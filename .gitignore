@@ -4,3 +4,6 @@ _site
 
 # Node
 node_modules
+
+# Other
+gui
