@@ -1,7 +1,7 @@
 {
-  "name": "blog",
+  "name": "frippz",
   "version": "1.0.0",
-  "description": "",
+  "description": "My super awesome blog",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git@bitbucket.org:frippz/blog.git"
   },
-  "author": "",
+  "author": "Fredrik Frodlund",
   "license": "ISC",
   "devDependencies": {
     "clean-css": "^2.2.19",
