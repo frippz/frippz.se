@@ -15,4 +15,4 @@ permalink: pretty
 markdown: kramdown
 
 # Exclude
-exclude: ['node_modules', 'Makefile', 'package.json']
+exclude: ['node_modules', 'Makefile', 'package.json', 'lib']
