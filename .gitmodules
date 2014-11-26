@@ -1,3 +1,4 @@
 [submodule "lib/gui"]
 	path = lib/gui
 	url = git@bitbucket.org:frippz/blog-gui.git
+	branch = master
