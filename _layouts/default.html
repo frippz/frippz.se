@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+{% include head.html %}
+<body>
 
-  {% include head.html %}
+  {% include header.html %}
 
-  <body>
+  <main role="main">
 
-    {% include header.html %}
+    <div class="landmark-content">
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+      {{ content }}
+
     </div>
 
-    {% include footer.html %}
+  </main>
 
-  </body>
-
+  {% include footer.html %}
+<script src="/gui/js/all.min.js"></script>
+</body>
 </html>
