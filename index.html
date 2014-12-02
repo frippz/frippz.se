@@ -4,13 +4,27 @@ layout: default
 
 <h2>Latest posts</h2>
 
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 <article role="article">
   <h3><a href="{{ post.url | prepend: site.baseurl }}" class="article-link">{{ post.title }}</a></h3>
   <footer>
-    Posted <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%b %-d, %Y' }}</time>
+    Posted <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %-d, %Y' }}</time>
   </footer>
-  <p>{{ page.excerpt }}</p>
+  <p>{{ post.excerpt }}</p>
   <p><a href="{{ post.url | prepend: site.baseurl }}">Continue reading <span class="offscreen">“{{ post.title }}”</span>…</a></p>
 </article>
 {% endfor %}
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</div>
