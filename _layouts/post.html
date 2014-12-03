@@ -4,8 +4,7 @@ layout: default
 <article role="article">
   <h3><a href="#" class="article-link">{{ page.title }}</a></h3>
   <footer>
-    Posted <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%b %-d, %Y" }}</time>
+    Posted on <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%B %-d, %Y" }}</time>
   </footer>
   {{ content }}
-  <!-- <p><a href="#">Continue reading <span class="offscreen">“{{ page.title }}”</span>…</a></p> -->
 </article>
