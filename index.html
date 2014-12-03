@@ -8,7 +8,7 @@ layout: default
 <article role="article">
   <h3><a href="{{ post.url | prepend: site.baseurl }}" class="article-link">{{ post.title }}</a></h3>
   <footer>
-    Posted <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %-d, %Y' }}</time>
+    Posted on <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%B %-d, %Y' }}</time>
   </footer>
   <p>{{ post.excerpt }}</p>
   <p><a href="{{ post.url | prepend: site.baseurl }}">Continue reading <span class="offscreen">“{{ post.title }}”</span>…</a></p>
