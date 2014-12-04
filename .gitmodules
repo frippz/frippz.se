@@ -1,0 +1,3 @@
+[submodule "lib/blog-prototype"]
+	path = lib/blog-prototype
+	url = git@bitbucket.org:frippz/blog-prototype.git
