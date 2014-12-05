@@ -12,6 +12,9 @@ github_username: frippz
 permalink: pretty
 paginate: 10
 
+# Server settings
+host: 0.0.0.0
+
 # Build settings
 markdown: kramdown
 
