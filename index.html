@@ -5,14 +5,14 @@ layout: default
 <h2>Latest posts</h2>
 
 {% for post in paginator.posts %}
-<article role="article">
+<div role="article">
   <h3><a href="{{ post.url | prepend: site.baseurl }}" class="article-link">{{ post.title }}</a></h3>
-  <footer>
+  <div class="post-info">
     Posted on <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%B %-d, %Y' }}</time>
-  </footer>
+  </div>
   <p>{{ post.excerpt }}</p>
   <p><a href="{{ post.url | prepend: site.baseurl }}">Continue reading <span class="offscreen">“{{ post.title }}”</span>…</a></p>
-</article>
+</div>
 {% endfor %}
 
 <div class="more-articles">
