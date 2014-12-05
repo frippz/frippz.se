@@ -2,6 +2,9 @@
 _site
 .sass-cache
 
+# Ignore random generated data file
+_data/gui.yml
+
 # Node
 node_modules
 
