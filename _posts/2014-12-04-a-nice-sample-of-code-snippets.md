@@ -32,3 +32,9 @@ cat /dev/urandom | env LC_CTYPE=C tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1
 ~~~
 
 There we go!
+
+Ok, how about some blockquotes?
+
+> This was quoted by some dude. Who knows who he was?
+
+Alright!
