@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
+title: About me
 permalink: /about/
 ---
 
-TODO: Fix this page!
+My name is Fredrik Frodlund and I'm a front end web developer working for Jayway, a consultancy out of Malmö, Sweden.
