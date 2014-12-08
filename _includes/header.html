@@ -8,7 +8,7 @@
 
     <div class="landmark-content">
       <ul id="main-nav">
-        {% for page in site.pages %}
+        {% for page in site.pages reversed %}
           {% if page.menutitle %}
           <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.menutitle }}</a></li>
           {% endif %}
