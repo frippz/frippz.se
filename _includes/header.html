@@ -9,8 +9,8 @@
     <div class="landmark-content">
       <ul id="main-nav">
         {% for page in site.pages %}
-          {% if page.title %}
-          <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+          {% if page.menutitle %}
+          <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.menutitle }}</a></li>
           {% endif %}
         {% endfor %}
       </ul>
