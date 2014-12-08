@@ -2,7 +2,6 @@
 layout: page
 title: About the proprietor of this establishment
 menutitle: About
-menu_order: b
 permalink: /about/
 ---
 
