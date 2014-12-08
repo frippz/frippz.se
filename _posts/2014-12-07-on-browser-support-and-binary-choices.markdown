@@ -1,7 +1,7 @@
 ---
 title: On browser support and binary choices
 layout: post
-published: 2014-12-05
+published: 2014-12-07
 ---
 I have more often than not been faced with the following scenario; a
 client, a colleague or maybe a project manager will ask the old-as-dirt
