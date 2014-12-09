@@ -79,11 +79,11 @@ While this might be considered a hack, it’s totally valid CSS. `min-width: 0` 
 
 A basic mobile first layout will, provided you’ve kept it simple, work quite well on legacy browsers. Chances are it will look just fine (or fine enough) without you needing to add any quirky hacks to your stylesheet. A great example of how this can look is the web site of [Jake Archibald](http://jakearchibald.com). Visiting his site in something very old (like IE6) and something quite modern (like Safari 8 on OS X) shows something interesting:
 
-[![](http://www.jayway.com/wp-content/uploads/2014/11/jakearchibald-safari8-1024x886.png)](http://www.jayway.com/wp-content/uploads/2014/11/jakearchibald-safari8.png)
+[![](https://dl.dropboxusercontent.com/u/817490/frippz.se/jakearchibald-safari8.png)](https://dl.dropboxusercontent.com/u/817490/frippz.se/jakearchibald-safari8.png)
 
 [jakearchibald.com](http://jakearchibald.com) viewed with Safari 8 on OS X Yosemite
 
-[![](http://www.jayway.com/wp-content/uploads/2014/11/jakearchibald-ie6-1024x811.png)](http://www.jayway.com/wp-content/uploads/2014/11/jakearchibald-ie6.png)
+[![](https://dl.dropboxusercontent.com/u/817490/frippz.se/jakearchibald-ie6.png)](https://dl.dropboxusercontent.com/u/817490/frippz.se/jakearchibald-ie6.png)
 
 [jakearchibald.com](http://jakearchibald.com) viewed with Internet Explorer 6 on Windows XP
 
