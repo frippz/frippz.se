@@ -23,19 +23,19 @@ The `:focus` pseudo-class is often forgotten when developers start messing aroun
 
 In the context of keyboard navigation, the :focus pseudo-class is very important since it helps users who are navigating with a keyboard rather than a pointing device. All browsers worth mentioning have a built-in user agent stylesheet that sets a style for focused elements.
 
-![](http://www.jayway.com/wp-content/uploads/2013/08/focus-outline-chrome.png)
+![](https://dl.dropboxusercontent.com/u/817490/frippz.se/focus-outline-chrome.png)
 
 Google Chrome (OS X 10.8)
 
-![](http://www.jayway.com/wp-content/uploads/2013/08/focus-outline-firefox.png)
+![](https://dl.dropboxusercontent.com/u/817490/frippz.se/focus-outline-firefox.png)
 
 Mozilla Firefox (OS X 10.8)
 
-![](http://www.jayway.com/wp-content/uploads/2013/08/focus-outline-ie10.png)
+![](https://dl.dropboxusercontent.com/u/817490/frippz.se/focus-outline-ie10.png)
 
 Internet Explorer 10 (Win 8)
 
-![](http://www.jayway.com/wp-content/uploads/2013/08/focus-outline-ie8.png)
+![](https://dl.dropboxusercontent.com/u/817490/frippz.se/focus-outline-ie8.png)
 
 Internet Explorer 8 (Win XP)
 
