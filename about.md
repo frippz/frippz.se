@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About the proprietor of this establishment
+title: About the author of this journal
 menutitle: About
 permalink: /about/
 ---
