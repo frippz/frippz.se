@@ -66,7 +66,7 @@ Noticed those thingies with an equals sign and some quotation marks? That what w
 
 ## Don't be *that* guy
 
-My former colleague is ever so courteous in his ageing post on the subject:
+My former colleague is ever so courteous in his post on the subject:
 
 >You may call this nitpicking, but I don’t think it is. Sure, most of the time people will understand what you mean even if you call everything a “tag”. But by using the correct terminology you reduce the risk of being misunderstood, and you will sound more professional, so you really have nothing to lose by learning the difference.
 >
