@@ -22,7 +22,7 @@ I mean, come on, it's really not rocket science, is it? (Or do we say rocket sur
 
 ## This is me doing something about it
 
-I guess the biggest problem for me is that each time I correct the culprit, *I* come off as the asshole. Ok, let's just to some HTML 101, shall we?
+I guess the biggest problem for me is that each time I correct the culprit, *I* come off as the asshole. Ok, let's just do some HTML 101, shall we?
 
 ### Elements
 
