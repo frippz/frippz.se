@@ -21,5 +21,6 @@ exclude: [
   'node_modules',
   'Makefile',
   'package.json',
-  'lib'
+  'lib',
+  'site_config.mk'
 ]
