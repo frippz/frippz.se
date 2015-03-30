@@ -1,4 +1,3 @@
-SHELL := /bin/sh
 all: build
 
 # NPM packages and options
