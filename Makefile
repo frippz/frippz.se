@@ -1,3 +1,4 @@
+SHELL := /bin/sh
 all: build
 
 # NPM packages and options
@@ -10,7 +11,7 @@ AUTOPREFIXER_BROWSERS = last 2 ios version, last 2 ff version, last 2 chrome ver
 GUI_SUBMODULE = lib/blog-prototype/index.html
 
 # Randomize file names for JavaScript and CSS
-RANDOM_NAME := $$(shell cat /dev/urandom | env LC_ALL=C tr -dc 'a-z0-9' | fold -w 16 | head -n 1)
+RANDOM_NAME := $(shell cat /dev/urandom | env LC_ALL=C tr -dc 'a-z0-9' | fold -w 16 | head -n 1)
 BUNDLE_JS = gui/js/$(RANDOM_NAME).js
 BUNDLE_CSS = gui/css/$(RANDOM_NAME).css
 
@@ -19,7 +20,7 @@ BUNDLE_CSS = gui/css/$(RANDOM_NAME).css
 
 # New draft config
 TOPIC ?= new article
-FILE = $$(shell date "+./_drafts/%Y-%m-%d-$(TOPIC).markdown" | sed -e y/\ /-/ | awk "{print tolower($0)}")
+FILE = $(shell date "+./_drafts/%Y-%m-%d-$(TOPIC).markdown" | sed -e y/\ /-/ | awk "{print tolower($0)}")
 
 $(CLEAN_CSS):
 	npm install
