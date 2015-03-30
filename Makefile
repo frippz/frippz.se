@@ -9,8 +9,8 @@ AUTOPREFIXER_BROWSERS = last 2 ios version, last 2 ff version, last 2 chrome ver
 # Submodule target
 GUI_SUBMODULE = lib/blog-prototype/index.html
 
-# Randomize file names for JavaScript and CSS
-RANDOM_NAME := $(shell cat /dev/urandom | env LC_ALL=C tr -dc 'a-z0-9' | fold -w 16 | head -n 1)
+# "Randomize" file names for JavaScript and CSS using a timestamp
+RANDOM_NAME := $(shell date "+%Y%m%d%H%M%S")
 BUNDLE_JS = gui/js/$(RANDOM_NAME).js
 BUNDLE_CSS = gui/css/$(RANDOM_NAME).css
 
