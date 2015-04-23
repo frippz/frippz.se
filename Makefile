@@ -3,6 +3,7 @@ all: build
 # NPM packages and options
 CLEAN_CSS = node_modules/.bin/cleancss
 UGLIFY_JS = node_modules/.bin/uglifyjs
+UGLIFY_OPTS = --screw-ie8
 AUTOPREFIXER = node_modules/.bin/autoprefixer
 AUTOPREFIXER_BROWSERS = last 2 ios version, last 2 ff version, last 2 chrome version, last 2 and_chr version
 
@@ -47,7 +48,7 @@ build: $(CLEAN_CSS) $(AUTOPREFIXER) $(UGLIFY_JS) copy-gui-assets data-gui
 	find gui/css -name '*.css' -not -name '$(RANDOM_NAME).css' -not -name 'ie.css' -exec cat {} \; | $(CLEAN_CSS) --skip-rebase -o $(BUNDLE_CSS) ;\
 	find gui/css -name '*.css' -not -name '$(RANDOM_NAME).css' -not -name 'ie.css' | xargs rm ;\
 	$(AUTOPREFIXER) -b "$(AUTOPREFIXER_BROWSERS)" $(BUNDLE_CSS) ;\
-	$(UGLIFY_JS) gui/js/*.js -o $(BUNDLE_JS) ;\
+	$(UGLIFY_JS)  gui/js/*.js -o $(BUNDLE_JS) $(UGLIFY_OPTS);\
 	find gui/js -name '*.js' -not -name '$(RANDOM_NAME).js' | xargs rm ;\
 	echo '$(RANDOM_NAME)' > _data/gui.yml
 
