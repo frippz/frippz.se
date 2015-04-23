@@ -11,7 +11,7 @@ AUTOPREFIXER_BROWSERS = last 2 ios version, last 2 ff version, last 2 chrome ver
 GUI_SUBMODULE = lib/blog-prototype/index.html
 
 # "Randomize" file names for JavaScript and CSS using a timestamp
-RANDOM_NAME := $(shell date "+%Y%m%d%H%M%S")
+RANDOM_NAME := build-$(shell date "+%Y%m%d%H%M%S")
 BUNDLE_JS = gui/js/$(RANDOM_NAME).js
 BUNDLE_CSS = gui/css/$(RANDOM_NAME).css
 
