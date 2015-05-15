@@ -8,7 +8,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: ""
 url: "http://frippz.se"
 permalink: pretty
-paginate: 10
+paginate: 8
 
 # Server settings
 host: 0.0.0.0
