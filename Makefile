@@ -71,7 +71,6 @@ new:
 	echo "layout: post" >> $(FILE)
 	echo "published: $(shell date +\"%Y-%m-%d\")" >> $(FILE)
 	echo "---" >> $(FILE)
-	open $(FILE)
 
 # Push site to live
 push:
