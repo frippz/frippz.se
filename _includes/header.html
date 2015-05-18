@@ -10,13 +10,6 @@
       <ul id="main-nav">
         <li><a href="/">Home</a></li>
         <li><a href="/about/">About</a></li>
-        {% comment %}
-        {% for page in site.pages reversed %}
-          {% if page.menutitle %}
-          <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.menutitle }}</a></li>
-          {% endif %}
-        {% endfor %}
-        {% endcomment %}
       </ul>
     </div>
     <!-- /landmark-content -->
