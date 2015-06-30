@@ -18,3 +18,7 @@ This site is just plain static HTML generated with the help of [Jekyll](http://j
 ### Getting in touch
 
 Feeling the need to get in touch with me? Don’t hesitate to shoot me an email at [contact@frippz.se](mailto:contact@frippz.se). The exception, of course, is if you happen to be a recruiter. Then you should just send an email to [spam@frippz.se](mailto:spam@frippz.se). Your service provider’s mail server will by all accounts bounce that email and that should be enough of a clue for you…
+
+### Hey, what’s a ”frippz”?
+
+That’s just a nickname my cousin gave me when I was a kid. The ”z” is just because it looks cool.
