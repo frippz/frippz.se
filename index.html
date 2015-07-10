@@ -15,6 +15,7 @@ sitemap:
   <div class="post-info">
     Posted on <time datetime="{{ post.date | date: '%Y-%m-%d' }}" itemprop="datePublished">{{ post.date | date: '%B %-d, %Y' }}</time>
   </div>
+  <meta itemprop="author" content="{{ site.author }}">
   <meta itemprop="url" content="{{ site.url}}{{ post.url }}">
   <meta itemprop="description" content="{{ post.excerpt | strip_html }}">
   {{ post.excerpt }}
