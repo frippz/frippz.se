@@ -10,11 +10,13 @@ sitemap:
 <h2>Latest posts</h2>
 
 {% for post in paginator.posts %}
-<div role="article">
-  <h3><a href="{{ post.url | prepend: site.baseurl }}" class="article-link">{{ post.title }}</a></h3>
+<div role="article" itemscope itemtype="http://schema.org/BlogPosting">
+  <h3 itemprop="name"><a href="{{ post.url | prepend: site.baseurl }}" class="article-link">{{ post.title }}</a></h3>
   <div class="post-info">
-    Posted on <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%B %-d, %Y' }}</time>
+    Posted on <time datetime="{{ post.date | date: '%Y-%m-%d' }}" itemprop="datePublished">{{ post.date | date: '%B %-d, %Y' }}</time>
   </div>
+  <meta itemprop="url" content="{{ site.url}}{{ post.url }}">
+  <meta itemprop="description" content="{{ post.excerpt | strip_html }}">
   {{ post.excerpt }}
   <p><a href="{{ post.url | prepend: site.baseurl }}">Continue reading <span class="offscreen">“{{ post.title }}”</span>…</a></p>
 </div>
