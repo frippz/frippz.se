@@ -12,10 +12,9 @@ sitemap:
 {% for post in paginator.posts %}
 <div role="article" itemscope itemtype="http://schema.org/BlogPosting">
   <h3 itemprop="name"><a href="{{ post.url | prepend: site.baseurl }}" class="article-link">{{ post.title }}</a></h3>
-  <div class="post-info">
-    Posted on <time datetime="{{ post.date | date: '%Y-%m-%d' }}" itemprop="datePublished">{{ post.date | date: '%B %-d, %Y' }}</time>
-  </div>
-  <meta itemprop="author" content="{{ site.author }}">
+  <p class="post-info">
+    <em>Posted on <time datetime="{{ post.date | date: '%Y-%m-%d' }}" itemprop="datePublished">{{ post.date | date: '%B %-d, %Y' }}</time> by <span itemprop="author">{{ post.author }}</span></em>
+  </p>
   <meta itemprop="url" content="{{ site.url}}{{ post.url }}">
   <meta itemprop="description" content="{{ post.excerpt | strip_html }}">
   {{ post.excerpt }}
