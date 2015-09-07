@@ -13,7 +13,7 @@ Please note that any views and opinions expressed by me on this site are persona
 
 ### Technical stuff
 
-This site is just plain static HTML generated with the help of [Jekyll](http://jekyllrb.com/). Font icons used on this site are provided by [icomoon.io](https://icomoon.io). Technology-wise, this site uses good old plain HTML5, CSS3 and, for the moment, fairly small amounts of progressively enhanced JavaScript.
+This site is just plain static HTML generated with the help of [Jekyll](http://jekyllrb.com/). Font icons used on this site are provided by [icomoon.io](https://icomoon.io). Technology-wise, this site uses good old plain HTML5, CSS3 and, for the moment, fairly small amounts of unobtrusive JavaScript.
 
 ### Getting in touch
 
