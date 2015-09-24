@@ -28,7 +28,7 @@ practical](http://www.quirksmode.org/presentations/USTourApril11/albany.pdf).
 
 Photo by [Brad Frost](https://instagram.com/brad_frost/)
 
-### So what should we do?
+## So what should we do?
 
 Brad Frost wrote a great post called “[Support Vs
 Optimization](http://bradfrost.com/blog/mobile/support-vs-optimization/)”
@@ -43,7 +43,7 @@ A lot of people will argue that supporting legacy browsers means putting in load
 
 To get you started, I’d like to give you a few examples of what you can do to achieve this.
 
-#### Consider progressive enhancement
+### Consider progressive enhancement
 
 I will not repeat the many arguments for progressive enhancement, when so many talented individuals have already done this in the past.
 
@@ -57,7 +57,7 @@ I’ll refrain from going any deeper into the progressive enhancement part in th
 
 Ok, moving on.
 
-#### Go mobile first
+### Go mobile first
 
 You might ask yourself what mobile first has to do with legacy browsers. Internet explorer before version 9 does not even understand media queries, right? Well, mobile first in this context could mean that you start with a very basic layout that is defined outside of any dimension based media queries.
 
@@ -89,6 +89,6 @@ A basic mobile first layout will, provided you’ve kept it simple, work quite w
 
 The looks of that site in IE 6 won’t win any design awards (but then again, neither will Windows XP, right?) The most important thing is that *it works*. The content is there, but all the bells and whistles are absent. My guess is that the designer spent very little time optimizing anything for legacy browsers. However, any unfortunate soul using IE 6 on Windows XP will still be able to get the core experience; the content. *This is what matters the most*.
 
-### This is only the beginning
+## This is only the beginning
 
 This post will hopefully give you just a little bit of inspiration and maybe help you realize that supporting legacy browsers does not have to result in a lot of extra work. In return, you will reach a wider audience and most likely be happier for it.

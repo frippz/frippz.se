@@ -5,7 +5,11 @@
   </div>
 
   <div class="landmark-content">
-    <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+    {% if page.url == '/' %}
+      <h1 class="main-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+    {% else %}
+      <div class="main-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></div>
+    {% endif %}
   </div>
 
   <div role="navigation">

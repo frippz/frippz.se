@@ -11,14 +11,14 @@ If you're reading this, it very likely means you've found your way to my persona
 
 Please note that any views and opinions expressed by me on this site are personal and not necessarily shared by my employer.
 
-### Technical stuff
+## Technical stuff
 
 This site is just plain static HTML generated with the help of [Jekyll](http://jekyllrb.com/). Font icons used on this site are provided by [icomoon.io](https://icomoon.io). Technology-wise, this site uses good old plain HTML5, CSS3 and, for the moment, fairly small amounts of unobtrusive JavaScript.
 
-### Getting in touch
+## Getting in touch
 
 Feeling the need to get in touch with me? Don’t hesitate to shoot me an email at [contact@frippz.se](mailto:contact@frippz.se). Faceless mass-recruiter? Please refrain from sending me any inquiries.
 
-### Hey, what’s a ”frippz”?
+## Hey, what’s a ”frippz”?
 
 That’s just a nickname my cousin gave me when I was a kid. The ”z” is just because it looks cool.
