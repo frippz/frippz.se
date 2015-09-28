@@ -30,5 +30,7 @@ exclude: [
   'Makefile',
   'package.json',
   'lib',
-  'site_config.mk'
+  'site_config.mk',
+  'LICENSE.md',
+  'README.md'
 ]
