@@ -74,11 +74,11 @@ new:
 
 # Push site to live
 push:
-	rsync -avz --delete -e ssh _site/* $(REMOTE)
+	rsync -Pavz --delete -e ssh _site/* $(REMOTE)
 
 # Push site to live (test)
 test-push:
-	rsync -avz --delete --dry-run -e ssh _site/* $(REMOTE)
+	rsync -Pavz --delete --dry-run -e ssh _site/* $(REMOTE)
 
 # Deploy (build css, generate jekyll & then push)
 deploy: build jekyll-build push
