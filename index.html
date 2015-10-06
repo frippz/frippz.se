@@ -11,7 +11,8 @@ sitemap:
 
 {% for post in paginator.posts %}
 <div role="article" itemscope itemtype="http://schema.org/BlogPosting">
-  <h3 itemprop="name"><a href="{{ post.url | prepend: site.baseurl }}" class="article-link">{{ post.title }}</a></h3>
+  <h3 itemprop="headline"><a href="{{ post.url | prepend: site.baseurl }}" class="article-link">{{ post.title }}</a></h3>
+  <link itemprop="image" href="http://f.frippz.se/article.png">
   <p class="post-info">
     <em>Posted on <time datetime="{{ post.date | date: '%Y-%m-%d' }}" itemprop="datePublished">{{ post.date | date: '%B %-d, %Y' }}</time> by <span itemprop="author">{{ post.author }}</span></em>
   </p>
