@@ -37,7 +37,7 @@ test-push:
 	rsync -avz --delete --dry-run -e ssh _site/* $(REMOTE)
 
 # Deploy (generate jekyll & then push)
-deploy: jekyll-build push
+deploy: sync jekyll-build push
 
 # Help
 help:
