@@ -32,5 +32,6 @@ exclude: [
   'lib',
   'site_config.mk',
   'LICENSE.md',
-  'README.md'
+  'README.md',
+  '*.map'
 ]
