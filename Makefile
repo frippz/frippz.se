@@ -24,6 +24,10 @@ new:
 	echo "published: $(shell date +\"%Y-%m-%d\")" >> $(FILE)
 	echo "---" >> $(FILE)
 
+# Sync from prototype dist
+sync:
+	rsync -avz --delete $(PROTO_GUI) gui
+
 # Push site to live
 push:
 	rsync -avz --delete -e ssh _site/* $(REMOTE)
