@@ -4,9 +4,9 @@ layout: default
 <div role="article" itemscope itemtype="http://schema.org/BlogPosting">
   <h1 itemprop="headline">{{ page.title }}</h1>
   <link itemprop="image" href="http://f.frippz.se/article.png">
-  <p class="post-info">
+  <small class="post-info">
     <em>Published on <time datetime="{{ page.date | date: '%Y-%m-%d' }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time> by <span itemprop="author">{{ page.author }}</span></em>
-  </p>
+  </small>
   <div itemprop="articleBody">
     {{ content }}
   </div>

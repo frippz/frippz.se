@@ -18,9 +18,9 @@ sitemap:
     </a>
   </h3>
   <link itemprop="image" href="http://f.frippz.se/article.png">
-  <p class="post-info">
+  <small class="post-info">
     <em>Posted on <time datetime="{{ post.date | date: '%Y-%m-%d' }}" itemprop="datePublished">{{ post.date | date: '%B %-d, %Y' }}</time> by <span itemprop="author">{{ post.author }}</span></em>
-  </p>
+  </small>
   <meta itemprop="url" content="{{ site.url}}{{ post.url }}">
   <meta itemprop="description" content="{{ post.excerpt | strip_html }}">
   {{ post.excerpt }}
