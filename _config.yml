@@ -24,6 +24,11 @@ host: 0.0.0.0
 # Build settings
 markdown: kramdown
 
+# Gems
+gems: [
+  'jekyll-paginate'
+]
+
 # Exclude
 exclude: [
   'node_modules',
