@@ -5,7 +5,7 @@ menutitle: About
 permalink: /about/
 ---
 
-{% include my-face.html %} Hi! My name is Fredrik Frodlund and that is me when I still had a beard. I'm working as a front end web developer for [Jayway](http://www.jayway.com/), a consultancy based in Sweden.
+<img src="{% include my-face.html %}" alt="" height="216" width="322" class="left"> Hi! My name is Fredrik Frodlund and that is me when I still had a beard. I'm working as a front end web developer for [Jayway](http://www.jayway.com/), a consultancy based in Sweden.
 
 If you're reading this, it very likely means you've found your way to my personal journal. This is a place for me to collect my thoughts, mostly about front end web development. In the good spirit of sharing knowledge, I thought it’d be nice to post all my stuff online for the rest of the world to enjoy. Chances are you might find something useful some day.
 
