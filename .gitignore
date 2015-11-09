@@ -6,8 +6,5 @@ _site
 # Node
 node_modules
 
-# Other
-gui
-
 # Sensitive data shouldn't be included
 site_config.mk
