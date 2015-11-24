@@ -28,11 +28,11 @@ var gulp             = require('gulp'),
 var paths = {
 
   // Inputs
-  js: ['./src/gui/js/**/*.js'],
-  css: ['./src/gui/css/**/*.css'],
+  js: ['./src/js/**/*.js'],
+  css: ['./src/css/**/*.css'],
 
   // Static assets
-  images: './src/gui/i/',
+  images: './src/i/',
 
   // Outputs
   jsOutput: 'main.js',
