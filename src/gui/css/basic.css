@@ -1,0 +1,216 @@
+/**
+ * basic.css
+ *
+ * @author Fredrik Frodlund
+ */
+
+@media all {
+
+  /**
+   * The Lobotomized Owl
+   */
+  * + * {
+    margin-top: 1.75em;
+  }
+
+  /**
+   * HTML5 elements legacy reset
+   */
+  article, aside, details, figcaption, figure,
+  footer, header, hgroup, main, menu, nav, section {
+    display: block;
+  }
+
+  /**
+   * Reset body & html spacing
+   */
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+  }
+
+  /**
+   * Reset box sizing
+   */
+  html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  /**
+   * Tables
+   */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+  }
+
+  table,
+  th,
+  td {
+    border: 0;
+  }
+
+  th,
+  td {
+    padding: .125em .2em;
+    vertical-align: top;
+  }
+
+  caption,
+  th {
+    font-weight: bold;
+    text-align: left;
+  }
+
+  tr:nth-child(even) {
+    background: rgba(0, 0, 0, .05);
+  }
+
+
+  /**
+   * Images
+   */
+  img {
+    border: 0;
+    height: auto;
+    max-width: 100%;
+  }
+  img.left {
+    float: left;
+    margin: 0 1em .5em 0;
+  }
+  img.right {
+    float: right;
+    margin: 0 0 .5em 1em;
+  }
+
+
+  /**
+   * Body styling
+   */
+  html,
+  body {
+    background: #fff;
+    color: #333;
+  }
+
+
+  /**
+   * Fonts & sizes
+   * Base size set to 16px
+   */
+  html {
+    font: 100%/1.5 "Roboto Slab", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  code,
+  kbd,
+  pre {
+    font-family: Menlo, Courier, "Courier New", monospace;
+  }
+
+
+  /**
+   * Headings
+   */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    margin: 2em 0 0;
+  }
+  h1:first-child,
+  h2:first-child,
+  h3:first-child,
+  h4:first-child,
+  h5:first-child,
+  h6:first-child {
+    margin-top: 0;
+  }
+  h1 + p,
+  h2 + p,
+  h3 + p,
+  h4 + p,
+  h5 + p,
+  h6 + p {
+    margin-top: .5em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+
+  h5,
+  h6 {
+    font-size: 1em;
+  }
+
+
+  /**
+   *Links
+   */
+  a,
+  a:visited {
+    color: inherit;
+  }
+  a:hover,
+  a:focus,
+  a:active {
+    color: inherit;
+  }
+
+
+  /**
+   * Emphasis
+   */
+  b,
+  strong {
+    font-weight: bold;
+  }
+
+  i,
+  em {
+    font-style: italic;
+  }
+
+
+  /**
+   * Hidden elements (both visually and for AT:s)
+   */
+  [hidden] {
+    display: none;
+  }
+
+
+  /**
+   * Visually hidden (still visible to AT:s)
+   */
+  .offscreen {
+    height: 1px;
+    left: -10000px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px;
+  }
+
+}/* END @media all */
