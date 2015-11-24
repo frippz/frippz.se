@@ -21,19 +21,31 @@ host: 0.0.0.0
 markdown: kramdown
 
 # Gems
-gems: [
-  'jekyll-paginate'
-]
+gems:
+  - 'jekyll-archives'
+  - 'jekyll-paginate'
+
+# Archives
+jekyll-archives:
+  enabled: []
+  layout: 'archive'
+  permalinks:
+    year: '/archive/:year/'
+    month: '/archive/:year/archive/:month/'
+    day: '/archive/:year/archive/:month/archive/:day/'
+    tag: '/archive/tag/:name/'
+    category: '/archive/category/:name/'
 
 # Exclude
-exclude: [
-  'node_modules',
-  'Makefile',
-  'package.json',
-  'lib',
-  'site_config.mk',
-  'LICENSE.md',
-  'README.md',
-  '*.map',
-  'src'
-]
+exclude:
+  - 'node_modules'
+  - 'Makefile'
+  - 'package.json'
+  - 'lib'
+  - 'site_config.mk'
+  - 'LICENSE.md'
+  - 'README.md'
+  - 'src'
+  - 'gulpfile.js'
+  - 'Gemfile'
+  - 'Gemfile.lock'
