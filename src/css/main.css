@@ -103,7 +103,7 @@
   [role="contentinfo"] {
     background: #333;
     margin-top: 6em;
-    padding: 1em 0 2em;
+    padding: 2em 0;
   }
   [role="contentinfo"] a,
   [role="contentinfo"] a:visited {
@@ -133,6 +133,9 @@
     list-style: none;
     margin: 0;
     padding: 0;
+  }
+  .footer-links li + li {
+    margin-top: 1em;
   }
 
 
