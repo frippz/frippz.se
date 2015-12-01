@@ -101,20 +101,25 @@
    * Contentinfo
    */
   [role="contentinfo"] {
-    background: #efefef;
-    border-top: 1px solid #ccc;
+    background: #333;
     margin-top: 6em;
     padding: 1em 0 2em;
   }
   [role="contentinfo"] a,
   [role="contentinfo"] a:visited {
-    color: #007f00;
+    color: #9ac39f;
     text-decoration: none;
   }
   [role="contentinfo"] a:hover,
   [role="contentinfo"] a:focus,
   [role="contentinfo"] a:active {
-    border-bottom: 1px solid #666;
+    color: #efefef;
+  }
+
+  [role="contentinfo"] svg {
+    display: inline-block;
+    margin-right: .25em;
+    vertical-align: -.2em;
   }
 
   /* Footer links */
@@ -125,8 +130,6 @@
     float: right;
   }
   .footer-links {
-    font-size: .8125em;
-    font-weight: bold;
     list-style: none;
     margin: 0;
     padding: 0;
