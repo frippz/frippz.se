@@ -75,7 +75,7 @@ Then you do more complex layouts with something like this:
 }
 ~~~
 
-While this might be considered a hack, it’s totally valid CSS. `min-width: 0` means all widths from 0 and up, but since IE 8 and older versions doesn’t understand the syntax, they’ll just ignore it. Also, keep in mind that the code snippets above is only the beginning. You of course need to add additional media queries for different breakpoints tailored to your design.
+While this might be considered a hack, it’s totally valid CSS. `min-width: 0;` means all widths from 0 and up, but since IE 8 and older versions doesn’t understand the syntax, they’ll just ignore it. Also, keep in mind that the code snippets above is only the beginning. You of course need to add additional media queries for different breakpoints tailored to your design.
 
 A basic mobile first layout will, provided you’ve kept it simple, work quite well on legacy browsers. Chances are it will look just fine (or fine enough) without you needing to add any quirky hacks to your stylesheet. A great example of how this can look is the web site of [Jake Archibald](http://jakearchibald.com). Visiting his site in something very old (like IE6) and something quite modern (like Safari 8 on OS X) shows something interesting:
 
