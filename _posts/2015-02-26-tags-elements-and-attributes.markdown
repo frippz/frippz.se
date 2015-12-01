@@ -28,7 +28,7 @@ I guess the biggest problem for me is that each time I correct the culprit, *I* 
 
 In general, a HTML element consists of a start tag and an end tag. Here's a lovely heading for you.
 
-~~~markup
+~~~html
 <h1>This is a heading</h1>
 ~~~
 
@@ -38,25 +38,25 @@ Preferably, there should be some content between the start tag and the end tag.
 
 Tags are what makes up the start and the end of an element. You've might come across some of the, like in the previous section, like, five seconds ago.
 
-~~~markup
+~~~html
 <p>
 ~~~
 
 The above start tag denotes the beginning of a paragraph. Attributes are optional, like so.
 
-~~~markup
+~~~html
 <p class="whatever">
 ~~~
 
 In order to close you paragraph, you'll need and end tag.
 
-~~~markup
+~~~html
 </p>
 ~~~
 
 There are a few HTML elements that requires no end tag. The `<img>` element is one good example of those.
 
-~~~markup
+~~~html
 <img src="photo.jpg" alt="">
 ~~~
 
