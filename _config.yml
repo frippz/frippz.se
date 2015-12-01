@@ -5,6 +5,7 @@ baseurl: ''
 url: http://frippz.se
 permalink: pretty
 paginate: 5
+highlighter: rouge
 
 # Default page settings
 defaults:
@@ -24,6 +25,7 @@ markdown: kramdown
 gems:
   - 'jekyll-archives'
   - 'jekyll-paginate'
+  - 'rouge'
 
 # Archives
 jekyll-archives:
