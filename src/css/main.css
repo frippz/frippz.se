@@ -84,7 +84,10 @@
   /**
    * Code highlighting
    */
-  .highlighter-rouge pre {
+  .highlight {
+    margin: 0;
+  }
+  .highlight pre {
     background: #3f3f3f;
     padding: 1em;
     overflow-x: auto;
