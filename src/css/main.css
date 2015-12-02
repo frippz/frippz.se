@@ -99,6 +99,33 @@
     padding: .1em .4em;
   }
 
+  /* Line numbers */
+  .js .highlight pre {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .js .ln {
+    color: #888;
+    border-right: 1px solid #555;
+    padding-right: .5em;
+    margin-right: .75em;
+    text-align: right;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .js .ln span {
+    display: block;
+    margin-top: 0;
+  }
+
+  .js .ln + code {
+    margin-top: 0;
+  }
+
 
   /**
    * Contentinfo
