@@ -8,19 +8,19 @@ As of OS X Yosemite, the built in version of ZSH is 5.0.5. If you're, like me, a
 
 This very short guide assumes that you’re already familiar with [Homebrew](http://brew.sh/) and have it installed. Once that's sorted, install ZSH.
 
-~~~bash
+{% highlight bash %}
 $ brew install zsh
-~~~
+{% endhighlight %}
 
 Edit `/etc/shells` to add a new entry for the Homebrew ZSH.
 
-~~~bash
+{% highlight bash %}
 $ sudo vim /etc/shells
-~~~
+{% endhighlight %}
 
 At the end of the file add `/usr/local/bin/zsh`, which is the path to the Homebrew binary for ZSH. Your `/etc/shells` should look like this:
 
-~~~bash
+{% highlight bash %}
 # List of acceptable shells for chpass(1).
 # Ftpd will not allow users to connect who are not using
 # one of these shells.
@@ -32,12 +32,12 @@ At the end of the file add `/usr/local/bin/zsh`, which is the path to the Homebr
 /bin/tcsh
 /bin/zsh
 /usr/local/bin/zsh
-~~~
+{% endhighlight %}
 
 Now we need to set our Homebrew ZSH as the default shell, and we’re done!
 
-~~~bash
+{% highlight bash %}
 $ chsh -s /usr/local/bin/zsh
-~~~
+{% endhighlight %}
 
 Welcome to the bleeding edge of ZSH!

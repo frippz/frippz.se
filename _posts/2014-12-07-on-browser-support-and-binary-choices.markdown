@@ -61,19 +61,19 @@ Ok, moving on.
 
 You might ask yourself what mobile first has to do with legacy browsers. Internet explorer before version 9 does not even understand media queries, right? Well, mobile first in this context could mean that you start with a very basic layout that is defined outside of any dimension based media queries.
 
-~~~css
+{% highlight css %}
 @media all {
   /* Put very basic, mobile first layout here */
 }
-~~~
+{% endhighlight %}
 
 Then you do more complex layouts with something like this:
 
-~~~css
+{% highlight css %}
 @media screen and (min-width: 0) {
   /* Juicy, complex and cutting edge CSS goes here */
 }
-~~~
+{% endhighlight %}
 
 While this might be considered a hack, it’s totally valid CSS. `min-width: 0;` means all widths from 0 and up, but since IE 8 and older versions doesn’t understand the syntax, they’ll just ignore it. Also, keep in mind that the code snippets above is only the beginning. You of course need to add additional media queries for different breakpoints tailored to your design.
 
