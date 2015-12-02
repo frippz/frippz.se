@@ -5,7 +5,6 @@ baseurl: ''
 url: http://frippz.se
 permalink: pretty
 paginate: 5
-highlighter: rouge
 
 # Default page settings
 defaults:
@@ -20,6 +19,7 @@ host: 0.0.0.0
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 
 # Gems
 gems:
