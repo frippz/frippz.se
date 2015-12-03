@@ -24,9 +24,9 @@ asking ourselves which browsers to test for and whether we should
 optimize for legacy browsers, [because that just isn’t very
 practical](http://www.quirksmode.org/presentations/USTourApril11/albany.pdf).
 
-![](https://distilleryimage7-a.akamaihd.net/a8e80294b80f11e1be6a12313820455d_7.jpg)
+![](https://pbs.twimg.com/media/BwxaMg6CYAAupoH.jpg)
 
-Photo by [Brad Frost](https://instagram.com/brad_frost/)
+Photo by [Luke Wroblewski](https://twitter.com/lukew/)
 
 ## So what should we do?
 
