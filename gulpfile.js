@@ -137,4 +137,5 @@ gulp.task('deploy', function (cb) {
 // Build
 gulp.task('build', ['css', 'js', 'images']);
 
+// Default
 gulp.task('default', ['watch', 'css', 'js', 'images', 'lint']);
