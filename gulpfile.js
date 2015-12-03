@@ -2,6 +2,8 @@
  * gulpfile.js
  *
  * All the yummy build stuff!
+ *
+ * @author Fredrik Frodlund (contact@frippz.se)
  */
 
 // Requirements
