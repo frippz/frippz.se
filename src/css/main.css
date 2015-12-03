@@ -89,8 +89,9 @@
   }
   .highlight pre {
     background: #3f3f3f;
-    padding: 1em;
+    margin: 2em 0;
     overflow-x: auto;
+    padding: 1em;
   }
 
   /* Inline code */
@@ -99,7 +100,7 @@
     padding: .1em .4em;
   }
 
-  /* Line numbers */
+  /* Line numbers (requires JS) */
   .js .highlight pre {
     display: flex;
     align-items: flex-start;
