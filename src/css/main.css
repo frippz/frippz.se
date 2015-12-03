@@ -113,9 +113,9 @@
     margin-right: .75em;
     text-align: right;
     -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
   }
 
   .js .ln span {
