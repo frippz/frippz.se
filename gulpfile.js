@@ -134,4 +134,7 @@ gulp.task('deploy', function (cb) {
   ghPages.publish(path.join(process.cwd(), paths.tplDest), cb);
 });
 
+// Build
+gulp.task('build', ['css', 'js', 'images']);
+
 gulp.task('default', ['watch', 'css', 'js', 'images', 'lint']);
