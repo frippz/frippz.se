@@ -107,10 +107,10 @@
   }
 
   .js .ln {
-    color: #888;
     border-right: 1px solid #555;
-    padding-right: .5em;
+    color: #888;
     margin-right: .75em;
+    padding-right: .5em;
     text-align: right;
     -webkit-user-select: none;
        -moz-user-select: none;
