@@ -11,17 +11,21 @@ if('querySelector' in document && 'classList' in document.createElement('a') && 
   document.querySelector('html').classList.add('js');
 
   // Add line numbers to <pre>
-  (function() {
+  function numberedLines() {
     var pre = document.querySelectorAll('pre'),
-    pl = pre.length;
+        pl = pre.length;
+
     for (var i = 0; i < pl; i++) {
       pre[i].innerHTML = '<span class="ln" aria-hidden="true"></span>' + pre[i].innerHTML;
       var num = pre[i].innerHTML.split(/\n/).length;
+
       for (var j = 0; j < num; j++) {
-        var line_num = pre[i].getElementsByTagName('span')[0];
+        var line_num = pre[i].querySelector('span');
         line_num.innerHTML += '<span>' + (j + 1) + '</span>';
       }
     }
-  })();
+  }
+
+  numberedLines();
 
 }
