@@ -6,6 +6,7 @@
 
 // Requirements
 var gulp             = require('gulp'),
+    gulpif           = require('gulp-if'),
     gutil            = require('gulp-util'),
     plumber          = require('gulp-plumber'),
     sourcemaps       = require('gulp-sourcemaps'),
@@ -51,6 +52,9 @@ var onError = function (err) {
   console.log(err);
 };
 
+// Check for production
+var isProduction = process.env.NODE_ENV === 'production';
+
 // Process stylesheets
 gulp.task('css', function () {
   return gulp.src(paths.css)
@@ -65,7 +69,7 @@ gulp.task('css', function () {
     .pipe(postcss([customProperties()]))
     .pipe(concat(paths.cssOutput))
     .pipe(minifyCss({compatibility: 'ie8'}))
-    .pipe(sourcemaps.write('.'))
+    .pipe(gulpif(!isProduction, sourcemaps.write('.')))
     .pipe(gulp.dest(paths.cssDest));
 });
 
@@ -78,7 +82,7 @@ gulp.task('js', function () {
     .pipe(sourcemaps.init())
     .pipe(concat(paths.jsOutput))
     .pipe(uglify())
-    .pipe(sourcemaps.write('.'))
+    .pipe(gulpif(!isProduction, sourcemaps.write('.')))
     .pipe(gulp.dest(paths.jsDest));
 });
 
