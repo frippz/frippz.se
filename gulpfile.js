@@ -72,6 +72,9 @@ gulp.task('css', function () {
 // Concatenate and minify JavaScript
 gulp.task('js', function () {
   return gulp.src(paths.js)
+    .pipe(plumber({
+      errorHandler: onError
+    }))
     .pipe(sourcemaps.init())
     .pipe(concat(paths.jsOutput))
     .pipe(uglify())
