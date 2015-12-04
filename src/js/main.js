@@ -16,12 +16,12 @@ if('querySelector' in document && 'classList' in document.createElement('a') && 
         pl = pre.length;
 
     for (var i = 0; i < pl; i++) {
-      pre[i].innerHTML = '<span class="ln" aria-hidden="true"></span>' + pre[i].innerHTML;
+      pre[i].insertAdjacentHTML('beforeend', '<span class="ln" aria-hidden="true"></span>');
       var num = pre[i].innerHTML.split(/\n/).length;
 
       for (var j = 0; j < num; j++) {
-        var line_num = pre[i].querySelector('span');
-        line_num.innerHTML += '<span>' + (j + 1) + '</span>';
+        var lineNum = pre[i].querySelector('.ln');
+        lineNum.insertAdjacentHTML('beforeend', '<span></span>');
       }
     }
   }
