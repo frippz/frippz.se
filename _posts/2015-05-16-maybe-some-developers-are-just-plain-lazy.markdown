@@ -1,5 +1,6 @@
 ---
 title: Maybe some developers are just plain lazy
+description: Some quick thoughts about why tooling has become such a big thing in modern web development and the cost it brings.
 layout: post
 published: 2015-05-16
 ---
