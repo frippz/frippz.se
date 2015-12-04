@@ -106,19 +106,29 @@
     align-items: flex-start;
   }
 
+  .js code {
+    counter-reset: linenumber;
+    order: 2;
+    padding-right: 1em;
+  }
+
   .js .ln {
     border-right: 1px solid #555;
     color: #888;
+    margin-top: 0;
     margin-right: .75em;
     padding-right: .5em;
     text-align: right;
+    order: 1;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
   }
 
-  .js .ln span {
+  .js .ln span:before {
+    counter-increment: linenumber;
+    content: counter(linenumber);
     display: block;
     margin-top: 0;
   }
