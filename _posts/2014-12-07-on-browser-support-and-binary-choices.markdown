@@ -1,28 +1,18 @@
 ---
 title: On browser support and binary choices
+description: A post on why we shouldn’t just draw a hard line in the sand when it comes to browser support decisions.
 layout: post
 published: 2014-12-07
 ---
-I have more often than not been faced with the following scenario; a
-client, a colleague or maybe a project manager will ask the old-as-dirt
-question:
+I have more often than not been faced with the following scenario; a client, a colleague or maybe a project manager will ask the old-as-dirt question:
 
 *“What browsers should be supported in this project?”*
 
-For way too long I thought of this as a binary issue. You either
-supported a particular browser, or you didn’t. If you were a really bad
-apple, you took measures to make sure that the user of a legacy browser
-you decided shouldn’t be supported got a snarky message as well –
-*“Sorry, your old browser is not supported by us.”* – lovely, right?
+For way too long I thought of this as a binary issue. You either supported a particular browser, or you didn’t. If you were a really bad apple, you took measures to make sure that the user of a legacy browser you decided shouldn’t be supported got a snarky message as well – *“Sorry, your old browser is not supported by us.”* – lovely, right?
 
-All this is of course a pretty bad practice and parallels can be drawn
-to a store owner telling potential customers to get lost just because
-they can’t climb the stairs to get into the store.
+All this is of course a pretty bad practice and parallels can be drawn to a store owner telling potential customers to get lost just because they can’t climb the stairs to get into the store.
 
-Looking at the browser landscape of today and the future, we can’t keep
-asking ourselves which browsers to test for and whether we should
-optimize for legacy browsers, [because that just isn’t very
-practical](http://www.quirksmode.org/presentations/USTourApril11/albany.pdf).
+Looking at the browser landscape of today and the future, we can’t keep asking ourselves which browsers to test for and whether we should optimize for legacy browsers, [because that just isn’t very practical](http://www.quirksmode.org/presentations/USTourApril11/albany.pdf).
 
 ![](https://pbs.twimg.com/media/BwxaMg6CYAAupoH.jpg)
 
@@ -30,10 +20,7 @@ Photo by [Luke Wroblewski](https://twitter.com/lukew/)
 
 ## So what should we do?
 
-Brad Frost wrote a great post called “[Support Vs
-Optimization](http://bradfrost.com/blog/mobile/support-vs-optimization/)”
-back in 2011. You should absolutely read the whole thing, but if not,
-just read this:
+Brad Frost wrote a great post called “[Support Vs Optimization](http://bradfrost.com/blog/mobile/support-vs-optimization/)” back in 2011. You should absolutely read the whole thing, but if not, just read this:
 
 > “There is a difference between support and optimization” is a line I use regularly at work. For time and budget reasons, we can’t make the best experience ever for every connected device, but we have a responsibility to provide a decent experience to those who wish to interact with our products and services. As we move into the future, it’s going to be harder and harder to account for the plethora of connected devices, so we need to be construct our experiences with more consideration.
 
