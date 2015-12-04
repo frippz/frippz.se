@@ -171,6 +171,25 @@
 
 
   /**
+   * Custom selection colors
+   */
+  ::selection {
+    background-color: #7f9f7f;
+    color: #fff;
+  }
+  [role="contentinfo"] ::selection {
+    background-color: #7f9f7f;
+    color: #fff;
+  }
+
+  [role="article"] pre code::selection,
+  [role="article"] pre code ::selection {
+    background-color: #fdce93;
+    color: #3f3f3f;
+  }
+
+
+  /**
    * Super cool rainbow banner!
    */
   [role="banner"]:before {
