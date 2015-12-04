@@ -27,7 +27,8 @@
   [role="banner"] .main-title {
     font-size: 2.3em;
     font-weight: 400;
-    padding: .5em 0 .25em;
+    line-height: 1.125;
+    padding: .75em 0 .5em;
   }
   [role="banner"] .main-title a {
     text-decoration: none;
