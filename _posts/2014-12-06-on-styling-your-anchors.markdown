@@ -1,5 +1,6 @@
 ---
 title: On styling your anchors
+description: A short post on why you shouldn’t just mindlessly style away the outline on anchor elements.
 layout: post
 published: 2014-12-06
 ---
