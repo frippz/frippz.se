@@ -98,7 +98,7 @@
   /* Inline code */
   p > code {
     background: #f0dfaf;
-    padding: .1em .4em;
+    padding: .1em .2em;
   }
 
   /* Line numbers (requires JS) */
@@ -107,7 +107,7 @@
     align-items: flex-start;
   }
 
-  .js code {
+  .js .highlight code {
     counter-reset: linenumber;
     order: 2;
     padding-right: 1em;
