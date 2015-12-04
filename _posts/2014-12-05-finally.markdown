@@ -1,5 +1,6 @@
 ---
 title: Finally!
+description: The very first post on this blog!
 layout: post
 published: 2014-12-05 17:00
 ---
