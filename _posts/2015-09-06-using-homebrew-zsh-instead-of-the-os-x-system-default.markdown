@@ -1,5 +1,6 @@
 ---
 title: Using Homebrew ZSH instead of the OS X system default
+description: How to switch over from the system default installation of ZSH to the Homebrew version.
 layout: post
 published: 2015-09-06
 ---
