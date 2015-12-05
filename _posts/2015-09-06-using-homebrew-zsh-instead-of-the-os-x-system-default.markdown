@@ -35,10 +35,10 @@ At the end of the file add `/usr/local/bin/zsh`, which is the path to the Homebr
 /usr/local/bin/zsh
 {% endhighlight %}
 
-Now we need to set our Homebrew ZSH as the default shell, and we’re done!
+Now we need to set our Homebrew ZSH as the default shell.
 
 {% highlight bash %}
 $ chsh -s /usr/local/bin/zsh
 {% endhighlight %}
 
-Welcome to the bleeding edge of ZSH!
+Now open a new terminal, and we’re done! Welcome to the bleeding edge of ZSH!
