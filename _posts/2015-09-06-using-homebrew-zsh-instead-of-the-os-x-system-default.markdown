@@ -41,4 +41,4 @@ Now we need to set our Homebrew ZSH as the default shell.
 $ chsh -s /usr/local/bin/zsh
 {% endhighlight %}
 
-Now open a new terminal, and we’re done! Welcome to the bleeding edge of ZSH!
+Now open up a new terminal, and we’re done! Welcome to the bleeding edge of ZSH!
