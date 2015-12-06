@@ -313,21 +313,24 @@
   }
   blockquote:before,
   blockquote:after {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 2em;
     color: #dadada;
+    content: "";
     display: block;
-    font-size: 6em;
-    font-style: italic;
+    padding: 1em;
     position: absolute;
   }
   blockquote:before {
-    content: "“";
-    left: -.1em;
-    top: -.2em;
+    background-image: url("/gui/i/icon-quotes-left.svg");
+    left: .7em;
+    top: .2em;
   }
   blockquote:after {
-    bottom: -.8em;
-    content: "”";
-    right: .25em;
+    background-image: url("/gui/i/icon-quotes-right.svg");
+    bottom: .2em;
+    right: .7em;
   }
 
   /* Nested blockquotes */
@@ -343,7 +346,6 @@
   }
   blockquote blockquote:after,
   blockquote blockquote:before {
-    content: "";
     display: none;
   }
 
