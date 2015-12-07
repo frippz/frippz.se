@@ -25,7 +25,8 @@ var gulp             = require('gulp'),
     htmlhint         = require('gulp-htmlhint'),
     w3cjs            = require('gulp-w3cjs'),
     dirSync          = require('gulp-directory-sync'),
-    webserver        = require('gulp-webserver');
+    webserver        = require('gulp-webserver'),
+    svgSprite        = require('gulp-svg-sprite');
 
 // Configure paths
 var paths = {
@@ -37,6 +38,9 @@ var paths = {
   // Static assets
   images: './src/i/',
 
+  // SVG icons
+  svg: ['./src/svg/**/*.svg'],
+
   // Outputs
   jsOutput: 'main.js',
   cssOutput: 'styles.css',
@@ -45,6 +49,7 @@ var paths = {
   jsDest: './gui/js/',
   cssDest: './gui/css/',
   imgDest: './gui/i/',
+  svgDest: './_includes/'
 
 };
 
@@ -96,6 +101,32 @@ gulp.task('htmlhint', function () {
 //     .pipe(htmlhint.failReporter({ suppress: true }));
 });
 
+// SVG sprite generation
+svgConfig = {
+  mode: {
+    symbol: {
+      sprite: 'sprite.svg'
+    },
+    view: {
+      bust: false,
+      sprite: 'sprite.svg'
+    }
+  },
+  svg : {
+    rootAttributes: {
+      style: 'display: none;'
+    },
+    doctypeDeclaration: false,
+    xmlDeclaration: false
+  }
+}
+gulp.task('svg-sprite', function ( ){
+  return gulp.src(paths.svg)
+    .pipe(svgSprite(svgConfig))
+    .pipe(gulp.dest(paths.svgDest))
+    .pipe(gulp.dest(paths.imgDest));
+});
+
 // eslint
 gulp.task('eslint', function () {
   return gulp.src(paths.js)
@@ -123,6 +154,9 @@ gulp.task('watch', function() {
   watch(paths.images, function() {
     gulp.start(['images']);
   });
+  watch(paths.svg, function() {
+    gulp.start(['svg-sprite']);
+  });
 });
 
 // Copy image assets into /gui
@@ -140,4 +174,4 @@ gulp.task('deploy', function (cb) {
 gulp.task('build', ['css', 'js', 'images']);
 
 // Default
-gulp.task('default', ['watch', 'css', 'js', 'images', 'lint']);
+gulp.task('default', ['watch', 'css', 'js', 'images', 'svg-sprite', 'lint']);
