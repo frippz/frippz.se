@@ -171,7 +171,7 @@ gulp.task('deploy', function (cb) {
 });
 
 // Build
-gulp.task('build', ['css', 'js', 'images']);
+gulp.task('build', ['css', 'js', 'images', 'svg-sprite']);
 
 // Default
 gulp.task('default', ['watch', 'css', 'js', 'images', 'svg-sprite', 'lint']);
