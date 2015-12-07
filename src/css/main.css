@@ -158,7 +158,8 @@
     color: #efefef;
   }
 
-  [role="contentinfo"] svg {
+  [role="contentinfo"] .svg-icon {
+    fill: currentcolor;
     display: inline-block;
     margin-right: .25em;
     vertical-align: -.2em;
