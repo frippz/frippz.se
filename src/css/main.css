@@ -313,22 +313,21 @@
   }
   blockquote:before,
   blockquote:after {
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 2em;
+    background: url("/gui/i/view/sprite.svg") no-repeat 0 0;
     color: #dadada;
     content: "";
     display: block;
+    opacity: .1;
     padding: 1em;
     position: absolute;
   }
   blockquote:before {
-    background-image: url("/gui/i/icon-quotes-left.svg");
+    background-position: 0 -4em;
     left: .7em;
     top: .2em;
   }
   blockquote:after {
-    background-image: url("/gui/i/icon-quotes-right.svg");
+    background-position: -2em -4em;
     bottom: .2em;
     right: .7em;
   }
