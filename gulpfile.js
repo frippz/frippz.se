@@ -93,14 +93,6 @@ gulp.task('js', function () {
     .pipe(gulp.dest(paths.jsDest));
 });
 
-// HTMLhint
-gulp.task('htmlhint', function () {
-//  return gulp.src(paths.templates)
-//     .pipe(htmlhint('.htmlhintrc'))
-//     .pipe(htmlhint.reporter('htmlhint-stylish'))
-//     .pipe(htmlhint.failReporter({ suppress: true }));
-});
-
 // SVG sprite generation
 svgConfig = {
   mode: {
