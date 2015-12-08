@@ -309,11 +309,11 @@
     background: #f3f3f3;
     border-radius: 1em;
     margin: 1em;
-    padding: 1em 2.5em;
+    padding: 1em 3em;
     position: relative;
   }
-  blockquote::before,
-  blockquote::after {
+  blockquote:before,
+  blockquote:after {
     background: url("/gui/i/sprite-css.svg") no-repeat 0 0;
     color: #dadada;
     content: "";
@@ -322,12 +322,12 @@
     padding: 1em;
     position: absolute;
   }
-  blockquote::before {
+  blockquote:before {
     background-position: 0 -12em;
     left: .7em;
     top: .2em;
   }
-  blockquote::after {
+  blockquote:after {
     background-position: 0 -14em;
     bottom: .2em;
     right: .7em;
@@ -341,11 +341,11 @@
     margin: 1em 0 0;
     padding: 0 0 0 .5em;
   }
-  blockquote blockquote::first-child {
-    margin-top: 2em;
+  blockquote blockquote:first-child {
+    margin-top: 1.5em;
   }
-  blockquote blockquote::after,
-  blockquote blockquote::before {
+  blockquote blockquote:after,
+  blockquote blockquote:before {
     display: none;
   }
 
