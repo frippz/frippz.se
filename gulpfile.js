@@ -22,7 +22,6 @@ var gulp             = require('gulp'),
     ghPages          = require('gh-pages'),
     path             = require('path'),
     eslint           = require('gulp-eslint'),
-    htmlhint         = require('gulp-htmlhint'),
     w3cjs            = require('gulp-w3cjs'),
     dirSync          = require('gulp-directory-sync'),
     webserver        = require('gulp-webserver'),
@@ -49,7 +48,10 @@ var paths = {
   jsDest: './gui/js/',
   cssDest: './gui/css/',
   imgDest: './gui/i/',
-  svgDest: './_includes/'
+  svgDest: './_includes/',
+
+  // Jekyll build files
+  jekyllHTML: ['./_site/**/*.html']
 
 };
 
@@ -130,12 +132,12 @@ gulp.task('eslint', function () {
 
 // Validation
 gulp.task('validate', function () {
-  // return gulp.src(paths.templates)
-  //   .pipe(w3cjs());
+  return gulp.src(paths.jekyllHTML)
+    .pipe(w3cjs());
 });
 
 // Linting task
-gulp.task('lint', ['htmlhint', 'eslint', 'validate']);
+gulp.task('lint', ['eslint', 'validate']);
 
 // Watch for changes
 gulp.task('watch', function() {
@@ -150,6 +152,9 @@ gulp.task('watch', function() {
   });
   watch(paths.svg, function() {
     gulp.start(['svg-sprite']);
+  });
+  watch(paths.jekyllHTML, function() {
+    gulp.start(['validate']);
   });
 });
 
