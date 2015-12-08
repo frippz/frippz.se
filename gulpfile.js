@@ -95,23 +95,25 @@ gulp.task('js', function () {
 
 // SVG sprite generation
 svgConfig = {
-  mode: {
-    symbol: {
-      sprite: 'sprite.svg'
-    },
-    view: {
-      bust: false,
-      sprite: 'sprite.svg'
-    }
-  },
   svg : {
-    rootAttributes: {
-      style: 'display: none;'
-    },
     doctypeDeclaration: false,
     xmlDeclaration: false
+  },
+  mode: {
+    symbol: {
+      inline: true,
+      dest: '.',
+      sprite: 'sprite-symbol.svg'
+    },
+    css: {
+      bust: false,
+      layout: 'vertical',
+      dest: '.',
+      sprite: 'sprite-css.svg'
+    }
   }
 }
+
 gulp.task('svg-sprite', function ( ){
   return gulp.src(paths.svg)
     .pipe(svgSprite(svgConfig))
