@@ -102,14 +102,18 @@
 
   /**
    * Fonts & sizes
-   * Base size set to 16px
+   * Base size set to browser default (usually 16px)
    */
   html {
-    font: 100%/1.5 "Roboto Slab", Helvetica, Arial, sans-serif;
+    font: 100%/1.5 Book Antiqua, Palatino Linotype, Palatino, Georgia, serif;
     font-weight: 300;
 
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    font-size: 1.2em;
   }
 
   code,
@@ -118,6 +122,15 @@
     font-family: Menlo, Consolas, Courier, "Courier New", monospace;
   }
 
+
+  /**
+   * Heading style fonts
+   */
+  h1, h2, h3, h4, h5, h6,
+  .main-title,
+  #main-nav {
+    font-family: Avenir, Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
 
   /**
    * Headings
