@@ -122,6 +122,11 @@
     font-family: Menlo, Consolas, Courier, "Courier New", monospace;
   }
 
+  pre,
+  p > code {
+    font-size: .9em;
+  }
+
 
   /**
    * Heading style fonts
