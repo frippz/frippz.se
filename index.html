@@ -13,10 +13,7 @@ sitemap:
 {% for post in paginator.posts %}
 <div role="article" itemscope itemtype="http://schema.org/BlogPosting">
   <h3 itemprop="headline">
-    <a href="{{ post.url | prepend: site.baseurl }}" class="article-link">
-      <svg class="svg-icon"><use xlink:href="#icon-article" /></svg>
-      {{ post.title }}
-    </a>
+    <a href="{{ post.url | prepend: site.baseurl }}" class="article-link">{{ post.title }}</a>
   </h3>
   <link itemprop="image" href="http://f.frippz.se/article.png">
   <small class="post-info">
