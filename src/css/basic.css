@@ -105,7 +105,7 @@
    * Base size set to browser default (usually 16px)
    */
   html {
-    font: 100%/1.5 Book Antiqua, Palatino Linotype, Palatino, Georgia, serif;
+    font: 100%/1.5 Avenir, Helvetica Neue, Helvetica, Arial, sans-serif;
     font-weight: 300;
 
     -ms-text-size-adjust: 100%;
@@ -127,16 +127,6 @@
     font-size: .9em;
   }
 
-
-  /**
-   * Heading style fonts
-   */
-  h1, h2, h3, h4, h5, h6,
-  .main-title,
-  #main-nav,
-  [role="contentinfo"] {
-    font-family: Avenir, Helvetica Neue, Helvetica, Arial, sans-serif;
-  }
 
   /**
    * Headings
