@@ -77,7 +77,8 @@
     text-decoration: none;
   }
   [role="article"] .post-info {
-    font-size: .8em;
+    color: #717171;
+    font-size: .85em;
     margin-top: 0;
   }
 
