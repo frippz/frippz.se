@@ -13,7 +13,9 @@ Please note that any views and opinions expressed by me on this site are persona
 
 ## Technical stuff
 
-This site is just plain static HTML generated with the help of [Jekyll](http://jekyllrb.com/). Font icons used on this site are provided by [icomoon.io](https://icomoon.io). Technology-wise, this site uses good old plain HTML5, CSS3 and, for the moment, fairly small amounts of unobtrusive JavaScript.
+This site is just plain static HTML generated with the help of [Jekyll](http://jekyllrb.com/). Vector icons used on this site are provided by [icomoon.io](https://icomoon.io). Technology-wise, this site uses good old plain HTML5, CSS3 and, for the moment, fairly small amounts of unobtrusive JavaScript.
+
+I'm also using encryption via SSL provided by [Let’s Encrypt](https://letsencrypt.org), a new certificate authority that is free, automated and open. If you’re looking to serve your content encrypted, but always balked at the difficulty and complexity issuing a certificate means, give them a go. They’re currently in open beta.
 
 ## Getting in touch
 
