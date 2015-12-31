@@ -23,4 +23,4 @@ Feeling the need to get in touch with me? Don’t hesitate to shoot me an email 
 
 ## Hey, what’s a ”frippz”?
 
-That’s just a nickname my cousin gave me when I was a kid. The ”z” is just because it looks cool.
+That’s just a nickname my cousin gave me when I was a kid. The ”z” is just because it looks cool. Back in 2005, I quickly needed a domain name for my portfolio when I attended Hyper Island in Karlskrona, and said name came to mind.
