@@ -319,16 +319,16 @@
     content: "";
     display: block;
     opacity: .1;
-    padding: 1em;
+    padding: .9em 1em;
     position: absolute;
   }
   blockquote:before {
-    background-position: 0 -12em;
+    background-position: 0 -8.3em;
     left: .7em;
     top: .2em;
   }
   blockquote:after {
-    background-position: 0 -14em;
+    background-position: 0 -9.8em;
     bottom: .2em;
     right: .7em;
   }
