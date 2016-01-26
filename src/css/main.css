@@ -24,12 +24,14 @@
     background: #efefef;
     padding: 0;
   }
+
   [role="banner"] .main-title {
     font-size: 2.3em;
     font-weight: 400;
     line-height: 1.125;
     padding: .75em 0 .5em;
   }
+
   [role="banner"] .main-title a {
     text-decoration: none;
   }
@@ -44,15 +46,18 @@
     border-width: 1px 0 1px 0;
     margin-top: 0;
   }
+
   #main-nav {
     list-style: none;
     margin: 0;
     padding: .25em 0;
   }
+
   #main-nav li {
     display: inline;
     padding-right: 1em;
   }
+
   #main-nav a {
     font-weight: 600;
     text-decoration: none;
@@ -65,6 +70,7 @@
   [role="article"] + [role="article"] {
     margin-top: 2em;
   }
+
   [role="article"] + [role="article"]:before {
     color: #ccc;
     content: "✣";
@@ -73,9 +79,11 @@
     speak: none;
     text-align: center;
   }
+
   [role="article"] .article-link {
     text-decoration: none;
   }
+
   [role="article"] .post-info {
     color: #717171;
     font-size: .85em;
@@ -89,6 +97,7 @@
   .highlight {
     margin: 0;
   }
+
   .highlight pre {
     background: #3f3f3f;
     margin: 2em 0;
@@ -148,11 +157,13 @@
     margin-top: 6em;
     padding: 2em 0;
   }
+
   [role="contentinfo"] a,
   [role="contentinfo"] a:visited {
     color: #9ac39f;
     text-decoration: none;
   }
+
   [role="contentinfo"] a:hover,
   [role="contentinfo"] a:focus,
   [role="contentinfo"] a:active {
@@ -170,14 +181,17 @@
   .social {
     float: left;
   }
+
   .subscribe {
     float: right;
   }
+
   .footer-links {
     list-style: none;
     margin: 0;
     padding: 0;
   }
+
   .footer-links li + li {
     margin-top: 1em;
   }
@@ -190,6 +204,7 @@
     background-color: #7f9f7f;
     color: #fff;
   }
+
   [role="contentinfo"] ::selection {
     background-color: #7f9f7f;
     color: #fff;
@@ -267,6 +282,7 @@
     display: flex;
     justify-content: space-between;
   }
+
   .more-articles a {
     background: #333;
     border-radius: .5em;
@@ -276,15 +292,18 @@
     padding: .35em 1em;
     position: relative;
   }
+
   .more-articles a:hover,
   .more-articles a:focus,
   .more-articles a:active {
     background: #414141;
   }
+
   .more-articles .older,
   .more-articles .newer {
     display: inline-block;
   }
+
   .more-articles .newer {
     margin-left: auto;
   }
@@ -296,6 +315,7 @@
   .not-found [role="article"] {
     text-align: center;
   }
+
   .not-found [role="article"] #svg-404 {
     fill: #ccc;
     height: 8.5em;
@@ -312,6 +332,7 @@
     padding: 1em 3em;
     position: relative;
   }
+
   blockquote:before,
   blockquote:after {
     background: url("/gui/i/sprite-css.svg") no-repeat 0 0;
@@ -322,11 +343,13 @@
     padding: .9em 1em;
     position: absolute;
   }
+
   blockquote:before {
     background-position: 0 -8.3em;
     left: .7em;
     top: .2em;
   }
+
   blockquote:after {
     background-position: 0 -9.8em;
     bottom: .2em;
@@ -341,9 +364,11 @@
     margin: 1em 0 0;
     padding: 0 0 0 .5em;
   }
+
   blockquote blockquote:first-child {
     margin-top: 1.5em;
   }
+
   blockquote blockquote:after,
   blockquote blockquote:before {
     display: none;
@@ -446,6 +471,7 @@
     flex-direction: column;
     min-height: 100vh;
   }
+
   [role="main"] {
     flex: 1 0 auto;
   }
@@ -478,6 +504,7 @@
   .more-articles a[class] {
     float: none;
   }
+
   .more-articles a[class] + a[class] {
     margin-top: .5em;
   }
@@ -487,6 +514,7 @@
   .subscribe {
     float: none;
   }
+
   .subscribe {
     margin-top: 1em;
   }
