@@ -1,7 +1,7 @@
 ---
 title: Did you know that this journal is open source?
 layout: post
-published: 2015-09-25
+published: 2016-01-25
 ---
 
 Almost from day one, I wanted this particular website’s source code to be publicly available. I’m not just talking about the JavaScript and CSS. Those things, while minified and concatenated, can fairly easily be extracted, prettified and sort of separated into logical parts again. But since this entire site is generated using Jekyll, I wanted that part to be publicly available as well. Github does a wonderful job of making this happen in an easy way.
