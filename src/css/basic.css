@@ -36,6 +36,7 @@
   html {
     box-sizing: border-box;
   }
+
   *, *:before, *:after {
     box-sizing: inherit;
   }
@@ -80,10 +81,12 @@
     height: auto;
     max-width: 100%;
   }
+
   img.left {
     float: left;
     margin: 0 1em .5em 0;
   }
+
   img.right {
     float: right;
     margin: 0 0 .5em 1em;
@@ -136,6 +139,7 @@
     line-height: 1.125;
     margin: 2em 0 0;
   }
+
   h1:first-child,
   h2:first-child,
   h3:first-child,
@@ -144,6 +148,7 @@
   h6:first-child {
     margin-top: 0;
   }
+
   h1 + p,
   h2 + p,
   h3 + p,
@@ -182,6 +187,7 @@
   a:visited {
     color: inherit;
   }
+
   a:hover,
   a:focus,
   a:active {
