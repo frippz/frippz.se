@@ -17,4 +17,4 @@ Doing a little bit of researched revealed that for example Chrome and Safari tra
 }
 {% endhighlight %}
 
-This has aappeared to have worked nicely in at least Safari 9 and Chrome 48. Some people have recommended to also add `transform: translateY(0);` as well, but I have been unable to confirm that this has any effect whatsoever. Your mileage may vary.
+This has appeared to have worked nicely in at least Safari 9 and Chrome 48. Some people have recommended to also add `transform: translateY(0);` as well, but I have been unable to confirm that this has any effect whatsoever. Your mileage may vary.
