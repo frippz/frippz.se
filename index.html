@@ -23,7 +23,7 @@ sitemap:
   <meta itemprop="url" content="{{ site.url}}{{ post.url }}">
   <link itemprop="mainEntityOfPage" href="{{ site.url}}{{ post.url }}">
   <meta itemprop="description" content="{{ post.excerpt | strip_html }}">
-  {{ post.excerpt }}
+  <p>{{ post.excerpt }}</p>
   <p><a href="{{ post.url | prepend: site.baseurl }}">Continue reading <span class="offscreen">“{{ post.title }}”</span>…</a></p>
 </div>
 {% endfor %}
