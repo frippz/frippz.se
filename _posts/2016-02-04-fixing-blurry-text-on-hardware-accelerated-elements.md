@@ -7,7 +7,7 @@ layout: post
 published: 2016-02-04
 ---
 
-A customer project I was working had the need for animated bubbles with text in them. They were working as information overlays and needed to move around smoothly. To accomplish this, all you need to do is apply `transform: translate3d(0,0,0);` to the element in question to enable hardware acceleration in most modern browsers. This, however, caused another issue; blurry text.
+A customer project I was working on had the need for animated bubbles with text in them. They were used as information overlays and needed to move around smoothly. To accomplish this, all you need to do is apply `transform: translate3d(0,0,0);` to the element in question to enable hardware acceleration in most modern browsers. This, however, caused another issue; blurry text.
 
 Doing a little bit of researched revealed that for example Chrome and Safari transforms vector based text into textures when you apply `translate3d`, which in turn risks causing blurry text on the elements in question. The fix seems suspiciously simple.
 
