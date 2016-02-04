@@ -1,5 +1,5 @@
 ---
-title: Deblurring text on hardware accelerated elements
+title: Fixing blurry text on hardware accelerated elements
 description: A quick fix to prevent blurry text when applying translate3d on elements
 excerpt: A customer project I was working had the need for animated bubbles with text in them. They were working as information overlays and needed to move around smoothly.
 tags: css3,html5
