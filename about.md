@@ -5,7 +5,7 @@ menutitle: About
 permalink: /about/
 ---
 
-<img src="{% include my-face.html %}" alt="" height="216" width="322" class="left"> Hi! My name is Fredrik Frodlund and that is me when I still had a beard. I'm working as a front end web developer for [Jayway](http://www.jayway.com/), a consultancy based in Sweden.
+<img src="{% include my-face.html %}" alt="" height="216" width="322" class="left"> Hi! My name is Fredrik Frodlund and that is me when I still had a beard. I'm working as a front end web developer in frosty Sweden (though our summers are really awesome when it’s not raining).
 
 If you're reading this, it very likely means you've found your way to my personal journal. This is a place for me to collect my thoughts, mostly about front end web development. In the good spirit of sharing knowledge, I thought it’d be nice to post all my stuff online for the rest of the world to enjoy. Chances are you might find something useful some day.
 
@@ -19,7 +19,9 @@ I'm also using encryption via SSL provided by [Let’s Encrypt](https://letsencr
 
 ## Getting in touch
 
-Feeling the need to get in touch with me? Don’t hesitate to shoot me an email at [contact@frippz.se](mailto:contact@frippz.se). Faceless mass-recruiter? Please refrain from sending me any inquiries.
+Feeling the need to get in touch with me? Have a business inquiry? Don’t hesitate to shoot me an email at [contact@frippz.se](mailto:contact@frippz.se). I have limited availability for smaller front end related projects from time to time.
+
+Faceless mass-recruiter? Please refrain from sending me any inquiries. I will not reply to these.
 
 ## Hey, what’s a ”frippz”?
 
