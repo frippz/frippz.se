@@ -72,7 +72,6 @@
     background: rgba(0, 0, 0, .05);
   }
 
-
   /**
    * Images
    */
@@ -92,7 +91,6 @@
     margin: 0 0 .5em 1em;
   }
 
-
   /**
    * Body styling
    */
@@ -101,7 +99,6 @@
     background: #fff;
     color: #333;
   }
-
 
   /**
    * Fonts & sizes
@@ -129,7 +126,6 @@
   p > code {
     font-size: .9em;
   }
-
 
   /**
    * Headings
@@ -179,7 +175,6 @@
     font-size: 1em;
   }
 
-
   /**
    *Links
    */
@@ -193,7 +188,6 @@
   a:active {
     color: inherit;
   }
-
 
   /**
    * Emphasis
@@ -220,14 +214,12 @@
     padding: .2em .5em;
   }
 
-
   /**
    * Hidden elements (both visually and for AT:s)
    */
   [hidden] {
     display: none;
   }
-
 
   /**
    * Visually hidden (still visible to AT:s)

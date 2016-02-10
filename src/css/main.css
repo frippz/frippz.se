@@ -463,9 +463,13 @@
   /**
    * Dyslexic mode toggle
    */
+  .dyslexic-mode {
+    font-size: 1.4em;
+    letter-spacing: .25em;
+    line-height: 2;
+  }
   .dyslexic-mode .landmark-content {
     max-width: 26em;
-    letter-spacing: .25em;
   }
 
   /* Toggle button */
