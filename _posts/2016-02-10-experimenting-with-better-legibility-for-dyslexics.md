@@ -18,7 +18,7 @@ Sounds simple enough. With a bit of extra styling, this could be done easily, pr
 
 ## Using my own journal as an experiment
 
-This is precisely why I keep a journal online; doing cool experiments (besides incoherent rambling, of course). With a few quick addition to my stylesheet and some quick and dirty hacking with JavaScript, I managed to quickly deploy a solution for my experiment. As per the article’s suggestion, I wanted to do a few simple things:
+This is precisely why I keep a journal online; doing cool experiments (besides incoherent rambling, of course). With a few quick additions to my stylesheet and some quick and dirty hacking with JavaScript, I managed to quickly deploy a solution for my experiment. As per the article’s suggestion, I wanted to do a few simple things:
 
 * Decrease line width (i.e. fewer characters per line)
 * Increase letter spacing
