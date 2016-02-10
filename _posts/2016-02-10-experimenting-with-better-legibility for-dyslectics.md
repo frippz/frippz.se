@@ -1,12 +1,12 @@
 ---
-title: Experimenting with better legibility for dyslectics
+title: Experimenting with better legibility for dyslexics
 description: An quick experiment to improve legibility for people with dyslexia
 tags: accessibility,dyslexia
 layout: post
 published: 2016-02-10
 ---
 
-This morning, [Heydon Pickering](http://www.heydonworks.com) posted a link to an article detailing how special typefaces for dyslectics basically don’t work as expected.
+This morning, [Heydon Pickering](http://www.heydonworks.com) posted a link to an article detailing how special typefaces for dyslexics basically don’t work as expected.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Fonts &quot;for dyslexics&quot; is not inclusive design. More like target marketing. And it doesn&#39;t work. <a href="https://t.co/HS8JxwPpt6">https://t.co/HS8JxwPpt6</a></p>&mdash; Heydon (@heydonworks) <a href="https://twitter.com/heydonworks/status/697342047833976832">February 10, 2016</a></blockquote>
 
@@ -58,7 +58,7 @@ I also added some quick styling for a `<button>` to be placed inside my banner r
 }
 {% endhighlight %}
 
-JavaScript certainly isn’t my strongest skill, but I manage to get by. All we need to do in order to toggle our dyslectics mode is to toggle the modifier class on the `<body>`. To get a little progressive enhancement into the mix, I also added the toggle button with JavaScript. This of course means that if JavaScript is not available to the user, they can’t toggle the dyslectics mode. Then again, we won’t have a silly button in the banner region that does nothing.
+JavaScript certainly isn’t my strongest skill, but I manage to get by. All we need to do in order to toggle our dyslexics mode is to toggle the modifier class on the `<body>`. To get a little progressive enhancement into the mix, I also added the toggle button with JavaScript. This of course means that if JavaScript is not available to the user, they can’t toggle the dyslexics mode. Then again, we won’t have a silly button in the banner region that does nothing.
 
 {% highlight javascript %}
 /**
