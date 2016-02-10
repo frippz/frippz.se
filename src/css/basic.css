@@ -208,6 +208,18 @@
     font-style: italic;
   }
 
+  /**
+   * General button styles
+   */
+  button {
+    border: 0;
+    background: #333;
+    color: #fff;
+    border-radius: .25em;
+    font-size: inherit;
+    padding: .2em .5em;
+  }
+
 
   /**
    * Hidden elements (both visually and for AT:s)
