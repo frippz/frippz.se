@@ -134,8 +134,9 @@
     margin-top: 0;
     margin-right: .75em;
     padding-right: .5em;
-    text-align: right;
     flex: 1 0 auto;
+    text-align: right;
+    max-width: 2em;
     order: 1;
     -webkit-user-select: none;
        -moz-user-select: none;
