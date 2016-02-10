@@ -96,7 +96,7 @@ function dyslexicMode() {
 dyslexicMode();
 {% endhighlight %}
 
-Note that I chose to do this with vanilla JavaScript, without any jQuery, because I really need to kick that awful habit of mine. As I said, this is pretty quick and dirty, so browser support is basically Internet Explorer 9 and up. Doing this with jQuery would likely be a few less lines of code (but then you’d also need to pull in the library). Since I employ the mustard cutting method for my journal, this code would never be run be legacy browsers anyway.
+Note that I chose to do this with vanilla JavaScript, without any jQuery, because I really need to kick that awful habit of mine. As I said, this is pretty quick and dirty, so browser support is basically Internet Explorer 10 and up. Doing this with jQuery would likely be a few less lines of code (but then you’d also need to pull in the library). Since I employ the mustard cutting method for my journal, this code would never be run be legacy browsers anyway.
 
 ## Taking this experiment further
 
