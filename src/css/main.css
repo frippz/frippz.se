@@ -14,6 +14,7 @@
     max-width: 34em;
     overflow: hidden;
     padding: 0 1em;
+    position: relative;
   }
 
 
@@ -457,6 +458,23 @@
     text-align: center;
     top: 0;
     width: 100%;
+  }
+
+  /**
+   * Dyslexic mode toggle
+   */
+  .dyslexic-mode .landmark-content {
+    max-width: 26em;
+    letter-spacing: .25em;
+  }
+
+  /* Toggle button */
+  .toggle-dyslexic-mode {
+    font-size: .65em;
+    margin-top: 0;
+    position: absolute;
+    top: 1.5em;
+    right: 0;
   }
 
 }/* END @media screen */
