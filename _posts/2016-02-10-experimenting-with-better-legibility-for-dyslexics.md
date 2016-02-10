@@ -108,8 +108,8 @@ If you wish to give me feedback on this, feel free to hit me up on [Twitter](htt
 
 [![](https://dl.dropboxusercontent.com/u/817490/frippz.se/frippz.se-without-dyslexic-mode.png)](https://dl.dropboxusercontent.com/u/817490/frippz.se/frippz.se-without-dyslexic-mode.png)
 
-Figured above: frippz.se without dyslexic mode
+Above: frippz.se without dyslexic mode
 
 [![](https://dl.dropboxusercontent.com/u/817490/frippz.se/frippz.se-with-dyslexic-mode.png)](https://dl.dropboxusercontent.com/u/817490/frippz.se/frippz.se-with-dyslexic-mode.png)
 
-Figured above: frippz.se _with_ dyslexic mode
+Above: frippz.se _with_ dyslexic mode
