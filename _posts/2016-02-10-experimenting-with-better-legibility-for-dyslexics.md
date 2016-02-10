@@ -18,14 +18,14 @@ Sounds simple enough. With a bit of extra styling, this could be done easily, pr
 
 ## Using my own journal as an experiment
 
-This is precisely why I keep a journal online; doing cool experiments (besides incoherent rambling, of course). With a few quick additions to my stylesheet and some quick and dirty hacking with JavaScript, I managed to quickly deploy a solution for my experiment. As per the article’s suggestion, I wanted to do a few simple things:
+This is precisely why I keep a journal online; doing cool experiments (besides incoherent rambling, of course). With a few quick additions to my stylesheets and some quick and dirty hacking with JavaScript, I managed to quickly deploy a solution for my experiment. As per the article’s suggestion, I wanted to do a few simple things:
 
 * Decrease line width (i.e. fewer characters per line)
 * Increase letter spacing
 * Increase line height
 * Slightly increased font size
 
-As one would expect, this wouldn’t require more than a few lines of extra code in the stylesheet. In addition, I also added some JavaScript to enable users to toggle the functionality.
+As one would expect, this wouldn’t require more than a few lines of extra code in the stylesheets. In addition, I also added some JavaScript to enable users to toggle the functionality.
 
 ### The code
 
@@ -103,3 +103,13 @@ Note that I chose to do this with vanilla JavaScript, without any jQuery, becaus
 Right now, users would need to toggle the function on each page visit. Nothing is being remembered, even within the same session. Hey, it’s a beta. Also, I’ve eyeballed the typographic tweaks and would need feedback from real people with dyslexia, in order to improve this or to even validate that this is something viable.
 
 If you wish to give me feedback on this, feel free to hit me up on [Twitter](https://twitter.com/frippz)!
+
+**_Update (2016-02-10):_** I’ve added two screenshots to showcase the difference between the two modes, should you have any issues toggling the looks of my own journal.
+
+[![](https://dl.dropboxusercontent.com/u/817490/frippz.se/frippz.se-without-dyslexic-mode.png)](https://dl.dropboxusercontent.com/u/817490/frippz.se/frippz.se-without-dyslexic-mode.png)
+
+Figured above: frippz.se without dyslexic mode
+
+[![](https://dl.dropboxusercontent.com/u/817490/frippz.se/frippz.se-with-dyslexic-mode.png)](https://dl.dropboxusercontent.com/u/817490/frippz.se/frippz.se-with-dyslexic-mode.png)
+
+Figured above: frippz.se _with_ dyslexic mode
