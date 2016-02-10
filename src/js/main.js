@@ -7,10 +7,14 @@
 
 if('querySelector' in document && 'classList' in document.createElement('a') && 'addEventListener' in window) {
 
-  // Add class "js" to html element
+  /**
+   * Add class "js" to html element
+   */
   document.querySelector('html').classList.add('js');
 
-  // Add line numbers to <pre>
+  /**
+   * Add line numbers to <pre>
+   */
   function numberedLines() {
     var pre = document.querySelectorAll('pre'),
         pl = pre.length;
