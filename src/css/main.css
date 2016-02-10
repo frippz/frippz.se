@@ -91,6 +91,10 @@
     margin-top: 0;
   }
 
+  [role="article"] li + li {
+    margin-top: .5em;
+  }
+
 
   /**
    * Code highlighting
