@@ -8,7 +8,7 @@ layout: default
   </small>
   {% if page.tags %}
   <p class="post-tags">
-    <em>Tagged with: {{ page.tags | join: ', ' }}</em>
+    <em><strong>Tagged with:</strong> <span itemprop="keywords">{{ page.tags | join: ', ' }}</span></em>
   </p>
   {% endif %}
   <div itemprop="articleBody">

@@ -84,15 +84,20 @@
     text-decoration: none;
   }
 
-  [role="article"] .post-info {
+  .post-info {
     color: #717171;
     font-size: .85em;
     margin-top: 0;
   }
 
-  [role="article"] .post-tags {
+  .post-tags {
     color: #717171;
     font-size: .85em;
+    margin-top: .5em;
+  }
+
+  .post-tags strong {
+    font-weight: 600;
   }
 
   [role="article"] li + li {
