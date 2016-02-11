@@ -108,8 +108,10 @@ If you wish to give me feedback on this, feel free to hit me up on [Twitter](htt
 
 [![](https://dl.dropboxusercontent.com/u/817490/frippz.se/frippz.se-without-dyslexic-mode.png)](https://dl.dropboxusercontent.com/u/817490/frippz.se/frippz.se-without-dyslexic-mode.png)
 
-Above: frippz.se without dyslexic mode
+Pictured above: frippz.se without dyslexic mode
 
 [![](https://dl.dropboxusercontent.com/u/817490/frippz.se/frippz.se-with-dyslexic-mode.png)](https://dl.dropboxusercontent.com/u/817490/frippz.se/frippz.se-with-dyslexic-mode.png)
 
-Above: frippz.se _with_ dyslexic mode
+Pictured above: frippz.se _with_ dyslexic mode
+
+**_Update (2016-02-11):_** [Kseso](https://twitter.com/kseso) did an [alternative solution](http://codepen.io/Kseso/pen/NxedYR?editors=1100) using only HTML and CSS. While my current solution does use modern DOM API:s, it can pretty easily be adapted to support legacy browsers as well. Kseso’s solution relies on the `:checked` pseudo class, which limits the implementation possibilities a bit and won’t work in IE8 and below. Depending on your particular situation, this isn’t necessarily a problem.
