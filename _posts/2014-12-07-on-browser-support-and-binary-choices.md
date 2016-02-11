@@ -1,6 +1,10 @@
 ---
 title: On browser support and binary choices
 description: A post on why we shouldn’t just draw a hard line in the sand when it comes to browser support decisions.
+tags:
+  - browser support
+  - progressive enhancement
+  - css
 layout: post
 published: 2014-12-07
 ---
