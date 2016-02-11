@@ -1,7 +1,12 @@
 ---
 title: Experimenting with better legibility for dyslexics
 description: An quick experiment to improve legibility for people with dyslexia
-tags: accessibility,dyslexia
+tags:
+  - accessibility
+  - dyslexia
+  - html
+  - javascript
+  - css
 layout: post
 published: 2016-02-10
 ---
