@@ -73,12 +73,11 @@
   }
 
   [role="article"] + [role="article"]:before {
-    color: #ccc;
-    content: "✣";
+    border-top: 1px solid #ececec;
+    content: "";
     display: block;
-    margin-bottom: 2em;
-    speak: none;
-    text-align: center;
+    margin: 4em auto;
+    width: 40%;
   }
 
   [role="article"] .article-link {
