@@ -6,6 +6,11 @@ layout: default
   <small class="post-info">
     <em>Published on <time datetime="{{ page.date | date: '%Y-%m-%d' }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time></em>
   </small>
+  {% if page.tags %}
+  <p class="post-tags">
+    <em>Tagged with: {{ page.tags | join: ', ' }}</em>
+  </p>
+  {% endif %}
   <div itemprop="articleBody">
     {{ content }}
   </div>

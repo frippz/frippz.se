@@ -90,6 +90,11 @@
     margin-top: 0;
   }
 
+  [role="article"] .post-tags {
+    color: #717171;
+    font-size: .85em;
+  }
+
   [role="article"] li + li {
     margin-top: .5em;
   }
