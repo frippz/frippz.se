@@ -16,7 +16,7 @@ Apparently, this just rubbed some people the wrong way.
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/frippz">@frippz</a> PE is much more than &quot;needs to work without JS&quot; though.</p>&mdash; Anders Ekdahl (@andersekdahl) <a href="https://twitter.com/andersekdahl/status/615484523221020673">June 29, 2015</a></blockquote>
 
-Which is absolutely correct, which [Christian Heilmann has pointed out very well](http://christianheilmann.com/2015/02/18/progressive-enhancement-is-not-about-javascript-availability/). But you can't always get everything you want into 140 characters. Then came the tweet that set off about an hours worth of what I've come to loathe; arguing over Twitter:
+Which is absolutely correct, which [Christian Heilmann has pointed out very well](http://christianheilmann.com/2015/02/18/progressive-enhancement-is-not-about-javascript-availability/). But you can't always get everything you want into 140 characters. Then came the tweet that set off about an hour’s worth of what I've come to loathe; arguing over Twitter:
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/frippz">@frippz</a> And you can certainly be doing PE but still require JS.</p>&mdash; Anders Ekdahl (@andersekdahl) <a href="https://twitter.com/andersekdahl/status/615485466352201728">June 29, 2015</a></blockquote>
 
