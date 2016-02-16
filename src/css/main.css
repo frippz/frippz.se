@@ -84,6 +84,7 @@
     text-decoration: none;
   }
 
+  /* Post meta data */
   .post-info {
     color: #717171;
     font-size: .85em;
@@ -100,6 +101,7 @@
     font-weight: 600;
   }
 
+  /* Editorial lists */
   [role="article"] li + li {
     margin-top: .5em;
   }
