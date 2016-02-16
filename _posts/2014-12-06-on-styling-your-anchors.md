@@ -29,21 +29,15 @@ The `:focus` pseudo-class is often forgotten when developers start messing aroun
 
 In the context of keyboard navigation, the :focus pseudo-class is very important since it helps users who are navigating with a keyboard rather than a pointing device. All browsers worth mentioning have a built-in user agent stylesheet that sets a style for focused elements.
 
-![](https://dl.dropboxusercontent.com/u/817490/frippz.se/focus-outline-chrome.png)
+{% include image.html url="https://dl.dropboxusercontent.com/u/817490/frippz.se/focus-outline-chrome.png" caption="Google Chrome (OS X 10.8)" %}
 
-Google Chrome (OS X 10.8)
 
-![](https://dl.dropboxusercontent.com/u/817490/frippz.se/focus-outline-firefox.png)
+{% include image.html url="https://dl.dropboxusercontent.com/u/817490/frippz.se/focus-outline-firefox.png" caption="Mozilla Firefox (OS X 10.8)" %}
 
-Mozilla Firefox (OS X 10.8)
 
-![](https://dl.dropboxusercontent.com/u/817490/frippz.se/focus-outline-ie10.png)
+{% include image.html url="https://dl.dropboxusercontent.com/u/817490/frippz.se/focus-outline-ie10.png" caption="Internet Explorer 10 (Win 8)" %}
 
-Internet Explorer 10 (Win 8)
-
-![](https://dl.dropboxusercontent.com/u/817490/frippz.se/focus-outline-ie8.png)
-
-Internet Explorer 8 (Win XP)
+{% include image.html url="https://dl.dropboxusercontent.com/u/817490/frippz.se/focus-outline-ie8.png" caption="Internet Explorer 8 (Win XP)" %}
 
 As you can see, the Internet Explorer 8 focus outline looks a little… ugly. Fair enough. But it still provides an important visual cue for users navigating with their keyboards. The problem is that this outline is also present when you’re using a pointing device and it also has a habit of becoming stuck after you’ve clicked a link (especially if you are are using JavaScript to catch the event). This has given rise to the following CSS rule on a number of websites:
 

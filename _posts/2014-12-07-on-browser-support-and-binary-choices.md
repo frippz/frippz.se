@@ -18,9 +18,7 @@ All this is of course a pretty bad practice and parallels can be drawn to a stor
 
 Looking at the browser landscape of today and the future, we can’t keep asking ourselves which browsers to test for and whether we should optimize for legacy browsers, [because that just isn’t very practical](http://www.quirksmode.org/presentations/USTourApril11/albany.pdf).
 
-![](https://pbs.twimg.com/media/BwxaMg6CYAAupoH.jpg)
-
-Photo by [Luke Wroblewski](https://twitter.com/lukew/)
+{% include image.html url="https://pbs.twimg.com/media/BwxaMg6CYAAupoH.jpg" caption="Photo by [Luke Wroblewski](https://twitter.com/lukew/)" %}
 
 ## So what should we do?
 
@@ -70,13 +68,9 @@ While this might be considered a hack, it’s totally valid CSS. `min-width: 0;`
 
 A basic mobile first layout will, provided you’ve kept it simple, work quite well on legacy browsers. Chances are it will look just fine (or fine enough) without you needing to add any quirky hacks to your stylesheet. A great example of how this can look is the web site of [Jake Archibald](http://jakearchibald.com). Visiting his site in something very old (like IE6) and something quite modern (like Safari 8 on OS X) shows something interesting:
 
-[![](https://dl.dropboxusercontent.com/u/817490/frippz.se/jakearchibald-safari8.png)](https://dl.dropboxusercontent.com/u/817490/frippz.se/jakearchibald-safari8.png)
+{% include image.html url="https://dl.dropboxusercontent.com/u/817490/frippz.se/jakearchibald-safari8.png" caption="[jakearchibald.com](http://jakearchibald.com) viewed with Safari 8 on OS X Yosemite" %}
 
-[jakearchibald.com](http://jakearchibald.com) viewed with Safari 8 on OS X Yosemite
-
-[![](https://dl.dropboxusercontent.com/u/817490/frippz.se/jakearchibald-ie6.png)](https://dl.dropboxusercontent.com/u/817490/frippz.se/jakearchibald-ie6.png)
-
-[jakearchibald.com](http://jakearchibald.com) viewed with Internet Explorer 6 on Windows XP
+{% include image.html url="https://dl.dropboxusercontent.com/u/817490/frippz.se/jakearchibald-ie6.png" caption="[jakearchibald.com](http://jakearchibald.com) viewed with Internet Explorer 6 on Windows XP" %}
 
 The looks of that site in IE 6 won’t win any design awards (but then again, neither will Windows XP, right?) The most important thing is that *it works*. The content is there, but all the bells and whistles are absent. My guess is that the designer spent very little time optimizing anything for legacy browsers. However, any unfortunate soul using IE 6 on Windows XP will still be able to get the core experience; the content. *This is what matters the most*.
 
