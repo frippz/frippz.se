@@ -107,17 +107,17 @@
   }
 
   /* Images with captions */
-  figure {
+  figure.image {
     background-color: #f5f5f5;
     border: 1px solid #efefef;
     margin: 2em 0;
   }
 
-  figure img {
+  figure.image img {
     display: block;
   }
 
-  figcaption {
+  figure.image figcaption {
     border-top: 1px solid #efefef;
     font-style: italic;
     margin: 0;
