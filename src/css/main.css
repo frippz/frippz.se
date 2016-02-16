@@ -118,7 +118,8 @@
   }
 
   figure.image figcaption {
-    border-top: 1px solid #efefef;
+    /* border-top: 1px solid #efefef; */
+    font-size: .9em;
     font-style: italic;
     margin: 0;
     padding: .5em .75em;
