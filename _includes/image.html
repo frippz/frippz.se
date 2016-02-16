@@ -1,4 +1,4 @@
 <figure class="image">
   <img src="{{ include.url }}" alt="">
-  <figcaption>{{ include.caption }}</figcaption>
+  <figcaption>{{ include.caption | markdownify | remove: '<p>' | remove: '</p>' }}</figcaption>
 </figure>
