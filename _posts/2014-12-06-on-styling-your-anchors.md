@@ -41,11 +41,11 @@ In the context of keyboard navigation, the :focus pseudo-class is very important
 
 As you can see, the Internet Explorer 8 focus outline looks a little… ugly. Fair enough. But it still provides an important visual cue for users navigating with their keyboards. The problem is that this outline is also present when you’re using a pointing device and it also has a habit of becoming stuck after you’ve clicked a link (especially if you are are using JavaScript to catch the event). This has given rise to the following CSS rule on a number of websites:
 
-{% highlight css %}
+~~~css
 a {
     outline: none;
 }
-{% endhighlight %}
+~~~
 
 This is, for obvious reasons, horrible. Suddenly, that ugly, ugly outline is gone and your designer is happy. But the accessibility just went out the window. To put it simply, **don’t do it!** If you *must* style away the outline, make sure you replace it with something at least equally clear.
 

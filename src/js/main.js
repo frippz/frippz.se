@@ -23,7 +23,8 @@ if('querySelector' in document && 'classList' in document.createElement('a') && 
       pre[i].insertAdjacentHTML('beforeend', '<span class="ln" aria-hidden="true"></span>');
       var num = pre[i].innerHTML.split(/\n/).length;
 
-      for (var j = 0; j < num; j++) {
+      // Start counter at 1 to circumvent Jekyll adding an extra line in <code>
+      for (var j = 1; j < num; j++) {
         var lineNum = pre[i].querySelector('.ln');
         lineNum.insertAdjacentHTML('beforeend', '<span></span>');
       }
