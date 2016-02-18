@@ -112,7 +112,7 @@ gulp.task('css', function () {
 });
 ~~~
 
-There we go! Right after `cssnano()` we grab the MD5 hash and write it to `_data/cache_bust_css.yml`. Let’s give it a go and see what our output is.
+There we go! Right after `cssnano()` (*on line 14*) we grab the MD5 hash and write it to `_data/cache_bust_css.yml`. Let’s give it a go and see what our output is.
 
 ~~~yaml
 6ebeded38c4fc6c1b111172052b6ca17  ../src/css/styles.css
