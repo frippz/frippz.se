@@ -142,7 +142,8 @@
 
   /* Inline code */
   p > code {
-    background: #f0dfaf;
+    background: #fbf6e8;
+    border: 1px solid #f0dfaf;
     padding: .1em .2em;
   }
 
