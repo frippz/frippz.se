@@ -129,11 +129,11 @@
   /**
    * Code highlighting
    */
-  .highlight {
+  .highlighter-rouge {
     margin: 0;
   }
 
-  .highlight pre {
+  .highlighter-rouge pre {
     background: #3f3f3f;
     margin: 2em 0;
     overflow-x: auto;
@@ -148,12 +148,12 @@
   }
 
   /* Line numbers (requires JS) */
-  .js .highlight pre {
+  .js .highlighter-rouge pre {
     display: flex;
     align-items: flex-start;
   }
 
-  .js .highlight code {
+  .js .highlighter-rouge code {
     counter-reset: linenumber;
     order: 2;
     padding-right: 1em;

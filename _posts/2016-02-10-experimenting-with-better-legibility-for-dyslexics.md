@@ -36,7 +36,7 @@ As one would expect, this wouldn’t require more than a few lines of extra code
 
 The basic concept involves just setting a modifier class to the `<body>` element. This would increase `font-size`, `line-height` and `letter-spacing`. In addition, the container for my content, `.landmark-content` as it is called, would have its width reduced in order to provide shorter lines of text.
 
-{% highlight css %}
+~~~css
 /**
  * Dyslexic mode toggle
  */
@@ -48,11 +48,11 @@ The basic concept involves just setting a modifier class to the `<body>` element
 .dyslexic-mode .landmark-content {
   max-width: 26em;
 }
-{% endhighlight %}
+~~~
 
 I also added some quick styling for a `<button>` to be placed inside my banner region, to allow toggling of my dyslexics mode.
 
-{% highlight css %}
+~~~css
 /* Toggle button */
 .toggle-dyslexic-mode {
   font-size: .65em;
@@ -61,11 +61,11 @@ I also added some quick styling for a `<button>` to be placed inside my banner r
   top: 1.5em;
   right: 0;
 }
-{% endhighlight %}
+~~~
 
 JavaScript certainly isn’t my strongest skill, but I manage to get by. All we need to do in order to toggle our dyslexics mode is to toggle the modifier class on the `<body>`. To get a little progressive enhancement into the mix, I also added the toggle button with JavaScript. This of course means that if JavaScript is not available to the user, they can’t toggle the dyslexics mode. Then again, we won’t have a silly button in the banner region that does nothing.
 
-{% highlight javascript %}
+~~~javascript
 /**
  * Toggle dyslexic mode
  */
@@ -99,7 +99,7 @@ function dyslexicMode() {
 }
 
 dyslexicMode();
-{% endhighlight %}
+~~~
 
 Note that I chose to do this with vanilla JavaScript, without any jQuery, because I really need to kick that awful habit of mine. As I said, this is pretty quick and dirty, so browser support is basically Internet Explorer 10 and up. Doing this with jQuery would likely be a few less lines of code (but then you’d also need to pull in the library). Since I employ the mustard cutting method for my journal, this code would never be run in legacy browsers anyway.
 

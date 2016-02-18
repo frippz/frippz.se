@@ -14,10 +14,10 @@ A customer project I was working on had the need for animated bubbles with text 
 
 Doing a little bit of researched revealed that for example Chrome and Safari transforms vector based text into textures when you apply `translate3d`, which in turn risks causing blurry text on the elements in question. The fix seems suspiciously simple.
 
-{% highlight css %}
+~~~css
 .element-with-blurry-text {
   filter: blur(0);
 }
-{% endhighlight %}
+~~~
 
 This has appeared to have worked nicely in at least Safari 9 and Chrome 48. Some people have recommended to also add `transform: translateY(0);` as well, but I have been unable to confirm that this has any effect whatsoever. Your mileage may vary.
