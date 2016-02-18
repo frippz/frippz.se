@@ -25,6 +25,7 @@ var gulp             = require('gulp'),
     w3cjs            = require('gulp-w3cjs'),
     dirSync          = require('gulp-directory-sync'),
     webserver        = require('gulp-webserver'),
+    hashsum          = require('gulp-hashsum'),
     svgSprite        = require('gulp-svg-sprite');
 
 // Configure paths
@@ -78,6 +79,7 @@ gulp.task('css', function () {
     .pipe(postcss([customProperties()]))
     .pipe(concat(paths.cssOutput))
     .pipe(minifyCss({compatibility: 'ie8'}))
+    .pipe(hashsum({filename: './_data/cache_bust_css.yml', hash: 'md5'}))
     .pipe(gulpif(!isProduction, sourcemaps.write('.')))
     .pipe(gulp.dest(paths.cssDest));
 });
@@ -91,6 +93,7 @@ gulp.task('js', function () {
     .pipe(sourcemaps.init())
     .pipe(concat(paths.jsOutput))
     .pipe(uglify())
+    .pipe(hashsum({filename: './_data/cache_bust_js.yml', hash: 'md5'}))
     .pipe(gulpif(!isProduction, sourcemaps.write('.')))
     .pipe(gulp.dest(paths.jsDest));
 });

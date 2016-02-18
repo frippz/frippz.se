@@ -19,6 +19,7 @@
     "gulp-concat": "^2.6.0",
     "gulp-directory-sync": "^1.1.0",
     "gulp-eslint": "^1.0.0",
+    "gulp-hashsum": "^1.0.1",
     "gulp-if": "^2.0.0",
     "gulp-minify-css": "^1.2.1",
     "gulp-plumber": "^1.0.1",
