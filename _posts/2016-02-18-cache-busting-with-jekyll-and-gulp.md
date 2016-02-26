@@ -32,7 +32,7 @@ In order to get some cache busting going, I needed the following:
 * Make this string available to Jekyll somehow to append it when linking to the files in the Jekyll template
 * Automate it so I don’t have to think about it anymore
 
-Since I only want the string to change when I’ve done something to either the JavaScript or CSS, the best approach would be to use the MD5 checksum from each generated file to indicate when something has changed. So I needed some sort of Gulp plugin to grab the MD5 and then do something with. But first, we need to sort out how to get this data into Gulp.
+Since I only want the string to change when I’ve done something to either the JavaScript or CSS, the best approach would be to use the MD5 checksum from each generated file to indicate when something has changed. So I needed some sort of Gulp plugin to grab the MD5 and then do something with it. But first, we need to sort out how to get this data into Gulp.
 
 ### Enter the data folder
 
