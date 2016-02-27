@@ -129,6 +129,9 @@ gulp.task('svg-sprite', function ( ){
 // eslint
 gulp.task('eslint', function () {
   return gulp.src(paths.js)
+    .pipe(plumber({
+      errorHandler: onError
+    }))
     .pipe(eslint())
     .pipe(eslint.format());
 });
@@ -137,6 +140,9 @@ gulp.task('eslint', function () {
 gulp.task('validate', function () {
   return gulp.src(paths.jekyllHTML)
     .pipe(w3cjs());
+    .pipe(plumber({
+      errorHandler: onError
+    }))
 });
 
 // Linting task
