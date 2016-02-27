@@ -139,10 +139,10 @@ gulp.task('eslint', function () {
 // Validation
 gulp.task('validate', function () {
   return gulp.src(paths.jekyllHTML)
-    .pipe(w3cjs());
     .pipe(plumber({
       errorHandler: onError
     }))
+    // .pipe(w3cjs());
 });
 
 // Linting task
