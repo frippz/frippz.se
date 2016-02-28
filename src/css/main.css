@@ -241,6 +241,7 @@
   /* Copyright */
   .copyright {
     display: block;
+    font-size: .75em;
     margin-top: 3em;
     width: 100%;
   }
