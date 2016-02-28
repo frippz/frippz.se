@@ -222,6 +222,14 @@
   }
 
   /* Footer links */
+  .footer-links.social {
+    margin-right: auto;
+  }
+
+  .footer-links.subscribe {
+    margin-left: auto;
+  }
+
   .social,
   .subscribe {
     display: inline-block;
