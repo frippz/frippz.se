@@ -191,8 +191,15 @@
    */
   [role="contentinfo"] {
     background: #333;
+    color: #7f9f7f;
     margin-top: 6em;
     padding: 2em 0;
+  }
+
+  [role="contentinfo"] .landmark-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
   }
 
   [role="contentinfo"] a,
@@ -215,12 +222,10 @@
   }
 
   /* Footer links */
-  .social {
-    float: left;
-  }
-
+  .social,
   .subscribe {
-    float: right;
+    display: inline-block;
+    vertical-align: top;
   }
 
   .footer-links {
@@ -231,6 +236,13 @@
 
   .footer-links li + li {
     margin-top: 1em;
+  }
+
+  /* Copyright */
+  .copyright {
+    display: block;
+    margin-top: 3em;
+    width: 100%;
   }
 
 
