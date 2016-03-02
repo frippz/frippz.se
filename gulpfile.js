@@ -142,7 +142,7 @@ gulp.task('validate', function () {
     .pipe(plumber({
       errorHandler: onError
     }))
-    // .pipe(w3cjs());
+    .pipe(w3cjs());
 });
 
 // Linting task
