@@ -146,7 +146,7 @@ gulp.task('validate', function () {
 });
 
 // Linting task
-gulp.task('lint', ['eslint', 'validate']);
+gulp.task('lint', ['eslint'/*, 'validate'*/]);
 
 // Watch for changes
 gulp.task('watch', function() {
@@ -162,9 +162,9 @@ gulp.task('watch', function() {
   watch(paths.svg, function() {
     gulp.start(['svg-sprite']);
   });
-  watch(paths.jekyllHTML, function() {
-    gulp.start(['validate']);
-  });
+  // watch(paths.jekyllHTML, function() {
+  //   gulp.start(['validate']);
+  // });
 });
 
 // Copy image assets into /gui
