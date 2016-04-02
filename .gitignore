@@ -4,9 +4,6 @@ _data/cache_bust_*.yml
 .sass-cache
 .jekyll-metadata
 
-# Node
-node_modules
-
 # Generated stuff
 gui
 
