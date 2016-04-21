@@ -26,6 +26,7 @@ var gulp             = require('gulp'),
     dirSync          = require('gulp-directory-sync'),
     webserver        = require('gulp-webserver'),
     hashsum          = require('gulp-hashsum'),
+    stylelint        = require('gulp-stylelint'),
     svgSprite        = require('gulp-svg-sprite');
 
 // Configure paths
@@ -70,6 +71,12 @@ gulp.task('css', function () {
   return gulp.src(paths.css)
     .pipe(plumber({
       errorHandler: onError
+    }))
+    .pipe(stylelint({
+      reporters: [{
+        formatter: 'verbose',
+        console: true
+        }]
     }))
     .pipe(sourcemaps.init())
     .pipe(autoprefixer({
