@@ -17,7 +17,6 @@
     position: relative;
   }
 
-
   /**
    * Header (banner)
    */
@@ -36,7 +35,6 @@
   .main-title a {
     text-decoration: none;
   }
-
 
   /**
    * Navigation
@@ -64,7 +62,6 @@
     text-decoration: none;
   }
 
-
   /**
    * Articles
    */
@@ -72,7 +69,7 @@
     margin-top: 2em;
   }
 
-  [role="article"] + [role="article"]:before {
+  [role="article"] + [role="article"]::before {
     border-top: 1px solid #ececec;
     content: "";
     display: block;
@@ -124,7 +121,6 @@
     padding: .5em .75em;
   }
 
-
   /**
    * Code highlighting
    */
@@ -168,13 +164,10 @@
     text-align: right;
     max-width: 2em;
     order: 1;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    user-select: none;
   }
 
-  .js .ln span:before {
+  .js .ln span::before {
     counter-increment: linenumber;
     content: counter(linenumber);
     display: block;
@@ -184,7 +177,6 @@
   .js .ln + code {
     margin-top: 0;
   }
-
 
   /**
    * Contentinfo
@@ -253,10 +245,10 @@
     margin-top: 3em;
     width: 100%;
   }
+
   .copyright a {
     text-decoration: underline;
   }
-
 
   /**
    * Custom selection colors
@@ -277,11 +269,10 @@
     color: #3f3f3f;
   }
 
-
   /**
    * Super cool rainbow banner!
    */
-  [role="banner"]:before {
+  [role="banner"]::before {
     background-image: linear-gradient(
       to right,
       #142a06 0,
@@ -334,7 +325,6 @@
     width: 100%;
   }
 
-
   /**
    * Older & newer articles navigation
    */
@@ -369,7 +359,6 @@
     margin-left: auto;
   }
 
-
   /**
    * Custom error page (404)
    */
@@ -382,7 +371,6 @@
     height: 8.5em;
   }
 
-
   /**
    * Pretty blockquotes
    */
@@ -394,9 +382,9 @@
     position: relative;
   }
 
-  blockquote:before,
-  blockquote:after {
-    background: url("/gui/i/sprite-css.svg") no-repeat 0 0;
+  blockquote::before,
+  blockquote::after {
+    background: url(/gui/i/sprite-css.svg) no-repeat 0 0;
     color: #dadada;
     content: "";
     display: block;
@@ -405,13 +393,13 @@
     position: absolute;
   }
 
-  blockquote:before {
+  blockquote::before {
     background-position: 0 -11.6em;
     left: .7em;
     top: .2em;
   }
 
-  blockquote:after {
+  blockquote::after {
     background-position: 0 -13em;
     bottom: .2em;
     right: .7em;
@@ -430,11 +418,10 @@
     margin-top: 1.5em;
   }
 
-  blockquote blockquote:after,
-  blockquote blockquote:before {
+  blockquote blockquote::after,
+  blockquote blockquote::before {
     display: none;
   }
-
 
   /**
    * Footnotes
@@ -458,8 +445,8 @@
   }
 
   /* Numbered references */
-  [aria-describedby="footnotes"]:after {
-    color: blue;
+  [aria-describedby="footnotes"]::after {
+    color: inherit;
     content: "[" counter(footnotes) "]";
     cursor: pointer;
     font-size: .5em;
@@ -469,11 +456,10 @@
   }
 
   /* Resetting the default focused styles on the number */
-  [aria-describedby="footnotes"]:focus:after {
+  [aria-describedby="footnotes"]:focus::after {
     outline: thin dotted;
     outline-offset: 2px;
   }
-
 
   /**
    * Eye candy & visual fluff
@@ -481,7 +467,6 @@
   a {
     transition: all .25s ease;
   }
-
 
   /**
    * Inline SVG icons
@@ -528,6 +513,7 @@
     letter-spacing: .25em;
     line-height: 2;
   }
+
   .dyslexic-mode .landmark-content {
     max-width: 26em;
   }
