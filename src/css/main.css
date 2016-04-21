@@ -406,13 +406,13 @@
   }
 
   blockquote:before {
-    background-position: 0 -8.3em;
+    background-position: 0 -11.6em;
     left: .7em;
     top: .2em;
   }
 
   blockquote:after {
-    background-position: 0 -9.8em;
+    background-position: 0 -13em;
     bottom: .2em;
     right: .7em;
   }
