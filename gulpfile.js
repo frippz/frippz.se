@@ -74,7 +74,7 @@ gulp.task('css', function () {
     }))
     .pipe(stylelint({
       reporters: [{
-        formatter: 'verbose',
+        formatter: 'string',
         console: true
         }]
     }))
