@@ -108,6 +108,8 @@ gulp.task('js', function () {
     .pipe(plumber({
       errorHandler: onError
     }))
+    .pipe(eslint())
+    .pipe(eslint.format())
     .pipe(sourcemaps.init())
     .pipe(concat(paths.jsOutput))
     .pipe(uglify())
