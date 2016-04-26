@@ -13,7 +13,7 @@ var gulp             = require('gulp'),
     plumber          = require('gulp-plumber'),
     sourcemaps       = require('gulp-sourcemaps'),
     autoprefixer     = require('gulp-autoprefixer'),
-    minifyCss        = require('gulp-minify-css'),
+    cssnano          = require('gulp-cssnano'),
     concat           = require('gulp-concat'),
     uglify           = require('gulp-uglify'),
     postcss          = require('gulp-postcss'),
@@ -85,7 +85,9 @@ gulp.task('css', function () {
     }))
     .pipe(postcss([customProperties()]))
     .pipe(concat(paths.cssOutput))
-    .pipe(minifyCss({compatibility: 'ie8'}))
+    .pipe(cssnano({
+      discardComments: {removeAll: true}
+    }))
     .pipe(hashsum({filename: './_data/cache_bust_css.yml', hash: 'md5'}))
     .pipe(gulpif(!isProduction, sourcemaps.write('.')))
     .pipe(gulp.dest(paths.cssDest));
