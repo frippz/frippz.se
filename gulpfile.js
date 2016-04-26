@@ -19,12 +19,9 @@ var gulp             = require('gulp'),
     postcss          = require('gulp-postcss'),
     watch            = require('gulp-watch'),
     customProperties = require('postcss-custom-properties'),
-    path             = require('path'),
     eslint           = require('gulp-eslint'),
     liveServer       = require('live-server'),
-    w3cjs            = require('gulp-w3cjs'),
     syncy            = require('syncy'),
-    webserver        = require('gulp-webserver'),
     hashsum          = require('gulp-hashsum'),
     stylelint        = require('gulp-stylelint'),
     svgSprite        = require('gulp-svg-sprite'),
@@ -157,18 +154,6 @@ gulp.task('eslint', function () {
     .pipe(eslint.format());
 });
 
-// Validation
-gulp.task('validate', function () {
-  return gulp.src(paths.jekyllHTML)
-    .pipe(plumber({
-      errorHandler: onError
-    }))
-    .pipe(w3cjs());
-});
-
-// Linting task
-gulp.task('lint', ['eslint'/*, 'validate'*/]);
-
 // Watch for changes
 gulp.task('watch', function() {
   watch(paths.css, function() {
@@ -186,9 +171,6 @@ gulp.task('watch', function() {
   watch(paths.jekyllBuild, function() {
     gulp.start(['jekyll-build']);
   });
-  // watch(paths.jekyllHTML, function() {
-  //   gulp.start(['validate']);
-  // });
 });
 
 // Copy image assets to /gui
@@ -226,4 +208,4 @@ gulp.task('live-server', function () {
 gulp.task('build', ['css', 'js', 'images', 'svg-sprite', 'jekyll-build']);
 
 // Default
-gulp.task('default', ['build', 'watch', 'lint', 'live-server']);
+gulp.task('default', ['build', 'watch', 'live-server']);
