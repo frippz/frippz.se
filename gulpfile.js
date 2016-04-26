@@ -119,7 +119,7 @@ gulp.task('js', function () {
 });
 
 // SVG sprite generation
-svgConfig = {
+var svgConfig = {
   svg : {
     doctypeDeclaration: false,
     xmlDeclaration: false
@@ -137,7 +137,7 @@ svgConfig = {
       sprite: 'sprite-css.svg'
     }
   }
-}
+};
 
 gulp.task('svg-sprite', function ( ){
   return gulp.src(paths.svg)
