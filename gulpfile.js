@@ -89,7 +89,7 @@ gulp.task('css', function () {
       discardComments: {removeAll: true}
     }))
     .pipe(hashsum({filename: './_data/cache_bust_css.yml', hash: 'md5'}))
-    .pipe(gulpif(!isProduction, sourcemaps.write('.')))
+    .pipe(gulpif(!isProduction, sourcemaps.write()))
     .pipe(gulp.dest(paths.cssDest));
 });
 
