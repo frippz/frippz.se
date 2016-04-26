@@ -27,12 +27,9 @@
     "gulp-svg-sprite": "^1.2.16",
     "gulp-uglify": "^1.4.0",
     "gulp-util": "^3.0.7",
-    "gulp-w3cjs": "^1.1.0",
     "gulp-watch": "^4.3.5",
-    "gulp-webserver": "^0.9.1",
     "htmlhint-stylish": "^1.0.3",
     "live-server": "^1.0.0",
-    "path": "^0.12.7",
     "postcss-custom-properties": "^5.0.1",
     "syncy": "^1.0.1"
   }
