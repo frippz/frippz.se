@@ -19,7 +19,6 @@ var gulp             = require('gulp'),
     postcss          = require('gulp-postcss'),
     watch            = require('gulp-watch'),
     customProperties = require('postcss-custom-properties'),
-    ghPages          = require('gh-pages'),
     path             = require('path'),
     eslint           = require('gulp-eslint'),
     w3cjs            = require('gulp-w3cjs'),
@@ -185,9 +184,6 @@ gulp.task('images', function(){
     .end();
 });
 
-// Deploy to gh-pages
-gulp.task('deploy', function (cb) {
-  ghPages.publish(path.join(process.cwd(), paths.tplDest), cb);
 });
 
 // Build
