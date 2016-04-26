@@ -7,5 +7,8 @@ _data/cache_bust_*.yml
 # Generated stuff
 gui
 
+# Node stuff
+node_modules
+
 # Sensitive data shouldn't be included
 site_config.mk
