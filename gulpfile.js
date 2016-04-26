@@ -209,5 +209,8 @@ gulp.task('live-server', function () {
 // Build
 gulp.task('build', ['css', 'js', 'images', 'svg-sprite', 'jekyll-build']);
 
+// Deploy
+gulp.task('deploy', ['css', 'js', 'images', 'svg-sprite']);
+
 // Default
 gulp.task('default', ['build', 'watch', 'live-server']);
