@@ -23,7 +23,7 @@ var gulp             = require('gulp'),
     path             = require('path'),
     eslint           = require('gulp-eslint'),
     w3cjs            = require('gulp-w3cjs'),
-    dirSync          = require('gulp-directory-sync'),
+    syncy            = require('syncy'),
     webserver        = require('gulp-webserver'),
     hashsum          = require('gulp-hashsum'),
     stylelint        = require('gulp-stylelint'),
@@ -37,7 +37,7 @@ var paths = {
   css: ['./src/css/**/*.css'],
 
   // Static assets
-  images: './src/i/',
+  images: ['./src/i/**'],
 
   // SVG icons
   svg: ['./src/svg/**/*.svg'],
@@ -49,7 +49,7 @@ var paths = {
   // Destinations
   jsDest: './gui/js/',
   cssDest: './gui/css/',
-  imgDest: './gui/i/',
+  imgDest: './gui/i',
   svgDest: './_includes/',
 
   // Jekyll build files
@@ -176,10 +176,13 @@ gulp.task('watch', function() {
   // });
 });
 
-// Copy image assets into /gui
+// Copy image assets to /gui
 gulp.task('images', function(){
-  gulp.src(paths.images)
-    .pipe(dirSync(paths.images, paths.imgDest));
+  syncy(paths.images, paths.imgDest, {
+    base: './src/i/'
+  })
+    .on('error', console.error)
+    .end();
 });
 
 // Deploy to gh-pages
