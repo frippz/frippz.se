@@ -21,14 +21,16 @@ var gulp             = require('gulp'),
     customProperties = require('postcss-custom-properties'),
     path             = require('path'),
     eslint           = require('gulp-eslint'),
+    liveServer       = require('live-server'),
     w3cjs            = require('gulp-w3cjs'),
     syncy            = require('syncy'),
     webserver        = require('gulp-webserver'),
     hashsum          = require('gulp-hashsum'),
     stylelint        = require('gulp-stylelint'),
-    svgSprite        = require('gulp-svg-sprite');
+    svgSprite        = require('gulp-svg-sprite'),
+    exec             = require('child_process').exec;
 
-// Configure paths
+// Configur paths
 var paths = {
 
   // Inputs
@@ -52,7 +54,18 @@ var paths = {
   svgDest: './_includes/',
 
   // Jekyll build files
-  jekyllHTML: ['./_site/**/*.html']
+  jekyllHTML: ['./_site/**/*.html'],
+
+  // Jekyll build triggers
+  jekyllBuild: [
+    '**/*.html',
+    '**/*.+(md|markdown|MD)',
+    'src/**/*.*',
+    '_data/**.*+(yml|yaml|csv|json)',
+    '!dist/**/*.*',
+    '!_site/**/*.*',
+    '!README.md'
+  ]
 
 };
 
@@ -170,6 +183,9 @@ gulp.task('watch', function() {
   watch(paths.svg, function() {
     gulp.start(['svg-sprite']);
   });
+  watch(paths.jekyllBuild, function() {
+    gulp.start(['jekyll-build']);
+  });
   // watch(paths.jekyllHTML, function() {
   //   gulp.start(['validate']);
   // });
@@ -184,10 +200,30 @@ gulp.task('images', function(){
     .end();
 });
 
+// Jekyll
+gulp.task('jekyll-build', function (){
+  exec('bundle exec jekyll build -q', function(err) {
+    if (err) {
+      console.log(err);
+    }
+  });
+});
+
+// Live server
+gulp.task('live-server', function () {
+  liveServer.start({
+    port: 4000,
+    host: '0.0.0.0',
+    root: '_site',
+    open: false,
+    quiet: true,
+    file: 'index.html',
+    wait: 500
+  });
 });
 
 // Build
-gulp.task('build', ['css', 'js', 'images', 'svg-sprite']);
+gulp.task('build', ['css', 'js', 'images', 'svg-sprite', 'jekyll-build']);
 
 // Default
-gulp.task('default', ['watch', 'css', 'js', 'images', 'svg-sprite', 'lint']);
+gulp.task('default', ['build', 'watch', 'lint', 'live-server']);
