@@ -186,11 +186,11 @@ gulp.task('images', function(){
 
 // Jekyll
 gulp.task('jekyll-build', function (){
-  exec('bundle exec jekyll build -q', function(err) {
+  gulpif(!isProduction, exec('bundle exec jekyll build -q', function(err) {
     if (err) {
       console.log(err);
     }
-  });
+  }));
 });
 
 // Live server
