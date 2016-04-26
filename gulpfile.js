@@ -31,8 +31,8 @@ var gulp             = require('gulp'),
 var paths = {
 
   // Inputs
-  js: ['./src/js/**/*.js'],
-  css: ['./src/css/**/*.css'],
+  jsFiles: ['./src/js/**/*.js'],
+  cssFiles: ['./src/css/**/*.css'],
 
   // Static assets
   images: ['./src/i/**'],
@@ -77,7 +77,7 @@ var isProduction = process.env.NODE_ENV === 'production';
 
 // Process stylesheets
 gulp.task('css', function () {
-  return gulp.src(paths.css)
+  return gulp.src(paths.cssFiles)
     .pipe(plumber({
       errorHandler: onError
     }))
@@ -104,7 +104,7 @@ gulp.task('css', function () {
 
 // Concatenate and minify JavaScript
 gulp.task('js', function () {
-  return gulp.src(paths.js)
+  return gulp.src(paths.jsFiles)
     .pipe(plumber({
       errorHandler: onError
     }))
@@ -148,7 +148,7 @@ gulp.task('svg-sprite', function ( ){
 
 // eslint
 gulp.task('eslint', function () {
-  return gulp.src(paths.js)
+  return gulp.src(paths.jsFiles)
     .pipe(plumber({
       errorHandler: onError
     }))
@@ -158,10 +158,10 @@ gulp.task('eslint', function () {
 
 // Watch for changes
 gulp.task('watch', function() {
-  watch(paths.css, function() {
+  watch(paths.cssFiles, function() {
     gulp.start(['css']);
   });
-  watch(paths.js, function() {
+  watch(paths.jsFiles, function() {
     gulp.start(['js', 'eslint']);
   });
   watch(paths.images, function() {
