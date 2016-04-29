@@ -5,21 +5,6 @@
  * Requires support for querySelector, classList and addEventListener
  */
 
-if('querySelector' in document && 'classList' in document.createElement('a') && 'addEventListener' in window) {
-
-  /**
-   * Add class "js" to html element
-   */
-  document.querySelector('html').classList.add('js');
-
-  /* Add numbered lines to <pre> */
-  numberedLines();
-
-  /* Enable dyslexic mode toggle */
-  dyslexicMode();
-
-}
-
 /**
  * Add line numbers to <pre>
  */
@@ -59,7 +44,7 @@ function dyslexicMode() {
     document.body.classList.toggle('dyslexic-mode');
 
     // Swap text on <button>
-    if (dyslexicButton.getAttribute('data-text-swap') == dyslexicButton.innerHTML) {
+    if (dyslexicButton.getAttribute('data-text-swap') === dyslexicButton.innerHTML) {
       dyslexicButton.innerHTML = dyslexicButton.getAttribute('data-text-original');
     } else {
       dyslexicButton.setAttribute('data-text-original', dyslexicButton.innerHTML);
@@ -69,4 +54,19 @@ function dyslexicMode() {
 
   // Swap class & text on click
   dyslexicButton.addEventListener('click', toggleDyslexicMode, false);
+}
+
+if ('querySelector' in document && 'classList' in document.createElement('a') && 'addEventListener' in window) {
+
+  /**
+   * Add class "js" to html element
+   */
+  document.querySelector('html').classList.add('js');
+
+  /* Add numbered lines to <pre> */
+  numberedLines();
+
+  /* Enable dyslexic mode toggle */
+  dyslexicMode();
+
 }
