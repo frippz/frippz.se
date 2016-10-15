@@ -180,8 +180,7 @@ gulp.task('images', function(){
   syncy(paths.images, paths.imgDest, {
     base: './src/i/'
   })
-    .on('error', console.error)
-    .end();
+    .catch(console.error);
 });
 
 // Jekyll

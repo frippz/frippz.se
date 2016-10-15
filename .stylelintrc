@@ -27,7 +27,7 @@
     "function-comma-space-before": "never",
     "function-parentheses-space-inside": "never-single-line",
     "function-parentheses-newline-inside": "always-multi-line",
-    "function-url-quotes": "none",
+    "function-url-quotes": "never",
     "indentation": 2,
     "max-empty-lines": 1,
     "media-feature-colon-space-after": "always",
@@ -35,9 +35,7 @@
     "media-feature-no-missing-punctuation": true,
     "media-query-list-comma-newline-after": "never-multi-line",
     "media-query-list-comma-newline-before": "never-multi-line",
-    "media-query-parentheses-space-inside": "never",
     "number-leading-zero": "never",
-    "number-zero-length-no-unit": true,
     "rule-nested-empty-line-before": ["always", {
       "ignore": ["after-comment"]
     }],
