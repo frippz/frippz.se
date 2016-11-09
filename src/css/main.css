@@ -377,8 +377,8 @@
   blockquote {
     background: #f3f3f3;
     border-radius: 1em;
-    margin: 2em 1em;
-    padding: 1em 3em;
+    margin: 2em 0;
+    padding: 1.5em;
     position: relative;
   }
 
@@ -387,7 +387,7 @@
     display: block;
     font-family: Georgia, serif;
     font-size: 6em;
-    opacity: .1;
+    opacity: .05;
     position: absolute;
   }
 
