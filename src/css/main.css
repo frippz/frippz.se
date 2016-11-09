@@ -384,25 +384,23 @@
 
   blockquote::before,
   blockquote::after {
-    background: url(/gui/i/sprite-css.svg) no-repeat 0 0;
-    color: #dadada;
-    content: "";
     display: block;
+    font-family: Georgia, serif;
+    font-size: 6em;
     opacity: .1;
-    padding: .9em 1em;
     position: absolute;
   }
 
   blockquote::before {
-    background-position: 0 -11.6em;
-    left: .7em;
-    top: .2em;
+    content: "“";
+    left: .1em;
+    top: -.2em;
   }
 
   blockquote::after {
-    background-position: 0 -13em;
-    bottom: .2em;
-    right: .7em;
+    content: "”";
+    bottom: -.8em;
+    right: .1em;
   }
 
   /* Nested blockquotes */
