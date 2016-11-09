@@ -85,7 +85,7 @@ gulp.task('css', function () {
       reporters: [{
         formatter: 'string',
         console: true
-        }]
+      }]
     }))
     .pipe(sourcemaps.init())
     .pipe(autoprefixer({
@@ -95,9 +95,9 @@ gulp.task('css', function () {
     .pipe(postcss([customProperties()]))
     .pipe(concat(paths.cssOutput))
     .pipe(cssnano({
-      discardComments: {removeAll: true}
+      discardComments: { removeAll: true }
     }))
-    .pipe(hashsum({filename: './_data/cache_bust_css.yml', hash: 'md5'}))
+    .pipe(hashsum({ filename: './_data/cache_bust_css.yml', hash: 'md5' }))
     .pipe(gulpif(!isProduction, sourcemaps.write()))
     .pipe(gulp.dest(paths.cssDest));
 });
@@ -113,14 +113,14 @@ gulp.task('js', function () {
     .pipe(sourcemaps.init())
     .pipe(concat(paths.jsOutput))
     .pipe(uglify())
-    .pipe(hashsum({filename: './_data/cache_bust_js.yml', hash: 'md5'}))
+    .pipe(hashsum({ filename: './_data/cache_bust_js.yml', hash: 'md5' }))
     .pipe(gulpif(!isProduction, sourcemaps.write('.')))
     .pipe(gulp.dest(paths.jsDest));
 });
 
 // SVG sprite generation
 var svgConfig = {
-  svg : {
+  svg: {
     doctypeDeclaration: false,
     xmlDeclaration: false
   },
@@ -129,21 +129,15 @@ var svgConfig = {
       inline: true,
       dest: '.',
       sprite: 'sprite-symbol.svg'
-    },
-    css: {
-      bust: false,
-      layout: 'vertical',
-      dest: '.',
-      sprite: 'sprite-css.svg'
     }
   }
 };
 
-gulp.task('svg-sprite', function ( ){
+gulp.task('svg-sprite', function () {
   return gulp.src(paths.svg)
     .pipe(svgSprite(svgConfig))
-    .pipe(gulp.dest(paths.svgDest))
-    .pipe(gulp.dest(paths.imgDest));
+    .pipe(gulp.dest(paths.svgDest));
+    // .pipe(gulp.dest(paths.imgDest));
 });
 
 // eslint
@@ -157,26 +151,26 @@ gulp.task('eslint', function () {
 });
 
 // Watch for changes
-gulp.task('watch', function() {
-  watch(paths.cssFiles, function() {
+gulp.task('watch', function () {
+  watch(paths.cssFiles, function () {
     gulp.start(['css']);
   });
-  watch(paths.jsFiles, function() {
+  watch(paths.jsFiles, function () {
     gulp.start(['js', 'eslint']);
   });
-  watch(paths.images, function() {
+  watch(paths.images, function () {
     gulp.start(['images']);
   });
-  watch(paths.svg, function() {
+  watch(paths.svg, function () {
     gulp.start(['svg-sprite']);
   });
-  watch(paths.jekyllBuild, function() {
+  watch(paths.jekyllBuild, function () {
     gulp.start(['jekyll-build']);
   });
 });
 
 // Copy image assets to /gui
-gulp.task('images', function(){
+gulp.task('images', function () {
   syncy(paths.images, paths.imgDest, {
     base: './src/i/'
   })
@@ -184,8 +178,8 @@ gulp.task('images', function(){
 });
 
 // Jekyll
-gulp.task('jekyll-build', function (){
-  gulpif(!isProduction, exec('bundle exec jekyll build -q', function(err) {
+gulp.task('jekyll-build', function () {
+  gulpif(!isProduction, exec('bundle exec jekyll build -q', function (err) {
     if (err) {
       console.log(err);
     }
