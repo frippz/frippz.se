@@ -137,7 +137,6 @@ gulp.task('svg-sprite', function () {
   return gulp.src(paths.svg)
     .pipe(svgSprite(svgConfig))
     .pipe(gulp.dest(paths.svgDest));
-    // .pipe(gulp.dest(paths.imgDest));
 });
 
 // eslint
