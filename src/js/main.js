@@ -27,7 +27,7 @@ function numberedLines() {
 /**
  * Toggle dyslexic mode
  */
-function dyslexicMode() {
+/* function dyslexicMode() {
 
   // Place button inside role="banner"
   var toggleContainer = document.querySelector('[role="banner"] .landmark-content');
@@ -54,7 +54,7 @@ function dyslexicMode() {
 
   // Swap class & text on click
   dyslexicButton.addEventListener('click', toggleDyslexicMode, false);
-}
+} */
 
 if ('querySelector' in document && 'classList' in document.createElement('a') && 'addEventListener' in window) {
 
@@ -67,6 +67,6 @@ if ('querySelector' in document && 'classList' in document.createElement('a') &&
   numberedLines();
 
   /* Enable dyslexic mode toggle */
-  dyslexicMode();
+  // dyslexicMode();
 
 }
