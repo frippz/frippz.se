@@ -70,7 +70,7 @@
 
   th,
   td {
-    padding: .125em .2em;
+    padding: 0.125em 0.2em;
     vertical-align: top;
   }
 
@@ -81,7 +81,7 @@
   }
 
   tr:nth-child(even) {
-    background: rgba(0, 0, 0, .05);
+    background: rgba(0, 0, 0, 0.05);
   }
 
   /**
@@ -95,12 +95,12 @@
 
   img.left {
     float: left;
-    margin: 0 1em .5em 0;
+    margin: 0 1em 0.5em 0;
   }
 
   img.right {
     float: right;
-    margin: 0 0 .5em 1em;
+    margin: 0 0 0.5em 1em;
   }
 
   /**
@@ -136,7 +136,7 @@
 
   pre,
   p > code {
-    font-size: .8em;
+    font-size: 0.8em;
   }
 
   /**
@@ -168,7 +168,7 @@
   h4 + p,
   h5 + p,
   h6 + p {
-    margin-top: .5em;
+    margin-top: 0.5em;
   }
 
   h1 {
@@ -226,9 +226,9 @@
     border: 0;
     background: #333;
     color: #fff;
-    border-radius: .25em;
+    border-radius: 0.25em;
     font-size: inherit;
-    padding: .2em .5em;
+    padding: 0.2em 0.5em;
   }
 
   /**
