@@ -29,7 +29,7 @@
     font-size: 2.3em;
     font-weight: 400;
     line-height: 1.125;
-    padding: .75em 0 .5em;
+    padding: 0.75em 0 0.5em;
   }
 
   .main-title a {
@@ -49,7 +49,7 @@
   #main-nav {
     list-style: none;
     margin: 0;
-    padding: .25em 0;
+    padding: 0.25em 0;
   }
 
   #main-nav li {
@@ -84,14 +84,14 @@
   /* Post meta data */
   .post-info {
     color: #717171;
-    font-size: .85em;
+    font-size: 0.85em;
     margin-top: 0;
   }
 
   .post-tags {
     color: #717171;
-    font-size: .85em;
-    margin-top: .5em;
+    font-size: 0.85em;
+    margin-top: 0.5em;
   }
 
   .post-tags strong {
@@ -100,7 +100,7 @@
 
   /* Editorial lists */
   [role="article"] li + li {
-    margin-top: .5em;
+    margin-top: 0.5em;
   }
 
   /* Images with captions */
@@ -115,10 +115,10 @@
   }
 
   figure.image figcaption {
-    font-size: .9em;
+    font-size: 0.9em;
     font-style: italic;
     margin: 0;
-    padding: .5em .75em;
+    padding: 0.5em 0.75em;
   }
 
   /**
@@ -139,7 +139,7 @@
   p > code {
     background: #fbf6e8;
     border: 1px solid #f0dfaf;
-    padding: .1em .2em;
+    padding: 0.1em 0.2em;
   }
 
   /* Line numbers (requires JS) */
@@ -158,8 +158,8 @@
     border-right: 1px solid #555;
     color: #888;
     margin-top: 0;
-    margin-right: .75em;
-    padding-right: .5em;
+    margin-right: 0.75em;
+    padding-right: 0.5em;
     flex: 1 0 auto;
     text-align: right;
     max-width: 2em;
@@ -209,8 +209,8 @@
   [role="contentinfo"] .svg-icon {
     fill: currentcolor;
     display: inline-block;
-    margin-right: .25em;
-    vertical-align: -.2em;
+    margin-right: 0.25em;
+    vertical-align: -0.2em;
   }
 
   /* Footer links */
@@ -241,7 +241,7 @@
   /* Copyright */
   .copyright {
     display: block;
-    font-size: .75em;
+    font-size: 0.75em;
     margin-top: 3em;
     width: 100%;
   }
@@ -336,11 +336,11 @@
 
   .more-articles a {
     background: #333;
-    border-radius: .5em;
+    border-radius: 0.5em;
     color: #fff;
     display: block;
     margin-top: 0;
-    padding: .35em 1em;
+    padding: 0.35em 1em;
     position: relative;
   }
 
@@ -387,29 +387,29 @@
     display: block;
     font-family: Georgia, serif;
     font-size: 6em;
-    opacity: .05;
+    opacity: 0.05;
     position: absolute;
   }
 
   blockquote::before {
     content: "“";
-    left: .1em;
-    top: -.2em;
+    left: 0.1em;
+    top: -0.2em;
   }
 
   blockquote::after {
     content: "”";
-    bottom: -.8em;
-    right: .1em;
+    bottom: -0.8em;
+    right: 0.1em;
   }
 
   /* Nested blockquotes */
   blockquote blockquote {
     background: transparent;
-    border-left: .25em solid #dadada;
+    border-left: 0.25em solid #dadada;
     border-radius: 0;
     margin: 1em 0 0;
-    padding: 0 0 0 .5em;
+    padding: 0 0 0 0.5em;
   }
 
   blockquote blockquote:first-child {
@@ -447,7 +447,7 @@
     color: inherit;
     content: "[" counter(footnotes) "]";
     cursor: pointer;
-    font-size: .5em;
+    font-size: 0.5em;
     margin-left: 2px;
     text-decoration: underline;
     vertical-align: super;
@@ -463,7 +463,7 @@
    * Eye candy & visual fluff
    */
   a {
-    transition: all .25s ease;
+    transition: all 0.25s ease;
   }
 
   /**
