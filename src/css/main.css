@@ -315,10 +315,10 @@
       #172327 100%
     );
     background-repeat: no-repeat;
-    background-size: 100% .75em;
+    background-size: 100% 0.75em;
     content: " ";
     display: block;
-    height: .75em;
+    height: 0.75em;
     left: 0;
     position: absolute;
     top: 0;
@@ -496,7 +496,7 @@
     font-weight: bold;
     left: 9999px;
     line-height: 1.0;
-    padding: .5em 0;
+    padding: 0.5em 0;
     position: absolute;
     text-align: center;
     top: 0;
@@ -508,7 +508,7 @@
    */
   .dyslexic-mode {
     font-size: 1.4em;
-    letter-spacing: .25em;
+    letter-spacing: 0.25em;
     line-height: 2;
   }
 
@@ -518,7 +518,7 @@
 
   /* Toggle button */
   .toggle-dyslexic-mode {
-    font-size: .65em;
+    font-size: 0.65em;
     margin-top: 0;
     position: absolute;
     top: 1.5em;
@@ -572,7 +572,7 @@
   }
 
   .more-articles a[class] + a[class] {
-    margin-top: .5em;
+    margin-top: 0.5em;
   }
 
   /* Stack footer links */
