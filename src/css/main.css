@@ -129,7 +129,7 @@
   }
 
   .highlighter-rouge pre {
-    background: #3f3f3f;
+    background: #252525;
     margin: 2em 0;
     overflow-x: auto;
     padding: 1em;
@@ -266,7 +266,7 @@
   [role="article"] pre code::selection,
   [role="article"] pre code ::selection {
     background-color: #fdce93;
-    color: #3f3f3f;
+    color: #252525;
   }
 
   /**
