@@ -120,6 +120,13 @@ gulp.task('js', function () {
 
 // SVG sprite generation
 var svgConfig = {
+  transform: [{
+    svgo: {
+      js2svg: {
+        useShortTags: false
+      }
+    }
+  }],
   svg: {
     doctypeDeclaration: false,
     xmlDeclaration: false
