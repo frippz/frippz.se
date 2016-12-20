@@ -15,7 +15,13 @@ Please note that any views and opinions expressed by me on this site are persona
 
 This site is just plain static HTML generated with the help of [Jekyll](http://jekyllrb.com/). Vector icons used on this site are provided by [icomoon.io](https://icomoon.io). Technology-wise, this site uses good old plain HTML5, CSS3 and, for the moment, fairly small amounts of unobtrusive JavaScript.
 
+### Encryption
+
 I'm also using encryption via SSL provided by [Let’s Encrypt](https://letsencrypt.org), a new certificate authority that is free, automated and open. If you’re looking to serve your content encrypted, but always balked at the difficulty and complexity issuing a certificate means, give them a go. They’re currently in open beta.
+
+### Statistics and tracking
+
+The only tracking I perform on this site is via the server logs. I have no tracking scripts installed and I doubt that I would ever install one either. I'm really not interested in what you have done in any greater detail, more than what pages you visit on _this site_, and possibly whether you came from a search engine or some other site. All of these things are all found through the server logs and there’s no need for any intrusive tracking scripts. Also, since those scripts can be blocked (or be asked not to track you, which one should respect) they aren’t very reliable.
 
 ## Getting in touch
 
