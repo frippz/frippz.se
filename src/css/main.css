@@ -478,32 +478,6 @@
   }
 
   /**
-   * Skip links
-   */
-  #skip {
-    left: -9999px;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-  }
-
-  #skip a:focus,
-  #skip a:active {
-    background: #444;
-    color: #fff;
-    display: block;
-    font-weight: bold;
-    left: 9999px;
-    line-height: 1.0;
-    padding: 0.5em 0;
-    position: absolute;
-    text-align: center;
-    top: 0;
-    width: 100%;
-  }
-
-  /**
    * Dyslexic mode toggle
    */
   .dyslexic-mode {
