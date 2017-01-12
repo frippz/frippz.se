@@ -69,12 +69,10 @@
     margin-top: 2em;
   }
 
-  [role="article"] + [role="article"]::before {
-    border-top: 1px solid #ececec;
-    content: "";
-    display: block;
-    margin: 4em auto;
-    width: 40%;
+  .article-end {
+    color: #eee;
+    margin: 4em 0;
+    text-align: center;
   }
 
   [role="article"] .article-link {
@@ -184,7 +182,6 @@
   [role="contentinfo"] {
     background: #333;
     color: #9ac39f;
-    margin-top: 6em;
     padding: 2em 0;
   }
 
