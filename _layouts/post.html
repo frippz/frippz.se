@@ -7,17 +7,20 @@ layout: default
     <em>Published on <time datetime="{{ page.date | date: '%Y-%m-%d' }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time></em>
     <a class="permalink" href="{{ post.url | prepend: site.baseurl }}" title="Permalink" aria-label="Permalink">∞</a>
   </small>
+  {% comment %}
   {% if page.tags %}
   <p class="post-tags">
     <em><strong>Tagged with:</strong> <span itemprop="keywords">{{ page.tags | join: ', ' }}</span></em>
   </p>
   {% endif %}
+  {% endcomment %}
   <div itemprop="articleBody">
     {{ content }}
   </div>
   <meta itemprop="author" content="{{ page.author }}">
   <meta itemprop="publisher" content="{{ page.author }}">
   <meta itemprop="url" content="{{ site.url}}{{ page.url }}">
+  <meta itemprop="keywords" content="{{ page.tags | join: ', ' }}"/>
   <link itemprop="mainEntityOfPage" href="{{ site.url}}{{ page.url }}">
 </div>
 <div class="article-end" role="presentation" aria-hidden="true">✦</div>
