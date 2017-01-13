@@ -79,6 +79,22 @@
     text-decoration: none;
   }
 
+  .permalink .svg-icon {
+    height: 0.85em;
+    width: 0.85em;
+    margin-left: 0.25em;
+    vertical-align: baseline;
+  }
+
+  /* Icon for external links */
+  [rel="external"] + .svg-icon {
+    fill: #bbb;
+    margin: 0;
+    vertical-align: middle;
+    height: 0.65em;
+    width: 0.65em;
+  }
+
   /* Post meta data */
   .post-info {
     color: #717171;
