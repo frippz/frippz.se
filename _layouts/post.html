@@ -2,10 +2,23 @@
 layout: default
 ---
 <div role="article" itemscope itemtype="http://schema.org/BlogPosting">
-  <h2 itemprop="headline">{{ page.title }}</h2>
+  <h2 itemprop="headline">
+    {% if page.external-link %}
+      <a href="{{ page.external-link }}" rel="external">{{ page.title }}</a>
+      <svg class="svg-icon" height="16" width="16">
+        <use xlink:href="#icon-external"></use>
+      </svg>
+    {% else %}
+      {{ page.title }}
+    {% endif %}
+  </h2>
   <small class="post-info">
     <em>Posted on <time datetime="{{ page.date | date: '%Y-%m-%d' }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time></em>
-    <a class="permalink" href="{{ post.url | prepend: site.baseurl }}" title="Permalink" aria-label="Permalink">∞</a>
+    <a class="permalink" href="{{ post.url | prepend: site.baseurl }}" title="Permalink" aria-label="Permalink">
+      <svg class="svg-icon" height="16" width="16">
+        <use xlink:href="#icon-link"></use>
+      </svg>
+    </a>
   </small>
   {% comment %}
   {% if page.tags %}
