@@ -369,53 +369,13 @@
   }
 
   /**
-   * Pretty blockquotes
+   * Blockquotes
    */
   blockquote {
-    background: #f3f3f3;
-    border-radius: 1em;
-    margin: 2em 0;
-    padding: 1.5em;
-    position: relative;
-  }
-
-  blockquote::before,
-  blockquote::after {
-    display: block;
-    font-family: Georgia, serif;
-    font-size: 6em;
-    opacity: 0.05;
-    position: absolute;
-  }
-
-  blockquote::before {
-    content: "“";
-    left: 0.1em;
-    top: -0.2em;
-  }
-
-  blockquote::after {
-    content: "”";
-    bottom: -0.8em;
-    right: 0.1em;
-  }
-
-  /* Nested blockquotes */
-  blockquote blockquote {
-    background: transparent;
-    border-left: 0.25em solid #dadada;
-    border-radius: 0;
-    margin: 1em 0 0;
-    padding: 0 0 0 0.5em;
-  }
-
-  blockquote blockquote:first-child {
-    margin-top: 1.5em;
-  }
-
-  blockquote blockquote::after,
-  blockquote blockquote::before {
-    display: none;
+    margin: 0 1em 1em;
+    padding-left: 0.75em;
+    border-left: 4px solid #eee;
+    color: #595959;
   }
 
   /**
