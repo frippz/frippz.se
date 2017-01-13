@@ -11,7 +11,7 @@ published: 2014-12-06
 ---
 This problem really isn’t something new and this specific issue has been repeated on many accessibility oriented blogs over the years. But since I regularly see this mistake being made over and over again, I think it’s time for a revisit. I’m talking about why you shouldn’t style away the `:focus` pseudo-class.
 
-##Pseudo-what?
+### Pseudo-what?
 
 Pseudo-classes have been around in CSS since the first version, albeit in a more limited manner and without the associated semantic meaning.
 
@@ -23,7 +23,7 @@ From the [Mozilla Developer Network article on pseudo-classes](https://developer
 
 Clear as a bell, right?
 
-##Our focus of the day
+### Our focus of the day
 
 The `:focus` pseudo-class is often forgotten when developers start messing around with styling anchors on a website. However, it is just as important as `:hover`, `:active` and `:visited`. While the `:hover` pseudo-class matches when the user designates an element with a pointing device, the `:focus` pseudo-class is applied when an element has received focus, either from the user selecting it with the use of a keyboard or by activating it with the mouse.
 

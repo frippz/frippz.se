@@ -2,9 +2,10 @@
 layout: default
 ---
 <div role="article" itemscope itemtype="http://schema.org/BlogPosting">
-  <h1 itemprop="headline">{{ page.title }}</h1>
+  <h2 itemprop="headline">{{ page.title }}</h2>
   <small class="post-info">
     <em>Published on <time datetime="{{ page.date | date: '%Y-%m-%d' }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time></em>
+    <a class="permalink" href="{{ post.url | prepend: site.baseurl }}" title="Permalink" aria-label="Permalink">∞</a>
   </small>
   {% if page.tags %}
   <p class="post-tags">

@@ -13,13 +13,13 @@ published: 2016-02-18
 
 Since I love tinkering with my journal, updates to both my stylesheets and JavaScript files are quite frequent. Up till now, I’ve just let Gulp generate my files and then I included this in my Jekyll templates in a hard-coded fashion. But it then hit me that maybe I should do something to make sure that recurring visitors always get the latest version of my JavaScript and CSS, _if_ they’ve been changed.
 
-## What is cache busting?
+### What is cache busting?
 
 In short, cache busting is a way to make sure that client downloads your very latest version of a file. The simplest way to do this is to either give the file a random name, like `ab459ef32da.css` or, in my opinion, the nicer variant of adding a query string along the lines of `styles.css?version=ab459ef32da`. Then, each time you do a change to this file, you make sure that the random string changes, and you’ve successfully busted that cache.
 
 **_Update (2016-02-26):_** Apparently, [according to GTmetrix](https://gtmetrix.com/remove-query-strings-from-static-resources.html), some proxies do not cache static resources with a query string in the URL. They recommend that you encode the unique string into the file names themselves.
 
-## Making Gulp and Jekyll work together
+### Making Gulp and Jekyll work together
 
 As mentioned, I use [Gulp](http://gulpjs.com) to minify and concatenate both my CSS and JavaScript. The output files are hardcoded in my `Gulpfile.js` so all Jekyll needed was the paths to both files in the templates and be done with it.
 
@@ -36,7 +36,7 @@ In order to get some cache busting going, I needed the following:
 
 Since I only want the string to change when I’ve done something to either the JavaScript or CSS, the best approach would be to use the MD5 checksum from each generated file to indicate when something has changed. So I needed some sort of Gulp plugin to grab the MD5 and then do something with it. But first, we need to sort out how to get this data into Gulp.
 
-### Enter the data folder
+#### Enter the data folder
 
 Jekyll has this nifty feature that lets you define custom data.
 
@@ -48,7 +48,7 @@ Jekyll has this nifty feature that lets you define custom data.
 
 Perfect! This will allow us to pass information into our Jekyll templates. Reading on in the Jekyll documentation lets us know that if we create `_data/cache_bust.yml`, the contents of this file will be available in Jekyll via `{% raw %}{{ site.data.cache_bust }}{% endraw %}`. If the `cache_bust.yml` just contains a string, the aforementioned Jekyll tag will output just that. That’s all we need for this job.
 
-### Getting Gulp to write an MD5 hash to the data folder
+#### Getting Gulp to write an MD5 hash to the data folder
 
 There’s a plethora of cache busting plugins for Gulp over at [npmjs.com](https://www.npmjs.com). But all I need is something that grabs the MD5 checksum of my generated files and write that string to a file in the `_data` folder. The closest match for me turned out to be [gulp-hashsum](https://www.npmjs.com/package/gulp-hashsum).
 
