@@ -20,7 +20,7 @@ layout: default
   <meta itemprop="author" content="{{ page.author }}">
   <meta itemprop="publisher" content="{{ page.author }}">
   <meta itemprop="url" content="{{ site.url}}{{ page.url }}">
-  <meta itemprop="keywords" content="{{ page.tags | join: ', ' }}"/>
+  {% if page.tags %}<meta itemprop="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
   <link itemprop="mainEntityOfPage" href="{{ site.url}}{{ page.url }}">
 </div>
 <div class="article-end" role="presentation" aria-hidden="true">✦</div>
