@@ -18,8 +18,7 @@ sitemap:
       <item>
         <title>{{ post.title | xml_escape }}</title>
         <description>
-          {{ post.excerpt | xml_escape }}
-          &lt;p&gt;Read the full article at &lt;a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">frippz.se&lt;/a&gt;&lt;/p&gt;
+          {{ post.content | xml_escape }}
         </description>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         {% if post.external-link %}
