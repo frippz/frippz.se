@@ -21,7 +21,7 @@ Intrigued by this, as I have seen a few of these special typefaces and always wo
 
 Sounds simple enough. With a bit of extra styling, this could be done easily, provided your front end code is up to snuff. Your front end code _is_ up to snuff, right?
 
-## Using my own journal as an experiment
+### Using my own journal as an experiment
 
 This is precisely why I keep a journal online; doing cool experiments (besides incoherent rambling, of course). With a few quick additions to my stylesheets and some quick and dirty hacking with JavaScript, I managed to quickly deploy a solution for my experiment. As per the article’s suggestion, I wanted to do a few simple things:
 
@@ -32,7 +32,7 @@ This is precisely why I keep a journal online; doing cool experiments (besides i
 
 As one would expect, this wouldn’t require more than a few lines of extra code in the stylesheets. In addition, I also added some JavaScript to enable users to toggle the functionality.
 
-### The code
+#### The code
 
 The basic concept involves just setting a modifier class to the `<body>` element. This would increase `font-size`, `line-height` and `letter-spacing`. In addition, the container for my content, `.landmark-content` as it is called, would have its width reduced in order to provide shorter lines of text.
 
@@ -103,7 +103,7 @@ dyslexicMode();
 
 Note that I chose to do this with vanilla JavaScript, without any jQuery, because I really need to kick that awful habit of mine. As I said, this is pretty quick and dirty, so browser support is basically Internet Explorer 10 and up. Doing this with jQuery would likely be a few less lines of code (but then you’d also need to pull in the library). Since I employ the mustard cutting method for my journal, this code would never be run in legacy browsers anyway.
 
-## Taking this experiment further
+### Taking this experiment further
 
 Right now, users would need to toggle the function on each page visit. Nothing is being remembered, even within the same session. Hey, it’s a beta. Also, I’ve eyeballed the typographic tweaks and would need feedback from real people with dyslexia, in order to improve this or to even validate that this is something viable.
 

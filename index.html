@@ -8,23 +8,29 @@ sitemap:
   changefreq: daily
 ---
 
-<h2>Latest posts</h2>
-
 {% for post in paginator.posts %}
 <div role="article" itemscope itemtype="http://schema.org/BlogPosting">
-  <h3 itemprop="headline">
+  <h2 itemprop="headline">
     <a href="{{ post.url | prepend: site.baseurl }}" class="article-link">{{ post.title }}</a>
-  </h3>
+  </h2>
   <small class="post-info">
     <em>Posted on <time datetime="{{ post.date | date: '%Y-%m-%d' }}" itemprop="datePublished">{{ post.date | date: '%B %-d, %Y' }}</time></em>
+    <a class="permalink" href="{{ post.url | prepend: site.baseurl }}" title="Permalink" aria-label="Permalink">∞</a>
   </small>
   <meta itemprop="author" content="{{ page.author }}">
   <meta itemprop="publisher" content="{{ page.author }}">
   <meta itemprop="url" content="{{ site.url}}{{ post.url }}">
   <link itemprop="mainEntityOfPage" href="{{ site.url}}{{ post.url }}">
   <meta itemprop="description" content="{{ post.excerpt | strip_html }}">
+  {% comment %}
   <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+  {% endcomment %}
+  <div itemprop="articleBody">
+    {{ post.content }}
+  </div>
+  {% comment %}
   <p><a href="{{ post.url | prepend: site.baseurl }}">Continue reading <span class="offscreen">“{{ post.title }}”</span>…</a></p>
+  {% endcomment %}
 </div>
 <div class="article-end" role="presentation" aria-hidden="true">✦</div>
 {% endfor %}
