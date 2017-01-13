@@ -33,15 +33,9 @@ sitemap:
   <meta itemprop="url" content="{{ site.url}}{{ post.url }}">
   <link itemprop="mainEntityOfPage" href="{{ site.url}}{{ post.url }}">
   <meta itemprop="description" content="{{ post.excerpt | strip_html }}">
-  {% comment %}
-  <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
-  {% endcomment %}
   <div itemprop="articleBody">
     {{ post.content }}
   </div>
-  {% comment %}
-  <p><a href="{{ post.url | prepend: site.baseurl }}">Continue reading <span class="offscreen">“{{ post.title }}”</span>…</a></p>
-  {% endcomment %}
 </div>
 <div class="article-end" role="presentation" aria-hidden="true">✦</div>
 {% endfor %}
