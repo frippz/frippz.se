@@ -69,7 +69,11 @@
     margin-top: 2em;
   }
 
-  [itemprop="articleBody"] a {
+  [role="article"] h2 a {
+    color: currentcolor;
+  }
+
+  [role="article"] a {
     color: #b60000;
   }
 
