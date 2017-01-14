@@ -11,7 +11,7 @@ external-link: http://csswizardry.com/2017/01/preparing-vim-for-apples-touch-bar
 published: 2017-01-13
 ---
 
-Since we basically lost the escape key with the new MacBook Pros, Vim users needed a solid backup plan if they were to get one of the new laptops. Harry Roberts has put together some really nice things to consider with regards to the escape key:
+Since we basically lost the escape key with the new MacBook Pro models that came out at the end of 2016, Vim users needed a solid backup plan if they were to get one of the new laptops. Harry Roberts has put together some really nice things to consider with regards to the escape key:
 
 > For almost as long as I’ve been using Vim–which is [a long time now](http://csswizardry.com/2014/06/vim-for-people-who-think-things-like-vim-are-weird-and-hard/)–I’ve been using `jj` and `jk` to leave Insert mode. These mappings are on the [Home Row](https://en.wikipedia.org/wiki/Touch_typing#Home_row), so always easy to reach, and the letter pairs very rarely (if ever) occur in the English language. If there were words that contained `jj` and `jk` next to each other then I would be flung straight into Normal mode any time I tried to write them. (The reason I haven’t mapped `kk` to Escape is because it does occur within words, e.g. bookkeeper.
 
