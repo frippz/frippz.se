@@ -21,7 +21,7 @@
    * Header (banner)
    */
   [role="banner"] {
-    background: #efefef;
+    background: rgba(237, 214, 180, 0.2);
     padding: 0;
   }
 
@@ -67,6 +67,10 @@
    */
   [role="article"] + [role="article"] {
     margin-top: 2em;
+  }
+
+  [itemprop="articleBody"] a {
+    color: #b60000;
   }
 
   .article-end {
@@ -197,7 +201,7 @@
    */
   [role="contentinfo"] {
     background: #333;
-    color: #9ac39f;
+    color: #edd6b4;
     padding: 2em 0;
   }
 
@@ -209,7 +213,7 @@
 
   [role="contentinfo"] a,
   [role="contentinfo"] a:visited {
-    color: #9ac39f;
+    color: currentcolor;
     text-decoration: none;
   }
 
@@ -223,7 +227,6 @@
     fill: currentcolor;
     display: inline-block;
     margin-right: 0.25em;
-    vertical-align: -0.2em;
   }
 
   /* Footer links */
@@ -283,53 +286,27 @@
   }
 
   /**
-   * Super cool rainbow banner!
+   * Rainbow banner
    */
   [role="banner"]::before {
     background-image: linear-gradient(
       to right,
-      #142a06 0,
-      #142a06 5.55%,
-      #23436e 5.55%,
-      #23436e 11.1%,
-      #276686 11.1%,
-      #276686 16.65%,
-      #2e849d 16.65%,
-      #2e849d 22.2%,
-      #5690a5 22.2%,
-      #5690a5 27.75%,
-      #29416e 27.75%,
-      #29416e 33.3%,
-      #413264 33.3%,
-      #413264 38.85%,
-      #6d416d 38.85%,
-      #6d416d 44.4%,
-      #8a2f5c 44.4%,
-      #8a2f5c 49.95%,
-      #bb426b 49.95%,
-      #bb426b 55.5%,
-      #9c2c52 55.5%,
-      #9c2c52 61.05%,
-      #a43941 61.05%,
-      #a43941 66.6%,
-      #b46839 66.6%,
-      #b46839 72.15%,
-      #b08f42 72.15%,
-      #b08f42 77.7%,
-      #869956 77.7%,
-      #869956 83.25%,
-      #437e4c 83.25%,
-      #437e4c 88.8%,
-      #327344 88.8%,
-      #327344 94.35%,
-      #19372c 94.35%,
-      #19372c 99.9%,
-      #172327 99.9%,
-      #172327 100%
+      #539770 0,
+      #539770 16.66%,
+      #4b7d74 16.66%,
+      #4b7d74 33.32%,
+      #8dc2bc 33.32%,
+      #8dc2bc 49.98%,
+      #edd6b4 49.98%,
+      #edd6b4 66.64%,
+      #be7467 66.64%,
+      #be7467 83.3%,
+      #e2ae63 83.3%,
+      #e2ae63 100%
     );
-    background-repeat: no-repeat;
-    background-size: 100% 0.75em;
-    content: " ";
+    background-repeat: repeat-x;
+    background-size: 100% 0.5em;
+    content: "";
     display: block;
     height: 0.75em;
     left: 0;
@@ -447,7 +424,7 @@
     fill: currentcolor;
     height: 1.2em;
     width: 1.2em;
-    vertical-align: top;
+    vertical-align: -0.2em;
   }
 
   /**
@@ -490,6 +467,17 @@
   }
 
 }/* END @media only screen */
+
+@media only screen and (min-width: 42em) {
+
+  /**
+   * Rainbow banner
+   */
+  [role="banner"]::before {
+    background-size: 50% 0.5em;
+  }
+
+}
 
 @media only screen and (max-width: 28em) {
 
