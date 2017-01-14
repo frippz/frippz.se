@@ -9,34 +9,45 @@ sitemap:
 ---
 
 {% for post in paginator.posts %}
-<div role="article" itemscope itemtype="http://schema.org/BlogPosting">
-  <h2 itemprop="headline">
-    {% if post.external-link %}
-      <a href="{{ post.external-link }}" rel="external">{{ post.title }}</a>
-      <svg class="svg-icon" height="16" width="16" aria-hidden="true">
-        <use xlink:href="#icon-external"></use>
-      </svg>
-    {% else %}
-      <a href="{{ post.url | prepend: site.baseurl }}" class="article-link">{{ post.title }}</a>
-    {% endif %}
-  </h2>
-  <small class="post-info">
-    <em>Posted on <time datetime="{{ post.date | date: '%Y-%m-%d' }}" itemprop="datePublished">{{ post.date | date: '%B %-d, %Y' }}</time></em>
-    <a class="permalink" href="{{ post.url | prepend: site.baseurl }}" title="Permalink" aria-label="Permalink">
-      <svg class="svg-icon" height="16" width="16" aria-hidden="true">
-        <use xlink:href="#icon-link"></use>
-      </svg>
-    </a>
-  </small>
-  <meta itemprop="author" content="{{ page.author }}">
-  <meta itemprop="publisher" content="{{ page.author }}">
-  <meta itemprop="url" content="{{ site.url}}{{ post.url }}">
-  <link itemprop="mainEntityOfPage" href="{{ site.url}}{{ post.url }}">
-  <meta itemprop="description" content="{{ post.excerpt | strip_html }}">
+<article role="article" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    <h2 itemprop="headline">
+      {% if post.external-link %}
+        <a href="{{ post.external-link }}" rel="external">{{ post.title }}</a>
+        <svg class="svg-icon" height="16" width="16" aria-hidden="true">
+          <use xlink:href="#icon-external"></use>
+        </svg>
+      {% else %}
+        <a href="{{ post.url | prepend: site.baseurl }}" class="article-link">{{ post.title }}</a>
+      {% endif %}
+    </h2>
+    <small class="post-info">
+      <em>Posted on <time datetime="{{ post.date | date: '%Y-%m-%d' }}" itemprop="datePublished">{{ post.date | date: '%B %-d, %Y' }}</time></em>
+      <a class="permalink" href="{{ post.url | prepend: site.baseurl }}" title="Permalink" aria-label="Permalink">
+        <svg class="svg-icon" height="16" width="16" aria-hidden="true">
+          <use xlink:href="#icon-link"></use>
+        </svg>
+      </a>
+    </small>
+    <meta itemprop="author" content="{{ page.author }}">
+    <meta itemprop="publisher" content="{{ page.author }}">
+    <meta itemprop="url" content="{{ site.url}}{{ post.url }}">
+    <link itemprop="mainEntityOfPage" href="{{ site.url}}{{ post.url }}">
+    <meta itemprop="description" content="{{ post.excerpt | strip_html }}">
+  </header>
   <div itemprop="articleBody">
     {{ post.content }}
   </div>
-</div>
+  {% comment %}
+  <footer>
+    {% if page.tags %}
+      <p class="post-tags">
+      <em><strong>Tagged with:</strong> <span itemprop="keywords">{{ page.tags | join: ', ' }}</span></em>
+      </p>
+    {% endif %}
+  </footer>
+  {% endcomment %}
+</article>
 <div class="article-end" aria-hidden="true">✦</div>
 {% endfor %}
 
