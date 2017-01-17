@@ -32,7 +32,6 @@
     "gulp-watch": "^4.3.11",
     "htmlhint-stylish": "^1.0.3",
     "live-server": "^1.2.0",
-    "postcss-custom-properties": "^5.0.1",
-    "syncy": "^2.2.0"
+    "postcss-custom-properties": "^5.0.1"
   }
 }
