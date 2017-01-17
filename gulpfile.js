@@ -21,7 +21,6 @@ var gulp             = require('gulp'),
     customProperties = require('postcss-custom-properties'),
     eslint           = require('gulp-eslint'),
     liveServer       = require('live-server'),
-    syncy            = require('syncy'),
     hashsum          = require('gulp-hashsum'),
     stylelint        = require('gulp-stylelint'),
     svgSprite        = require('gulp-svg-sprite'),
@@ -34,9 +33,6 @@ var paths = {
   jsFiles: ['./src/js/**/*.js'],
   cssFiles: ['./src/css/**/*.css'],
 
-  // Static assets
-  images: ['./src/i/**'],
-
   // SVG icons
   svg: ['./src/svg/**/*.svg'],
 
@@ -47,7 +43,6 @@ var paths = {
   // Destinations
   jsDest: './gui/js/',
   cssDest: './gui/css/',
-  imgDest: './gui/i',
   svgDest: './_includes/',
 
   // Jekyll build files
@@ -165,23 +160,12 @@ gulp.task('watch', function () {
   watch(paths.jsFiles, function () {
     gulp.start(['js', 'eslint']);
   });
-  watch(paths.images, function () {
-    gulp.start(['images']);
-  });
   watch(paths.svg, function () {
     gulp.start(['svg-sprite']);
   });
   watch(paths.jekyllBuild, function () {
     gulp.start(['jekyll-build']);
   });
-});
-
-// Copy image assets to /gui
-gulp.task('images', function () {
-  syncy(paths.images, paths.imgDest, {
-    base: './src/i/'
-  })
-    .catch(console.error);
 });
 
 // Jekyll
@@ -207,10 +191,10 @@ gulp.task('live-server', function () {
 });
 
 // Build
-gulp.task('build', ['css', 'js', 'images', 'svg-sprite', 'jekyll-build']);
+gulp.task('build', ['css', 'js', 'svg-sprite', 'jekyll-build']);
 
 // Deploy
-gulp.task('deploy', ['css', 'js', 'images', 'svg-sprite']);
+gulp.task('deploy', ['css', 'js', 'svg-sprite']);
 
 // Default
 gulp.task('default', ['build', 'watch', 'live-server']);
