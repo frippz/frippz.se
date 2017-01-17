@@ -3,10 +3,12 @@
   "version": "1.4.1-build2",
   "description": "My quaint little blog",
   "main": "index.html",
+  "engine": "node 6.8.0",
   "scripts": {
     "start": "gulp",
     "build": "gulp build",
-    "deploy": "gulp deploy"
+    "deploy": "gulp deploy",
+    "test": ""
   },
   "repository": {
     "type": "git",
