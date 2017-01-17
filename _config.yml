@@ -47,3 +47,4 @@ exclude:
   - 'gulpfile.js'
   - 'Gemfile'
   - 'Gemfile.lock'
+  - 'yarn.lock'
