@@ -57,6 +57,7 @@ var paths = {
     '_data/**.*+(yml|yaml|csv|json)',
     '!dist/**/*.*',
     '!_site/**/*.*',
+    '!node_modules',
     '!README.md'
   ]
 
