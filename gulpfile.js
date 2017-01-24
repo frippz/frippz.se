@@ -184,7 +184,7 @@ gulp.task('live-server', function () {
     host: '0.0.0.0',
     root: '_site',
     open: false,
-    quiet: true,
+    logLevel: 0,
     file: 'index.html',
     wait: 500
   });
