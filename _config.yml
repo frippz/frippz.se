@@ -37,6 +37,7 @@ jekyll-archives:
 # Exclude
 exclude:
   - 'node_modules'
+  - 'script'
   - 'Makefile'
   - 'package.json'
   - 'lib'
@@ -48,3 +49,4 @@ exclude:
   - 'Gemfile'
   - 'Gemfile.lock'
   - 'yarn.lock'
+  - [vendor]
