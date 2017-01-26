@@ -3,11 +3,8 @@ rvm:
 - 2.3.0
 
 before_install:
-  # install v6.x of nodejs
    - nvm install 6
-  #install yarn globally
    - npm install -g yarn
-  # yarn install is like npm install
    - yarn
 
 cache:
