@@ -49,4 +49,4 @@ exclude:
   - 'Gemfile'
   - 'Gemfile.lock'
   - 'yarn.lock'
-  - [vendor]
+  - 'vendor'
