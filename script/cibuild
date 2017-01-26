@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -e
 
+yarn run deploy
 bundle exec jekyll build --incremental
 bundle exec htmlproofer ./_site --disable-external
