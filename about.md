@@ -29,8 +29,8 @@ Feeling the need to get in touch with me? Have a business inquiry? Don’t hesit
 
 #### Don’t bother contacting me if
 
-* You are a faceless mass-recruiter. I will not reply to you and blacklist your email.
-* You want to write guest post or “collaborate”, whatever that actually means.
+* You are a faceless mass-recruiter. I will not reply to you and I will blacklist your email.
+* You want to write a guest post or “collaborate”, whatever that actually means.
 
 ### Hey, what’s a ”frippz”?
 
