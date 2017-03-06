@@ -111,9 +111,9 @@ If you wish to give me feedback on this, feel free to hit me up on [Twitter](htt
 
 **_Update (2016-02-10):_** I’ve added two screenshots to showcase the difference between the two modes, should you have any issues toggling the looks of my own journal.
 
-{% include image.html url="https://dl.dropboxusercontent.com/u/817490/frippz.se/frippz.se-without-dyslexic-mode.png" caption="Pictured above: frippz.se without dyslexic mode" %}
+{% include image.html url="//frippz-se.s3.amazonaws.com/frippz.se-without-dyslexic-mode.png" caption="Pictured above: frippz.se without dyslexic mode" %}
 
-{% include image.html url="https://dl.dropboxusercontent.com/u/817490/frippz.se/frippz.se-with-dyslexic-mode.png" caption="Pictured above: frippz.se with dyslexic mode" %}
+{% include image.html url="//frippz-se.s3.amazonaws.com/frippz.se-with-dyslexic-mode.png" caption="Pictured above: frippz.se with dyslexic mode" %}
 
 **_Update (2016-02-11):_** [Kseso](https://twitter.com/kseso) did an [alternative solution](http://codepen.io/Kseso/pen/NxedYR?editors=1100) using only HTML and CSS. While my current solution does use modern DOM API:s, it can pretty easily be adapted to support legacy browsers as well. Kseso’s solution relies on the `:checked` pseudo class, which limits the implementation possibilities a bit and won’t work in IE8 and below. Depending on your particular situation, this isn’t necessarily a problem.
 
