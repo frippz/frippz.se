@@ -21,13 +21,14 @@
    * Header (banner)
    */
   [role="banner"] {
-    background: rgba(237, 214, 180, 0.2);
+    background: #83261c;
+    color: #fff;
     padding: 0;
   }
 
   .main-title {
-    font-size: 2.3em;
-    font-weight: 400;
+    font-size: 2.4em;
+    font-weight: 200;
     line-height: 1.125;
     padding: 0.75em 0 0.5em;
   }
@@ -40,9 +41,6 @@
    * Navigation
    */
   [role="navigation"] {
-    background: #fff;
-    border: 0 solid #ccc;
-    border-width: 1px 0 1px 0;
     margin-top: 0;
   }
 
@@ -58,7 +56,6 @@
   }
 
   #main-nav a {
-    font-weight: 600;
     text-decoration: none;
   }
 
@@ -74,11 +71,11 @@
   }
 
   [role="article"] a {
-    color: #b60000;
+    color: #83261c;
   }
 
   .article-end {
-    color: #eee;
+    color: rgba(0, 0, 0, 0.08);
     padding: 2em 0;
     text-align: center;
   }
@@ -96,7 +93,7 @@
 
   /* Icon for external links */
   [rel="external"] + .svg-icon {
-    fill: #bbb;
+    fill: rgba(0, 0, 0, 0.2);
     margin: 0;
     vertical-align: middle;
     height: 0.65em;
@@ -290,36 +287,6 @@
   }
 
   /**
-   * Rainbow banner
-   */
-  [role="banner"]::before {
-    background-image: linear-gradient(
-      to right,
-      #539770 0,
-      #539770 16.66%,
-      #4b7d74 16.66%,
-      #4b7d74 33.32%,
-      #8dc2bc 33.32%,
-      #8dc2bc 49.98%,
-      #edd6b4 49.98%,
-      #edd6b4 66.64%,
-      #be7467 66.64%,
-      #be7467 83.3%,
-      #e2ae63 83.3%,
-      #e2ae63 100%
-    );
-    background-repeat: repeat-x;
-    background-size: 100% 0.5em;
-    content: "";
-    display: block;
-    height: 0.75em;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
-
-  /**
    * Older & newer articles navigation
    */
   .more-articles {
@@ -371,7 +338,7 @@
   blockquote {
     margin: 0 1em 1em;
     padding-left: 0.75em;
-    border-left: 4px solid #eee;
+    border-left: 4px solid rgba(0, 0, 0, 0.08);
     color: #595959;
   }
 
