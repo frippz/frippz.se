@@ -22,7 +22,6 @@
     "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.2",
     "gulp-eslint": "^3.0.1",
-    "gulp-hashsum": "^1.1.0",
     "gulp-if": "^2.0.2",
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^6.3.0",
@@ -35,5 +34,10 @@
     "htmlhint-stylish": "^1.0.3",
     "live-server": "^1.2.0",
     "postcss-custom-properties": "^5.0.1"
+  },
+  "dependencies": {
+    "del": "^2.2.2",
+    "gulp-clean-dest": "^0.2.0",
+    "gulp-rev": "^7.1.2"
   }
 }

@@ -21,9 +21,10 @@ var gulp             = require('gulp'),
     customProperties = require('postcss-custom-properties'),
     eslint           = require('gulp-eslint'),
     liveServer       = require('live-server'),
-    hashsum          = require('gulp-hashsum'),
     stylelint        = require('gulp-stylelint'),
     svgSprite        = require('gulp-svg-sprite'),
+    rev              = require('gulp-rev'),
+    del              = require('del'),
     exec             = require('child_process').exec;
 
 // Configur paths
@@ -72,8 +73,13 @@ var onError = function (err) {
 // Check for production
 var isProduction = process.env.NODE_ENV === 'production';
 
+// Clean CSS dist
+gulp.task('css:clean', function () {
+  return del(paths.cssDest + '*');
+});
+
 // Process stylesheets
-gulp.task('css', function () {
+gulp.task('css:build', function () {
   return gulp.src(paths.cssFiles)
     .pipe(plumber({
       errorHandler: onError
@@ -94,13 +100,20 @@ gulp.task('css', function () {
     .pipe(cssnano({
       discardComments: { removeAll: true }
     }))
-    .pipe(hashsum({ filename: './_data/cache_bust_css.yml', hash: 'md5' }))
     .pipe(gulpif(!isProduction, sourcemaps.write()))
-    .pipe(gulp.dest(paths.cssDest));
+    .pipe(rev())
+    .pipe(gulp.dest(paths.cssDest))
+    .pipe(rev.manifest())
+    .pipe(gulp.dest('./_data/css'));
+});
+
+// Clean JS dist
+gulp.task('js:clean', function () {
+  return del(paths.jsDest + '*');
 });
 
 // Concatenate and minify JavaScript
-gulp.task('js', function () {
+gulp.task('js:build', function () {
   return gulp.src(paths.jsFiles)
     .pipe(plumber({
       errorHandler: onError
@@ -110,9 +123,11 @@ gulp.task('js', function () {
     .pipe(sourcemaps.init())
     .pipe(concat(paths.jsOutput))
     .pipe(uglify())
-    .pipe(hashsum({ filename: './_data/cache_bust_js.yml', hash: 'md5' }))
     .pipe(gulpif(!isProduction, sourcemaps.write('.')))
-    .pipe(gulp.dest(paths.jsDest));
+    .pipe(rev())
+    .pipe(gulp.dest(paths.jsDest))
+    .pipe(rev.manifest())
+    .pipe(gulp.dest('./_data/js'));
 });
 
 // SVG sprite generation
@@ -190,6 +205,12 @@ gulp.task('live-server', function () {
     wait: 500
   });
 });
+
+// CSS
+gulp.task('css', ['css:clean', 'css:build']);
+
+// JS
+gulp.task('js', ['js:clean', 'js:build']);
 
 // Build
 gulp.task('build', ['css', 'js', 'svg-sprite', 'jekyll-build']);

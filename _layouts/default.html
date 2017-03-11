@@ -21,6 +21,6 @@
 
   {% include sprite-symbol.svg %}
 
-<script src="{{ site.baseurl }}/gui/js/main.js?version={{ site.data.cache_bust_js | truncate: 10, '' }}" defer></script>
+  <script src="{{ site.baseurl }}/gui/js/{{ site.data.js.rev-manifest['main.js'] }}" defer></script>
 </body>
 </html>
