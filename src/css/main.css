@@ -59,6 +59,12 @@
     text-decoration: none;
   }
 
+  #main-nav a:hover,
+  #main-nav a:focus,
+  #main-nav a:active {
+    text-decoration: underline;
+  }
+
   /**
    * Articles
    */
