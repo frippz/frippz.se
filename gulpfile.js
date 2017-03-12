@@ -12,8 +12,7 @@ var gulp             = require('gulp'),
     gutil            = require('gulp-util'),
     plumber          = require('gulp-plumber'),
     sourcemaps       = require('gulp-sourcemaps'),
-    autoprefixer     = require('gulp-autoprefixer'),
-    cssnano          = require('gulp-cssnano'),
+    cleanCSS         = require('gulp-clean-css'),
     concat           = require('gulp-concat'),
     uglify           = require('gulp-uglify'),
     postcss          = require('gulp-postcss'),
@@ -91,15 +90,9 @@ gulp.task('css:build', function () {
       }]
     }))
     .pipe(sourcemaps.init())
-    .pipe(autoprefixer({
-      browsers: ['last 2 versions'],
-      cascade: false
-    }))
     .pipe(postcss([customProperties()]))
     .pipe(concat(paths.cssOutput))
-    .pipe(cssnano({
-      discardComments: { removeAll: true }
-    }))
+    .pipe(cleanCSS())
     .pipe(gulpif(!isProduction, sourcemaps.write()))
     .pipe(rev())
     .pipe(gulp.dest(paths.cssDest))

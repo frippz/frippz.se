@@ -18,9 +18,7 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
     "gulp-concat": "^2.6.1",
-    "gulp-cssnano": "^2.1.2",
     "gulp-eslint": "^3.0.1",
     "gulp-if": "^2.0.2",
     "gulp-plumber": "^1.1.0",
@@ -37,6 +35,7 @@
   },
   "dependencies": {
     "del": "^2.2.2",
+    "gulp-clean-css": "^3.0.3",
     "gulp-clean-dest": "^0.2.0",
     "gulp-rev": "^7.1.2"
   }
