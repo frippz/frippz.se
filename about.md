@@ -25,7 +25,7 @@ I'm also using encryption via SSL provided by [Let’s Encrypt](https://letsencr
 
 #### Statistics and tracking
 
-The only tracking I perform on this site is via the server logs. I have no tracking scripts installed and I doubt that I would ever install one either. I'm really not interested in what you have done in any greater detail, more than what pages you visit on _this site_, and possibly whether you came from a search engine or some other site. All of these things are all found through the server logs and there’s no need for any intrusive tracking scripts. Also, since those scripts can be blocked (or be asked not to track you, which one should respect) they aren’t very reliable.
+The only tracking I perform on this site is via the server logs. I have no tracking scripts installed and I doubt that I would ever install one either. I'm really not interested in what you have done in any greater detail, more than what pages you visit on _this site_, and possibly whether you came from a search engine or some other site. All of these things are found through the server logs and there’s no need for any intrusive tracking scripts. Also, since those scripts can be blocked (or be asked not to track you, which one should respect) they aren’t very reliable.
 
 ### Getting in touch
 
