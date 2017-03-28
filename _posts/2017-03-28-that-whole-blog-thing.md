@@ -1,5 +1,5 @@
 ---
-title: That whole "blog" thing
+title: That whole “blog” thing
 description: Twitter threads are awful and blogs are awesome
 tags:
   - blogging
