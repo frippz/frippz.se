@@ -191,11 +191,12 @@ gulp.task('live-server', function () {
   liveServer.start({
     port: 4000,
     host: '0.0.0.0',
+    ignore: '**/*',
     root: '_site',
     open: false,
     logLevel: 0,
     file: 'index.html',
-    wait: 500
+    wait: 1000
   });
 });
 
