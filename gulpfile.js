@@ -41,8 +41,8 @@ var paths = {
   cssOutput: 'styles.css',
 
   // Destinations
-  jsDest: './gui/js/',
-  cssDest: './gui/css/',
+  jsDest: './dist/js/',
+  cssDest: './dist/css/',
   svgDest: './_includes/',
 
   // Jekyll build files
