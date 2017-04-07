@@ -1,2 +1,0 @@
-function numberedLines(){for(var e=document.querySelectorAll("pre"),n=e.length,r=0;r<n;r++){e[r].insertAdjacentHTML("beforeend",'<span class="ln" aria-hidden="true"></span>');for(var t=e[r].innerHTML.split(/\n/).length,s=1;s<t;s++){var a=e[r].querySelector(".ln");a.insertAdjacentHTML("beforeend","<span></span>")}}}"querySelector"in document&&"classList"in document.createElement("a")&&"addEventListener"in window&&(document.querySelector("html").classList.add("js"),numberedLines());
-//# sourceMappingURL=main.js.map
