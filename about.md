@@ -33,7 +33,7 @@ I’ve decided to give Google Analytics another go based on some interesting fee
 
 Feeling the need to get in touch with me? Have a business inquiry? Don’t hesitate to shoot me an email at [contact@frippz.se](mailto:contact@frippz.se). I have limited availability for smaller front end related projects from time to time.
 
-#### Don’t bother contacting me if
+#### Please don’t bother contacting me if
 
 * You are a faceless mass-recruiter. I will not reply to you and I will blacklist your email.
 * You want to write a guest post or “collaborate”, whatever that actually means.
