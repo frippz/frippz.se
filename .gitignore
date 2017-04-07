@@ -5,7 +5,7 @@ _data/*/rev-manifest.json
 .jekyll-metadata
 
 # Generated stuff
-gui
+dist
 
 # Node stuff
 node_modules
