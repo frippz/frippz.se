@@ -1,6 +1,6 @@
 {
   "name": "frippz",
-  "version": "1.5.1-build8",
+  "version": "1.5.1-build9",
   "description": "My quaint little blog",
   "main": "index.html",
   "engine": "node 6.8.0",
