@@ -1,9 +1,11 @@
 {
   "name": "frippz",
-  "version": "1.5.1-build9",
+  "version": "1.5.2-build1",
   "description": "My quaint little blog",
   "main": "index.html",
-  "engine": "node 6.8.0",
+  "engines": {
+    "node": "6.8.0"
+  },
   "scripts": {
     "start": "gulp",
     "build": "gulp build",
