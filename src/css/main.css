@@ -20,12 +20,13 @@
   /**
    * Header
    */
-  header {
+  #header {
     background: #83261c;
     color: #fff;
     padding: 0;
   }
 
+  /* Main title */
   .main-title {
     font-size: 2.4em;
     font-weight: 200;
@@ -204,31 +205,31 @@
   /**
    * Contentinfo
    */
-  footer {
+  #footer {
     background: #333;
     color: #edd6b4;
     padding: 2em 0;
   }
 
-  footer .landmark-content {
+  #footer .landmark-content {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
   }
 
-  footer a,
-  footer a:visited {
+  #footer a,
+  #footer a:visited {
     color: currentcolor;
     text-decoration: none;
   }
 
-  footer a:hover,
-  footer a:focus,
-  footer a:active {
+  #footer a:hover,
+  #footer a:focus,
+  #footer a:active {
     color: #efefef;
   }
 
-  footer .svg-icon {
+  #footer .svg-icon {
     fill: currentcolor;
     display: inline-block;
     margin-right: 0.25em;
