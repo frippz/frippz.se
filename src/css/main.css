@@ -18,14 +18,15 @@
   }
 
   /**
-   * Header (banner)
+   * Header
    */
-  [role="banner"] {
+  #header {
     background: #83261c;
     color: #fff;
     padding: 0;
   }
 
+  /* Main title */
   .main-title {
     font-size: 2.4em;
     font-weight: 200;
@@ -40,7 +41,7 @@
   /**
    * Navigation
    */
-  [role="navigation"] {
+  nav {
     margin-top: 0;
   }
 
@@ -68,15 +69,15 @@
   /**
    * Articles
    */
-  [role="article"] + [role="article"] {
+  article + article {
     margin-top: 2em;
   }
 
-  [role="article"] h2 a {
+  article h2 a {
     color: currentcolor;
   }
 
-  [role="article"] a {
+  article a {
     color: #83261c;
   }
 
@@ -124,7 +125,7 @@
   }
 
   /* Editorial lists */
-  [role="article"] li + li {
+  article li + li {
     margin-top: 0.5em;
   }
 
@@ -204,31 +205,31 @@
   /**
    * Contentinfo
    */
-  [role="contentinfo"] {
+  #footer {
     background: #333;
     color: #edd6b4;
     padding: 2em 0;
   }
 
-  [role="contentinfo"] .landmark-content {
+  #footer .landmark-content {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
   }
 
-  [role="contentinfo"] a,
-  [role="contentinfo"] a:visited {
+  #footer a,
+  #footer a:visited {
     color: currentcolor;
     text-decoration: none;
   }
 
-  [role="contentinfo"] a:hover,
-  [role="contentinfo"] a:focus,
-  [role="contentinfo"] a:active {
+  #footer a:hover,
+  #footer a:focus,
+  #footer a:active {
     color: #efefef;
   }
 
-  [role="contentinfo"] .svg-icon {
+  #footer .svg-icon {
     fill: currentcolor;
     display: inline-block;
     margin-right: 0.25em;
@@ -308,11 +309,11 @@
   /**
    * Custom error page (404)
    */
-  .not-found [role="article"] {
+  .not-found article {
     text-align: center;
   }
 
-  .not-found [role="article"] #svg-404 {
+  .not-found article #svg-404 {
     fill: #ccc;
     height: 8.5em;
   }
@@ -335,7 +336,7 @@
    */
 
   /* Initialiazing a 'footnotes' counter on the wrapper */
-  [role="article"] {
+  article {
     counter-reset: footnotes;
   }
 
@@ -418,22 +419,11 @@
     min-height: 100vh;
   }
 
-  [role="main"] {
+  main {
     flex: 1 0 auto;
   }
 
 }/* END @media only screen */
-
-@media only screen and (min-width: 42em) {
-
-  /**
-   * Rainbow banner
-   */
-  [role="banner"]::before {
-    background-size: 50% 0.5em;
-  }
-
-}
 
 @media only screen and (max-width: 28em) {
 
@@ -467,7 +457,7 @@
   }
 
   /* Stack footer links */
-  [role="contentinfo"] .landmark-content,
+  #footer .landmark-content,
   .social,
   .subscribe {
     display: block;
