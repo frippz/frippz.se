@@ -457,7 +457,7 @@
   }
 
   /* Stack footer links */
-  footer .landmark-content,
+  #footer .landmark-content,
   .social,
   .subscribe {
     display: block;
