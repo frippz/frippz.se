@@ -13,6 +13,18 @@
     margin-top: 1.75em;
   }
 
+  /* Default owl reset */
+  body,
+  br,
+  li,
+  dt,
+  dd,
+  th,
+  td,
+  option {
+    margin-top: 0;
+  }
+
   /**
    * HTML5 elements legacy reset
    */
