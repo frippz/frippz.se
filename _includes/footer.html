@@ -45,7 +45,15 @@
           <svg class="svg-icon" height="16" width="16">
             <use xlink:href="#icon-feed"></use>
           </svg>
-          Subscribe
+          Atom feed
+        </a>
+      </li>
+      <li>
+        <a href="{{ "/feed.json" | prepend: site.baseurl | prepend: site.url }}">
+          <svg class="svg-icon" height="16" width="16">
+            <use xlink:href="#icon-json-feed"></use>
+          </svg>
+          JSON feed
         </a>
       </li>
     </ul>
