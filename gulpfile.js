@@ -52,7 +52,7 @@ var paths = {
   jekyllBuild: [
     '**/*.html',
     '**/*.+(md|markdown|MD)',
-    '**/*.xml',
+    '**/*.+(xml|json)',
     'src/**/*.*',
     '_data/**.*+(yml|yaml|csv|json)',
     '!dist/**/*.*',
