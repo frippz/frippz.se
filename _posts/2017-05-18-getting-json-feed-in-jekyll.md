@@ -10,7 +10,7 @@ published: 2017-05-18 09:30:00 +0100
 date: 2017-05-18 09:30:00 +0100
 ---
 
-With regard to the previous post, here’s how I cooked up a Jekyll template for JSON Feed:
+[With regard to the previous post](/2017/05/18/json-feed/), here’s how I cooked up a Jekyll template for JSON Feed:
 
 {% raw %}
 
