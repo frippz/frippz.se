@@ -23,15 +23,15 @@ sitemap:
 ---
 {
   "version" : "https://jsonfeed.org/version/1",
-  "title" : "frippz.se",
-  "home_page_url" : "https://frippz.se/",
-  "feed_url" : "https://frippz.se/feed.json",
+  "title" : {{ site.title | jsonify }},
+  "home_page_url" : {{ site.url | jsonify }},
+  "feed_url" : {{ "/feed.json" | prepend: site.baseurl | prepend: site.url | jsonify }},
   "author" : {
     "url" : "https://twitter.com/frippz",
     "name" : "Fredrik Frodlund"
   },
-  "icon" : "https://frippz.se/apple-touch-icon.png",
-  "favicon" : "https://frippz.se/favicon-32x32.png",
+  "icon" : {{ "/apple-touch-icon.png" | prepend: site.baseurl | prepend: site.url | jsonify }}
+  "favicon" : {{ "/favicon-32x32.png" | prepend: site.baseurl | prepend: site.url | jsonify }}
   "items" : [
   {% for post in site.posts limit:100 %}
     {
@@ -45,7 +45,7 @@ sitemap:
       "author" : {
         "name" : "Fredrik Frodlund"
       },
-      "content_html": {{ post.content | xml_escape | jsonify }}
+      "content_html": {{ post.content | jsonify }}
     }{% if forloop.last == false %},{% endif %}
   {% endfor %}
   ]
@@ -55,3 +55,5 @@ sitemap:
 {% endraw %}
 
 It’s a pretty quick and dirty port of my [feed.xml template](https://github.com/frippz/frippz.se/blob/master/feed.xml), but it seems to work. You can get the above [code snippet directly on Github](https://github.com/frippz/frippz.se/blob/master/feed.json) as well, but the syntax highlighter doesn’t like the YAML front matter and Liquid template tags too much, so it looks a bit ugly.
+
+**_Update (2017-05-19):_** I’ve updated the code snippet a bit with more Jekyll tags for a more dynamic solution (like `site.url` and so on). Liquid template offers a great filter called `jsonify` that I’m using wherever applicable.
