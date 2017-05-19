@@ -28,7 +28,7 @@ sitemap:
       "author" : {
         "name" : "Fredrik Frodlund"
       },
-      "content_html": {{ post.content | jsonify }}
+      "content_html": "{{ post.content }}"
     }{% if forloop.last == false %},{% endif %}
   {% endfor %}
   ]
