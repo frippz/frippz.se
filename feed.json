@@ -13,8 +13,8 @@ sitemap:
     "url" : "https://twitter.com/frippz",
     "name" : "Fredrik Frodlund"
   },
-  "icon" : "https://frippz.se/apple-touch-icon.png",
-  "favicon" : "https://frippz.se/favicon-32x32.png",
+  "icon" : {{ "/apple-touch-icon.png" | prepend: site.baseurl | prepend: site.url | jsonify }}
+  "favicon" : {{ "/favicon-32x32.png" | prepend: site.baseurl | prepend: site.url | jsonify }}
   "items" : [
   {% for post in site.posts limit:100 %}
     {
