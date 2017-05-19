@@ -23,17 +23,17 @@ sitemap:
 ---
 {
   "version" : "https://jsonfeed.org/version/1",
-  "title" : {{ site.title | jsonify }},
-  "home_page_url" : {{ site.url | jsonify }},
-  "feed_url" : {{ "/feed.json" | prepend: site.baseurl | prepend: site.url | jsonify }},
+  "title" : "{{ site.title }}",
+  "home_page_url" : "{{ site.url }}",
+  "feed_url" : "{{ "/feed.json" | prepend: site.baseurl | prepend: site.url }}",
   "author" : {
     "url" : "https://twitter.com/frippz",
     "name" : "Fredrik Frodlund"
   },
-  "icon" : {{ "/apple-touch-icon.png" | prepend: site.baseurl | prepend: site.url | jsonify }}
-  "favicon" : {{ "/favicon-32x32.png" | prepend: site.baseurl | prepend: site.url | jsonify }}
+  "icon" : "{{ "/apple-touch-icon.png" | prepend: site.baseurl | prepend: site.url }}",
+  "favicon" : "{{ "/favicon-32x32.png" | prepend: site.baseurl | prepend: site.url }}",
   "items" : [
-  {% for post in site.posts limit:100 %}
+  {% for post in site.posts limit:10 %}
     {
       "title" : {{ post.title | jsonify }},
       "date_published" : "{{ post.date | date_to_rfc822 }}",
