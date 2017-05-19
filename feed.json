@@ -6,9 +6,9 @@ sitemap:
 ---
 {
   "version" : "https://jsonfeed.org/version/1",
-  "title" : "frippz.se",
-  "home_page_url" : "https://frippz.se/",
-  "feed_url" : "https://frippz.se/feed.json",
+  "title" : {{ site.title | jsonify }},
+  "home_page_url" : {{ site.url | jsonify }},
+  "feed_url" : {{ "/feed.json" | prepend: site.baseurl | prepend: site.url | jsonify }},
   "author" : {
     "url" : "https://twitter.com/frippz",
     "name" : "Fredrik Frodlund"
@@ -28,7 +28,7 @@ sitemap:
       "author" : {
         "name" : "Fredrik Frodlund"
       },
-      "content_html": {{ post.content | xml_escape | jsonify }}
+      "content_html": {{ post.content | jsonify }}
     }{% if forloop.last == false %},{% endif %}
   {% endfor %}
   ]
