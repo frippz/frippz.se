@@ -17,9 +17,6 @@ date: 2017-05-18 09:30:00 +0100
 ~~~liquid
 ---
 layout: null
-sitemap:
-  priority: 0.7
-  changefreq: weekly
 ---
 {
   "version" : "https://jsonfeed.org/version/1",
