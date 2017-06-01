@@ -165,7 +165,8 @@
   }
 
   /* Inline code */
-  p > code {
+  p > code,
+  li > code {
     background: #fff;
     border: 1px solid #f0dfaf;
     padding: 0.1em 0.2em;
