@@ -134,4 +134,9 @@ Use spans on grid items and try to get your grid to place your photos in a mason
 
 ### Lab 3
 
-Use `@supports` to handle legacy browser support.
+Use `@supports` ([MDN article](https://developer.mozilla.org/en-US/docs/Web/CSS/@supports)) to handle legacy browser support.
+~~~css
+@supports (display: grid) {
+  /* Grid stuff here */
+}
+~~~
