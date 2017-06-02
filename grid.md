@@ -131,3 +131,7 @@ Based on the previous lab, add a photo grid in the `<main>` element. Use the fol
 {% endraw %}
 
 Use spans on grid items and try to get your grid to place your photos in a masonry grid (hint: experiment with `grid-auto-flow` and see what you get).
+
+### Lab 3
+
+Use `@supports` to handle legacy browser support.
