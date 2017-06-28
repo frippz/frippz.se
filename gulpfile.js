@@ -2,8 +2,6 @@
  * gulpfile.js
  *
  * All the yummy build stuff!
- *
- * @author Fredrik Frodlund (contact@frippz.se)
  */
 
 // Requirements
@@ -91,10 +89,10 @@ gulp.task('css:build', function () {
     }))
     .pipe(sourcemaps.init())
     .pipe(postcss([customProperties()]))
-    .pipe(concat(paths.cssOutput))
+    .pipe(concat({ path: paths.cssOutput, cwd: '' }))
     .pipe(cleanCSS())
-    .pipe(gulpif(!isProduction, sourcemaps.write()))
     .pipe(rev())
+    .pipe(gulpif(!isProduction, sourcemaps.write('.')))
     .pipe(gulp.dest(paths.cssDest))
     .pipe(rev.manifest())
     .pipe(gulp.dest('./_data/css'));
@@ -114,10 +112,10 @@ gulp.task('js:build', function () {
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(sourcemaps.init())
-    .pipe(concat(paths.jsOutput))
+    .pipe(concat({ path: paths.jsOutput, cwd: '' }))
     .pipe(uglify())
-    .pipe(gulpif(!isProduction, sourcemaps.write('.')))
     .pipe(rev())
+    .pipe(gulpif(!isProduction, sourcemaps.write('.')))
     .pipe(gulp.dest(paths.jsDest))
     .pipe(rev.manifest())
     .pipe(gulp.dest('./_data/js'));
