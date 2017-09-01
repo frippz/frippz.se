@@ -39,8 +39,6 @@ exclude:
   - 'node_modules'
   - 'script'
   - 'package.json'
-  - 'lib'
-  - 'site_config.mk'
   - 'LICENSE.md'
   - 'README.md'
   - 'src'
