@@ -1,16 +1,30 @@
 {
   "name": "frippz",
-  "version": "1.5.3-build2",
+  "version": "1.6.0-build1",
   "description": "My quaint little blog",
   "main": "index.html",
   "engines": {
-    "node": "6.8.0"
+    "node": "6.11.1"
   },
   "scripts": {
-    "start": "gulp",
-    "build": "gulp build",
-    "deploy": "gulp deploy",
-    "test": ""
+    "start": "parallelshell 'yarn run build:watch' 'yarn run jekyll:serve'",
+    "prebuild": "yarn run dist:clean",
+    "build": "yarn run build:css & yarn run build:js & yarn run build:svg",
+    "build:watch": "onchange ./src/** ./assets/** -i -- yarn run build",
+    "build:css": "postcss ./src/css/styles.css -o ./dist/styles.css -c postcss.config.js",
+    "build:js": "uglifyjs ./src/js/*.js --compress --source-map \"url=inline\" -o ./dist/main.js",
+    "build:svg": "svg-sprite -C svg-sprite.config.json --dest ./_includes src/svg/*.svg",
+    "deploy:css": "postcss ./src/css/styles.css -c postcss.config.live.js | hashmark -l 8 'dist/styles.{hash}.css'",
+    "deploy:js": "uglifyjs ./src/js/*.js --compress | hashmark -l 8 'dist/main.{hash}.js'",
+    "lint": "yarn run lint:css && yarn run lint:js",
+    "lint:css": "stylelint src/css/**/*.css",
+    "lint:js": "eslint src/js/**/*.js",
+    "jekyll:serve": "jekyll serve",
+    "jekyll:build": "jekyll build",
+    "test": "yarn run lint",
+    "dist:clean": "mkdir -p ./dist && rm -rf ./dist/*",
+    "predeploy": "yarn run dist:clean",
+    "deploy": "yarn run deploy:css & yarn run deploy:js & yarn run build:svg && yarn run jekyll:build"
   },
   "repository": {
     "type": "git",
@@ -18,25 +32,17 @@
   },
   "author": "Fredrik Frodlund",
   "license": "ISC",
-  "dependencies": {
-    "del": "^2.2.2",
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^3.0.3",
-    "gulp-clean-dest": "^0.2.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-eslint": "^3.0.1",
-    "gulp-if": "^2.0.2",
-    "gulp-plumber": "^1.1.0",
-    "gulp-postcss": "^6.3.0",
-    "gulp-rev": "^7.1.2",
-    "gulp-sourcemaps": "^2.4.0",
-    "gulp-stylelint": "^3.6.0",
-    "gulp-svg-sprite": "^1.3.6",
-    "gulp-uglify": "^2.0.0",
-    "gulp-util": "^3.0.7",
-    "gulp-watch": "^4.3.11",
-    "htmlhint-stylish": "^1.0.3",
-    "live-server": "^1.2.0",
-    "postcss-custom-properties": "^5.0.1"
+  "devDependencies": {
+    "cssnano-cli": "^1.0.5",
+    "eslint": "^4.5.0",
+    "hashmark": "^5.0.0",
+    "onchange": "^3.2.1",
+    "parallelshell": "^3.0.1",
+    "postcss-cli": "^4.1.0",
+    "postcss-custom-properties": "^6.1.0",
+    "postcss-import": "^10.0.0",
+    "stylelint": "^8.0.0",
+    "svg-sprite": "^1.3.7",
+    "uglify-es": "^3.0.28"
   }
 }
