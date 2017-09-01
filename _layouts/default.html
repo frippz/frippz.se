@@ -21,7 +21,7 @@
   {% include sprite-symbol.svg %}
 
   {% for js in site.static_files %}
-    {% if js.path contains "dist/main.js" %}
+    {% if js.path contains "dist/main" %}
       <script src="{{ site.baseurl }}{{ js.path }}" defer></script>
     {% endif %}
   {% endfor %}
