@@ -1,0 +1,11 @@
+/**
+ * styles.css
+ *
+ * Import all stylesheets for the project here
+ */
+
+ /* stylelint-disable */
+
+@import "basic.css";
+@import "main.css";
+@import "syntax.css";

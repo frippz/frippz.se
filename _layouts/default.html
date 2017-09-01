@@ -20,6 +20,10 @@
 
   {% include sprite-symbol.svg %}
 
-  <script src="{{ site.baseurl }}/dist/js/{{ site.data.js.rev-manifest['main.js'] }}" defer></script>
+  {% for js in site.static_files %}
+    {% if js.path contains "dist/main.js" %}
+      <script src="{{ site.baseurl }}{{ js.path }}" defer></script>
+    {% endif %}
+  {% endfor %}
 </body>
 </html>

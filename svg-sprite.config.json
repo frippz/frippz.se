@@ -1,0 +1,20 @@
+{
+  "transform": [{
+    "svgo": {
+      "js2svg": {
+        "useShortTags": false
+      }
+    }
+  }],
+  "svg": {
+    "doctypeDeclaration": false,
+    "xmlDeclaration": false
+  },
+  "mode": {
+    "symbol": {
+      "inline": true,
+      "dest": ".",
+      "sprite": "sprite.svg"
+    }
+  }
+}
