@@ -19,7 +19,7 @@
     "lint": "yarn run lint:css && yarn run lint:js",
     "lint:css": "stylelint src/css/**/*.css",
     "lint:js": "eslint src/js/**/*.js",
-    "jekyll:serve": "jekyll serve",
+    "jekyll:serve": "sleep 1; jekyll serve",
     "jekyll:build": "jekyll build",
     "test": "yarn run lint",
     "dist:clean": "mkdir -p ./dist && rm -rf ./dist/*",
