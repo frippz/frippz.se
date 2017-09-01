@@ -28,7 +28,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:frippz/blog.git"
+    "url": "git@github.com:frippz/frippz.se.git"
   },
   "author": "Fredrik Frodlund",
   "license": "ISC",
