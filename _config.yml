@@ -47,3 +47,4 @@ exclude:
   - 'yarn.lock'
   - 'postcss.*.js'
   - 'svg-sprite.config.json'
+  - 'vendor'
