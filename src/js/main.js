@@ -12,8 +12,6 @@ function numberedLines() {
   var pre = document.querySelectorAll('pre'),
       pl = pre.length;
 
-  var derp;
-
   for (var i = 0; i < pl; i++) {
     pre[i].insertAdjacentHTML('beforeend', '<span class="ln" aria-hidden="true"></span>');
     var num = pre[i].innerHTML.split(/\n/).length;
