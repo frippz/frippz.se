@@ -1,0 +1,29 @@
+/**
+ * Print styles
+ */
+
+@media print {
+
+  /**
+   * Hidden elements
+   */
+  #header,
+  #footer,
+  .permalink,
+  .more-articles {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  [itemprop="articleBody"] a[href^="http"] {
+    text-decoration: underline;
+  }
+
+  [itemprop="articleBody"] a[href^="http"]::after {
+    content: " ("attr(href)")";
+    font-size: 0.85em;
+  }
+}

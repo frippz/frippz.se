@@ -7,5 +7,6 @@
  /* stylelint-disable */
 
 @import "basic.css";
+@import "print.css";
 @import "main.css";
 @import "syntax.css";
