@@ -1,6 +1,5 @@
 # Jekyll stuff
 _site
-_data/*/rev-manifest.json
 .sass-cache
 .jekyll-metadata
 
@@ -9,6 +8,3 @@ dist
 
 # Node stuff
 node_modules
-
-# Sensitive data shouldn't be included
-site_config.mk
