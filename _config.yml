@@ -24,6 +24,10 @@ plugins:
   - 'jekyll-tidy'
   - 'rouge'
 
+# Jekyll tidy
+jekyll_tidy:
+  compress_html: true
+
 # Archives
 jekyll-archives:
   enabled: []
