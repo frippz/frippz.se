@@ -38,15 +38,13 @@ sitemap:
   <div itemprop="articleBody">
     {{ post.content }}
   </div>
-  {% comment %}
   <footer>
-    {% if page.tags %}
+    {% if post.tags %}
       <p class="post-tags">
-      <em><strong>Tagged with:</strong> <span itemprop="keywords">{{ page.tags | join: ', ' }}</span></em>
+      <em><strong>Tagged with:</strong> <span itemprop="keywords">{{ post.tags | join: ', ' }}</span></em>
       </p>
     {% endif %}
   </footer>
-  {% endcomment %}
 </article>
 {% endfor %}
 
