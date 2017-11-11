@@ -38,21 +38,21 @@ sitemap:
   <div itemprop="articleBody">
     {{ post.content }}
   </div>
-  <footer>
-    {% if post.tags %}
+  {% if post.tags %}
+    <footer>
       <p class="post-tags">
-      <em><strong>Tagged with:</strong> <span itemprop="keywords">{{ post.tags | join: ', ' }}</span></em>
+        <em><strong>Tagged with:</strong> <span itemprop="keywords">{{ post.tags | join: ', ' }}</span></em>
       </p>
-    {% endif %}
-  </footer>
+    </footer>
+  {% endif %}
 </article>
 {% endfor %}
 
 <div class="more-articles">
   {% if paginator.next_page %}
-  <a href="{{ paginator.next_page_path }}" class="older">Older articles</a>
+    <a href="{{ paginator.next_page_path }}" class="older">Older articles</a>
   {% endif %}
   {% if paginator.previous_page %}
-  <a href="{{ paginator.previous_page_path }}" class="newer">Newer articles</a>
+    <a href="{{ paginator.previous_page_path }}" class="newer">Newer articles</a>
   {% endif %}
 </div>
