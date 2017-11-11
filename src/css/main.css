@@ -86,6 +86,12 @@
     color: #83261c;
   }
 
+  article footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
   .article-end {
     color: rgba(0, 0, 0, 0.08);
     padding: 2em 0;
@@ -120,7 +126,6 @@
   }
 
   .post-tags {
-    color: #717171;
     font-size: 0.85em;
     margin-top: 0.5em;
   }
