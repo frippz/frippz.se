@@ -24,19 +24,16 @@ layout: default
     <meta itemprop="author" content="{{ page.author }}">
     <meta itemprop="publisher" content="{{ page.author }}">
     <meta itemprop="url" content="{{ site.url}}{{ page.url }}">
-    {% if page.tags %}<meta itemprop="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
     <link itemprop="mainEntityOfPage" href="{{ site.url}}{{ page.url }}">
   </header>
   <div itemprop="articleBody">
     {{ content }}
   </div>
-  {% comment %}
-  <footer>
-    {% if page.tags %}
+  {% if page.tags %}
+    <footer>
       <p class="post-tags">
-      <em><strong>Tagged with:</strong> <span itemprop="keywords">{{ page.tags | join: ', ' }}</span></em>
+      <em><strong>Tagged with:</strong> <span itemprop="keywords">{{ page | tags }}</span></em>
       </p>
-    {% endif %}
-  </footer>
-  {% endcomment %}
+    </footer>
+  {% endif %}
 </article>

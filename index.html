@@ -41,7 +41,7 @@ sitemap:
   {% if post.tags %}
     <footer>
       <p class="post-tags">
-        <em><strong>Tagged with:</strong> <span itemprop="keywords">{{ post.tags | join: ', ' }}</span></em>
+        <em><strong>Tagged with:</strong> <span itemprop="keywords">{{ post | tags }}</span></em>
       </p>
     </footer>
   {% endif %}
