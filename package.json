@@ -9,21 +9,21 @@
   "scripts": {
     "start": "parallelshell 'yarn run build:watch' 'yarn run jekyll:serve'",
     "prebuild": "yarn run dist:clean",
-    "build": "yarn run build:css & yarn run build:js & yarn run build:svg",
+    "build": "yarn run build:css && yarn run build:js && yarn run build:svg",
     "build:watch": "onchange ./src/** -i -- yarn run build",
     "build:css": "postcss ./src/css/styles.css -o ./dist/styles.css -c postcss.config.js",
     "build:js": "uglifyjs ./src/js/*.js --compress -o ./dist/main.js",
     "build:svg": "svg-sprite -C svg-sprite.config.json --dest ./_includes src/svg/*.svg",
     "deploy:css": "postcss ./src/css/styles.css -c postcss.config.live.js | cssnano | hashmark -l 8 'dist/styles.{hash}.css'",
     "deploy:js": "uglifyjs ./src/js/*.js --compress | hashmark -l 8 'dist/main.{hash}.js'",
-    "lint": "yarn run lint:css & yarn run lint:js",
+    "lint": "yarn run lint:css && yarn run lint:js",
     "lint:css": "stylelint --color -f verbose src/css/**/*.css",
     "lint:js": "eslint src/js/**/*.js",
     "jekyll:serve": "sleep 1; jekyll serve --incremental",
     "test": "yarn run lint",
     "dist:clean": "mkdir -p ./dist && rm -rf ./dist/*",
     "predeploy": "yarn run dist:clean",
-    "deploy": "yarn run deploy:css & yarn run deploy:js & yarn run build:svg"
+    "deploy": "yarn run deploy:css && yarn run deploy:js && yarn run build:svg"
   },
   "repository": {
     "type": "git",
