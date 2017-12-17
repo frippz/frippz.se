@@ -24,6 +24,12 @@ plugins:
   - 'jekyll-tidy'
   - 'rouge'
 
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:path.html
+
 # Tags
 tag_page_layout: tags-page
 tag_page_dir: tags
