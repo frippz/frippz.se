@@ -421,6 +421,14 @@
     right: 0;
   }
 
+  /**
+   * Tags list
+   */
+  .tags-article-list {
+    list-style: none;
+    padding: 0;
+  }
+
 }/* END @media screen */
 
 @media only screen {
