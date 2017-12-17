@@ -62,7 +62,7 @@ exclude:
   - 'node_modules'
   - 'script'
   - 'package.json'
-  - 'LICENSE.md'
+  - 'LICENSE'
   - 'README.md'
   - 'src'
   - 'Gemfile'
