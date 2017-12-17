@@ -1,7 +1,5 @@
 ---
-layout: default
 title: The personal journal of Fredrik Frodlund
-menutitle: Home
 description: Articles and musings on web development, web standards, accessibility, usability and anything else related to the web or web technologies.
 sitemap:
   priority: 1.0
@@ -41,18 +39,20 @@ sitemap:
   {% if post.tags %}
     <footer>
       <p class="post-tags">
-        <em><strong>Tagged with:</strong> <span itemprop="keywords">{{ post.tags | join: ', ' }}</span></em>
+        <em><strong>Tagged with:</strong> <span itemprop="keywords">{{ post | tags }}</span></em>
       </p>
     </footer>
   {% endif %}
 </article>
 {% endfor %}
 
-<div class="more-articles">
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="older">Older articles</a>
-  {% endif %}
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="newer">Newer articles</a>
-  {% endif %}
-</div>
+{% if paginator.total_pages > 1 %}
+  <div class="more-articles">
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="older">Older articles</a>
+    {% endif %}
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="newer">Newer articles</a>
+    {% endif %}
+  </div>
+{% endif %}

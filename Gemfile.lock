@@ -44,6 +44,8 @@ GEM
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.5.1)
       sass (~> 3.4)
+    jekyll-tagging (1.1.0)
+      nuggets
     jekyll-tidy (0.2.2)
       htmlbeautifier
       htmlcompressor
@@ -61,6 +63,7 @@ GEM
     minitest (5.10.3)
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
+    nuggets (1.5.0)
     parallel (1.12.0)
     pathutil (0.16.1)
       forwardable-extended (~> 2.6)
@@ -90,6 +93,7 @@ DEPENDENCIES
   html-proofer
   jekyll-archives
   jekyll-paginate
+  jekyll-tagging
   jekyll-tidy
 
 BUNDLED WITH

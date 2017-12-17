@@ -24,6 +24,24 @@ plugins:
   - 'jekyll-tidy'
   - 'rouge'
 
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:path.html
+
+# Tags
+tag_page_layout: tags-page
+tag_page_dir: tags
+
 # Jekyll tidy
 jekyll_tidy:
   compress_html: true

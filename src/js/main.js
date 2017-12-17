@@ -1,9 +1,13 @@
 /**
  * main.js
- *
- * Only runs in modern browsers via feature detection
- * Requires support for querySelector, classList and addEventListener
  */
+
+'use strict';
+
+// Only run in capable browsers via feature detection
+var didCutTheMustard = 'querySelector' in document
+  && 'classList' in document.createElement('a')
+  && 'addEventListener' in window;
 
 /**
  * Add line numbers to <pre>
@@ -24,16 +28,12 @@ function numberedLines() {
   }
 }
 
-if ('querySelector' in document && 'classList' in document.createElement('a') && 'addEventListener' in window) {
+if (didCutTheMustard) {
 
-  /**
-   * Add class "js" to html element
-   */
+  // Add class "js" to html element
   document.querySelector('html').classList.add('js');
 
-  /**
-   * Add numbered lines to <pre>
-   */
+  // Add numbered lines to <pre>
   numberedLines();
 
 }
