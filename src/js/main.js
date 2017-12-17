@@ -28,6 +28,18 @@ function numberedLines() {
   }
 }
 
+/**
+ * Add a little christmas spirit
+ */
+function snowyHeader() {
+  var headElem = document.querySelector('head');
+  var snowStyles = '<link rel="stylesheet" href="//frippz-se.s3.amazonaws.com/christmas.css">';
+  var header = document.querySelector('#header');
+
+  headElem.insertAdjacentHTML('beforeend', snowStyles);
+  header.classList.add('snow');
+}
+
 if (didCutTheMustard) {
 
   // Add class "js" to html element
@@ -35,5 +47,8 @@ if (didCutTheMustard) {
 
   // Add numbered lines to <pre>
   numberedLines();
+
+  // Let it snow!
+  snowyHeader();
 
 }
