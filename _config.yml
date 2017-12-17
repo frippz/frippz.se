@@ -24,6 +24,14 @@ plugins:
   - 'jekyll-tidy'
   - 'rouge'
 
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+
 # Collections
 collections:
   pages:
