@@ -8,7 +8,6 @@
   },
   "scripts": {
     "start": "parallelshell 'yarn run build:watch' 'yarn run jekyll:serve'",
-    "prebuild": "yarn run dist:clean",
     "build": "yarn run build:css && yarn run build:js && yarn run build:svg",
     "build:watch": "onchange ./src/** -i -- yarn run build",
     "build:css": "postcss ./src/css/styles.css -o ./dist/styles.css -c postcss.config.js",
