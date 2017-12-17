@@ -1,0 +1,11 @@
+---
+layout: page
+---
+<h2>Articles tagged with <em>“{{ page.tag }}”</em></h2>
+<ul class="tags-article-list">
+  {% for post in page.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> <small><em>(Posted on {{ post.date | date_to_string }})</em></small>
+    </li>
+  {% endfor %}
+</ul>
