@@ -429,6 +429,29 @@
     padding: 0;
   }
 
+  /**
+   * Tag cloud
+   */
+  .tag-cloud [class^="set"] {
+    padding-right: 0.75rem;
+  }
+
+  .tag-cloud .set-2 {
+    font-size: 1.2em;
+  }
+
+  .tag-cloud .set-3 {
+    font-size: 1.4em;
+  }
+
+  .tag-cloud .set-4 {
+    font-size: 1.6em;
+  }
+
+  .tag-cloud .set-4 {
+    font-size: 1.8em;
+  }
+
 }/* END @media screen */
 
 @media only screen {
