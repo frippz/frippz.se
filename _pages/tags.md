@@ -1,6 +1,9 @@
 ---
 layout: page
-title: Tags
+title: All tags
+permalink: /tags/
 ---
 
-{{ site | tag_cloud }}
+<p class="tag-cloud">
+  {{ site | tag_cloud }}
+</p>
