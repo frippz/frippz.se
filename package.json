@@ -1,5 +1,7 @@
 {
   "name": "frippz",
+  "author": "Fredrik Frodlund",
+  "license": "ISC",
   "version": "1.6.1-build2",
   "description": "My quaint little blog",
   "main": "index.html",
@@ -28,8 +30,6 @@
     "type": "git",
     "url": "git@github.com:frippz/frippz.se.git"
   },
-  "author": "Fredrik Frodlund",
-  "license": "ISC",
   "devDependencies": {
     "cssnano-cli": "^1.0.5",
     "eslint": "^4.5.0",
