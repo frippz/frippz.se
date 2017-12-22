@@ -1,12 +1,23 @@
 {
   "name": "frippz",
-  "author": "Fredrik Frodlund",
+  "author": "Fredrik Frodlund <fredrik@frodlund.se> (https://frippz.se)",
   "license": "ISC",
-  "version": "1.6.1-build2",
+  "version": "1.6.2",
   "description": "My quaint little blog",
+  "keywords": ["blog", "jekyll", "html5", "css", "web"],
+  "homepage": "https://github.com/frippz/frippz.se",
+  "bugs": "https://github.com/frippz/frippz.se/issues",
   "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:frippz/frippz.se.git"
+  },
+  "directories": {
+    "src": "src/"
+  },
   "engines": {
-    "node": "6.11.1"
+    "node": ">=6.11.1",
+    "yarn": "^1.0.0"
   },
   "scripts": {
     "start": "parallelshell 'yarn run build:watch' 'yarn run jekyll:serve'",
@@ -25,10 +36,6 @@
     "dist:clean": "mkdir -p ./dist && rm -rf ./dist/*",
     "predeploy": "yarn run dist:clean",
     "deploy": "yarn run deploy:css && yarn run deploy:js && yarn run build:svg"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:frippz/frippz.se.git"
   },
   "devDependencies": {
     "cssnano-cli": "^1.0.5",
