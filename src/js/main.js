@@ -30,15 +30,17 @@ function numberedLines() {
 
 /**
  * Add a little christmas spirit
+ *
+ * Yes, it’s added via JS. It’s an enhancement, not core functionality 😝
  */
-function snowyHeader() {
-  var headElem = document.querySelector('head');
-  var snowStyles = '<link rel="stylesheet" href="//frippz-se.s3.amazonaws.com/christmas.css">';
-  var header = document.querySelector('#header');
+// function snowyHeader() {
+//   var headElem = document.querySelector('head');
+//   var snowStyles = '<link rel="stylesheet" href="//frippz-se.s3.amazonaws.com/christmas.css">';
+//   var header = document.querySelector('#header');
 
-  headElem.insertAdjacentHTML('beforeend', snowStyles);
-  header.classList.add('snow');
-}
+//   headElem.insertAdjacentHTML('beforeend', snowStyles);
+//   header.classList.add('snow');
+// }
 
 if (didCutTheMustard) {
 
@@ -49,6 +51,6 @@ if (didCutTheMustard) {
   numberedLines();
 
   // Let it snow!
-  snowyHeader();
+  // snowyHeader();
 
 }
