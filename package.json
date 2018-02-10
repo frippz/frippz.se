@@ -4,7 +4,13 @@
   "license": "ISC",
   "version": "1.6.2",
   "description": "My quaint little blog",
-  "keywords": ["blog", "jekyll", "html5", "css", "web"],
+  "keywords": [
+    "blog",
+    "jekyll",
+    "html5",
+    "css",
+    "web"
+  ],
   "homepage": "https://github.com/frippz/frippz.se",
   "bugs": "https://github.com/frippz/frippz.se/issues",
   "main": "index.html",
@@ -24,10 +30,10 @@
     "build": "yarn run build:css && yarn run build:js && yarn run build:svg",
     "build:watch": "onchange ./src/** -i -- yarn run build",
     "build:css": "postcss ./src/css/styles.css -o ./dist/styles.css -c postcss.config.js",
-    "build:js": "uglifyjs ./src/js/*.js --compress -o ./dist/main.js",
+    "build:js": "browserify ./src/js/main.js -o ./dist/bundle.js",
     "build:svg": "svg-sprite -C svg-sprite.config.json --dest ./_includes src/svg/*.svg",
     "deploy:css": "postcss ./src/css/styles.css -c postcss.config.live.js | cssnano | hashmark -l 8 'dist/styles.{hash}.css'",
-    "deploy:js": "uglifyjs ./src/js/*.js --compress | hashmark -l 8 'dist/main.{hash}.js'",
+    "deploy:js": "browserify ./src/js/main.js | uglifyjs | hashmark -l 8 'dist/bundle.{hash}.js'",
     "lint": "yarn run lint:css && yarn run lint:js",
     "lint:css": "stylelint --color -f verbose src/css/**/*.css",
     "lint:js": "eslint src/js/**/*.js",
@@ -38,6 +44,7 @@
     "deploy": "yarn run deploy:css && yarn run deploy:js && yarn run build:svg"
   },
   "devDependencies": {
+    "browserify": "^15.2.0",
     "cssnano-cli": "^1.0.5",
     "eslint": "^4.5.0",
     "hashmark": "^5.0.0",
