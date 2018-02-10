@@ -19,6 +19,7 @@ host: 0.0.0.0
 
 # Gems
 plugins:
+  - 'jekyll-admin'
   - 'jekyll-archives'
   - 'jekyll-paginate'
   - 'jekyll-tidy'
