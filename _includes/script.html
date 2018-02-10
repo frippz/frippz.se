@@ -1,5 +1,5 @@
 {% for js in site.static_files %}
-  {% if js.path contains "dist/main" %}
+  {% if js.path contains "dist/bundle" %}
     <script src="{{ site.baseurl }}{{ js.path }}" defer></script>
   {% endif %}
 {% endfor %}
