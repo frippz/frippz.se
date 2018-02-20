@@ -23,12 +23,6 @@ I’ve gone from hosting on a regular old-school web host, to Github Pages, to f
 
 I'm also using encryption via SSL provided by [Let’s Encrypt](https://letsencrypt.org), a new certificate authority that is free, automated and open. If you’re looking to serve your content encrypted, but always balked at the difficulty and complexity issuing a certificate means, give them a go. They’re currently in open beta.
 
-#### Statistics and tracking
-
-~~The only tracking I perform on this site is via the server logs. I have no tracking scripts installed and I doubt that I would ever install one either. I'm really not interested in what you have done in any greater detail, more than what pages you visit on _this site_, and possibly whether you came from a search engine or some other site. All of these things are found through the server logs and there’s no need for any intrusive tracking scripts. Also, since those scripts can be blocked (or be asked not to track you, which one should respect) they aren’t very reliable.~~
-
-I’ve decided to give Google Analytics another go based on some interesting feedback from a colleague of mine. I’ll still be using my log analytics to compare with the results coming from Google.
-
 ### Getting in touch
 
 Feeling the need to get in touch with me? Have a business inquiry? Don’t hesitate to shoot me an email at [contact@frippz.se](mailto:contact@frippz.se). I have limited availability for smaller front end related projects from time to time.
