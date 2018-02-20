@@ -24,7 +24,7 @@
     "function-comma-space-before": "never",
     "function-parentheses-space-inside": "never-single-line",
     "function-parentheses-newline-inside": "always-multi-line",
-    "function-url-quotes": "never",
+    "function-url-quotes": "always",
     "indentation": 2,
     "max-empty-lines": 1,
     "media-feature-colon-space-after": "always",
