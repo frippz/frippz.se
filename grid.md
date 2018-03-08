@@ -179,9 +179,8 @@ A whole set of example media objects. These objects can be flipped, they can be 
 
 Are you finished already? Or maybe it’s so late that the office alarm will soon kick in automatically. Check out the completed solutions for all of the above labs. Props and ❤️  to [Rachel Andrew](https://rachelandrew.co.uk) for creating all these awesome patterns!
 
-
 <div class="showme-hidden">
-<p><a href="https://gridbyexample.com/patterns/">https://gridbyexample.com/patterns/</a></p>
+  <p><a href="https://gridbyexample.com/patterns/">https://gridbyexample.com/patterns/</a></p>
 </div>
 
 <script>
@@ -193,6 +192,7 @@ Are you finished already? Or maybe it’s so late that the office alarm will soo
 
   hiddenElem.parentNode.insertBefore(showmeBtn, hiddenElem);
 
+  hiddenElem.style.transition = "opacity 250ms";
   hiddenElem.style.opacity = 0;
 
   showmeBtn.addEventListener('click', function () {
