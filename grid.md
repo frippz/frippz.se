@@ -104,7 +104,7 @@ This is example shows a two column pattern, with header and footer. The centre p
 </div>
 ~~~
 
-### Lab 4 - as many as will fit, some tall
+### Lab 5 - as many as will fit, some tall
 
 This is example shows a two column pattern, with header and footer. The centre panel contains a number of boxes. We want to have as many in each row as will fit, with the boxes lining up as rows and columns.
 
@@ -133,7 +133,7 @@ Some of our items span two rows.
 </div>
 ~~~
 
-### Lab 5 - media objects
+### Lab 6 - media objects
 
 A whole set of example media objects. These objects can be flipped, they can be nested, then can have a fixed column for the image or a flexible one.
 
