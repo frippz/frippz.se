@@ -9,6 +9,7 @@ A collection of links for the competence day at Jayway Malmö office as well as 
 
 ### Really nice resources
 
+* [Mozilla Developer Network](https://developer.mozilla.org/en-US/) - the best source of knowledge for everything web
 * [CodePen.io](https://codepen.io) – excellent sandbox for labs
 * [CSS Tricks: A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) – a complete guide detailing all the properties covering CSS Grid Layout
 * [Box Alignment Cheatsheet](https://rachelandrew.co.uk/css/cheatsheets/box-alignment) – this cheatsheet compares alignment in CSS Grid Layout and Flexbox
