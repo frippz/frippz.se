@@ -5,6 +5,7 @@ _site
 
 # Generated stuff
 dist
+_includes/sprite.svg
 
 # Node stuff
 node_modules
