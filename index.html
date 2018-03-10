@@ -43,6 +43,9 @@ sitemap:
       </p>
     </footer>
   {% endif %}
+  {% if forloop.last == false %}
+    {% include svg.html icon="divider" classes="article-end" %}
+  {% endif %}
 </article>
 {% endfor %}
 
