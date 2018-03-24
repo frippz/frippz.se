@@ -69,6 +69,7 @@ exclude:
   - 'Gemfile'
   - 'Gemfile.lock'
   - 'yarn.lock'
+  - 'yarn-error.log'
   - 'postcss.*.js'
   - 'svg-sprite.config.json'
   - 'vendor'
