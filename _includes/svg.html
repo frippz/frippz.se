@@ -1,3 +1,13 @@
-<svg class="svg-icon{% if include.classes %} {{ include.classes }}{% endif %}" height="{{ include.height | default: 16 }}" width="{{ include.width | default: 16 }}" aria-hidden="true">
-  <use xlink:href="#{{ include.icon }}"></use>
+{% assign height = include.height | default: 16 %}
+{% assign width = include.width | default: 16 %}
+{% assign icon = include.icon %}
+
+{%- capture class -%}
+{% if include.classes %} {{ include.classes }}{% endif %}
+{%- endcapture -%}
+
+{% if icon %}
+<svg class="svg-icon{{ class }}" height="{{ height }}" width="{{ width }}" aria-hidden="true">
+  <use xlink:href="#{{ icon }}"></use>
 </svg>
+{% endif %}
