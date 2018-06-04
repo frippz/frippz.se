@@ -1,3 +1,6 @@
+{% assign socialLinks = site.data.social-links %}
+{% assign subscribeLinks = site.data.subscribe-links %}
+
 <footer id="footer">
 
   <div class="landmark-content">
@@ -5,57 +8,25 @@
     <h2 class="offscreen">Find Fredrik in other places</h2>
 
     <ul class="footer-links social">
+      {% for item in socialLinks %}
       <li>
-        <a href="https://github.com/frippz">
-          <svg class="svg-icon" height="16" width="16">
-            <use xlink:href="#icon-github"></use>
-          </svg>
-          Github
+        <a href="{{ item.url }}">
+          {% include svg.html icon=item.icon %}
+          {{ item.label }}
         </a>
       </li>
-      <li>
-        <a href="https://twitter.com/frippz">
-          <svg class="svg-icon" height="16" width="16">
-            <use xlink:href="#icon-twitter"></use>
-          </svg>
-          Twitter
-        </a>
-      </li>
-      <li>
-        <a href="https://linkedin.com/in/fredrikfrodlund">
-          <svg class="svg-icon" height="16" width="16">
-            <use xlink:href="#icon-linkedin"></use>
-          </svg>
-          LinkedIn
-        </a>
-      </li>
-      <li>
-        <a href="https://codepen.io/frippz/">
-          <svg class="svg-icon" height="16" width="16">
-            <use xlink:href="#icon-codepen"></use>
-          </svg>
-          CodePen
-        </a>
-      </li>
+      {% endfor %}
     </ul>
 
     <ul class="footer-links subscribe">
+      {% for item in subscribeLinks %}
       <li>
-        <a href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-          <svg class="svg-icon" height="16" width="16">
-            <use xlink:href="#icon-feed"></use>
-          </svg>
-          Atom feed
+        <a href="{{ item.url | prepend: site.baseurl | prepend: site.urlk}}">
+          {% include svg.html icon=item.icon %}
+          {{ item.label }}
         </a>
       </li>
-      <li>
-        <a href="{{ "/feed.json" | prepend: site.baseurl | prepend: site.url }}">
-          <svg class="svg-icon" height="16" width="16">
-            <use xlink:href="#icon-json-feed"></use>
-          </svg>
-          JSON feed
-        </a>
-      </li>
+      {% endfor %}
     </ul>
 
     <small class="copyright">© 2005–{{ site.time | date: '%Y' }} Fredrik Frodlund</small>
