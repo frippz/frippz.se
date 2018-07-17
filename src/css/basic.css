@@ -105,16 +105,6 @@
     max-width: 100%;
   }
 
-  img.left {
-    float: left;
-    margin: 0 1em 0.5em 0;
-  }
-
-  img.right {
-    float: right;
-    margin: 0 0 0.5em 1em;
-  }
-
   /**
    * Body styling
    */
@@ -273,4 +263,21 @@
     width: 1.2em;
     vertical-align: -0.2em;
   }
-}/* END @media all */
+}
+/* END @media all */
+
+@media only screen and (min-width: 28em) {
+
+  /**
+   * Float images on wider viewports
+   */
+  img.left {
+    float: left;
+    margin: 0 1em 0.5em 0;
+  }
+
+  img.right {
+    float: right;
+    margin: 0 0 0.5em 1em;
+  }
+}
