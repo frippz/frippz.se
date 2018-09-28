@@ -76,6 +76,13 @@
     color: #83261c;
   }
 
+  @media (prefers-dark-interface) {
+
+    article a {
+      color: inherit;
+    }
+  }
+
   article footer {
     border-top: 1px solid rgba(0, 0, 0, 0.08);
     padding-left: 0.5em;
@@ -325,6 +332,15 @@
     padding-left: 0.75em;
     border-left: 4px solid rgba(0, 0, 0, 0.08);
     color: #595959;
+  }
+
+  @media (prefers-dark-interface) {
+
+    blockquote {
+      color: unset;
+      filter: brightness(0.7);
+      border-left-color: rgba(253, 206, 147, 0.2);
+    }
   }
 
   /**
