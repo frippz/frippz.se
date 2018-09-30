@@ -272,12 +272,12 @@
     margin-right: auto;
   }
 
-  .footer-links.feed-links {
+  .footer-links.feeds {
     margin-left: auto;
   }
 
   .external-links,
-  .feed-links {
+  .feeds {
     display: inline-block;
     vertical-align: top;
   }
