@@ -52,10 +52,16 @@ sitemap:
 {% if paginator.total_pages > 1 %}
   <div class="more-articles">
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="older">Older posts</a>
+      <a href="{{ paginator.next_page_path }}" class="older">
+        {% include svg.html icon="arrow-left" %}
+        Older posts
+      </a>
     {% endif %}
     {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}" class="newer">Newer posts</a>
+      <a href="{{ paginator.previous_page_path }}" class="newer">
+        Newer posts
+        {% include svg.html icon="arrow-right" %}
+      </a>
     {% endif %}
   </div>
 {% endif %}
