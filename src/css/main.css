@@ -268,16 +268,16 @@
   }
 
   /* Footer links */
-  .footer-links.social {
+  .footer-links.external-links {
     margin-right: auto;
   }
 
-  .footer-links.subscribe {
+  .footer-links.feed-links {
     margin-left: auto;
   }
 
-  .social,
-  .subscribe {
+  .external-links,
+  .feed-links {
     display: inline-block;
     vertical-align: top;
   }

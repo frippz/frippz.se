@@ -1,5 +1,5 @@
-{% assign socialLinks = site.data.social-links %}
-{% assign subscribeLinks = site.data.subscribe-links %}
+{% assign externalLinks = site.data.external-links %}
+{% assign feedLinks = site.data.feed-links %}
 
 <footer id="footer">
 
@@ -7,8 +7,8 @@
 
     <h2 class="offscreen">Find Fredrik in other places</h2>
 
-    <ul class="footer-links social">
-      {% for item in socialLinks %}
+    <ul class="footer-links external-links">
+      {% for item in externalLinks %}
       <li>
         <a href="{{ item.url }}">
           {% include svg.html icon=item.icon %}
@@ -18,8 +18,8 @@
       {% endfor %}
     </ul>
 
-    <ul class="footer-links subscribe">
-      {% for item in subscribeLinks %}
+    <ul class="footer-links feed-links">
+      {% for item in feedLinks %}
       <li>
         <a href="{{ item.url | prepend: site.baseurl | prepend: site.urlk}}">
           {% include svg.html icon=item.icon %}
