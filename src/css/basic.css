@@ -274,11 +274,16 @@
   }
 }
 
-@media only screen and (min-width: 28em) {
+@media only screen and (min-width: 20em) {
 
   /**
    * Float images on wider viewports
    */
+  img.left,
+  img.right {
+    max-width: 40vw;
+  }
+
   img.left {
     float: left;
     margin: 0 1em 0.5em 0;
@@ -287,5 +292,13 @@
   img.right {
     float: right;
     margin: 0 0 0.5em 1em;
+  }
+}
+
+@media only screen and (min-width: 25em) {
+
+  img.left,
+  img.right {
+    max-width: 50vw;
   }
 }
