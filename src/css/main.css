@@ -246,6 +246,7 @@
   #footer a:visited {
     color: currentcolor;
     text-decoration: none;
+    padding: 0.25em;
   }
 
   #footer a:hover,
@@ -258,7 +259,6 @@
     border-radius: 0.25em;
     color: #333;
     outline: 0;
-    padding: 0.25em;
   }
 
   #footer .svg-icon {
