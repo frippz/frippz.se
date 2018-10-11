@@ -30,10 +30,11 @@
     "prebuild": "touch _includes/sprite.svg & mkdir -p dist",
     "build": "yarn run build:css && yarn run build:js && yarn run build:svg",
     "build:watch": "onchange ./src/** -i -- yarn run build",
-    "build:css": "postcss ./src/css/styles.css -c postcss.config.js | cleancss --source-map -o dist/styles.css",
+    "build:css": "postcss -c postcss.config.js ./src/css/*.css -d dist/css",
     "build:js": "browserify ./src/js/main.js -o ./dist/bundle.js",
     "build:svg": "svg-sprite -C svg-sprite.config.json --dest ./_includes src/svg/*.svg",
-    "deploy:css": "postcss ./src/css/styles.css -c postcss.config.live.js | cleancss | hashmark -l 8 'dist/styles.{hash}.css'",
+    "deploy:css": "postcss -c postcss.config.live.js ./src/css/*.css -d dist/css",
+    "postdeploy:css": "foreach -g 'dist/css/*.css' -x 'uglifycss #{path} --output #{path}'",
     "deploy:js": "browserify ./src/js/main.js | uglifyjs | hashmark -l 8 'dist/bundle.{hash}.js'",
     "lint": "yarn run lint:css && yarn run lint:js",
     "lint:css": "stylelint --color -f verbose src/css/**/*.css",
@@ -46,17 +47,17 @@
   },
   "devDependencies": {
     "browserify": "^16.1.1",
-    "clean-css-cli": "^4.1.11",
     "eslint": "^4.5.0",
+    "foreach-cli": "^1.8.1",
     "hashmark": "^5.0.0",
     "onchange": "^3.2.1",
     "parallelshell": "^3.0.1",
     "postcss-cli": "^5.0.0",
     "postcss-custom-properties": "^7.0.0",
-    "postcss-import": "^11.1.0",
     "stylelint": "^9.2.0",
     "svg-sprite": "^1.3.7",
     "uglify-es": "^3.0.28",
+    "uglifycss": "^0.0.29",
     "yarn": "^1.5.1"
   }
 }
