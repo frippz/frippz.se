@@ -1,6 +1,6 @@
 ---
 title: How we talk about CSS
-description: CSS has had a bad rep for far too long
+description: CSS has come a really long way in just a few years and it’s no longer that hacky, weird “language” anymore.
 tags:
   - css
 layout: post
@@ -14,7 +14,7 @@ Rachel Andrew has been working on new material for upcoming talks and she have b
 Back in 1998, when I started working with CSS, I found it to be mostly hacks and me trying to beat browsers into submission (I’m mostly looking at you, Internet Explorer). Now we have modern layout frameworks like Flexbox and CSS Grid, in addition to – as Rachel points out – many other technologies in CSS that might not be as well known. They are, however, very important.
 
 > No available space? That’s ok. Nothing is going to break. We often don’t know how much content we have, so CSS gives us sizing based on min and max content sizes, allowing items to grow and shrink into their containing boxes. […]
-> 
+>
 > These features are part of the [Box Alignment](https://www.w3.org/TR/css-align-3/), [CSS Intrinsic and Extrinsic Sizing](https://www.w3.org/TR/css-sizing-3/), [Writing Modes](https://www.w3.org/TR/css-writing-modes-3/), and [Logical Properties and Values](https://www.w3.org/TR/css-logical-1/) specifications. These specifications tie together the individual layout methods into one system, with various methods to create the type of layout we need to see.
 
 While there’s still much that is left to be desired, the technology has come such long way in just a few years. My day to day work has shifted significantly, from trying to make browsers jump through hoops while using CSS in ways it was probably never intended for, to actually letting me work more creatively.
