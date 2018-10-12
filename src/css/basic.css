@@ -271,6 +271,7 @@
     height: 1.2em;
     width: 1.2em;
     vertical-align: -0.2em;
+    transition: all 0.25s ease;
   }
 }
 
