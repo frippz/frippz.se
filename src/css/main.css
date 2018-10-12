@@ -79,6 +79,8 @@
   /**
    * Articles
    */
+
+  /* Heading links */
   article h2 a {
     color: currentcolor;
     text-decoration-color: rgba(0, 0, 0, 0.4);
@@ -100,6 +102,7 @@
     fill: #83261c;
   }
 
+  /* Inline article links */
   article a {
     color: #83261c;
   }
