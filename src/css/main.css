@@ -435,7 +435,8 @@
   /**
    * Eye candy & visual fluff
    */
-  a {
+  a,
+  .svg-icon {
     transition: all 0.25s ease;
   }
 
