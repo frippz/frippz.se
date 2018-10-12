@@ -5,7 +5,7 @@ tags:
   - css
 layout: post
 external-link: https://rachelandrew.co.uk/archives/2018/10/04/the-way-we-talk-about-css/
-published: 2018-10-11
+published: 2018-10-12
 ---
 Rachel Andrew has been working on new material for upcoming talks and she have been thinking about how CSS has been perceived in the web developer community in the past, and how we should perhaps modify our thinking about it in the future, given how far it has come.
 
