@@ -81,10 +81,23 @@
    */
   article h2 a {
     color: currentcolor;
-    text-decoration-color: rgba(0, 0, 0, 0.2);
-    -webkit-text-decoration-color: rgba(0, 0, 0, 0.2);
+    text-decoration-color: rgba(0, 0, 0, 0.4);
+    -webkit-text-decoration-color: rgba(0, 0, 0, 0.4);
     text-decoration-style: dotted;
     -webkit-text-decoration-style: dotted;
+  }
+
+  article h2 a:hover,
+  article h2 a:focus,
+  article h2 a:active {
+    text-decoration-color: #83261c;
+    -webkit-text-decoration-color: #83261c;
+  }
+
+  article h2 a:hover + .svg-icon,
+  article h2 a:focus + .svg-icon,
+  article h2 a:active + .svg-icon {
+    fill: #83261c;
   }
 
   article a {
