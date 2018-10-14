@@ -1,4 +1,12 @@
+{%- capture figCaption -%}
+{% if include.caption %}
+  <figcaption>
+    {{ include.caption | markdownify | remove: '<p>' | remove: '</p>' }}
+  </figcaption>
+{% endif %}
+{%- endcapture -%}
+
 <figure class="image">
   <img src="{{ include.url }}" alt="">
-  <figcaption>{{ include.caption | markdownify | remove: '<p>' | remove: '</p>' }}</figcaption>
+  {{ figCaption }}
 </figure>
