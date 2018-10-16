@@ -42,7 +42,7 @@
     "lint": "yarn run lint:css && yarn run lint:js",
     "lint:css": "stylelint --color -f verbose src/css/**/*.css",
     "lint:js": "eslint src/js/**/*.js",
-    "jekyll:serve": "sleep 1; jekyll serve --incremental",
+    "jekyll:serve": "sleep 1; jekyll serve --incremental --drafts",
     "test": "yarn run lint",
     "dist:clean": "mkdir -p ./dist && rm -rf ./dist/*",
     "predeploy": "yarn run dist:clean",
