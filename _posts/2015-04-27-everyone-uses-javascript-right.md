@@ -2,8 +2,7 @@
 title: Everyone uses JavaScript, right?
 description: Although some people would like to think otherwise, there are cases out there when JavaScript just isn’t available.
 tags:
-  - javascript
-layout: post
+  - javascript 
 published: 2015-04-27
 ---
 

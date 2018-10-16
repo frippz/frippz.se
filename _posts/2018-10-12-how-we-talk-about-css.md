@@ -2,11 +2,11 @@
 title: How we talk about CSS
 description: CSS has come a really long way in just a few years and it’s no longer that hacky, weird “language” anymore.
 tags:
-  - css
-layout: post
+  - css 
 external-link: https://rachelandrew.co.uk/archives/2018/10/04/the-way-we-talk-about-css/
 published: 2018-10-12
 ---
+
 Rachel Andrew has been working on new material for upcoming talks and she have been thinking about how CSS has been perceived in the web developer community in the past, and how we should perhaps modify our thinking about it in the future, given how far it has come.
 
 > CSS has been seen as this fragile language that we stumble around, trying things out and seeing what works. In particular for layout, rather than using the system as specified, we have so often exploited things about the language in order to achieve far more complex layouts than it was ever designed for. We had to, or resign ourselves to very simple looking web pages.

@@ -3,8 +3,7 @@ title: Muddying the waters of progressive enhancement
 description: Musings on how the term “progressive enhancement” are losing its meaning to some people, causing confusion.
 tags:
   - progressive enhancement
-  - javascript
-layout: post
+  - javascript 
 published: 2015-06-30
 ---
 

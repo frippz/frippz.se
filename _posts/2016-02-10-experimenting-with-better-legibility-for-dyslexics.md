@@ -6,8 +6,7 @@ tags:
   - dyslexia
   - html
   - javascript
-  - css
-layout: post
+  - css 
 published: 2016-02-10
 ---
 

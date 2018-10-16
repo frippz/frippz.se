@@ -4,8 +4,7 @@ description: A quick fix to prevent blurry text when applying translate3d on ele
 tags:
   - css3
   - html5
-  - animation
-layout: post
+  - animation 
 published: 2016-02-04
 ---
 

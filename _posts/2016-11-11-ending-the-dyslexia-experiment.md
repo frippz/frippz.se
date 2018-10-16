@@ -3,8 +3,7 @@ title: Ending the dyslexia legibility experiment
 description: I’m ending the experiment for improved legibility for dyslexics
 tags:
   - accessibility
-  - dyslexia
-layout: post
+  - dyslexia 
 published: 2016-11-11
 ---
 

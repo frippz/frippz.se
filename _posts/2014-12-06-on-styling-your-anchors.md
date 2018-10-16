@@ -5,10 +5,10 @@ tags:
   - accessibility
   - a11y
   - html
-  - css
-layout: post
+  - css 
 published: 2014-12-06
 ---
+
 This problem really isn’t something new and this specific issue has been repeated on many accessibility oriented blogs over the years. But since I regularly see this mistake being made over and over again, I think it’s time for a revisit. I’m talking about why you shouldn’t style away the `:focus` pseudo-class.
 
 ### Pseudo-what?

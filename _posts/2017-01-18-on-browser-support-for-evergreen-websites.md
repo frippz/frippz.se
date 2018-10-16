@@ -4,11 +4,11 @@ description: Coping with bleeding edge features in CSS and evergreen browsers
 tags:
   - css
   - browser support
-  - progressive enhancement
-layout: post
+  - progressive enhancement 
 external-link: https://rachelandrew.co.uk/archives/2017/01/12/browser-support-for-evergreen-websites/
 published: 2017-01-18
 ---
+
 > “Pixel perfect” meant “this website looks like this graphic”. Designers reacted in horror that users might increase their text size. Browser compatibility ranged from “Best Viewed in Internet Explorer” badges to the development of two separate sites, one for each browser in order to ensure the same design was shown to each.
 
 I remember those days back in the 90s and early 2000s. While it was fun to tackle such challenges, I still shudder thinking back knowing what I know now.

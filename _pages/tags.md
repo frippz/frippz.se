@@ -1,5 +1,4 @@
 ---
-layout: page
 title: All tags
 permalink: /tags/
 ---
