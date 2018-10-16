@@ -4,10 +4,10 @@ description: A post on why we shouldn’t just draw a hard line in the sand when
 tags:
   - browser support
   - progressive enhancement
-  - css
-layout: post
+  - css 
 published: 2014-12-07
 ---
+
 I have more often than not been faced with the following scenario; a client, a colleague or maybe a project manager will ask the old-as-dirt question:
 
 *“What browsers should be supported in this project?”*

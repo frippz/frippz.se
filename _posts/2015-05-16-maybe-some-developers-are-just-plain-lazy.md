@@ -4,8 +4,7 @@ description: Some quick thoughts about why tooling has become such a big thing i
 tags:
   - tools
   - musings
-  - rant
-layout: post
+  - rant 
 published: 2015-05-16
 ---
 

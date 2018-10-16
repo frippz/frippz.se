@@ -3,8 +3,7 @@ title: That whole “blog” thing
 description: Twitter threads are awful and blogs are awesome
 tags:
   - blogging
-  - web
-layout: post
+  - web 
 published: 2017-03-28
 ---
 

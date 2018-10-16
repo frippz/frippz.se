@@ -4,8 +4,7 @@ description: Time to drop all these vendor prefixes in my CSS
 tags:
   - css
   - browser support
-  - progressive enhancement
-layout: post
+  - progressive enhancement 
 published: 2017-03-12
 ---
 

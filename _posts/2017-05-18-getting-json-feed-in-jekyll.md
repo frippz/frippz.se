@@ -4,8 +4,7 @@ description: How to create a Liquid template for JSON Feed
 tags:
   - web
   - tech
-  - jekyll
-layout: post
+  - jekyll 
 published: 2017-05-18 09:30:00 +0100
 date: 2017-05-18 09:30:00 +0100
 ---

@@ -5,8 +5,7 @@ tags:
   - tools
   - vim
   - apple
-  - macbook pro
-layout: post
+  - macbook pro 
 external-link: http://csswizardry.com/2017/01/preparing-vim-for-apples-touch-bar/
 published: 2017-01-13
 ---

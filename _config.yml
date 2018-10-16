@@ -1,10 +1,10 @@
 # Site settings
-title: frippz.se
-email: contact@frippz.se
+title: 'frippz.se'
+email: 'contact@frippz.se'
 baseurl: ''
-url: https://frippz.se
-permalink: pretty
-paginate: 5
+url: 'https://frippz.se'
+permalink: 'pretty'
+paginate: '5'
 
 # Default page settings
 defaults:
@@ -12,10 +12,23 @@ defaults:
     scope:
       path: ''
     values:
-      author: Fredrik Frodlund
+      layout: 'default'
+  -
+    scope:
+      path: ''
+      type: 'pages'
+    values:
+      layout: 'page'
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+      layout: 'post'
+      author: 'Fredrik Frodlund'
 
 # Server settings
-host: 0.0.0.0
+host: '0.0.0.0'
 
 # Gems
 plugins:
@@ -25,23 +38,15 @@ plugins:
   - 'jekyll-tidy'
   - 'rouge'
 
-# Defaults
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default"
-
 # Collections
 collections:
   pages:
     output: true
-    permalink: /:path.html
+    permalink: '/:path.html'
 
 # Tags
-tag_page_layout: tags-page
-tag_page_dir: tags
+tag_page_layout: 'tags-page'
+tag_page_dir: 'tags'
 
 # Jekyll tidy
 jekyll_tidy:

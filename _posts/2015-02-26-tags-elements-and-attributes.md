@@ -2,8 +2,7 @@
 title: Tags, elements and attributes
 description: A basic crash course in correct HTML terminology and why you should learn it.
 tags:
-  - html
-layout: post
+  - html 
 published: 2015-02-26
 ---
 

@@ -7,8 +7,7 @@ tags:
   - css
   - gulp
   - jekyll
-  - cache busting
-layout: post
+  - cache busting 
 published: 2016-02-18
 ---
 
