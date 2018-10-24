@@ -24,6 +24,7 @@
   /* Article */
   --article-link: #83261c;
   --article-link-invert: #fff;
+  --article-header-decoration: rgba(0, 0, 0, 0.2);
 
   /**
    * Surface colors
@@ -31,6 +32,9 @@
   --body-background: #f6f3ea;
   --header-background: #83261c;
   --footer-background: #333;
+
+  /* Borders */
+  --faint-border: rgba(0, 0, 0, 0.08);
 
   /* Forms */
   --default-button: #333;
@@ -45,4 +49,54 @@
   /* Line numbers */
   --line-numbers-border: #555;
   --line-numbers-text: #888;
+}
+
+@media only screen {
+
+  .dark-mode {
+
+    /**
+     * Text & glyph colors
+     */
+
+    /* Body */
+    --body-text: #e6e5d0;
+    --body-text-invert: #333;
+
+    /* Header */
+    --header-text: #e6e5d0;
+    --header-text-invert: #83261c;
+
+    /* Footer */
+    --footer-text: #edd6b4;
+    --footer-text-invert: #252525;
+    --footer-text-hover: #efefef;
+
+    /* Article */
+    --article-link: #e6e5d0;
+    --article-link-invert: #252525;
+    --article-header-decoration: rgba(255, 255, 255, 0.3);
+    --faint-border: rgba(255, 255, 255, 0.2);
+
+    /**
+     * Surface colors
+     */
+    --body-background: #252525;
+    --header-background: #252525;
+    --footer-background: #252525;
+
+    /* Forms */
+    --default-button: #333;
+
+    /**
+     * Code
+     */
+    --code-background: #252525;
+    --inline-code-background: rgba(255, 255, 255, 0.06);
+    --inline-code-border: var(--body-text);
+
+    /* Line numbers */
+    --line-numbers-border: #555;
+    --line-numbers-text: #888;
+  }
 }
