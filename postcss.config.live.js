@@ -3,6 +3,8 @@
 module.exports = {
   map: { inline: false },
   plugins: [
-    require('postcss-custom-properties'),
+    require('postcss-custom-properties')({
+      preserve: false
+    }),
   ]
 };
