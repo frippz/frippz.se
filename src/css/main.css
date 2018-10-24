@@ -84,8 +84,8 @@
   article h2 a,
   article h2 a:visited {
     color: var(--body-text);
-    text-decoration-color: rgba(0, 0, 0, 0.4);
-    -webkit-text-decoration-color: rgba(0, 0, 0, 0.4);
+    text-decoration-color: var(--article-header-decoration);
+    -webkit-text-decoration-color: var(--article-header-decoration);
     text-decoration-style: dotted;
     -webkit-text-decoration-style: dotted;
   }
@@ -116,13 +116,14 @@
   }
 
   article footer {
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    border-top: 1px solid var(--faint-border);
     padding-left: 0.5em;
     padding-right: 0.5em;
   }
 
   .article-end {
     display: block;
+    fill: var(--faint-border);
     margin: 3.75em auto;
   }
 
@@ -139,7 +140,7 @@
 
   /* Icon for external links */
   [rel="external"] + .svg-icon {
-    fill: rgba(0, 0, 0, 0.2);
+    fill: var(--article-header-decoration);
     margin: 0;
     vertical-align: middle;
     height: 0.65em;
@@ -354,7 +355,7 @@
   blockquote {
     margin: 0 1em 1em;
     padding-left: 0.75em;
-    border-left: 4px solid rgba(0, 0, 0, 0.08);
+    border-left: 4px solid var(--faint-border);
   }
 
   /**
