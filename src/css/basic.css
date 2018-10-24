@@ -110,17 +110,8 @@
    */
   html,
   body {
-    background: #f6f3ea;
-    color: #333;
-  }
-
-  @media (prefers-dark-interface) {
-
-    html,
-    body {
-      background: #333;
-      color: #fdce93;
-    }
+    background: var(--body-background);
+    color: var(--body-text);
   }
 
   /**
@@ -236,7 +227,7 @@
    */
   button {
     border: 0;
-    background: #333;
+    background: var(--default-button);
     color: #fff;
     border-radius: 0.25em;
     font-size: inherit;
