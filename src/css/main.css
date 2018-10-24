@@ -19,8 +19,8 @@
    * Header
    */
   #header {
-    background-color: #83261c;
-    color: #fff;
+    background-color: var(--header-background);
+    color: var(--header-text);
     padding: 0;
   }
 
@@ -37,8 +37,8 @@
   }
 
   .main-title a:focus {
-    background-color: #fff;
-    color: #83261c;
+    background-color: var(--header-text);
+    color: var(--header-text-invert);
     outline: 0;
   }
 
@@ -71,8 +71,8 @@
   }
 
   #main-nav a:focus {
-    background-color: #fff;
-    color: #83261c;
+    background-color: var(--header-text);
+    color: var(--header-text-invert);
     outline: 0;
   }
 
@@ -81,8 +81,9 @@
    */
 
   /* Heading links */
-  article h2 a {
-    color: currentcolor;
+  article h2 a,
+  article h2 a:visited {
+    color: var(--body-text);
     text-decoration-color: rgba(0, 0, 0, 0.4);
     -webkit-text-decoration-color: rgba(0, 0, 0, 0.4);
     text-decoration-style: dotted;
@@ -92,32 +93,26 @@
   article h2 a:hover,
   article h2 a:focus,
   article h2 a:active {
-    text-decoration-color: #83261c;
-    -webkit-text-decoration-color: #83261c;
+    text-decoration-color: var(--article-link);
+    -webkit-text-decoration-color: var(--article-link);
   }
 
   article h2 a:hover + .svg-icon,
   article h2 a:focus + .svg-icon,
   article h2 a:active + .svg-icon {
-    fill: #83261c;
+    fill: var(--article-link);
   }
 
   /* Inline article links */
-  article a {
-    color: #83261c;
+  article a,
+  article a:visited {
+    color: var(--article-link);
   }
 
   article a:focus {
-    background-color: #83261c;
-    color: #fff;
+    background-color: var(--article-link);
+    color: var(--article-link-invert);
     outline: 0;
-  }
-
-  @media (prefers-dark-interface) {
-
-    article a {
-      color: inherit;
-    }
   }
 
   article footer {
@@ -153,7 +148,6 @@
 
   /* Post meta data */
   .post-info {
-    color: #666;
     font-size: 0.85em;
     margin-top: 0;
   }
@@ -196,7 +190,7 @@
   }
 
   .highlighter-rouge pre {
-    background: #252525;
+    background: var(--code-background);
     margin: 2em 0;
     overflow-x: auto;
     padding: 1em;
@@ -205,8 +199,8 @@
   /* Inline code */
   p > code,
   li > code {
-    background: #fff;
-    border: 1px solid #f0dfaf;
+    background: var(--inline-code-background);
+    border: 1px solid var(--inline-code-border);
     padding: 0.1em 0.2em;
   }
 
@@ -223,8 +217,8 @@
   }
 
   .js .ln {
-    border-right: 1px solid #555;
-    color: #888;
+    border-right: 1px solid var(--line-numbers-border);
+    color: var(--line-numbers-text);
     margin-top: 0;
     margin-right: 0.75em;
     padding-right: 0.5em;
@@ -250,8 +244,8 @@
    * Contentinfo
    */
   #footer {
-    background-color: #333;
-    color: #edd6b4;
+    background-color: var(--footer-text-invert);
+    color: var(--footer-text);
     margin-top: 6em;
     padding: 2em 0;
   }
@@ -271,13 +265,14 @@
 
   #footer a:hover,
   #footer a:active {
-    color: #efefef;
+    color: var(--footer-text-hover);
   }
 
+  /* Invert colors on :focus */
   #footer a:focus {
-    background-color: #edd6b4;
+    background-color: var(--footer-text);
     border-radius: 0.25em;
-    color: #333;
+    color: var(--footer-background);
     outline: 0;
   }
 
@@ -337,13 +332,13 @@
 
   .more-articles a:hover,
   .more-articles a:active {
-    color: #83261c;
+    color: var(--article-link);
   }
 
   .more-articles a:focus {
-    background-color: #333;
+    background-color: var(--body-text);
     border-radius: 0.25em;
-    color: #fff;
+    color: var(--body-text-invert);
     outline: 0;
   }
 
@@ -368,8 +363,7 @@
   }
 
   .not-found article #svg-404 {
-    fill: #ccc;
-    filter: drop-shadow(0 0 0.25em rgba(0, 0, 0, 0.4));
+    fill: var(--text-color);
     height: 16em;
     display: block;
     margin: 0 auto;
@@ -382,16 +376,6 @@
     margin: 0 1em 1em;
     padding-left: 0.75em;
     border-left: 4px solid rgba(0, 0, 0, 0.08);
-    color: #595959;
-  }
-
-  @media (prefers-dark-interface) {
-
-    blockquote {
-      color: unset;
-      filter: brightness(0.7);
-      border-left-color: rgba(253, 206, 147, 0.2);
-    }
   }
 
   /**

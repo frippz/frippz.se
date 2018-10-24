@@ -1,0 +1,48 @@
+/**
+ * Global custom properties
+ */
+
+:root {
+
+  /**
+   * Text & glyph colors
+   */
+
+  /* Body */
+  --body-text: #333;
+  --body-text-invert: #fff;
+
+  /* Header */
+  --header-text: #fff;
+  --header-text-invert: #83261c;
+
+  /* Footer */
+  --footer-text: #edd6b4;
+  --footer-text-invert: #333;
+  --footer-text-hover: #efefef;
+
+  /* Article */
+  --article-link: #83261c;
+  --article-link-invert: #fff;
+
+  /**
+   * Surface colors
+   */
+  --body-background: #f6f3ea;
+  --header-background: #83261c;
+  --footer-background: #333;
+
+  /* Forms */
+  --default-button: #333;
+
+  /**
+   * Code
+   */
+  --code-background: #252525;
+  --inline-code-background: #fff;
+  --inline-code-border: #f0dfaf;
+
+  /* Line numbers */
+  --line-numbers-border: #555;
+  --line-numbers-text: #888;
+}
