@@ -28,3 +28,5 @@ Also, I did some quick and dirty experimenting with a (very ugly) media query th
 ```
 
 It works… ok, I guess? It might need some more work.
+
+***Update:*** It appears that my code blocks looks like crap at the moment. I will have to take a look at that at some point…
