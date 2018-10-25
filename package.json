@@ -32,13 +32,13 @@
     "build:watch": "onchange ./src/** -i -- yarn run build",
     "prebuild:css": "rm -rf ./dist/css/*",
     "build:css": "postcss -c postcss.config.js ./src/css/*.css -d dist/css",
-    "build:js": "browserify ./src/js/main.js -o ./dist/bundle.js",
+    "build:js": "rsync --checksum --recursive --delete src/js/ ./dist/js",
     "build:svg": "svg-sprite -C svg-sprite.config.json --dest ./_includes src/svg/*.svg",
     "deploy:css": "postcss -c postcss.config.live.js ./src/css/*.css -d dist/css",
     "css:uglify": "foreach -g 'dist/css/*.css' -x 'uglifycss #{path} --output #{path}'",
     "css:hash": "hashmark -r -l 8 dist/css/*.css 'dist/css/{name}-{hash}.css'",
     "postdeploy:css": "yarn run css:uglify && yarn run css:hash",
-    "deploy:js": "browserify ./src/js/main.js | uglifyjs | hashmark -l 8 'dist/bundle.{hash}.js'",
+    "deploy:js": "yarn run build:js",
     "lint": "yarn run lint:css && yarn run lint:js",
     "lint:css": "stylelint --color -f verbose src/css/**/*.css",
     "lint:js": "eslint src/js/**/*.js",
@@ -49,7 +49,6 @@
     "deploy": "yarn run deploy:css && yarn run deploy:js && yarn run build:svg"
   },
   "devDependencies": {
-    "browserify": "^16.1.1",
     "eslint": "^4.5.0",
     "foreach-cli": "^1.8.1",
     "hashmark": "^5.0.0",
