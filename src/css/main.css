@@ -462,7 +462,7 @@
    * Dark Mode
    */
 
-  /* .dark-mode-ready,
+  .dark-mode-ready,
   .dark-mode-ready body,
   .dark-mode-ready #header,
   .dark-mode-ready #footer {
@@ -472,7 +472,7 @@
       background-color var(--transition-time) ease,
       fill calc(var(--transition-time) / 2) ease,
       border-color var(--transition-time) ease;
-  } */
+  }
 
   /* Toggle button */
   [data-toggle] {
