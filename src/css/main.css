@@ -192,6 +192,7 @@
 
   .highlighter-rouge pre {
     background: var(--code-background);
+    border: 1px solid var(--body-text);
     margin: 2em 0;
     overflow-x: auto;
     padding: 1em;
@@ -455,6 +456,31 @@
 
   .tag-cloud .set-4 {
     font-size: 1.8em;
+  }
+
+  /**
+   * Dark Mode
+   */
+
+  .dark-mode-ready,
+  .dark-mode-ready body,
+  .dark-mode-ready #header,
+  .dark-mode-ready #footer {
+    --transition-time: 800ms;
+    transition:
+      color calc(var(--transition-time) / 2) ease,
+      background-color var(--transition-time) ease,
+      fill calc(var(--transition-time) / 2) ease,
+      border-color var(--transition-time) ease;
+  }
+
+  /* Toggle button */
+  [data-toggle] {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    margin: 0;
+    font-size: 0.7em;
   }
 }
 
