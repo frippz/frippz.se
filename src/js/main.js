@@ -18,13 +18,12 @@ if (didCutTheMustard) {
 
   // Init requirejs
   require([
-    'numberedLines',
+    'numberedLines'
 		// 'snowyHeader',
-    'darkMode'
+    // 'darkMode'
   ], function(
-    numberedLines,
+    numberedLines
 		// snowyHeader,
-    darkMode
+    // darkMode
   ) {});
-
 }
