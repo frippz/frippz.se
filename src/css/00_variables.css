@@ -51,9 +51,9 @@
   --line-numbers-text: #888;
 }
 
-@media only screen {
+@media only screen and (prefers-color-scheme: dark) {
 
-  .dark-mode {
+  :root {
 
     /**
      * Text & glyph colors
