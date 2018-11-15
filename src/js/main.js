@@ -19,11 +19,9 @@ if (didCutTheMustard) {
   // Init requirejs
   require([
     'numberedLines'
-		// 'snowyHeader',
-    // 'darkMode'
+		// 'snowyHeader'
   ], function(
     numberedLines
-		// snowyHeader,
-    // darkMode
+		// snowyHeader
   ) {});
 }
