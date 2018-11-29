@@ -5,28 +5,6 @@
 :root {
 
   /**
-   * Text & glyph colors
-   */
-
-  /* Body */
-  --body-text: #333;
-  --body-text-invert: #fff;
-
-  /* Header */
-  --header-text: #fff;
-  --header-text-invert: #83261c;
-
-  /* Footer */
-  --footer-text: #edd6b4;
-  --footer-text-invert: #333;
-  --footer-text-hover: #efefef;
-
-  /* Article */
-  --article-link: #83261c;
-  --article-link-invert: #fff;
-  --article-header-decoration: rgba(0, 0, 0, 0.2);
-
-  /**
    * Surface colors
    */
   --body-background: #f6f3ea;
@@ -49,11 +27,57 @@
   /* Line numbers */
   --line-numbers-border: #555;
   --line-numbers-text: #888;
+
+  /**
+   * Text & glyph colors
+   */
+
+  /* Body */
+  --body-text: #333;
+  --body-text-invert: #fff;
+
+  /* Header */
+  --header-text: #fff;
+  --header-text-invert: #83261c;
+
+  /* Footer */
+  --footer-text: #edd6b4;
+  --footer-text-invert: #333;
+  --footer-text-hover: #efefef;
+
+  /* Article */
+  --article-link: #83261c;
+  --article-link-invert: #fff;
+  --article-header-decoration: rgba(0, 0, 0, 0.2);
 }
 
 @media only screen and (prefers-color-scheme: dark) {
 
   :root {
+
+    /**
+     * Surface colors
+     */
+
+    /* --body-background: #252525; */
+    --body-background: #292a2d;
+    --header-background: var(--body-background);
+    --footer-background: var(--body-background);
+
+    /* Forms */
+    --default-button: #333;
+
+    /**
+     * Code
+     */
+
+    /* --code-background: var(--body-background); */
+    --inline-code-background: rgba(255, 255, 255, 0.06);
+    --inline-code-border: rgba(255, 255, 255, 0.12);
+
+    /* Line numbers */
+    --line-numbers-border: #555;
+    --line-numbers-text: #888;
 
     /**
      * Text & glyph colors
@@ -69,34 +93,13 @@
 
     /* Footer */
     --footer-text: #edd6b4;
-    --footer-text-invert: #252525;
+    --footer-text-invert: var(--body-background);
     --footer-text-hover: #efefef;
 
     /* Article */
     --article-link: #e6e5d0;
-    --article-link-invert: #252525;
+    --article-link-invert: var(--body-background);
     --article-header-decoration: rgba(255, 255, 255, 0.3);
     --faint-border: rgba(255, 255, 255, 0.2);
-
-    /**
-     * Surface colors
-     */
-    --body-background: #252525;
-    --header-background: #252525;
-    --footer-background: #252525;
-
-    /* Forms */
-    --default-button: #333;
-
-    /**
-     * Code
-     */
-    --code-background: #252525;
-    --inline-code-background: rgba(255, 255, 255, 0.06);
-    --inline-code-border: rgba(255, 255, 255, 0.12);
-
-    /* Line numbers */
-    --line-numbers-border: #555;
-    --line-numbers-text: #888;
   }
 }

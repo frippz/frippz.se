@@ -190,9 +190,15 @@
     margin: 0;
   }
 
+  @media (min-width: 48em) {
+
+    div.highlighter-rouge {
+      margin: 0 -4rem;
+    }
+  }
+
   .highlighter-rouge pre {
     background: var(--code-background);
-    border: 1px solid var(--body-text);
     margin: 2em 0;
     overflow-x: auto;
     padding: 1em;
