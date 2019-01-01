@@ -3,7 +3,7 @@
  */
 (function () {
   var headElem = document.querySelector('head');
-  var snowStyles = '<link rel="stylesheet" href="//frippz-se.s3.amazonaws.com/christmas.css">';
+  var snowStyles = '<link rel="stylesheet" href="//frippz-se.s3.amazonaws.com/snow.css">';
   var header = document.querySelector('#header');
 
   headElem.insertAdjacentHTML('beforeend', snowStyles);
