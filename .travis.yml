@@ -6,7 +6,6 @@ before_install:
    - nvm install 8.12.0
    - npm install -g yarn
    - yarn
-   - gem install bundler
 
 cache:
   directories:
