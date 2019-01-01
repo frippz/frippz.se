@@ -33,6 +33,7 @@
     "prebuild:css": "rm -rf ./dist/css/*",
     "build:css": "postcss -c postcss.config.js ./src/css/*.css -d dist/css",
     "build:js": "rsync --checksum --recursive --delete src/js/ ./dist/js",
+    "postbuild:js": "hashmark -r -l 8 dist/js/vendor/require.min.js 'dist/js/vendor/{name}-{hash}.js'",
     "build:svg": "svg-sprite -C svg-sprite.config.json --dest ./_includes src/svg/*.svg",
     "deploy:css": "postcss -c postcss.config.live.js ./src/css/*.css -d dist/css",
     "css:uglify": "foreach -g 'dist/css/*.css' -x 'uglifycss #{path} --output #{path}'",

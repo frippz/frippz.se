@@ -1,1 +1,5 @@
-<script async data-main="/dist/js/main" src="/dist/js/vendor/require.min.js"></script>
+{% for js in site.static_files %}
+  {% if js.path contains "dist/js/vendor" %}
+    <script async data-main="/dist/js/main" src="{{ site.baseurl }}{{ js.path }}"></script>
+  {% endif %}
+{% endfor %}
