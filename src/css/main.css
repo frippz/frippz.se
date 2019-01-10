@@ -80,6 +80,11 @@
    * Articles
    */
 
+  /* Article headings */
+  article h2 {
+    margin: 0;
+  }
+
   /* Heading links */
   article h2 a,
   article h2 a:visited {
