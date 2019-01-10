@@ -13,6 +13,7 @@ defaults:
       path: ''
     values:
       layout: 'default'
+      author: 'Fredrik Frodlund'
   -
     scope:
       path: ''
@@ -25,7 +26,6 @@ defaults:
       type: 'posts'
     values:
       layout: 'post'
-      author: 'Fredrik Frodlund'
 
 # Server settings
 host: '0.0.0.0'
