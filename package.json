@@ -26,7 +26,7 @@
     "yarn": "^1.0.0"
   },
   "scripts": {
-    "start": "parallelshell 'yarn run build:watch' 'yarn run jekyll:serve'",
+    "start": "concurrently 'yarn run build:watch' 'yarn run jekyll:serve'",
     "prebuild": "touch _includes/sprite.svg & mkdir -p dist",
     "build": "yarn run build:css && yarn run build:js && yarn run build:svg",
     "build:watch": "onchange ./src/** -i -- yarn run build",
@@ -50,11 +50,11 @@
     "deploy": "yarn run deploy:css && yarn run deploy:js && yarn run build:svg"
   },
   "devDependencies": {
+    "concurrently": "^4.1.0",
     "eslint": "^4.5.0",
     "foreach-cli": "^1.8.1",
     "hashmark": "^5.0.0",
     "onchange": "^3.2.1",
-    "parallelshell": "^3.0.1",
     "postcss-cli": "^5.0.0",
     "postcss-custom-properties": "^7.0.0",
     "stylelint": "^9.2.0",
