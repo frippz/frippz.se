@@ -18,10 +18,8 @@ if (didCutTheMustard) {
 
   // Init requirejs
   require([
-    'numberedLines',
-		'snowyHeader'
+    'numberedLines'
   ], function(
-    numberedLines,
-		snowyHeader
+    numberedLines
   ) {});
 }
