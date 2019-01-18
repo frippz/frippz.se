@@ -6,19 +6,15 @@ layout: default
     <h2 itemprop="headline">
       {% if page.external-link %}
         <a href="{{ page.external-link }}" rel="external">{{ page.title }}</a>
-        <svg class="svg-icon" height="16" width="16">
-          <use xlink:href="#icon-external"></use>
-        </svg>
+        {% include svg.html icon="icon-external" %}
       {% else %}
         {{ page.title }}
       {% endif %}
     </h2>
     <small class="post-info">
       Posted on <time datetime="{{ page.date | date: '%Y-%m-%d' }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>
-      <a class="permalink" href="{{ post.url | prepend: site.baseurl }}" title="Permalink" aria-label="Permalink">
-        <svg class="svg-icon" height="16" width="16">
-          <use xlink:href="#icon-link"></use>
-        </svg>
+      <a class="permalink" href="{{ post.url | prepend: site.baseurl }}" aria-label="Permalink">
+        {% include svg.html icon="icon-link" %}
       </a>
     </small>
     <span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
@@ -38,7 +34,7 @@ layout: default
   {% if page.tags %}
     <footer>
       <p class="post-tags">
-      <em><strong>Tagged with:</strong> <span itemprop="keywords">{{ page | tags }}</span></em>
+        <em><strong>Keywords:</strong> <span itemprop="keywords">{{ page | tags }}</span></em>
       </p>
     </footer>
   {% endif %}

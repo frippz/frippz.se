@@ -13,19 +13,15 @@ sitemap:
     <h2 itemprop="headline">
       {% if post.external-link %}
         <a href="{{ post.external-link }}" rel="external">{{ post.title }}</a>
-        <svg class="svg-icon" height="16" width="16" aria-hidden="true">
-          <use xlink:href="#icon-external"></use>
-        </svg>
+        {% include svg.html icon="icon-external" %}
       {% else %}
         <a href="{{ post.url | prepend: site.baseurl }}" class="article-link">{{ post.title }}</a>
       {% endif %}
     </h2>
     <small class="post-info">
       Posted on <time datetime="{{ post.date | date: '%Y-%m-%d' }}" itemprop="datePublished">{{ post.date | date: '%B %-d, %Y' }}</time>
-      <a class="permalink" href="{{ post.url | prepend: site.baseurl }}" title="Permalink" aria-label="Permalink">
-        <svg class="svg-icon" height="16" width="16" aria-hidden="true">
-          <use xlink:href="#icon-link"></use>
-        </svg>
+      <a class="permalink" href="{{ post.url | prepend: site.baseurl }}" aria-label="Permalink">
+        {% include svg.html icon="icon-link" %}
       </a>
     </small>
     <span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
@@ -46,7 +42,7 @@ sitemap:
   {% if post.tags %}
     <footer>
       <p class="post-tags">
-        <em><strong>Tagged with:</strong> <span itemprop="keywords">{{ post | tags }}</span></em>
+        <em><strong>Keywords:</strong> <span itemprop="keywords">{{ post | tags }}</span></em>
       </p>
     </footer>
   {% endif %}
