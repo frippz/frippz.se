@@ -1,0 +1,124 @@
+/**
+ * Footer
+ */
+
+@media screen {
+
+  #footer {
+    background-color: var(--footer-text-invert);
+    color: var(--footer-text);
+    margin-top: 6em;
+    padding: 2em 0;
+    font-family: var(--title-font);
+    font-weight: 200;
+  }
+
+  #footer a,
+  #footer a:visited {
+    color: currentcolor;
+    text-decoration: none;
+    padding: 0.25em;
+  }
+
+  #footer a:hover,
+  #footer a:active {
+    color: var(--footer-text-hover);
+  }
+
+  /* Invert colors on :focus */
+  #footer a:focus {
+    background-color: var(--footer-text);
+    border-radius: 0.25em;
+    color: var(--footer-background);
+    outline: 0;
+  }
+
+  #footer .svg-icon {
+    fill: currentcolor;
+    display: inline-block;
+    margin-right: 0.25em;
+  }
+
+  /* Footer links */
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-links li + li {
+    margin-top: 1em;
+  }
+
+  /* Copyright */
+  .copyright {
+    display: block;
+    font-size: 0.75em;
+    margin-top: 4em;
+    text-align: center;
+    width: 100%;
+  }
+
+  /**
+   * Older & newer articles navigation
+   */
+  .more-articles {
+    font-weight: 500;
+    margin: 4em -0.25em 0;
+    display: flex;
+  }
+
+  .more-articles a {
+    margin-top: 0;
+    padding: 0 0.25em;
+  }
+
+  .more-articles a:hover,
+  .more-articles a:active {
+    color: var(--article-link);
+  }
+
+  .more-articles a:focus {
+    background-color: var(--body-text);
+    border-radius: 0.25em;
+    color: var(--body-text-invert);
+    outline: 0;
+  }
+
+  .more-articles .newer {
+    margin-left: auto;
+  }
+
+  .more-articles .older {
+    margin-right: auto;
+  }
+
+  .more-articles .svg-icon {
+    height: 1em;
+    width: 1em;
+  }
+}
+
+@media only screen and (min-width: 22em) {
+
+  /* Switch to flexbox layout in footer */
+  #footer .landmark-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /* Footer links */
+  .footer-links {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+  }
+
+  .footer-links.external-links {
+    margin-right: auto;
+  }
+
+  .footer-links.feeds {
+    margin-left: auto;
+  }
+}

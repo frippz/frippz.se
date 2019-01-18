@@ -1,0 +1,110 @@
+/**
+ * Main layout
+ */
+
+@media screen {
+
+  body::before {
+    content: "";
+    height: 0.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--body-top-border);
+    z-index: 2;
+  }
+
+  /**
+   * Landmark content
+   *
+   * Used in any main landmarks
+   */
+  .landmark-content {
+    margin: 0 auto;
+    max-width: 34em;
+    padding: 0 1em;
+  }
+
+}
+
+@media only screen {
+
+  /**
+   * Sticky footer
+   */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+}
+
+@media only screen and (min-width: 32em) {
+
+  /* Inline header content when there’s room */
+  .header-content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  /* Reset main title spacing */
+  .main-title {
+    margin: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  @supports (display: grid) {
+
+    body {
+      display: grid;
+      grid-template-columns: 1fr 42rem 1fr;
+      grid-template-rows: auto minmax(16rem, min-content);
+    }
+
+    #header {
+      grid-column: 1 / 2;
+      text-align: right;
+    }
+
+    main {
+      grid-column: 2 / 3;
+    }
+
+    #footer {
+      margin-top: 0;
+      grid-column: 1 / -1;
+      grid-row: 2 / -1;
+    }
+
+    /* Unset flex header */
+    .header-content {
+      display: block;
+      margin-bottom: 2em;
+    }
+
+    /* Header content */
+    .header-content {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 2rem;
+    }
+
+    /* Man navigation */
+    nav {
+      margin-top: 2em;
+    }
+
+    #main-nav {
+      flex-direction: column;
+    }
+  }
+}

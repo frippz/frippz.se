@@ -1,0 +1,79 @@
+/**
+ * Header
+ */
+
+@media screen {
+
+  #header {
+    font-family: var(--title-font);
+  }
+
+  /* Main title */
+  .main-title {
+    font-size: 2.8em;
+    line-height: 1.125;
+    padding: 0.5em 0 0;
+    white-space: nowrap;
+  }
+
+  .main-title span {
+    font-size: 0.6em;
+  }
+
+  .main-title a {
+    text-decoration: none;
+  }
+
+  .main-title a:focus {
+    background-color: var(--header-text);
+    color: var(--header-text-invert);
+    outline: 0;
+  }
+
+  /**
+   * Navigation
+   */
+  #main-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #main-nav li {
+    display: block;
+  }
+
+  #main-nav a {
+    display: block;
+    text-decoration: none;
+  }
+
+  #main-nav a:hover,
+  #main-nav a:active {
+    text-decoration: underline;
+  }
+
+  #main-nav a:focus {
+    background-color: var(--header-text);
+    color: var(--header-text-invert);
+    outline: 0;
+  }
+}
+
+@media only screen and (min-width: 20em) {
+
+  /**
+   * Inline menu items
+   */
+  #main-nav {
+    display: flex;
+  }
+
+  #main-nav li {
+    display: inline;
+  }
+
+  #main-nav li + li {
+    margin-left: 1em;
+  }
+}
