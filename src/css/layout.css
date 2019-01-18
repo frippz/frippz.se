@@ -26,6 +26,13 @@
     padding: 0 1em;
   }
 
+  /**
+   * Main landmark
+   */
+  main {
+    padding-bottom: 4em;
+  }
+
 }
 
 @media only screen {
