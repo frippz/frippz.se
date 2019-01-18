@@ -1,105 +1,27 @@
 /**
- * main.css
+ * Main stylesheet
  *
- * @author Fredrik Frodlund
+ * To be broken up into smaller components, because who the hell
+ * can manage mega stylesheets anymore?
  */
 
 @media screen {
 
   /**
-   * Landmark content
-   */
-  .landmark-content {
-    margin: 0 auto;
-    max-width: 34em;
-    padding: 0 1em;
-  }
-
-  /**
-   * Header
-   */
-  #header {
-    background-color: var(--header-background);
-    color: var(--header-text);
-    padding: 0;
-  }
-
-  /* Main title */
-  .main-title {
-    font-size: 2.8em;
-    font-weight: 200;
-    line-height: 1.125;
-    padding: 0.5em 0 0.25em;
-  }
-
-  .main-title a {
-    text-decoration: none;
-  }
-
-  .main-title a:focus {
-    background-color: var(--header-text);
-    color: var(--header-text-invert);
-    outline: 0;
-  }
-
-  /**
-   * Navigation
-   */
-  nav {
-    margin-top: 0;
-  }
-
-  #main-nav {
-    list-style: none;
-    margin: 0 0 0 -0.25em;
-    padding: 0;
-  }
-
-  #main-nav li {
-    display: block;
-  }
-
-  #main-nav a {
-    display: block;
-    text-decoration: none;
-    padding: 0.25em;
-  }
-
-  #main-nav a:hover,
-  #main-nav a:active {
-    text-decoration: underline;
-  }
-
-  #main-nav a:focus {
-    background-color: var(--header-text);
-    color: var(--header-text-invert);
-    outline: 0;
-  }
-
-  /**
    * Articles
    */
 
-  /* Article headings */
-  article h2 {
-    margin: 0;
-  }
-
   /* Heading links */
-  article h2 a,
+  article h2 a:link,
   article h2 a:visited {
     color: var(--body-text);
-    text-decoration-color: var(--article-header-decoration);
-    -webkit-text-decoration-color: var(--article-header-decoration);
-    text-decoration-style: dotted;
-    -webkit-text-decoration-style: dotted;
+    text-decoration: none;
   }
 
-  article h2 a:hover,
-  article h2 a:focus,
-  article h2 a:active {
-    text-decoration-color: var(--article-link);
-    -webkit-text-decoration-color: var(--article-link);
+  article h2 a:focus {
+    color: var(--article-link-invert);
+    text-decoration-color: var(--article-link-invert);
+    -webkit-text-decoration-color: var(--article-link-invert);
   }
 
   article h2 a:hover + .svg-icon,
@@ -141,6 +63,7 @@
     width: 0.85em;
     margin-left: 0.25em;
     vertical-align: baseline;
+    overflow: visible;
   }
 
   /* Icon for external links */
@@ -154,12 +77,14 @@
 
   /* Post meta data */
   .post-info {
+    font-family: var(--title-font);
+    font-weight: 300;
+    display: block;
     font-size: 0.85em;
-    margin-top: 0;
+    margin-top: -1em;
   }
 
   .post-tags {
-    font-size: 0.85em;
     margin-top: 0.5em;
   }
 
@@ -195,18 +120,12 @@
     margin: 0;
   }
 
-  @media (min-width: 48em) {
-
-    div.highlighter-rouge {
-      margin: 0 -4rem;
-    }
-  }
-
   .highlighter-rouge pre {
     background: var(--code-background);
     margin: 2em 0;
     overflow-x: auto;
     padding: 1em;
+    -webkit-overflow-scrolling: touch;
   }
 
   /* Inline code */
@@ -251,100 +170,6 @@
 
   .js .ln + code {
     margin-top: 0;
-  }
-
-  /**
-   * Contentinfo
-   */
-  #footer {
-    background-color: var(--footer-text-invert);
-    color: var(--footer-text);
-    margin-top: 6em;
-    padding: 2em 0;
-  }
-
-  #footer a,
-  #footer a:visited {
-    color: currentcolor;
-    text-decoration: none;
-    padding: 0.25em;
-  }
-
-  #footer a:hover,
-  #footer a:active {
-    color: var(--footer-text-hover);
-  }
-
-  /* Invert colors on :focus */
-  #footer a:focus {
-    background-color: var(--footer-text);
-    border-radius: 0.25em;
-    color: var(--footer-background);
-    outline: 0;
-  }
-
-  #footer .svg-icon {
-    fill: currentcolor;
-    display: inline-block;
-    margin-right: 0.25em;
-  }
-
-  /* Footer links */
-  .footer-links {
-    list-style: none;
-    padding: 0;
-  }
-
-  .footer-links li + li {
-    margin-top: 1em;
-  }
-
-  /* Copyright */
-  .copyright {
-    display: block;
-    font-size: 0.75em;
-    margin-top: 4em;
-    text-align: center;
-    width: 100%;
-  }
-
-  /**
-   * Older & newer articles navigation
-   */
-  .more-articles {
-    font-weight: 500;
-    margin: 4em -0.25em 0;
-    display: flex;
-  }
-
-  .more-articles a {
-    margin-top: 0;
-    padding: 0 0.25em;
-  }
-
-  .more-articles a:hover,
-  .more-articles a:active {
-    color: var(--article-link);
-  }
-
-  .more-articles a:focus {
-    background-color: var(--body-text);
-    border-radius: 0.25em;
-    color: var(--body-text-invert);
-    outline: 0;
-  }
-
-  .more-articles .newer {
-    margin-left: auto;
-  }
-
-  .more-articles .older {
-    margin-right: auto;
-  }
-
-  .more-articles .svg-icon {
-    height: 1em;
-    width: 1em;
   }
 
   /**
@@ -469,22 +294,6 @@
     font-size: 1.8em;
   }
 
-  /**
-   * Dark Mode
-   */
-
-  .dark-mode-ready,
-  .dark-mode-ready body,
-  .dark-mode-ready #header,
-  .dark-mode-ready #footer {
-    --transition-time: 800ms;
-    transition:
-      color calc(var(--transition-time) / 2) ease,
-      background-color var(--transition-time) ease,
-      fill calc(var(--transition-time) / 2) ease,
-      border-color var(--transition-time) ease;
-  }
-
   /* Toggle button */
   [data-toggle] {
     position: absolute;
@@ -492,64 +301,5 @@
     right: 1em;
     margin: 0;
     font-size: 0.7em;
-  }
-}
-
-@media only screen {
-
-  /**
-   * Sticky footer
-   */
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-
-  main {
-    flex: 1 0 auto;
-  }
-}
-
-@media only screen and (min-width: 20em) {
-
-  /**
-   * Inline menu items
-   */
-  #main-nav {
-    display: flex;
-  }
-
-  #main-nav li {
-    display: inline;
-  }
-
-  #main-nav li + li {
-    margin-left: 1em;
-  }
-}
-
-@media only screen and (min-width: 22em) {
-
-  /* Switch to flexbox layout in footer */
-  #footer .landmark-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  /* Footer links */
-  .footer-links {
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 0;
-  }
-
-  .footer-links.external-links {
-    margin-right: auto;
-  }
-
-  .footer-links.feeds {
-    margin-left: auto;
   }
 }

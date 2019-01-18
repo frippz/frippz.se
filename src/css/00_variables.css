@@ -5,9 +5,15 @@
 :root {
 
   /**
+   * Typography
+   */
+  --title-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /**
    * Surface colors
    */
   --body-background: #f6f3ea;
+  --body-top-border: #f06543;
   --header-background: #83261c;
   --footer-background: #333;
 
@@ -37,8 +43,8 @@
   --body-text-invert: #fff;
 
   /* Header */
-  --header-text: #fff;
-  --header-text-invert: #83261c;
+  --header-text: var(--body-text);
+  --header-text-invert: var(--article-link-invert);
 
   /* Footer */
   --footer-text: #edd6b4;
@@ -46,7 +52,7 @@
   --footer-text-hover: #efefef;
 
   /* Article */
-  --article-link: #83261c;
+  --article-link: #c83c19;
   --article-link-invert: #fff;
   --article-header-decoration: rgba(0, 0, 0, 0.2);
 }
@@ -97,7 +103,7 @@
     --footer-text-hover: #efefef;
 
     /* Article */
-    --article-link: #e6e5d0;
+    --article-link: var(--body-top-border);
     --article-link-invert: var(--body-background);
     --article-header-decoration: rgba(255, 255, 255, 0.3);
     --faint-border: rgba(255, 255, 255, 0.2);
