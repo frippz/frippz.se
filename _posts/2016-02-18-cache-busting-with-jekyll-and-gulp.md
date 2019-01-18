@@ -7,7 +7,7 @@ tags:
   - css
   - gulp
   - jekyll
-  - cache busting 
+  - cache busting
 published: 2016-02-18
 ---
 
@@ -15,7 +15,7 @@ Since I love tinkering with my journal, updates to both my stylesheets and JavaS
 
 ### What is cache busting?
 
-In short, cache busting is a way to make sure that client downloads your very latest version of a file. The simplest way to do this is to either give the file a random name, like `ab459ef32da.css` or, in my opinion, the nicer variant of adding a query string along the lines of `styles.css?version=ab459ef32da`. Then, each time you do a change to this file, you make sure that the random string changes, and you’ve successfully busted that cache.
+In short, cache busting is a way to make sure that a client downloads your very latest version of a file. The simplest way to do this is to either give the file a random name, like `ab459ef32da.css` or, in my opinion, the nicer variant of adding a query string along the lines of `styles.css?version=ab459ef32da`. Then, each time you do a change to this file, you make sure that the random string changes, and you’ve successfully busted that cache.
 
 **_Update (2016-02-26):_** Apparently, [according to GTmetrix](https://gtmetrix.com/remove-query-strings-from-static-resources.html), some proxies do not cache static resources with a query string in the URL. They recommend that you encode the unique string into the file names themselves.
 
