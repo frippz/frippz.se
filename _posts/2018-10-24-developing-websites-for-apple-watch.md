@@ -18,7 +18,7 @@ As of WatchOS 5, you are able to render web content on the Apple Watch. [Marcus 
 Also, I did some quick and dirty experimenting with a (very ugly) media query that _should_ target only Apple Watches. More testing is warranted.
 
 ```css
-/* Apple Watch only? How can this come back to bite me in the ass? */
+/* Apple Watch only? How can this possibly come back to bite me in the ass? */
 @media only screen and (max-width: 22em) and (max-height: 357px) {
 
   html {
