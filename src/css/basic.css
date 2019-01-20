@@ -119,7 +119,7 @@
    * Base size set to browser default (usually 16px)
    */
   html {
-    font-family: "Charter", serif;
+    font-family: "Charter", Georgia, serif;
     line-height: 1.7;
     font-weight: normal;
 
