@@ -41,7 +41,7 @@ document.addEventListener('click', function (event) {
 }, false);
 ```
 
-Since we might have any number of buttons in a page, all that might potentially mock a scenario that takes us away from the current page, I found that the most preferrable method is to attach an event listener to the entire document and use event delegation to trigger the actions. Something that I’ve picked up from [Chris Ferdinandi](https://gomakethings.com/why-is-javascript-event-delegation-better-than-attaching-events-to-each-element/). The short-short version of the script:
+Since we might have any number of buttons in a page, all that might potentially mock a scenario that takes us away from the current page, I found that the most preferrable method is to attach an event listener to the entire document and use event delegation to trigger the actions. This was something that I’ve picked up from [Chris Ferdinandi](https://gomakethings.com/why-is-javascript-event-delegation-better-than-attaching-events-to-each-element/). The short-short version of the script:
 
 1. Listen for clicks across the document
 2. Check if the click matches an element with the `data-prototype-url` attribute
