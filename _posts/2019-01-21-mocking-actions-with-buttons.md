@@ -1,6 +1,6 @@
 ---
 title: Mocking actions with buttons
-description: Sometimes we might want buttons to take use places even in prototypes. This solution helps mock flows in static HTML prototypes.
+description: Sometimes we might want buttons to take us places even in prototypes. This solution helps mock flows in static HTML prototypes.
 tags:
   - html
   - javascript
