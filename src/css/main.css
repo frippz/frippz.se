@@ -92,11 +92,6 @@
     font-weight: 600;
   }
 
-  /* Editorial lists */
-  article li + li {
-    margin-top: 0.5em;
-  }
-
   /* Images with captions */
   figure.image {
     margin: 2em 0;
