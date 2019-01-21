@@ -77,3 +77,10 @@
     margin-left: 1em;
   }
 }
+
+@media only screen and (min-width: 60em) {
+
+  #main-nav li + li {
+    margin-top: 0.5em;
+  }
+}

@@ -185,7 +185,8 @@
    * Blockquotes
    */
   blockquote {
-    margin: 0 1em 1em;
+    margin-left: 1em;
+    margin-right: 1em;
     padding-left: 0.75em;
     border-left: 4px solid var(--faint-border);
   }
