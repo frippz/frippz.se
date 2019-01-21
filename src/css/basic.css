@@ -6,11 +6,16 @@
 
 @media all {
 
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
   /**
    * The Lobotomized Owl
    */
   * + * {
-    margin-top: 1.75em;
+    margin-top: 1.5em;
   }
 
   /* Default owl reset */
@@ -120,7 +125,7 @@
    */
   html {
     font-family: "Charter", Georgia, serif;
-    line-height: 1.7;
+    line-height: 1.5;
     font-weight: normal;
 
     -ms-text-size-adjust: 100%;
@@ -195,6 +200,21 @@
   h5,
   h6 {
     font-size: 1.2em;
+  }
+
+  /**
+   * Paragraphs
+   */
+  p + p {
+    margin-top: 0.75em;
+  }
+
+  /**
+   * Lists
+   */
+  ul,
+  ol {
+    margin-left: 2em;
   }
 
   /**
