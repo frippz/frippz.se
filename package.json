@@ -2,7 +2,7 @@
   "name": "frippz",
   "author": "Fredrik Frodlund <fredrik@frodlund.se> (https://frippz.se)",
   "license": "ISC",
-  "version": "1.6.3-build3",
+  "version": "2.0.1",
   "description": "My quaint little blog",
   "keywords": [
     "blog",
@@ -22,7 +22,7 @@
     "src": "src/"
   },
   "engines": {
-    "node": ">=6.11.1",
+    "node": ">=10.15.0",
     "yarn": "^1.0.0"
   },
   "scripts": {
