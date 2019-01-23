@@ -7,7 +7,7 @@ tags:
   - prototyping
 ---
 
-A common scenario in my line of work is when I build UI components into complete pages, and somewhere on this pages there might be a form. This form might contain a button, and when you click this button you want something to happen. Now, since pattern libraries and HTML prototypes very often are just static HTML, you are limited in what can happen. Naturally, when it comes to regular links, everything works out of the box since all you have to do is link pages together. Buttons, on the other hand, are a different story. 
+A common scenario in my line of work is when I build UI components into complete pages, and somewhere on this pages there might be a form. This form might contain a button, and when you click this button you want something to happen. Now, since pattern libraries and HTML prototypes very often are just static HTML, you are limited in what can happen. Naturally, when it comes to regular links, everything works out of the box since all you have to do is link pages together. Buttons, on the other hand, are a different story.
 
 Let me first state, very clearly, that _this should not be used in production. **Ever.**_ If you want to link to something – well, then we already have the excellent `<a>` element that does that job amazingly well.
 
@@ -32,12 +32,12 @@ You guessed it. We can’t really do very much with this button unless we enlist
 
 ```javascript
 document.addEventListener('click', function (event) {
-	if (event.target.matches('[data-prototype-url]')) {
+  if (event.target.matches('[data-prototype-url]')) {
     var button = event.target;
-		var buttonURL = button.getAttribute('data-prototype-url');
+    var buttonURL = button.getAttribute('data-prototype-url');
     window.location.href = buttonURL;
     console.log(button.textContent + ' clicked');
-	}
+  }
 }, false);
 ```
 
