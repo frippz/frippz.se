@@ -95,7 +95,8 @@
     /* Unset flex header */
     .header-content {
       display: block;
-      margin-bottom: 2em;
+      margin: 0 0 2em;
+      max-width: none;
     }
 
     /* Header content */
