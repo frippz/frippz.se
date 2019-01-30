@@ -8,11 +8,11 @@ jobs:
     steps:
       - checkout
       # - run: sudo apt install rsync rubygems
-      - run: sudo gem install bundler
+      # - run: sudo gem install bundler
       - run: sudo npm install -g yarn@latest
       - run: yarn
       - run: yarn run test
       - run: yarn run deploy
-      - run: bundle install
-      - run: bundle exec jekyll build --incremental
-      - run: bundle exec htmlproofer ./_site --disable-external --empty-alt-ignore
+      # - run: bundle install
+      - run: jekyll build --incremental
+      # - run: bundle exec htmlproofer ./_site --disable-external --empty-alt-ignore
