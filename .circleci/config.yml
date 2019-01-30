@@ -9,16 +9,16 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-        keys:
-          - yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
-          - v1-gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+          keys:
+            - yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
+            - v1-gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
       - run: sudo apt install rsync
       - run: sudo npm install -g yarn@latest
       - run: yarn
       - save_cache:
+        key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
         paths:
           - ~/.cache/yarn
-        key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
       - run: yarn run deploy
       - run: yarn run test
       - run: bundle install --path vendor/bundle
