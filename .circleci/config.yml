@@ -19,8 +19,8 @@ jobs:
           key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
           paths:
             - ~/.cache/yarn
-      - run: yarn run deploy
       - run: yarn run test
+      - run: yarn run deploy
       - run: bundle install --path vendor/bundle
       - save_cache:
           key: v1-gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
