@@ -6,7 +6,7 @@ jobs:
       - image: circleci/ruby:2.4.5-node
     steps:
       - checkout
-      # - run: sudo apt install rsync rubygems
+      - run: sudo apt install rsync
       # - run: sudo gem install bundler
       - run: sudo npm install -g yarn@latest
       - run: yarn
