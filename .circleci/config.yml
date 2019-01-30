@@ -3,8 +3,8 @@ jobs:
   build:
     working_directory: ~/frippz.se
     docker:
+      - image: circleci/ruby:2.4.5
       - image: circleci/node:10.15.0
-      - image: jekyll/jekyll
     steps:
       - checkout
       - run: sudo apt install rsync rubygems
