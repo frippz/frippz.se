@@ -35,13 +35,16 @@ jobs:
             - ~/frippz.se/node_modules
 
       # Run tests
-      - run: yarn run test
+      - run:
+          name: Run tests
+          command: yarn run test
 
       # Build CSS, JS & SVG
-      - run: yarn run deploy
+      - run:
+          name: Build CSS, JS & SVG
+          command: yarn run deploy
 
       # Install Jekyll dependencies and cache them
-      - run: bundle install --path vendor/bundle
       - run:
           name: Install Jekyll dependencies
           command: bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3
