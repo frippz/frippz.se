@@ -8,11 +8,5 @@ jobs:
     steps:
       - checkout
       - run: 'sudo npm install -g yarn@latest'
-      - restore_cache:
-        key: dependency-cache-{{ checksum "package.json" }}
       - run: yarn
-      - save_cache:
-        key: dependency-cache-{{ checksum "package.json" }}
-        paths:
-          - ./node_modules
       - run: yarn run test
