@@ -4,10 +4,10 @@ jobs:
     working_directory: ~/frippz.se
     docker:
       - image: circleci/node:10.15.0
-      - image: circleci/ruby:2.4.5-node-browsers-legacy
+      - image: jekyll/jekyll
     steps:
       - checkout
-      - run: sudo apt install rsync rubygems
+      # - run: sudo apt install rsync rubygems
       - run: sudo gem install bundler
       - run: sudo npm install -g yarn@latest
       - run: yarn
