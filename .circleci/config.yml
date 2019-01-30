@@ -7,8 +7,8 @@ jobs:
       - image: circleci/node:10.15.0
     steps:
       - checkout
-      - run: sudo apt install rsync rubygems
-      - run: sudo gem install bundler
+      # - run: sudo apt install rsync rubygems
+      # - run: sudo gem install bundler
       - run: sudo npm install -g yarn@latest
       - run: yarn
       - run: yarn run test
