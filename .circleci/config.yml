@@ -10,3 +10,6 @@ jobs:
       - run: 'sudo npm install -g yarn@latest'
       - run: yarn
       - run: yarn run test
+      - run: yarn run deploy
+      - run: bundle exec jekyll build --incremental
+      - run: bundle exec htmlproofer ./_site --disable-external --empty-alt-ignore
