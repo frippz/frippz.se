@@ -7,7 +7,6 @@ jobs:
     steps:
       - checkout
       - run: sudo apt install rsync
-      - run: sudo gem install bundler
       - run: sudo npm install -g yarn@latest
       - run: yarn
       - run: yarn run deploy
