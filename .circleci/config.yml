@@ -19,14 +19,18 @@ jobs:
       - run:
           name: Install rsync
           command: sudo apt install rsync
-      - run: sudo npm install -g yarn@latest
+      - run:
+          name: Install yarn
+          command: sudo npm install -g yarn@latest
 
       # Install yarn packages and cache them
-      - run: yarn
+      - run:
+          name: Install yarn packages
+          command: yarn
       - save_cache:
           key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
           paths:
-            - ~/.cache/yarn
+            - ~/frippz.se/node_modules
 
       # Run tests
       - run: yarn run test
