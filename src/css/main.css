@@ -16,6 +16,7 @@
   article h2 a:visited {
     color: var(--body-text);
     text-decoration: none;
+    derp
   }
 
   article h2 a:focus {
