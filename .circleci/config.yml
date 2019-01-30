@@ -7,18 +7,12 @@ jobs:
       - image: circleci/ruby:2.4.5
     steps:
       - checkout
-      - run:
-        name: install-yarn
-        command: 'sudo npm install -g yarn@latest'
+      - run: 'sudo npm install -g yarn@latest'
       - restore_cache:
         key: dependency-cache-{{ checksum "package.json" }}
-      - run:
-        name: yarn-pkg-install
-        command: yarn
+      - run: yarn
       - save_cache:
         key: dependency-cache-{{ checksum "package.json" }}
         paths:
           - ./node_modules
-      - run:
-        name: test
-        command: yarn run test
+      - run: yarn run test
