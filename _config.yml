@@ -65,6 +65,7 @@ jekyll-archives:
 
 # Exclude
 exclude:
+  - '.circleci'
   - 'node_modules'
   - 'script'
   - 'package.json'
