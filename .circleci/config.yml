@@ -26,5 +26,5 @@ jobs:
           key: v1-gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
-      - run: jekyll build --incremental
+      - run: bundle exec jekyll build --incremental
       - run: bundle exec htmlproofer ./_site --disable-external --empty-alt-ignore
