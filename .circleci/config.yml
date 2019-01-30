@@ -16,15 +16,15 @@ jobs:
       - run: sudo npm install -g yarn@latest
       - run: yarn
       - save_cache:
-        key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
-        paths:
-          - ~/.cache/yarn
+          key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
       - run: yarn run deploy
       - run: yarn run test
       - run: bundle install --path vendor/bundle
       - save_cache:
-        key: v1-gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
-        paths:
-          - vendor/bundle
+          key: v1-gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
       - run: jekyll build --incremental
       - run: bundle exec htmlproofer ./_site --disable-external --empty-alt-ignore
