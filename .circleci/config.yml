@@ -4,13 +4,27 @@ jobs:
     working_directory: ~/frippz.se
     docker:
       - image: circleci/ruby:2.4.5-node
+        environment:
+          JEKYLL_ENV: production
     steps:
       - checkout
+      - restore_cache:
+        keys:
+          - yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          - v1-gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
       - run: sudo apt install rsync
       - run: sudo npm install -g yarn@latest
       - run: yarn
+      - save_cache:
+        paths:
+          - ~/.cache/yarn
+        key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
       - run: yarn run deploy
       - run: yarn run test
-      - run: bundle install
+      - run: bundle install --path vendor/bundle
+      - save_cache:
+        key: v1-gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+        paths:
+          - vendor/bundle
       - run: jekyll build --incremental
       - run: bundle exec htmlproofer ./_site --disable-external --empty-alt-ignore
