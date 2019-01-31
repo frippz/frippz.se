@@ -1,6 +1,6 @@
 # frippz.se
 
-[![Build Status](https://travis-ci.org/frippz/frippz.se.svg?branch=master)](https://travis-ci.org/frippz/frippz.se)
+[![CircleCI](https://circleci.com/gh/frippz/frippz.se.svg?style=svg)](https://circleci.com/gh/frippz/frippz.se)
 
 This repo contains the Jekyll source code for my personal journal at frippz.se.
 
