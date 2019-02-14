@@ -11,12 +11,7 @@ sitemap:
 <article itemscope itemtype="http://schema.org/BlogPosting">
   <header>
     <h2 itemprop="headline">
-      {% if post.external-link %}
-        <a href="{{ post.external-link }}" rel="external">{{ post.title }}</a>
-        {% include svg.html icon="icon-external" %}
-      {% else %}
-        <a href="{{ post.url | prepend: site.baseurl }}" class="article-link">{{ post.title }}</a>
-      {% endif %}
+      <a href="{{ post.url | prepend: site.baseurl }}" class="article-link">{{ post.title }}</a>
     </h2>
     <small class="post-info">
       Posted on <time datetime="{{ post.date | date: '%Y-%m-%d' }}" itemprop="datePublished">{{ post.date | date: '%B %-d, %Y' }}</time>

@@ -5,7 +5,7 @@ menutitle: Grid
 permalink: /grid/
 ---
 
-A collection of links for the competence day at Jayway Malmö office as well as instructions for the lab.
+A collection of links for the CSS Grid Layout session as well as instructions for the lab.
 
 ### Really nice resources
 

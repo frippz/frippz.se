@@ -3,14 +3,7 @@ layout: default
 ---
 <article itemscope itemtype="http://schema.org/BlogPosting">
   <header>
-    <h2 itemprop="headline">
-      {% if page.external-link %}
-        <a href="{{ page.external-link }}" rel="external">{{ page.title }}</a>
-        {% include svg.html icon="icon-external" %}
-      {% else %}
-        {{ page.title }}
-      {% endif %}
-    </h2>
+    <h2 itemprop="headline">{{ page.title }}</h2>
     <small class="post-info">
       Posted on <time datetime="{{ page.date | date: '%Y-%m-%d' }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>
       <a class="permalink" href="{{ post.url | prepend: site.baseurl }}" aria-label="Permalink">
