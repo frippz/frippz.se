@@ -44,7 +44,8 @@
     "lint:css": "stylelint --color -f verbose src/css/**/*.css",
     "lint:js": "eslint src/js/**/*.js",
     "jekyll:serve": "sleep 1; jekyll serve --incremental --drafts",
-    "test": "yarn run lint",
+    "test": "yarn run test:feed-xml && yarn run lint",
+    "test:feed-xml": "feed-validator --no-showfeed ./_site/feed.xml",
     "dist:clean": "mkdir -p ./dist && rm -rf ./dist/*",
     "predeploy": "yarn run dist:clean",
     "deploy": "yarn run deploy:css && yarn run deploy:js && yarn run build:svg"
@@ -52,6 +53,7 @@
   "devDependencies": {
     "concurrently": "^4.1.0",
     "eslint": "^5.12.1",
+    "feed-validator": "^1.1.1",
     "foreach-cli": "^1.8.1",
     "hashmark": "^5.0.0",
     "onchange": "^5.2.0",
