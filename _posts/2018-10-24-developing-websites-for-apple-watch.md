@@ -6,7 +6,6 @@ tags:
   - css
   - apple watch
   - responsive design
-external-link: https://marcus.io/blog/websites-on-apple-watch
 ---
 
 As of WatchOS 5, you are able to render web content on the Apple Watch. [Marcus Herrmann did a write-up on the subject](https://marcus.io/blog/websites-on-apple-watch) this summer and after stumbling over it, I couldn't resist doing some testing on my own site. Actually, all I did was to add the following to my `<head>`:
