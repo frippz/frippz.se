@@ -34,11 +34,6 @@ jobs:
           paths:
             - ~/frippz.se/node_modules
 
-      # Run tests
-      - run:
-          name: Run tests
-          command: yarn run test
-
       # Build CSS, JS & SVG
       - run:
           name: Build CSS, JS & SVG
@@ -55,6 +50,11 @@ jobs:
 
       # Build site
       - run: bundle exec jekyll build --incremental
+
+      # Run tests
+      - run:
+          name: Run tests
+          command: yarn run test
 
       # Validate generated HTML
       - run: bundle exec htmlproofer ./_site --disable-external --empty-alt-ignore
