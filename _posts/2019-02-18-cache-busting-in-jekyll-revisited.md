@@ -10,13 +10,13 @@ tags:
   - cache busting
 ---
 
-I never warmed up to Gulp. It was perhaps too much JavaScript for my taste and yet another tool I had to learn in order to get stuff done. Before Gulp there was Grunt, and somewhere along the way I had to cope with Webpack in React projects. The latter was surely fine for those projects, but for my own needs, it was way overkill or not even the right tool at all.
+I never quite warmed up to Gulp. It was yet another tool I had to learn in order to get stuff done. Before Gulp there was Grunt, and somewhere along the way I had to cope with Webpack in React projects. The latter was surely fine for those projects, but for my own needs, it was way overkill or not even the right tool for my needs.
 
 I then came upon two blog posts that piqued my interest; [Why I Left Gulp and Grunt for npm Scripts](https://medium.freecodecamp.org/why-i-left-gulp-and-grunt-for-npm-scripts-3d6853dd22b8) and [How to Use npm as a Build Tool](https://www.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/). I felt inspired and got to work.
 
 ### npm scripting – the why
 
-Cutting down on stuff is a favorite pasttime of mine. If I can, I minimise and optimise as much as I can, both in code and in real life. So what these blog posts were about resonated quite well with me. For the same reason that I detest CSS preprocessors because they add more problems than they claim to solve (which I don’t believe they do anyway), I detested Gulp because it also was an abstraction layer that I felt added more problems than it solved for me. And the plugins. Oh, all those damn Gulp plugins that I had to use for _everything_. Ugh.
+Cutting down on stuff is a favorite pasttime of mine. If I can, I minimise and optimise as much as I can, both in code and in real life. So what these blog posts were about resonated quite well with me. For the same reason that I dislike CSS preprocessors like Sass and Less because they add more problems than they claim to solve (which I don’t believe they do anyway), I disliked Gulp because it also was an abstraction layer that I felt added more problems than it solved for me. And the plugins. Oh, all those damn Gulp plugins that I had to use for _everything_. Ugh.
 
 ### npm scripting – the what
 
@@ -179,4 +179,10 @@ There’s a caveat with this method, though.  This implementation would list any
 <link rel="stylesheet" href="/dist/css/file3.css">
 ```
 
-Awesome! No matter how many files we add to our project, or whatever names they will dynamically get from hashmark, Jekyll will take care of linking them properly for us. 
+Awesome! No matter how many files we add to our project, or whatever names they will dynamically get from hashmark, Jekyll will take care of linking them properly for us.
+
+### Wrapping up
+
+Simplifying things and throwing out superflous tools felt really great! The less of them I have, the quicker my development environment got and I felt that the overall robustness went up a few ticks. There is still some things that I likely will never be rid of, like the cache busting feature, since the benefit is too big (and I just can’t wrap my head around getting caching headers right).
+
+I hope this might be of some use to someone else than me. The basic principle isn’t really tied to Jekyll (apart from the static files functionality), so you should be able to implement this with whatever tools you choose. If nothing else, it might’ve served as an inspiration to cut down a little in your own tool stack.
