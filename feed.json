@@ -22,7 +22,8 @@ layout: null
       "author" : {
         "name" : "Fredrik Frodlund"
       },
-      "content_html": "<p>{{ post.description }}</p><p><a href=\"{{ post.url | prepend: site.baseurl | prepend: site.url }}\">Permalink to this post</a></p>"
+      "content_html": "<p>{{ post.description }}</p><p><a href=\"{{ post.url | prepend: site.baseurl | prepend: site.url }}\">Permalink to this post</a></p>",
+      "content_text": "{{ post.description }}"
     }{% if forloop.last == false %},{% endif %}
   {% endfor %}
   ]
