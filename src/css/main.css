@@ -299,3 +299,11 @@
     font-size: 0.7em;
   }
 }
+
+/* Apple Watch only? How can this come back to bite me in the ass? */
+@media only screen and (max-width: 22em) and (max-height: 357px) {
+
+  .highlight code {
+    font-size: 4.5vw;
+  }
+}

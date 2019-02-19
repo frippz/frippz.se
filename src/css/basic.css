@@ -319,7 +319,7 @@
 /* Apple Watch only? How can this come back to bite me in the ass? */
 @media only screen and (max-width: 22em) and (max-height: 357px) {
 
-  html {
-    font-size: 6.5vmax;
+  body {
+    font-size: 10vw;
   }
 }
