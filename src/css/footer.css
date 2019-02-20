@@ -46,6 +46,7 @@
     padding: 0;
   }
 
+  .footer-links ~ .footer-links,
   .footer-links li + li {
     margin-top: 1em;
   }
@@ -109,7 +110,8 @@
   }
 
   /* Footer links */
-  .footer-links {
+  .footer-links,
+  .footer-links ~ .footer-links {
     display: inline-block;
     vertical-align: top;
     margin-top: 0;
