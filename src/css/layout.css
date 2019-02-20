@@ -73,23 +73,30 @@
 
     body {
       display: grid;
-      grid-template-columns: 1fr 42rem 1fr;
-      grid-template-rows: auto minmax(16rem, min-content);
+      grid-template-columns:
+        [main-start] 1fr
+        [content-start] 42rem
+        [content-end] 1fr
+        [main-end];
+      grid-template-rows:
+        [main-start] auto
+        [footer-start] minmax(16rem, min-content)
+        [main-end];
     }
 
     #header {
-      grid-column: 1 / 2;
+      grid-column: main-start / content-start;
       text-align: right;
     }
 
     main {
-      grid-column: 2 / 3;
+      grid-column: content-start / content-end;
     }
 
     #footer {
       margin-top: 0;
-      grid-column: 1 / -1;
-      grid-row: 2 / -1;
+      grid-column: main-start / main-end;
+      grid-row: footer-start / main-end;
     }
 
     /* Unset flex header */
