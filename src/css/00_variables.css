@@ -12,49 +12,49 @@
   /**
    * Surface colors
    */
-  --body-background: #f6f3ea;
-  --body-top-border: #f06543;
-  --header-background: #83261c;
-  --footer-background: #333;
+  --body-background: hsla(45, 40%, 94%, 1);
+  --body-top-border: hsla(12, 85%, 60%, 1);
+  --header-background: hsla(6, 65%, 31%, 1);
+  --footer-background: hsla(0, 0%, 20%, 1);
 
   /* Borders */
-  --faint-border: rgba(0, 0, 0, 0.08);
+  --faint-border: hsla(0, 0%, 0%, 0.08);
 
   /* Forms */
-  --default-button: #333;
+  --default-button: hsla(0, 0%, 20%, 1);
 
   /**
    * Code
    */
-  --code-background: #252525;
-  --inline-code-background: #fff;
-  --inline-code-border: #f0dfaf;
+  --code-background: hsla(0, 0%, 15%, 1);
+  --inline-code-background: hsla(0, 100%, 100%, 1);
+  --inline-code-border: hsla(44, 68%, 81%, 1);
 
   /* Line numbers */
-  --line-numbers-border: #555;
-  --line-numbers-text: #888;
+  --line-numbers-border: hsla(0, 0%, 33%, 1);
+  --line-numbers-text: hsla(0, 0%, 53%, 1);
 
   /**
    * Text & glyph colors
    */
 
   /* Body */
-  --body-text: #333;
-  --body-text-invert: #fff;
+  --body-text: hsla(0, 0%, 20%, 1);
+  --body-text-invert: hsla(0, 100%, 100%, 1);
 
   /* Header */
   --header-text: var(--body-text);
   --header-text-invert: var(--article-link-invert);
 
   /* Footer */
-  --footer-text: #edd6b4;
-  --footer-text-invert: #333;
-  --footer-text-hover: #efefef;
+  --footer-text: hsla(36, 61%, 82%, 1);
+  --footer-text-invert: hsla(0, 0%, 20%, 1);
+  --footer-text-hover: hsla(0, 0%, 94%, 1);
 
   /* Article */
-  --article-link: #c83c19;
-  --article-link-invert: #fff;
-  --article-header-decoration: rgba(0, 0, 0, 0.2);
+  --article-link: hsla(12, 78%, 44%, 1);
+  --article-link-invert: hsla(0, 100%, 100%, 1);
+  --article-header-decoration: hsla(0, 0%, 0%, 0.2);
 }
 
 @media only screen and (prefers-color-scheme: dark) {
@@ -65,47 +65,46 @@
      * Surface colors
      */
 
-    /* --body-background: #252525; */
-    --body-background: #292a2d;
+    --body-background: hsla(225, 5%, 17%, 1);
     --header-background: var(--body-background);
     --footer-background: var(--body-background);
 
     /* Forms */
-    --default-button: #333;
+    --default-button: hsla(0, 0%, 20%, 1);
 
     /**
      * Code
      */
 
     /* --code-background: var(--body-background); */
-    --inline-code-background: rgba(255, 255, 255, 0.06);
-    --inline-code-border: rgba(255, 255, 255, 0.12);
+    --inline-code-background: hsla(0, 100%, 100%, 0.06);
+    --inline-code-border: hsla(0, 100%, 100%, 0.12);
 
     /* Line numbers */
-    --line-numbers-border: #555;
-    --line-numbers-text: #888;
+    --line-numbers-border: hsla(0, 0%, 33%, 1);
+    --line-numbers-text: hsla(0, 0%, 53%, 1);
 
     /**
      * Text & glyph colors
      */
 
     /* Body */
-    --body-text: #e6e5d0;
-    --body-text-invert: #333;
+    --body-text: hsla(57, 31%, 86%, 1);
+    --body-text-invert: hsla(0, 0%, 20%, 1);
 
     /* Header */
-    --header-text: #e6e5d0;
-    --header-text-invert: #83261c;
+    --header-text: hsla(57, 31%, 86%, 1);
+    --header-text-invert: hsla(6, 65%, 31%, 1);
 
     /* Footer */
-    --footer-text: #edd6b4;
+    --footer-text: hsla(36, 61%, 82%, 1);
     --footer-text-invert: var(--body-background);
-    --footer-text-hover: #efefef;
+    --footer-text-hover: hsla(0, 0%, 94%, 1);
 
     /* Article */
     --article-link: var(--body-top-border);
     --article-link-invert: var(--body-background);
-    --article-header-decoration: rgba(255, 255, 255, 0.3);
-    --faint-border: rgba(255, 255, 255, 0.2);
+    --article-header-decoration: hsla(0, 100%, 100%, 0.3);
+    --faint-border: hsla(0, 100%, 100%, 0.2);
   }
 }
