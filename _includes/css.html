@@ -1,0 +1,9 @@
+{% if jekyll.environment == "production" %}
+  {% assign css-files = site.static_files | where: "dist-css", true %}
+{% else %}
+  {% assign css-files = site.static_files | where: "dev-css", true %}
+{% endif %}
+
+{% for css in css-files %}
+  <link rel="stylesheet" href="{{ site.baseurl }}{{ css.path }}">
+{% endfor %}

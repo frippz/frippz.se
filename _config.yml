@@ -8,24 +8,37 @@ paginate: '5'
 
 # Default page settings
 defaults:
-  -
-    scope:
+  - scope:
       path: ''
     values:
       layout: 'default'
       author: 'Fredrik Frodlund'
-  -
-    scope:
+  - scope:
       path: ''
       type: 'pages'
     values:
       layout: 'page'
-  -
-    scope:
+  - scope:
       path: ''
       type: 'posts'
     values:
       layout: 'post'
+  - scope:
+      path: 'dist/css'
+    values:
+      dist-css: true
+  - scope:
+      path: 'css'
+    values:
+      dev-css: true
+  - scope:
+      path: 'dist/js'
+    values:
+      dist-js: true
+  - scope:
+      path: 'js'
+    values:
+      dev-js: true
 
 # Server settings
 host: '0.0.0.0'
@@ -66,16 +79,17 @@ jekyll-archives:
 # Exclude
 exclude:
   - '.circleci'
-  - 'node_modules'
-  - 'script'
-  - 'package.json'
-  - 'LICENSE'
-  - 'README.md'
-  - 'src'
   - 'Gemfile'
   - 'Gemfile.lock'
-  - 'yarn.lock'
-  - 'yarn-error.log'
+  - 'LICENSE'
+  - 'README.md'
+  - 'dist'
+  - 'node_modules'
+  - 'package.json'
   - 'postcss.*.js'
+  - 'script'
+  - 'svg'
   - 'svg-sprite.config.json'
   - 'vendor'
+  - 'yarn-error.log'
+  - 'yarn.lock'
