@@ -1,5 +1,17 @@
+{% if jekyll.environment == "production" %}
+  {% assign js-files = site.static_files | where: "dist-js", true %}
+{% else %}
+  {% assign js-files = site.static_files | where: "dev-js", true %}
+{% endif %}
+
+{% for js in js-files %}
+  <script async src="{{ site.baseurl }}{{ js.path }}"></script>
+{% endfor %}
+
+{% comment %}
 {% for js in site.static_files %}
-  {% if js.path contains "dist/js/vendor" %}
-    <script async data-main="/dist/js/main" src="{{ site.baseurl }}{{ js.path }}"></script>
+  {% if js.path contains "/js" %}
+    <script async src="{{ site.baseurl }}{{ js.path }}"></script>
   {% endif %}
 {% endfor %}
+{% endcomment %}
