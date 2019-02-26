@@ -1,5 +1,9 @@
 {
+  "plugins": ["stylelint-color-format"],
   "rules": {
+    "color-format/format": {
+      "format": "hsl"
+    },
     "at-rule-empty-line-before": ["always", {
       "except": [
         "blockless-after-blockless"

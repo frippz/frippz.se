@@ -793,6 +793,14 @@ color@3.0.x:
     color-convert "^1.9.1"
     color-string "^1.5.2"
 
+color@^3.0.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/color/-/color-3.1.0.tgz#d8e9fb096732875774c84bf922815df0308d0ffc"
+  integrity sha512-CwyopLkuRYO5ei2EpzpIh6LqJMt6Mt+jZhO5VI5f/wJLZriXQE32/SSqzmrh+QB+AZT81Cj8yv+7zwToW8ahZg==
+  dependencies:
+    color-convert "^1.9.1"
+    color-string "^1.5.2"
+
 colornames@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/colornames/-/colornames-1.1.1.tgz#f8889030685c7c4ff9e2a559f5077eb76a816f96"
@@ -4104,6 +4112,13 @@ style-search@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/style-search/-/style-search-0.1.0.tgz#7958c793e47e32e07d2b5cafe5c0bf8e12e77902"
   integrity sha1-eVjHk+R+MuB9K1yv5cC/jhLneQI=
+
+stylelint-color-format@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/stylelint-color-format/-/stylelint-color-format-0.2.0.tgz#b0bb2ce504d66da98564bead3f6c170d8d7b1284"
+  integrity sha512-DXe7TZUahf2MENrRc3mT3qEGGYlQtuns/u8d+EC7oFnzIghEKvY/9Y6u7epkTGmpxgBRm534mi5LIgj9pWDPCQ==
+  dependencies:
+    color "^3.0.0"
 
 stylelint@^9.10.1:
   version "9.10.1"
