@@ -14,7 +14,6 @@
    */
   --body-background: hsla(45, 40%, 94%, 1);
   --body-top-border: hsla(12, 85%, 60%, 1);
-  --header-background: hsla(6, 65%, 31%, 1);
   --footer-background: hsla(0, 0%, 20%, 1);
 
   /* Borders */
@@ -67,7 +66,6 @@
      */
 
     --body-background: hsla(225, 5%, 17%, 1);
-    --header-background: var(--body-background);
     --footer-background: var(--body-background);
 
     /* Forms */
