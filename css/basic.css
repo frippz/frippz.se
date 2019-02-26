@@ -250,7 +250,7 @@
   button {
     border: 0;
     background: var(--default-button);
-    color: #fff;
+    color: var(--default-button-text);
     border-radius: 0.25em;
     font-size: inherit;
     padding: 0.2em 0.5em;

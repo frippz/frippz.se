@@ -21,6 +21,7 @@
   --faint-border: hsla(0, 0%, 0%, 0.08);
 
   /* Forms */
+  --default-button-text: hsla(0, 0%, 0%, 1);
   --default-button: hsla(0, 0%, 20%, 1);
 
   /**
