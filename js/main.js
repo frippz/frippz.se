@@ -1,5 +1,9 @@
 /**
  * main.js
+ *
+ * We keep things simple here in the countryside. No complex
+ * module loading or whatever using Browserify or RequireJS.
+ * Just one plain, simple vanilla JavaScript file.
  */
 
 'use strict';
