@@ -88,7 +88,7 @@
      */
 
     /* Body */
-    --body-text: hsl(57, 31%, 86%);
+    --body-text: hsl(36, 61%, 82%);
     --body-text-invert: hsl(0, 0%, 20%);
 
     /* Header */
@@ -96,7 +96,7 @@
     --header-text-invert: hsl(6, 65%, 31%);
 
     /* Footer */
-    --footer-text: hsl(36, 61%, 82%);
+    --footer-text: var(--body-text);
     --footer-text-invert: var(--body-background);
     --footer-text-hover: hsl(0, 0%, 94%);
 
