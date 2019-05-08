@@ -4,6 +4,8 @@
 
 :root {
 
+  color-scheme: light dark;
+
   /**
    * Typography
    */
@@ -12,48 +14,48 @@
   /**
    * Surface colors
    */
-  --body-background: hsla(45, 40%, 94%, 1);
-  --body-top-border: hsla(12, 85%, 60%, 1);
-  --footer-background: hsla(0, 0%, 20%, 1);
+  --body-background: hsl(45, 40%, 94%);
+  --body-top-border: hsl(12, 85%, 60%);
+  --footer-background: hsl(0, 0%, 20%);
 
   /* Borders */
   --faint-border: hsla(0, 0%, 0%, 0.08);
 
   /* Forms */
-  --default-button-text: hsla(0, 0%, 0%, 1);
-  --default-button: hsla(0, 0%, 20%, 1);
+  --default-button-text: hsl(0, 0%, 0%);
+  --default-button: hsl(0, 0%, 20%);
 
   /**
    * Code
    */
-  --code-background: hsla(0, 0%, 15%, 1);
-  --inline-code-background: hsla(0, 100%, 100%, 1);
-  --inline-code-border: hsla(44, 68%, 81%, 1);
+  --code-background: hsl(0, 0%, 15%);
+  --inline-code-background: hsl(0, 100%, 100%);
+  --inline-code-border: hsl(44, 68%, 81%);
 
   /* Line numbers */
-  --line-numbers-border: hsla(0, 0%, 33%, 1);
-  --line-numbers-text: hsla(0, 0%, 53%, 1);
+  --line-numbers-border: hsl(0, 0%, 33%);
+  --line-numbers-text: hsl(0, 0%, 53%);
 
   /**
    * Text & glyph colors
    */
 
   /* Body */
-  --body-text: hsla(0, 0%, 20%, 1);
-  --body-text-invert: hsla(0, 100%, 100%, 1);
+  --body-text: hsl(0, 0%, 20%);
+  --body-text-invert: hsl(0, 100%, 100%);
 
   /* Header */
   --header-text: var(--body-text);
   --header-text-invert: var(--article-link-invert);
 
   /* Footer */
-  --footer-text: hsla(36, 61%, 82%, 1);
-  --footer-text-invert: hsla(0, 0%, 20%, 1);
-  --footer-text-hover: hsla(0, 0%, 94%, 1);
+  --footer-text: hsl(36, 61%, 82%);
+  --footer-text-invert: hsl(0, 0%, 20%);
+  --footer-text-hover: hsl(0, 0%, 94%);
 
   /* Article */
-  --article-link: hsla(12, 78%, 44%, 1);
-  --article-link-invert: hsla(0, 100%, 100%, 1);
+  --article-link: hsl(12, 78%, 44%);
+  --article-link-invert: hsl(0, 100%, 100%, 1);
   --article-header-decoration: hsla(0, 0%, 0%, 0.2);
 }
 
@@ -65,11 +67,11 @@
      * Surface colors
      */
 
-    --body-background: hsla(225, 5%, 17%, 1);
+    --body-background: hsl(225, 5%, 17%);
     --footer-background: var(--body-background);
 
     /* Forms */
-    --default-button: hsla(0, 0%, 20%, 1);
+    --default-button: hsl(0, 0%, 20%);
 
     /**
      * Code
@@ -80,25 +82,25 @@
     --inline-code-border: hsla(0, 100%, 100%, 0.12);
 
     /* Line numbers */
-    --line-numbers-border: hsla(0, 0%, 33%, 1);
-    --line-numbers-text: hsla(0, 0%, 53%, 1);
+    --line-numbers-border: hsl(0, 0%, 33%);
+    --line-numbers-text: hsl(0, 0%, 53%);
 
     /**
      * Text & glyph colors
      */
 
     /* Body */
-    --body-text: hsla(57, 31%, 86%, 1);
-    --body-text-invert: hsla(0, 0%, 20%, 1);
+    --body-text: hsl(57, 31%, 86%);
+    --body-text-invert: hsl(0, 0%, 20%);
 
     /* Header */
-    --header-text: hsla(57, 31%, 86%, 1);
-    --header-text-invert: hsla(6, 65%, 31%, 1);
+    --header-text: hsl(57, 31%, 86%);
+    --header-text-invert: hsl(6, 65%, 31%);
 
     /* Footer */
-    --footer-text: hsla(36, 61%, 82%, 1);
+    --footer-text: hsl(36, 61%, 82%);
     --footer-text-invert: var(--body-background);
-    --footer-text-hover: hsla(0, 0%, 94%, 1);
+    --footer-text-hover: hsl(0, 0%, 94%);
 
     /* Article */
     --article-link: var(--body-top-border);
