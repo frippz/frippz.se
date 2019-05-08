@@ -76,8 +76,6 @@
     /**
      * Code
      */
-
-    /* --code-background: var(--body-background); */
     --inline-code-background: hsla(0, 100%, 100%, 0.06);
     --inline-code-border: hsla(0, 100%, 100%, 0.12);
 
