@@ -71,7 +71,7 @@
     --footer-background: var(--body-background);
 
     /* Forms */
-    --default-button: hsl(0, 0%, 20%);
+    --default-button: var(--article-link);
 
     /**
      * Code
