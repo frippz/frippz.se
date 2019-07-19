@@ -24,6 +24,7 @@
     "yarn": "^1.0.0"
   },
   "scripts": {
+    "prestart": "yarn",
     "start": "concurrently 'yarn run jekyll:serve' 'yarn run watch:svg'",
     "prebuild": "touch _includes/sprite.svg & mkdir -p dist",
     "build": "yarn run build:css && yarn run build:js && yarn run build:svg",

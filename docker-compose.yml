@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+
+  jekyll:
+    container_name: frippz-jekyll
+
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    volumes:
+      - .:/app
+
+    working_dir: /app
+
+    environment:
+      NODE_ENV: development
+      JEKYLL_ENV: development
+
+    ports:
+      - '4000:4000'
+
+    command: yarn start
