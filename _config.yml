@@ -78,11 +78,13 @@ jekyll-archives:
 
 # Exclude
 exclude:
+  - 'Dockerfile*'
   - 'Gemfile'
   - 'Gemfile.lock'
   - 'LICENSE'
   - 'README.md'
   - 'dist'
+  - 'docker-compose*.yml'
   - 'node_modules'
   - 'package.json'
   - 'postcss.*.js'
@@ -92,5 +94,3 @@ exclude:
   - 'vendor'
   - 'yarn-error.log'
   - 'yarn.lock'
-  - 'Dockerfile*'
-  - 'docker-compose*.yml'
