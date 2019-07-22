@@ -78,7 +78,6 @@ jekyll-archives:
 
 # Exclude
 exclude:
-  - '.circleci'
   - 'Gemfile'
   - 'Gemfile.lock'
   - 'LICENSE'
