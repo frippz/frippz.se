@@ -93,3 +93,5 @@ exclude:
   - 'vendor'
   - 'yarn-error.log'
   - 'yarn.lock'
+  - 'Dockerfile*'
+  - 'docker-compose*.yml'
