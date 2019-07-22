@@ -1,5 +1,7 @@
 #!/bin/sh
 
+export JEKYLL_ENV=production
+
 bundle install
 yarn install
 yarn deploy
