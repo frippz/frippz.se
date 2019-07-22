@@ -15,6 +15,7 @@
   article h2 a:link,
   article h2 a:visited {
     color: var(--body-text);
+    color: lime;
     text-decoration: none;
   }
 
