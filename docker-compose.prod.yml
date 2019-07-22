@@ -23,4 +23,4 @@ services:
 
     user: ${CURRENT_UID}
 
-    command: yarn deploy
+    command: ./scripts/deploy.sh
