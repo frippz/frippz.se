@@ -21,4 +21,6 @@ services:
     ports:
       - '4000:4000'
 
+    user: ${CURRENT_UID}
+
     command: yarn deploy
