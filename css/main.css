@@ -262,9 +262,8 @@
   /**
    * Tags list
    */
-  .tags-article-list {
-    list-style: none;
-    padding: 0;
+  .tags-article-list li + li {
+    margin-top: 0.5em;
   }
 
   /**
