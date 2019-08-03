@@ -57,6 +57,10 @@
   --article-link: hsl(12, 78%, 44%);
   --article-link-invert: hsl(0, 100%, 100%, 1);
   --article-header-decoration: hsla(0, 0%, 0%, 0.2);
+
+  /* Selection */
+  --selection-text: var(--body-text-invert);
+  --selection-bg: var(--body-top-border);
 }
 
 @media only screen and (prefers-color-scheme: dark) {
@@ -105,5 +109,8 @@
     --article-link-invert: var(--body-background);
     --article-header-decoration: hsla(0, 100%, 100%, 0.3);
     --faint-border: hsla(0, 100%, 100%, 0.2);
+
+    /* Selection */
+    --selection-text: var(--body-text);
   }
 }
