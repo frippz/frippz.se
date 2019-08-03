@@ -285,6 +285,14 @@
     width: 1.2em;
     vertical-align: -0.2em;
   }
+
+  /**
+   * Selection styling
+   */
+  ::selection {
+    background: var(--selection-bg) !important;
+    color: var(--selection-text) !important;
+  }
 }
 
 @media only screen and (min-width: 20em) {
