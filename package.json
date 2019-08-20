@@ -32,7 +32,7 @@
     "lint": "yarn run lint:css && yarn run lint:js",
     "lint:css": "stylelint --color -f verbose css/**/*.css",
     "lint:js": "eslint js/**/*.js",
-    "jekyll:serve": "jekyll serve --incremental --drafts",
+    "jekyll:serve": "jekyll serve --drafts",
     "test": "yarn run test:feed-xml && yarn run lint",
     "test:feed-xml": "feed-validator --no-showfeed ./_site/feed.xml",
     "predeploy": "mkdir -p dist/{css,js/vendor} && rm -rf dist/css/* dist/js/*",
