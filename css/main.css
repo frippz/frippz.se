@@ -66,6 +66,14 @@
     overflow: visible;
   }
 
+  /* Bookmarklet */
+  a.bookmarklet {
+    background-color: var(--article-link);
+    color: var(--article-link-invert);
+    padding: 0.25em 0.5em;
+    border-radius: 0.25em;
+  }
+
   /* Icon for external links */
   [rel="external"] + .svg-icon {
     fill: var(--article-header-decoration);
