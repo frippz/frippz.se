@@ -39,8 +39,8 @@
     "deploy": "yarn run hash:css && yarn run hash:js && yarn run svg"
   },
   "devDependencies": {
-    "concurrently": "^4.1.1",
-    "eslint": "^6.0.1",
+    "concurrently": "^4.1.2",
+    "eslint": "^6.2.2",
     "feed-validator": "^1.1.1",
     "foreach-cli": "^1.8.1",
     "hashmark": "^5.0.0",
