@@ -1,6 +1,6 @@
 <head>
   <meta charset="utf-8">
-  <title>{{ page.title }} – {{ site.title }}{% if paginator.page > 1 %} (page {{ paginator.page }}){% endif %}</title>
+  <title>{% include title.html %}</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="disabled-adaptations" content="watch">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
