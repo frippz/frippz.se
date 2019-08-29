@@ -45,17 +45,10 @@ host: '0.0.0.0'
 
 # Gems
 plugins:
-  - 'jekyll-admin'
   - 'jekyll-archives'
   - 'jekyll-paginate'
   - 'jekyll-tidy'
   - 'rouge'
-
-# Collections
-collections:
-  pages:
-    output: true
-    permalink: '/:path.html'
 
 # Tags
 tag_page_layout: 'tags-page'

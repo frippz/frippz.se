@@ -10,9 +10,9 @@ services:
       dockerfile: Dockerfile
 
     volumes:
-      - .:/app
+      - $PWD:/srv/jekyll
 
-    working_dir: /app
+    working_dir: /srv/jekyll
 
     environment:
       NODE_ENV: development
