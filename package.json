@@ -1,17 +1,13 @@
 {
-  "name": "frippz",
-  "author": "Fredrik Frodlund <fredrik@frodlund.se> (https://frippz.se)",
-  "license": "ISC",
-  "version": "2.0.8-build8",
-  "description": "My quaint little blog",
-  "keywords": [
-    "blog",
-    "jekyll",
-    "html5",
-    "css",
-    "web"
-  ],
-  "main": "index.html",
+  "name": "frippz.se",
+  "author": {
+    "name": "Fredrik Frodlund",
+    "email": "fredrik@frodlund.se",
+    "url": "https://frippz.se/"
+  },
+  "license": "MIT",
+  "version": "2.1.0",
+  "description": "The blog of Fredrik Frodlund",
   "repository": {
     "type": "git",
     "url": "git@github.com:frippz/frippz.se.git"
