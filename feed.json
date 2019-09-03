@@ -1,29 +1,34 @@
 ---
 layout: null
+sitemap:
+  priority: 0.7
+  changefreq: weekly
 ---
 {
   "version" : "https://jsonfeed.org/version/1",
   "title" : "{{ site.title }}",
   "home_page_url" : "{{ site.url }}",
-  "feed_url" : "{{ "/feed.json" | prepend: site.baseurl | prepend: site.url }}",
+  "feed_url" : "{{ "/feed.json" | absolute_url }}",
   "author" : {
     "url" : "https://twitter.com/frippz",
     "name" : "Fredrik Frodlund"
   },
-  "icon" : "{{ "/apple-touch-icon.png" | prepend: site.baseurl | prepend: site.url }}",
-  "favicon" : "{{ "/favicon-32x32.png" | prepend: site.baseurl | prepend: site.url }}",
+  "icon" : "{{ "/apple-touch-icon.png" | absolute_url }}",
+  "favicon" : "{{ "/favicon-32x32.png" | absolute_url }}",
   "items" : [
   {% for post in site.posts %}
     {
       "title" : {{ post.title | jsonify }},
       "date_published" : "{{ post.date | date_to_xmlschema }}",
-      "id" : "{{ post.url | prepend: site.baseurl | prepend: site.url }}",
-      "url" : "{{ post.url | prepend: site.baseurl | prepend: site.url }}",
+      "date_modified": "{{ post.date | date_to_xmlschema }}",
+      "id" : "{{ post.url | absolute_url }}",
+      "url" : "{{ post.url | absolute_url }}",
       "author" : {
         "name" : "Fredrik Frodlund"
       },
-      "content_html": "<p>{{ post.description }}</p><p><a href=\"{{ post.url | prepend: site.baseurl | prepend: site.url }}\">Permalink to this post</a></p>",
-      "content_text": "{{ post.description }}"
+      "summary": {{ post.description | jsonify }},
+      "content_text": {{ post.content | strip_html | strip_newlines | jsonify }},
+      "content_html": {{ post.content | strip_newlines | jsonify }}
     }{% if forloop.last == false %},{% endif %}
   {% endfor %}
   ]
