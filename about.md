@@ -5,7 +5,7 @@ menutitle: About
 permalink: /about/
 ---
 
-<img src="//frippz-se.s3.amazonaws.com/just-me.jpg" alt="" height="320" width="320" class="left"> Hi, there! My name is Fredrik Frodlund and that right there is me. I'm working as a frontend designer in frosty Sweden (though our summers are really awesome when it’s not raining).
+<img src="//frippz-se.s3.amazonaws.com/just-me.jpg" alt="" height="320" width="320" class="left"> Hi! My name is Fredrik Frodlund and that right there is me. I'm working as a frontend designer in frosty Sweden (though our summers are really awesome when it’s not raining).
 
 If you're reading this, it very likely means you've found your way to my personal journal. This is a place for me to collect my thoughts, mostly about front end web development. In the good spirit of sharing knowledge, I thought it’d be nice to post all my stuff online for the rest of the world to enjoy. Chances are you might find something useful some day.
 
