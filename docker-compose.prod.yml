@@ -15,8 +15,8 @@ services:
     working_dir: /srv/jekyll
 
     environment:
-      NODE_ENV: development
-      JEKYLL_ENV: development
+      NODE_ENV: production
+      JEKYLL_ENV: production
 
     ports:
       - '4000:4000'
