@@ -15,7 +15,7 @@ services:
     working_dir: /srv/jekyll
 
     environment:
-      NODE_ENV: production
+      # NODE_ENV: production
       JEKYLL_ENV: production
 
     user: ${CURRENT_UID}
