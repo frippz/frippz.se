@@ -13,3 +13,7 @@ WORKDIR /srv/jekyll
 COPY Gemfile* /srv/jekyll/
 
 RUN bundle install
+
+COPY package.json yarn.lock /srv/jekyll/
+
+RUN yarn install
