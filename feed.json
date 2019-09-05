@@ -39,8 +39,7 @@ sitemap:
       {% endfor %}
       ],
       {% endif %}
-      "content_text": {{ post.content | strip_html | strip_newlines | jsonify }},
-      "content_html": {{ post.content | strip_newlines | jsonify }}
+      "content_html": {{ post.content | jsonify }}
     }{% if forloop.last == false %},{% endif %}
   {% endfor %}
   ]
