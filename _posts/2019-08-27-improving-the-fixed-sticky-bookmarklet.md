@@ -7,7 +7,7 @@ tags:
   - usability
 ---
 
-Last week [I wrote about a bookmarklet I found online](/2019/08/20/killing-sticky-headers/). I found that there was some room for improvement since the bookmarklet didn't handle the more modern variant of `position: sticky;`.
+Last week [I wrote about a bookmarklet I found online]({% post_url 2019-08-20-killing-sticky-headers %}). I found that there was some room for improvement since the bookmarklet didn't handle the more modern variant of `position: sticky;`.
 
 While using my new and (sort of) improved bookmarklet, I noticed that on some sites, annoying overlays not only covered the content, but also disabled scrolling of the entire page. So if you were to remove all elements that were either fixed or sticky, you still couldn’t scroll the page. Normally, I would often reach for the built-in reader mode of Safari to get to the content. However, this might not always be possible or applicable, depending on the site’s content.
 
