@@ -20,7 +20,11 @@ sitemap:
     {
       "title" : {{ post.title | jsonify }},
       "date_published" : "{{ post.date | date_to_xmlschema }}",
+      {% if post.updated %}
+      "date_modified": "{{ post.updated | date_to_xmlschema }}",
+      {% else %}
       "date_modified": "{{ post.date | date_to_xmlschema }}",
+      {% endif %}
       "id" : "{{ post.url | absolute_url }}",
       "url" : "{{ post.url | absolute_url }}",
       "author" : {
