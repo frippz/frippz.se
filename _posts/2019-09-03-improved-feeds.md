@@ -13,7 +13,7 @@ Anyway. After years of questionable alternatives to syndicated feeds (like Faceb
 There’s of course the occasional fly in the ointment. And what's worse, I myself am guilty of it. I'm talking about only providing a short summary in the feed in order to drive traffic to the site itself. Well, no more. As of today, I've run a deploy that provides full content both via JSON Feed and Atom for this site. The reasons were quite simple:
 
 * I don’t actually need to drive traffic to my site since I'm not doing any kind of advertising
-* You as a reeder have the option of consuming the content any way you like
+* You as a reader have the option of consuming the content any way you like
 
 The counter point, as mentioned by someone online, is that this makes it easier for less than honest people to "steal" content and publish it as their own somewhere else. My position on this is that these people very likely would do so anyway, and it’s not a strong enough argument against not making things easier for everyone else.
 
