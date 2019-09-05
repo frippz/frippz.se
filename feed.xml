@@ -21,7 +21,11 @@ sitemap:
     <title>{{ post.title }}</title>
     <link href="{{ post.url | absolute_url }}"/>
     <id>{{ post.url | absolute_url }}</id>
+    {% if post.updated %}
+    <updated>{{ post.updated | date_to_xmlschema }}</updated>
+    {% else %}
     <updated>{{ post.date | date_to_xmlschema }}</updated>
+    {% endif %}
     <content type="html">{{ post.content | xml_escape }}</content>
   </entry>
   {% endfor %}
