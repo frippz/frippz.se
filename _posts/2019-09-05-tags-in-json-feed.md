@@ -1,7 +1,7 @@
 ---
 title: Tags in JSON Feed
 description: I felt the need to tinker even more with my JSON Feed and so I added support for tags
-date: 2019-09-05 13:56
+date: 2019-09-05 11:55
 tags:
   - jekyll
   - json feed
