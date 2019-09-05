@@ -31,6 +31,13 @@ sitemap:
         "name" : "Fredrik Frodlund"
       },
       "summary": {{ post.description | jsonify }},
+      {% if post.tags %}
+      "tags": [
+      {% for tag in post.tags %}
+        "{{ tag }}"{% if forloop.last == false %},{% endif %}
+      {% endfor %}
+      ],
+      {% endif %}
       "content_text": {{ post.content | strip_html | strip_newlines | jsonify }},
       "content_html": {{ post.content | strip_newlines | jsonify }}
     }{% if forloop.last == false %},{% endif %}
