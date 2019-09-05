@@ -182,9 +182,11 @@
     text-align: center;
   }
 
-  .not-found article #svg-404 {
-    fill: var(--text-color);
+  .not-found article .svg-icon {
+    fill: var(--body-text);
+    opacity: 0.6;
     height: 16em;
+    width: 16em;
     display: block;
     margin: 0 auto;
   }
