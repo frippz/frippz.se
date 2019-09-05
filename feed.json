@@ -10,8 +10,9 @@ sitemap:
   "home_page_url" : "{{ site.url }}",
   "feed_url" : "{{ "/feed.json" | absolute_url }}",
   "author" : {
-    "url" : "https://twitter.com/frippz",
-    "name" : "Fredrik Frodlund"
+    "url" : "{{ site.url }}",
+    "name" : "{{ page.author }}",
+    "avatar": "{{ site.avatar }}"
   },
   "icon" : "{{ "/apple-touch-icon.png" | absolute_url }}",
   "favicon" : "{{ "/favicon-32x32.png" | absolute_url }}",

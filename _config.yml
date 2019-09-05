@@ -3,6 +3,7 @@ title: 'frippz.se'
 email: 'contact@frippz.se'
 baseurl: ''
 url: 'https://frippz.se'
+avatar: 'https://frippz.se/images/just-me.jpg'
 permalink: 'pretty'
 paginate: '5'
 
