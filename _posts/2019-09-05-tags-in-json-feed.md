@@ -30,7 +30,7 @@ In context, according to the spec, each item in the items array would need the f
 
 ## Getting things done in Jekyll
 
-So this whole exercise revolves around you putting a tags array in your front matter for each post. I’m pretty much assuming that this is something that you have already done, but just in case, here’s a sample post:
+So this whole exercise revolves around you putting an array of tags in your front matter for each post. I’m pretty much assuming that this is something that you’ve already done, but just in case, here’s a sample post:
 
 ~~~markdown
 ---
@@ -43,7 +43,7 @@ tags:
 Some thoughtful content…
 ~~~
 
-Considering [my previous post about getting JSON Feed in Jekyll]({% post_url 2017-05-18-getting-json-feed-in-jekyll %}), here’s the additional Liquid we need to put these tags in.
+Considering [my previous post about getting JSON Feed in Jekyll]({% post_url 2017-05-18-getting-json-feed-in-jekyll %}), here’s the additional Liquid we need to get these tags in the JSON Feed code:
 
 ~~~liquid
 {% raw %}{% if post.tags %}
@@ -55,11 +55,11 @@ Considering [my previous post about getting JSON Feed in Jekyll]({% post_url 201
 {% endif %}{% endraw %}
 ~~~
 
-Since JSON is picky with trailing commas, we need to utilize `foorlop.last` in order to keep tabs on whether we’re at the last item in the loop. Also note the trailing comma after the last bracket (`]`). Depending on where you put this snippet in your JSON Feed temklate, you may or may not need it.
+Since JSON is picky with trailing commas, we need to utilize `foorlop.last` in order to keep tabs on whether we’re at the last item in the loop or not. Also note the trailing comma after the last bracket on the sixth row. Depending on where you put this snippet in your JSON Feed template, you may or may not need it.
 
 ## Putting it all together
 
-Here’s the full code snippet for my own `feed.json`, complete with the new section for tags.
+Here’s the full code for my own `feed.json` template, complete with the new section for tags.
 
 ~~~liquid
 {% raw %}---
