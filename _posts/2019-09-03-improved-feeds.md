@@ -1,6 +1,7 @@
 ---
 title: Improved feeds
 description: Blog syndication is an important corner stone of the internet and as such, I decided to improve my feeds.
+updated: 2019-09-05 08:57
 tags:
   - rss
   - json feed
