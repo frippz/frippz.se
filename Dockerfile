@@ -16,4 +16,4 @@ RUN bundle install
 
 COPY package.json yarn.lock /srv/jekyll/
 
-RUN yarn install
+RUN yarn install --pure-lockfile
