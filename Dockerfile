@@ -18,4 +18,4 @@ COPY package.json yarn.lock /srv/jekyll/
 
 RUN mkdir /srv/jekyll/.yarn-cache
 
-RUN yarn install --cache-folder /srv/jekyll/.yarn-cache
+RUN yarn install
