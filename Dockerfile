@@ -1,5 +1,7 @@
 FROM ruby:2.4.7-alpine3.10
 
+RUN mkdir -p /.cache/yarn
+
 RUN apk add --no-cache \
   g++ \
   make \
