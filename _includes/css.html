@@ -5,5 +5,5 @@
 {% endif %}
 
 {% for css in css-files %}
-  <link rel="stylesheet" href="{{ site.baseurl }}{{ css.path }}">
+  <link rel="stylesheet" href="{{ site.baseurl }}{{ css.path }}"{% if css.path contains "print" %} media="print"{% endif %}>
 {% endfor %}
