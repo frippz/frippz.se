@@ -6,7 +6,7 @@ sitemap:
 ---
 {
   "version" : "https://jsonfeed.org/version/1",
-  "title" : "{{ site.title }}",
+  "title" : "{{ site.feed-title }}",
   "home_page_url" : "{{ site.url }}",
   "feed_url" : "{{ "/feed.json" | absolute_url }}",
   "author" : {
