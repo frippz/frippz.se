@@ -7,7 +7,7 @@ sitemap:
 <?xml version="1.0" encoding="utf-8" ?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title>{{ site.title | xml_escape }}</title>
+  <title>{{ site.feed-title }}</title>
   <link href="{{ site.url }}"/>
   <link href="{{ page.url | absolute_url }}" rel="self"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
