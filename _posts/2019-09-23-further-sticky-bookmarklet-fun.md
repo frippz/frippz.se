@@ -2,6 +2,7 @@
 title: Further sticky bookmarklet fun
 description: I just couldn’t leave that poor bookmarklet alone and now it has turned into some kind of benevolent monster
 date: 2019-09-23 11:37
+updated: 2019-09-23 13:06
 tags:
   - css
   - javascript
@@ -23,23 +24,21 @@ Based on my *very* scientific research following this, by visiting as many as *t
 These assumptions (dangerous as assumptions may be), lead me to modify the script accordingly.
 
 ```javascript
-(function () {
-  const elements = document.querySelectorAll('body *');
-  const body = document.querySelector('body');
-  
-  if (getComputedStyle(body).overflow === 'hidden') {
-    body.style.overflow = "unset";
+const elements = document.querySelectorAll('body *');
+const body = document.querySelector('body');
+
+if (getComputedStyle(body).overflow === 'hidden') {
+  body.style.overflow = 'unset';
+}
+
+elements.forEach(function (element) {
+  if (['-webkit-sticky', 'sticky'].includes(getComputedStyle(element).position)) {
+    element.style.position = 'unset';
   }
-  
-  elements.forEach(function (element) {
-    if (["-webkit-sticky", "sticky"].includes(getComputedStyle(element).position)) {
-      element.style.position = "unset";
-    }
-    else if(["fixed"].includes(getComputedStyle(element).position)) {
-      element.parentNode.removeChild(element);
-    }
-  });
-})();
+  else if(['fixed'].includes(getComputedStyle(element).position)) {
+    element.parentNode.removeChild(element);
+  }
+});
 ```
 
 I first check for `position: sticky` styled elements, and instead of removing them, I force the inline style to `position: unset`. This will reset to the initial value of `position: static` and so "un-sticky" any such elements on the page. Everything else that has `position: fixed` will instead just get deleted.
@@ -48,6 +47,8 @@ There are of course some caveats with this approach, mostly that older sites mig
 
 I'm beginning to have trouble coming up with good names for these bookmarklets, so this time around I'm just calling it "unSticky". Besides, you’re completely free to name it whatever you wish.
 
-<a href="javascript:void%20function(){(function(){const%20e=document.querySelectorAll(%22body%20*%22),t=document.querySelector(%22body%22);%22hidden%22===getComputedStyle(t).overflow%26%26(t.style.overflow=%22unset%22),e.forEach(function(e){[%22-webkit-sticky%22,%22sticky%22].includes(getComputedStyle(e).position)%3Fe.style.position=%22unset%22:[%22fixed%22].includes(getComputedStyle(e).position)%26%26e.parentNode.removeChild(e)})})()}();" class="bookmarklet">unSticky</a>
+<a href="javascript:void%20function(){const%20e=document.querySelectorAll(%22body%20*%22),t=document.querySelector(%22body%22);%22hidden%22===getComputedStyle(t).overflow%26%26(t.style.overflow=%22unset%22),e.forEach(function(e){[%22-webkit-sticky%22,%22sticky%22].includes(getComputedStyle(e).position)%3Fe.style.position=%22unset%22:[%22fixed%22].includes(getComputedStyle(e).position)%26%26e.parentNode.removeChild(e)})}();" class="bookmarklet">unSticky</a>
 
 Ok, that’s it for now. Let’s see how long I can leave this one alone. 
+
+**Updated:** Well that didn't take long. My friend, [Joacim de la Motte](https://joacim.online), decided to do some optimization for me. Apparently the <abbr title="Immediately invoked function expression">IIFE</abbr> is not really necessary, so I’ve removed it. The bookmarklet will still run without it.
