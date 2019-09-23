@@ -245,6 +245,16 @@
   }
 
   /**
+   * Abbreviation
+   */
+  abbr {
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    cursor: help;
+  }
+
+  /**
    * General button styles
    */
   button {
