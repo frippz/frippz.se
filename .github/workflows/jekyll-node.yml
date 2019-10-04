@@ -12,8 +12,8 @@ jobs:
         node-version: [10.15]
 
     steps:
-    - name: Jekyll Action
-      uses: helaili/jekyll-action@1.0
+    # - name: Jekyll Action
+    #   uses: helaili/jekyll-action@1.0
     - uses: actions/checkout@v1
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
@@ -23,7 +23,7 @@ jobs:
       run: |
         yarn install --production --pure-lockfile
         yarn deploy
-        jekyll build --config "_config.yml,_config.prod.yml"
+        # jekyll build --config "_config.yml,_config.prod.yml"
 
       env:
         CI: true
