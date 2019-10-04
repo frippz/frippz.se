@@ -1,0 +1,29 @@
+name: Node CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.15]
+
+    steps:
+    - name: Jekyll Action
+      uses: helaili/jekyll-action@1.0
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: install, build, and test
+      run: |
+        yarn install --production --pure-lockfile
+        yarn deploy
+        jekyll build --config "_config.yml,_config.prod.yml"
+
+      env:
+        CI: true
