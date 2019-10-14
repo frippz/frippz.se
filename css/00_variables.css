@@ -113,4 +113,9 @@
     /* Selection */
     --selection-text: var(--body-text);
   }
+
+  /* Adjust images for dark mode */
+  img {
+    filter: brightness(0.8) contrast(1.2);
+  }
 }
