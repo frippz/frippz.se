@@ -128,7 +128,7 @@
     line-height: 1.5;
     font-weight: 200;
 
-    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
   }
 
