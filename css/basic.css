@@ -236,6 +236,12 @@
     color: inherit;
   }
 
+  /* Eye candy & visual fluff */
+  a,
+  a .svg-icon {
+    transition: 0.25s ease;
+  }
+
   /**
    * Emphasis
    */
