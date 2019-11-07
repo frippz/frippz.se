@@ -111,6 +111,6 @@
 
   /* Adjust images for dark mode */
   img {
-    filter: brightness(0.8) contrast(1.2);
+    filter: brightness(0.8) contrast(1.1);
   }
 }
