@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+{% include head.html %}
+<body{% if page.custom_class %} class="{{ page.custom_class }}"{% endif %}>
+
+  <main id="main-content">
+
+    <div class="landmark-content">
+
+      <article>
+
+        {% if page.title %}<h2>{{ page.title }}</h2>{% endif %}
+        {{ content }}
+
+      </article>
+
+    </div>
+
+  </main>
+
+  {% include sprite.svg %}
+
+  {% include script.html %}
+</body>
+</html>
+
