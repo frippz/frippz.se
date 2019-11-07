@@ -178,13 +178,14 @@
   /**
    * Custom error page (404)
    */
-  .not-found article {
+  .not-found main {
     text-align: center;
+    padding-top: 4em;
   }
 
   .not-found article .svg-icon {
     fill: var(--body-text);
-    opacity: 0.6;
+    opacity: 0.2;
     height: 16em;
     width: 16em;
     display: block;
