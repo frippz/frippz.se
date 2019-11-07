@@ -4,10 +4,6 @@
 
 @media screen {
 
-  #header {
-    font-family: var(--title-font);
-  }
-
   /* Main title */
   .main-title {
     font-size: 2.8em;
@@ -45,6 +41,7 @@
 
   #main-nav a {
     display: block;
+    font-size: 1.3em;
     text-decoration: none;
   }
 

@@ -7,11 +7,6 @@
   color-scheme: light dark;
 
   /**
-   * Typography
-   */
-  --title-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-  /**
    * Surface colors
    */
   --body-background: hsl(45, 40%, 94%);

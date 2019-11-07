@@ -124,9 +124,9 @@
    * Base size set to browser default (usually 16px)
    */
   html {
-    font-family: "Charter", Georgia, serif;
+    font-family: "Palatino", Georgia, serif;
     line-height: 1.5;
-    font-weight: normal;
+    font-weight: 200;
 
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -157,7 +157,6 @@
   h4,
   h5,
   h6 {
-    font-family: var(--title-font);
     font-weight: 200;
     line-height: 1.125;
     margin: 2em 0 0.5em;
@@ -212,6 +211,12 @@
   /**
    * Lists
    */
+  ul[class],
+  ol[class] {
+    margin: 0;
+    padding: 0;
+  }
+
   ul,
   ol {
     margin-left: 2em;
