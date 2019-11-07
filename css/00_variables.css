@@ -103,7 +103,7 @@
     --article-link: var(--body-top-border);
     --article-link-invert: var(--body-background);
     --article-header-decoration: hsla(0, 100%, 100%, 0.3);
-    --faint-border: hsla(0, 100%, 100%, 0.2);
+    --faint-border: hsla(36, 61%, 82%, 0.2);
 
     /* Selection */
     --selection-text: var(--body-text);
