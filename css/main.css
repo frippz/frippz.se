@@ -240,14 +240,6 @@
   }
 
   /**
-   * Eye candy & visual fluff
-   */
-  a,
-  .svg-icon {
-    transition: all 0.25s ease;
-  }
-
-  /**
    * Dyslexic mode toggle
    */
   .dyslexic-mode {
