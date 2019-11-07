@@ -27,6 +27,13 @@
   }
 
   /**
+   * Header
+   */
+  #header {
+    padding-bottom: 2em;
+  }
+
+  /**
    * Main landmark
    */
   main {
@@ -87,6 +94,7 @@
     #header {
       grid-column: main-start / content-start;
       text-align: right;
+      padding-bottom: unset;
     }
 
     main {
