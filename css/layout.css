@@ -82,7 +82,7 @@
       display: grid;
       grid-template-columns:
         [main-start] 1fr
-        [content-start] 42rem
+        [content-start] calc(42rem + 5vw)
         [content-end] 1fr
         [main-end];
       grid-template-rows:
@@ -103,8 +103,13 @@
 
     #footer {
       margin-top: 0;
-      grid-column: main-start / main-end;
+      grid-column: content-start / content-end;
       grid-row: footer-start / main-end;
+    }
+
+    /* Unset landmark content max-width */
+    .landmark-content {
+      max-width: unset;
     }
 
     /* Unset flex header */
