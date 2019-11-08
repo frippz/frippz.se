@@ -66,7 +66,7 @@
      * Surface colors
      */
 
-    --body-background: hsl(225, 5%, 17%);
+    --body-background: hsl(60, 1%, 16%);
     --footer-background: var(--body-background);
 
     /* Forms */
