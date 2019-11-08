@@ -112,13 +112,29 @@
       display: block;
       margin: 0 0 2em;
       max-width: none;
-    }
-
-    /* Header content */
-    .header-content {
       position: -webkit-sticky;
       position: sticky;
       top: 2rem;
+      padding-top: 1em;
+      padding-bottom: 3em;
+    }
+
+    /* Pretty gradient border in header */
+    .header-content::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      top: 0;
+      right: 0;
+      width: 1px;
+      background-image:
+        linear-gradient(
+          0deg,
+          transparent 0%,
+          currentcolor 20%,
+          currentcolor 80%,
+          transparent 100%
+        );
     }
 
     /* Man navigation */
