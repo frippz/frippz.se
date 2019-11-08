@@ -10,7 +10,6 @@
     margin-top: 6em;
     padding: 2em 0;
     font-family: var(--title-font);
-    font-weight: 200;
   }
 
   #footer a,
@@ -64,7 +63,6 @@
    * Older & newer articles navigation
    */
   .more-articles {
-    font-weight: 500;
     margin: 4em -0.25em 0;
     display: flex;
   }
