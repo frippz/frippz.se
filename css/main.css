@@ -58,6 +58,10 @@
     text-decoration: none;
   }
 
+  .permalink {
+    padding-right: 0.2em;
+  }
+
   .permalink .svg-icon {
     height: 0.85em;
     width: 0.85em;
