@@ -23,6 +23,7 @@
   /**
    * Code
    */
+  --code-color: hsl(33, 96%, 78%);
   --code-background: hsl(0, 0%, 15%);
   --inline-code-background: hsl(0, 100%, 100%);
   --inline-code-border: hsl(44, 68%, 81%);
@@ -75,6 +76,7 @@
     /**
      * Code
      */
+    --code-background: hsl(0, 0%, 10%);
     --inline-code-background: hsla(0, 100%, 100%, 0.06);
     --inline-code-border: hsla(0, 100%, 100%, 0.12);
 
