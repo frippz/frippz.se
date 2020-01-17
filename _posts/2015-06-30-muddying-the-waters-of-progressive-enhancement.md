@@ -25,7 +25,8 @@ Back in 2008, Aaron Gustafson wrote for A List Apart on progressive enhancement.
 
 > Getting into the progressive enhancement mindset is quite simple: just think from the content out. The content forms the solid base on which you layer your style and interactivity. If you’re a candy fan, think of it as a Peanut M&M:
 >
-> ![](http://alistapart.com/d/understandingprogressiveenhancement/m-m.jpg)
+> ![](//frippz-se.s3.amazonaws.com/pe-nut.jpeg)
+>
 > Start with your content peanut, marked up in rich, semantic (X)HTML. Coat that content with a layer of rich, creamy CSS. Finally, add JavaScript as the hard candy shell to make a wonderfully tasty treat (and keep it from melting in your hands).
 
 This is a great description of what progressive enhancement is, and even if this article is coming up on being seven years old, I see no reason why this definition should change. The key here is the rock solid foundation; the content. You can't base this on JavaScript and call this your baseline. Take away the JavaScript ([which still happens all the time](http://kryogenix.org/code/browser/everyonehasjs.html)), and you’re left with an empty page. Not very rock solid.
