@@ -3,13 +3,13 @@ title: Muddying the waters of progressive enhancement
 description: Musings on how the term “progressive enhancement” are losing its meaning to some people, causing confusion.
 tags:
   - progressive enhancement
-  - javascript 
+  - javascript
 published: 2015-06-30
 ---
 
 I did some work on a project for a client yesterday, where I was working on some specific JavaScript based functionality. By some weird chance, the JavaScript didn't execute due to some weird error and nothing was showing up in the browser console. Later on it was found to be Webpack that didn't build the file, hence no JavaScript. Anyway, this little event prompted me to post the following on Twitter:
 
-<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Why is my JavaScript not doing its stuff?! Oh, it’s not executing at all…&#10;&#10;See now kids why progressive enhancement is important? (^ω^)</p>&mdash; Fredrik Frodlund (@frippz) <a href="https://twitter.com/frippz/status/615474618841858048">June 29, 2015</a></blockquote>
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Why is my JavaScript not doing its stuff?! Oh, it’s not executing at all…&#10;&#10;See now kids why progressive enhancement is important? (^ω^)</p>&mdash; Fredrik Frodlund (@frippz) June 29, 2015</blockquote>
 
 Apparently, this just rubbed some people the wrong way.
 

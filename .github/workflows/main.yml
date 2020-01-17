@@ -1,12 +1,10 @@
-name: Build
+name: Build & test 🛠
 
 on: [push]
 
 jobs:
 
   build:
-
-    name: Build & test 🛠
 
     runs-on: ubuntu-18.04
 
@@ -43,8 +41,8 @@ jobs:
       - name: JS linting with eslint
         run: yarn run lint:js
 
-      - name: Site testing with html-proofer
+      - name: Site testing with htmlproofer
         uses: chabad360/htmlproofer@master
         with:
           directory: './_site'
-          arguments: '--empty_alt_ignore --http-status-ignore 999'
+          arguments: '--empty_alt_ignore --http-status-ignore "999,403"'

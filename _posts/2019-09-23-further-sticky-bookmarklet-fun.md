@@ -49,6 +49,6 @@ I'm beginning to have trouble coming up with good names for these bookmarklets, 
 
 <a href="javascript:void%20function(){const%20e=document.querySelectorAll(%22body%20*%22),t=document.querySelector(%22body%22);%22hidden%22===getComputedStyle(t).overflow%26%26(t.style.overflow=%22unset%22),e.forEach(function(e){[%22-webkit-sticky%22,%22sticky%22].includes(getComputedStyle(e).position)%3Fe.style.position=%22unset%22:[%22fixed%22].includes(getComputedStyle(e).position)%26%26e.parentNode.removeChild(e)})}();" class="bookmarklet">unSticky</a>
 
-Ok, that’s it for now. Let’s see how long I can leave this one alone. 
+Ok, that’s it for now. Let’s see how long I can leave this one alone.
 
-**Updated:** Well that didn't take long. My friend, [Joacim de la Motte](https://joacim.online), decided to do some optimization for me. Apparently the <abbr title="Immediately invoked function expression">IIFE</abbr> is not really necessary, so I’ve removed it. The bookmarklet will still run without it.
+**Updated:** Well that didn't take long. My friend, [Joacim de la Motte](https://joacimlowgren.com/), decided to do some optimization for me. Apparently the <abbr title="Immediately invoked function expression">IIFE</abbr> is not really necessary, so I’ve removed it. The bookmarklet will still run without it.

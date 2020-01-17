@@ -3,13 +3,13 @@ title: That whole “blog” thing
 description: Twitter threads are awful and blogs are awesome
 tags:
   - blogging
-  - web 
+  - web
 published: 2017-03-28
 ---
 
 In the beginning of March, I blurted this out in pure frustration on Twitter:
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">People posting mile long threads on Twitter; get a damn blog or something.</p>&mdash; Fredrik Frodlund (@frippz) <a href="https://twitter.com/frippz/status/838412000426348548">March 5, 2017</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">People posting mile long threads on Twitter; get a damn blog or something.</p>&mdash; Fredrik Frodlund (@frippz) March 5, 2017</blockquote>
 
 Then, a few weeks later, a gentleman named Paul Lloyd tweeted:
 

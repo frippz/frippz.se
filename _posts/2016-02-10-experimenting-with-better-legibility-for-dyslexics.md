@@ -6,11 +6,11 @@ tags:
   - dyslexia
   - html
   - javascript
-  - css 
+  - css
 published: 2016-02-10
 ---
 
-This morning, [Heydon Pickering](http://www.heydonworks.com) posted a link to an article detailing how special typefaces for dyslexics basically don’t work as expected.
+This morning, [Heydon Pickering](https://www.heydonworks.com) posted a link to an article detailing how special typefaces for dyslexics basically don’t work as expected.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Fonts &quot;for dyslexics&quot; is not inclusive design. More like target marketing. And it doesn&#39;t work. <a href="https://t.co/HS8JxwPpt6">https://t.co/HS8JxwPpt6</a></p>&mdash; Heydon (@heydonworks) <a href="https://twitter.com/heydonworks/status/697342047833976832">February 10, 2016</a></blockquote>
 
