@@ -6,7 +6,7 @@ jobs:
 
   build:
 
-    name: Build 🛠
+    name: Build & test 🛠
 
     runs-on: ubuntu-18.04
 
@@ -38,9 +38,7 @@ jobs:
         run: jekyll build --config "_config.yml,_config.prod.yml"
 
       - name: CSS linting with stylelint
-        uses: actions-hub/stylelint@v1.1.2
-        env:
-          PATTERN: 'src/css/*.css'
+        run: yarn run lint:css
 
       - name: JS linting with eslint
         run: yarn run lint:js
