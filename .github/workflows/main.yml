@@ -45,4 +45,4 @@ jobs:
         uses: chabad360/htmlproofer@master
         with:
           directory: './_site'
-          arguments: '--empty_alt_ignore --http-status-ignore 999,403'
+          arguments: '--empty_alt_ignore --http-status-ignore 0,999,403'
