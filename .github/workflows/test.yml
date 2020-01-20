@@ -1,7 +1,7 @@
-name: Builda & deploy 🚀
+name: Test 🧪
 
 on:
-  push:
+  pull_request:
     branches:
       - master
 
@@ -22,9 +22,6 @@ jobs:
       - name: Install Node packages
         run: yarn install --production --pure-lockfile --non-interactive
 
-      - name: Build assets for deployment
-        run: yarn run deploy
-
       - name: Set up Ruby 2.6
         uses: actions/setup-ruby@v1
         with:
@@ -38,12 +35,14 @@ jobs:
       - name: Jekyll build
         run: jekyll build --config "_config.yml,_config.prod.yml"
 
-      - name: Deploy
-        uses: easingthemes/ssh-deploy@v2.0.7
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
-          ARGS: '--checksum --delete -rltgoDzvO'
-          SOURCE: '_site'
-          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-          REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          TARGET: ${{ secrets.REMOTE_TARGET }}
+      - name: CSS linting with stylelint
+        run: yarn run lint:css
+
+      - name: JS linting with eslint
+        run: yarn run lint:js
+
+      - name: Site testing with htmlproofer
+        uses: chabad360/htmlproofer@master
+        with:
+          directory: './_site'
+          arguments: '--empty_alt_ignore --http-status-ignore 0,999,403'
