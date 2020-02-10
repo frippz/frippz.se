@@ -35,6 +35,8 @@ jobs:
           bundle install --jobs 4 --retry 3
 
       - name: Jekyll build
+        env:
+          JEKYLL_ENV: production
         run: jekyll build --config "_config.yml,_config.prod.yml"
 
       - name: Deploy to GitHub Pages
