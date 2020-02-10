@@ -1,4 +1,4 @@
-name: Build & deploy 🚀
+name: Deploy to live
 
 on:
   push:
@@ -6,8 +6,7 @@ on:
       - master
 
 jobs:
-
-  build:
+  deploy:
 
     runs-on: ubuntu-18.04
 
@@ -38,12 +37,9 @@ jobs:
       - name: Jekyll build
         run: jekyll build --config "_config.yml,_config.prod.yml"
 
-      - name: Deploy
-        uses: easingthemes/ssh-deploy@v2.0.7
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v2.10.1
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          ARGS: '--checksum --delete -rltgoDzvO'
-          SOURCE: '_site'
-          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-          REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          TARGET: ${{ secrets.REMOTE_TARGET }}
+          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: _site
