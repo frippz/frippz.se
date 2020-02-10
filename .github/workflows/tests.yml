@@ -23,6 +23,9 @@ jobs:
       - name: Install Node packages
         run: yarn install --production --pure-lockfile --non-interactive
 
+      - name: Build assets for deployment
+        run: yarn run deploy
+
       - name: Set up Ruby 2.6
         uses: actions/setup-ruby@v1
         with:
@@ -34,6 +37,8 @@ jobs:
           bundle install --jobs 4 --retry 3
 
       - name: Jekyll build
+        env:
+          JEKYLL_ENV: production
         run: jekyll build --config "_config.yml,_config.prod.yml"
 
       - name: CSS linting with stylelint
