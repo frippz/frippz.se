@@ -1,4 +1,4 @@
-name: Test 🧪
+name: Tests
 
 on:
   pull_request:
@@ -6,8 +6,9 @@ on:
       - master
 
 jobs:
+  test:
 
-  build:
+    name: Run linting tasks & HTML proofer
 
     runs-on: ubuntu-18.04
 
