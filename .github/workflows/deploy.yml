@@ -1,4 +1,4 @@
-name: Deploy to live
+name: Deploy
 
 on:
   push:
@@ -7,6 +7,8 @@ on:
 
 jobs:
   deploy:
+
+    name: Deploy to GitHub Pages
 
     runs-on: ubuntu-18.04
 
@@ -35,6 +37,8 @@ jobs:
           bundle install --jobs 4 --retry 3
 
       - name: Jekyll build
+        env:
+          JEKYLL_ENV: production
         run: jekyll build --config "_config.yml,_config.prod.yml"
 
       - name: Deploy to GitHub Pages
