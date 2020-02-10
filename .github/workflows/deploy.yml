@@ -41,6 +41,18 @@ jobs:
           JEKYLL_ENV: production
         run: jekyll build --config "_config.yml,_config.prod.yml"
 
+      - name: CSS linting with stylelint
+        run: yarn run lint:css
+
+      - name: JS linting with eslint
+        run: yarn run lint:js
+
+      - name: Site testing with htmlproofer
+        uses: chabad360/htmlproofer@master
+        with:
+          directory: './_site'
+          arguments: '--empty_alt_ignore --http-status-ignore 0,999,403'
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v2.10.1
         env:

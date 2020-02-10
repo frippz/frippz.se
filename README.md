@@ -1,6 +1,6 @@
 # frippz.se
 
-![Tests](https://github.com/frippz/frippz.se/workflows/Tests/badge.svg) ![Deploy to live](https://github.com/frippz/frippz.se/workflows/Deploy%20to%20live/badge.svg)
+![Tests](https://github.com/frippz/frippz.se/workflows/Tests/badge.svg)
 
 This repo contains the Jekyll source code for my personal journal at frippz.se.
 
