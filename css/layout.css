@@ -82,7 +82,7 @@
       display: grid;
       grid-template-columns:
         [main-start] 1fr
-        [content-start] calc(42rem + 5vw)
+        [content-start] calc(38rem + 5vw)
         [content-end] 1fr
         [main-end];
       grid-template-rows:
