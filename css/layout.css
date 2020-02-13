@@ -97,6 +97,14 @@
       padding-bottom: unset;
     }
 
+    .header-content {
+      padding-right: 2em;
+    }
+
+    main .landmark-content {
+      padding-left: 2em;
+    }
+
     main {
       grid-column: content-start / content-end;
     }

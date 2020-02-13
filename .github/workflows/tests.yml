@@ -3,7 +3,9 @@ name: Tests
 on: [push]
 
 jobs:
-  deploy:
+  test:
+
+    name: Linting & HTML proofing
 
     runs-on: ubuntu-18.04
 
