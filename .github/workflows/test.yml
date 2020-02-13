@@ -1,14 +1,9 @@
-name: Deploy to live
+name: Test
 
-on:
-  release:
-    types:
-      - published
+on: [push]
 
 jobs:
   deploy:
-
-    name: Deploy to GitHub Pages
 
     runs-on: ubuntu-18.04
 
@@ -52,10 +47,3 @@ jobs:
         with:
           directory: './_site'
           arguments: '--empty_alt_ignore --http-status-ignore 0,999,403'
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v2.10.1
-        env:
-          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: _site
