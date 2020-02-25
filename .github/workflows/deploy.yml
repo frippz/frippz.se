@@ -1,4 +1,4 @@
-name: Deploy to live
+name: Deploy
 
 on:
   push:
@@ -11,7 +11,7 @@ on:
 jobs:
   deploy:
 
-    name: Deploy to GitHub Pages
+    name: Deploy to Netlify
 
     runs-on: ubuntu-18.04
 
