@@ -57,10 +57,6 @@ plugins:
 tag_page_layout: 'tags-page'
 tag_page_dir: 'tags'
 
-# Jekyll tidy
-jekyll_tidy:
-  compress_html: true
-
 # Archives
 jekyll-archives:
   enabled: []
