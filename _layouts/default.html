@@ -1,24 +1,24 @@
 <!doctype html>
 <html lang="en">
-{% include head.html %}
-<body{% if page.custom_class %} class="{{ page.custom_class }}"{% endif %}>
+  {% include head.html %}
+  <body{% if page.custom_class %} class="{{ page.custom_class }}"{% endif %}>
 
-  {% include header.html %}
+    {% include header.html %}
 
-  <main id="main-content">
+    <main id="main-content">
 
-    <div class="landmark-content">
+      <div class="landmark-content">
 
-      {{ content }}
+        {{ content }}
 
-    </div>
+      </div>
 
-  </main>
+    </main>
 
-  {% include footer.html %}
+    {% include footer.html %}
 
-  {% include sprite.svg %}
+    {% include sprite.svg %}
 
-  {% include script.html %}
-</body>
+    {% include script.html %}
+  </body>
 </html>
