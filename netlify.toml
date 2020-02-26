@@ -2,10 +2,3 @@
   from = "/*"
   to = "/404"
   status = 404
-
-[[redirects]]
-  # Redirect default Netlify subdomain to primary domain
-  from = "https://frippz-se.netlify.com/*"
-  to= "https://frippz.se/"
-  query = {path = ":path"}
-  status = 301
