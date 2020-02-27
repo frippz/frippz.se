@@ -2,9 +2,3 @@
   from = "/*"
   to = "/404"
   status = 404
-
-[[redirects]]
-  from = "https://frippz-se.netlify.com"
-  to = "https://frippz.se"
-  query = { path = ":splat" }
-  status = 301
