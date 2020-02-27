@@ -86,7 +86,3 @@ exclude:
   - 'vendor'
   - 'yarn-error.log'
   - 'yarn.lock'
-
-# Include
-incluce:
-  - '_redirects'
