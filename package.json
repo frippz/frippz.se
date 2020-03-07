@@ -6,31 +6,30 @@
     "url": "https://frippz.se/"
   },
   "license": "MIT",
-  "version": "2",
+  "version": "2.0.0",
   "description": "The blog of Fredrik Frodlund",
   "repository": {
     "type": "git",
     "url": "git@github.com:frippz/frippz.se.git"
   },
   "scripts": {
-    "prestart": "yarn",
-    "start": "concurrently 'yarn run jekyll:serve' 'yarn run watch:svg'",
+    "start": "concurrently 'npm run jekyll:serve' 'npm run watch:svg'",
     "prebuild": "touch _includes/sprite.svg & mkdir -p dist",
-    "build": "yarn run build:css && yarn run build:js && yarn run build:svg",
-    "watch:svg": "onchange ./src/svg/** -i -- yarn run svg",
+    "build": "npm run build:css && npm run build:js && npm run build:svg",
+    "watch:svg": "onchange ./src/svg/** -i -- npm run svg",
     "svg": "svg-sprite -C svg-sprite.config.json --dest ./_includes svg/*.svg",
     "uglify:css": "foreach -g 'dist/css/*.css' -x 'uglifycss #{path} --output #{path}'",
     "uglify:js": "foreach -g 'dist/js/*.js' -x 'uglifyjs #{path} --output #{path}'",
     "hash:css": "hashmark -l 8 css/*.css './dist/css/{name}-{hash}.css'",
-    "posthash:css": "yarn run uglify:css",
+    "posthash:css": "npm run uglify:css",
     "hash:js": "hashmark -l 8 js/*.js './dist/js/{name}-{hash}.js'",
-    "posthash:js": "yarn run uglify:js",
-    "lint": "yarn run lint:css && yarn run lint:js",
+    "posthash:js": "npm run uglify:js",
+    "lint": "npm run lint:css && npm run lint:js",
     "lint:css": "stylelint --color -f verbose css/**/*.css",
     "lint:js": "eslint js/**/*.js",
     "jekyll:serve": "jekyll serve --drafts",
     "predeploy": "mkdir -p dist/{css,js/vendor} && rm -rf dist/css/* dist/js/*",
-    "deploy": "yarn run hash:css && yarn run hash:js && yarn run svg"
+    "deploy": "npm run hash:css && npm run hash:js && npm run svg"
   },
   "dependencies": {
     "eslint": "^6.8.0",
@@ -40,8 +39,7 @@
     "stylelint-color-format": "^1.0.0",
     "svg-sprite": "^1.3.7",
     "uglify-es": "^3.0.28",
-    "uglifycss": "^0.0.29",
-    "yarn": "^1.22.0"
+    "uglifycss": "^0.0.29"
   },
   "devDependencies": {
     "concurrently": "^5.1.0",

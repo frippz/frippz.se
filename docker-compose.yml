@@ -10,9 +10,10 @@ services:
       dockerfile: Dockerfile
 
     volumes:
-      - $PWD:/srv/jekyll
+      - $PWD:/jekyll
+      - /jekyll/node_modules
 
-    working_dir: /srv/jekyll
+    working_dir: /jekyll
 
     environment:
       NODE_ENV: development
@@ -21,4 +22,4 @@ services:
     ports:
       - '4000:4000'
 
-    command: yarn start
+    command: npm start
