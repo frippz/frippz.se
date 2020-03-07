@@ -79,13 +79,12 @@ exclude:
   - 'docker-compose*.yml'
   - 'node_modules'
   - 'package.json'
+  - 'package-lock.json'
   - 'postcss.*.js'
   - 'script'
   - 'svg'
   - 'svg-sprite.config.json'
   - 'vendor'
-  - 'yarn-error.log'
-  - 'yarn.lock'
 
 # Include
 include:

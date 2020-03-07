@@ -18,13 +18,13 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: '10.16'
+          node-version: '12.15'
 
       - name: Install Node packages
-        run: yarn install --production --pure-lockfile --non-interactive
+        run: npm ci --production
 
       - name: Build assets for deployment
-        run: yarn run deploy
+        run: npm run deploy
 
       - name: Set up Ruby 2.6
         uses: actions/setup-ruby@v1
@@ -42,10 +42,10 @@ jobs:
         run: jekyll build --config "_config.yml,_config.prod.yml"
 
       - name: CSS linting with stylelint
-        run: yarn run lint:css
+        run: npm run lint:css
 
       - name: JS linting with eslint
-        run: yarn run lint:js
+        run: npm run lint:js
 
       - name: Site testing with htmlproofer
         uses: chabad360/htmlproofer@master
