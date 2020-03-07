@@ -53,13 +53,6 @@ jobs:
           directory: './_site'
           arguments: '--empty_alt_ignore --http-status-ignore 0,999,403'
 
-      # - name: Deploy to GitHub Pages
-      #   uses: peaceiris/actions-gh-pages@v2.10.1
-      #   env:
-      #     ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-      #     PUBLISH_BRANCH: gh-pages
-      #     PUBLISH_DIR: _site
-
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.0
         with:
