@@ -1,5 +1,5 @@
 ---
-title: Facebook discovers that native is better
+title: Facebook discovers that native is better (updated)
 description: The web just can’t compete with native on performance.
 date: 2020-03-09 07:30
 updated: 2020-03-09 09:25
@@ -17,7 +17,7 @@ The engineers over at Facebook rolled out a new Messenger app and later on poste
 
 What’s gotten people’s attention online is that they seem to have accomplished this by axing React Native and going (possibly mostly) full native. The reaction has been just what you'd expect; *no shit, Sherlock*. I love the web and (at least most of) it's many technologies. These days you can accomplish amazing things with HTML, CSS and JavaScript.
 
-*But web just can’t compete with native.* 
+*But web just can’t compete with native.*
 
 I’m not going to stick my neck out and say that it never will, but I honestly don’t see that happening for many years to come. Plus, as front end developer since the 90s, I don’t see web technologies as the correct set of tools for building such apps. I loathe Electron and other stuff that’s not native to Mac, for example. I feel the same way about iOS as well. I want snappy, responsive and native apps on all my platforms. Looks like the engineers over at Facebook wants that too.
 
