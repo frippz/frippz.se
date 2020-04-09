@@ -1,8 +1,8 @@
 name: Production tests
 
-on: [push]
-  # schedule:
-  #   - cron: '0 8 * * *'
+on:
+  schedule:
+    - cron: '0 8 * * *'
 
 jobs:
   prod-tests:
@@ -20,3 +20,12 @@ jobs:
           urls: 'https://frippz.se'
           sha: ${{ github.sha }}
           accessToken: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Handle Lighthouse Check results
+        uses: foo-software/lighthouse-check-status-action@master
+        with:
+          lighthouseCheckResults: ${{ steps.lighthouseCheck.outputs.lighthouseCheckResults }}
+          minAccessibilityScore: "98"
+          minBestPracticesScore: "98"
+          minPerformanceScore: "90"
+          minSeoScore: "90"
