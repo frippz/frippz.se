@@ -1,0 +1,22 @@
+name: Production tests
+
+on: [push]
+  # schedule:
+  #   - cron: '0 8 * * *'
+
+jobs:
+  prod-tests:
+
+    name: Run tests on production site
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Run Lighthouse
+        uses: foo-software/lighthouse-check-action@master
+        with:
+          branch: master
+          urls: 'https://frippz.se'
+          sha: ${{ github.sha }}
+          accessToken: ${{ secrets.GITHUB_TOKEN }}
