@@ -53,14 +53,6 @@ jobs:
           directory: './_site'
           arguments: '--empty_alt_ignore --http-status-ignore 0,999,403 --file-ignore "/tags/" --url-ignore "/frippz.se/"'
 
-      - name: Run Lighthouse
-        uses: foo-software/lighthouse-check-action@master
-        with:
-          branch: ${{ github.ref }}
-          urls: '${{ steps.deploy.outputs.PUBLIC_URL }}'
-          sha: ${{ github.sha }}
-          accessToken: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.0.5
         with:
