@@ -1,5 +1,5 @@
 ---
-title: Happy CSS naked day!
+title: Happy CSS Naked Day!
 description: Strip your website of its CSS and show the world you know what you’re doing
 date: 2020-04-09 06:30
 tags:
