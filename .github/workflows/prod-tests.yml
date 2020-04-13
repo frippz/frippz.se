@@ -15,6 +15,7 @@ jobs:
 
       - name: Run Lighthouse
         uses: foo-software/lighthouse-check-action@master
+        id: lighthouseCheck
         with:
           branch: master
           urls: 'https://frippz.se'
@@ -24,7 +25,7 @@ jobs:
       - name: Handle Lighthouse Check results
         uses: foo-software/lighthouse-check-status-action@master
         with:
-          lighthouseCheckResults: ${{ steps.prodTests.outputs.lighthouseCheckResults }}
+          lighthouseCheckResults: ${{ steps.lighthouseCheck.outputs.lighthouseCheckResults }}
           minAccessibilityScore: "98"
           minBestPracticesScore: "98"
           minPerformanceScore: "90"
