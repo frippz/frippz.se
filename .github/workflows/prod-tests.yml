@@ -1,8 +1,8 @@
 name: Production tests
 
-on:
-  schedule:
-    - cron: '0 8 * * *'
+on: [push]
+  # schedule:
+  #   - cron: '0 8 * * *'
 
 jobs:
   prod-tests:
@@ -28,4 +28,5 @@ jobs:
           minAccessibilityScore: "98"
           minBestPracticesScore: "98"
           minPerformanceScore: "90"
+          minProgressiveWebAppScore: "0"
           minSeoScore: "90"
