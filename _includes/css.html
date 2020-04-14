@@ -1,4 +1,3 @@
-{% comment %}
 {% if jekyll.environment == "production" %}
   {% assign css-files = site.static_files | where: "dist-css", true %}
 {% else %}
@@ -8,4 +7,3 @@
 {% for css in css-files %}
   <link rel="stylesheet" href="{{ site.baseurl }}{{ css.path }}"{% if css.path contains "print" %} media="print"{% endif %}>
 {% endfor %}
-{% endcomment %}
