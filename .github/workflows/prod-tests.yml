@@ -2,7 +2,7 @@ name: Production tests
 
 on:
   schedule:
-    - cron: '0 8 * * *'
+    - cron: '0 * * * *'
 
 jobs:
   prod-tests:
@@ -27,6 +27,6 @@ jobs:
           lighthouseCheckResults: ${{ steps.lighthouseCheck.outputs.lighthouseCheckResults }}
           minAccessibilityScore: "98"
           minBestPracticesScore: "98"
-          minPerformanceScore: "85"
+          minPerformanceScore: "80"
           minProgressiveWebAppScore: "0"
           minSeoScore: "90"
