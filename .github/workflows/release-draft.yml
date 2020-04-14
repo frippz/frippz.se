@@ -12,11 +12,11 @@ jobs:
 
     steps:
       - name: Create a release draft for a version tag
-        id: create-release-draft
+        id: createReleaseDraft
         uses: ecampidoglio/auto-release-draft@v1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Print the URL of the release draft
-        if: steps.create-release-draft.outputs.release-url != ''
+        if: steps.createReleaseDraft.outputs.release-url != ''
         run: echo ${{ steps.create-release-draft.outputs.release-url }}
