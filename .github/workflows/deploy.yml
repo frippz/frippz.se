@@ -57,7 +57,6 @@ jobs:
         uses: nwtgck/actions-netlify@v1.0.12
         with:
           publish-dir: './_site'
-          production-branch: master
           github-token: ${{ secrets.GITHUB_TOKEN }}
           deploy-message: 'Deployed: ${{ github.event.commit.title }}'
         env:
