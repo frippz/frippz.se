@@ -15,10 +15,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Extract branch name
-        shell: bash
-        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
-        id: extract_branch
+      # - name: Extract branch name
+      #   shell: bash
+      #   run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+      #   id: extract_branch
 
       - name: Setup Node
         uses: actions/setup-node@v1
@@ -58,13 +58,21 @@ jobs:
           directory: './_site'
           arguments: '--empty_alt_ignore --http-status-ignore 0,999,403 --file-ignore "/tags/" --url-ignore "/frippz.se/"'
 
+      # - name: Deploy to Netlify
+      #   uses: nwtgck/actions-netlify@v1.0.12
+      #   with:
+      #     publish-dir: './_site'
+      #     production-branch: ${{ steps.extract_branch.outputs.branch }}
+      #     github-token: ${{ secrets.GITHUB_TOKEN }}
+      #     deploy-message: 'Deployed: ${{ github.event.commit.title }}'
+      #   env:
+      #     NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      #     NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+
       - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v1.0.12
+        uses: jsmrcaga/action-netlify-deploy@master
         with:
-          publish-dir: './_site'
-          production-branch: ${{ steps.extract_branch.outputs.branch }}
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          deploy-message: 'Deployed: ${{ github.event.commit.title }}'
-        env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_DEPLOY_MESSAGE: "Prod deploy v${{ github.ref }}"
+          NETLIFY_DEPLOY_TO_PROD: true
