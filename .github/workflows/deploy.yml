@@ -54,7 +54,7 @@ jobs:
           arguments: '--empty_alt_ignore --http-status-ignore 0,999,403 --file-ignore "/tags/" --url-ignore "/frippz.se/"'
 
       - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v1.0.5
+        uses: nwtgck/actions-netlify@v1.0.12
         with:
           publish-dir: './_site'
           production-branch: master
