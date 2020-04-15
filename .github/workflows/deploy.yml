@@ -70,10 +70,9 @@ jobs:
       #     NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
 
       - name: Deploy to Netlify
-        uses: jsmrcaga/action-netlify-deploy@master
+        uses: South-Paw/action-netlify-deploy@v1.0.3
         with:
-          build_directory: './_site'
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          NETLIFY_DEPLOY_MESSAGE: "Prod deploy v${{ github.ref }}"
-          NETLIFY_DEPLOY_TO_PROD: true
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
+          build-dir: './_site'
