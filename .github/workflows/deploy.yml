@@ -15,6 +15,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Extract branch name
+        shell: bash
+        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        id: extract_branch
+
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
@@ -57,7 +62,7 @@ jobs:
         uses: nwtgck/actions-netlify@v1.0.12
         with:
           publish-dir: './_site'
-          production-branch: '${GITHUB_REF##*/}'
+          production-branch: ${{ steps.extract_branch.outputs.branch }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
           deploy-message: 'Deployed: ${{ github.event.commit.title }}'
         env:
