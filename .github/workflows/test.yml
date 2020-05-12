@@ -1,14 +1,11 @@
-name: Deploy to prod
+name: Test
 
-on:
-  release:
-    types:
-      - published
+on: [push]
 
 jobs:
-  deploy:
+  test:
 
-    name: Deploy to Netlify
+    name: Test
 
     runs-on: ubuntu-latest
 
@@ -23,7 +20,7 @@ jobs:
       - name: Install Node packages
         run: npm ci --production
 
-      - name: Build assets for deployment
+      - name: Build assets
         run: npm run deploy
 
       - name: Set up Ruby 2.6
@@ -41,10 +38,10 @@ jobs:
           JEKYLL_ENV: production
         run: jekyll build --config "_config.yml,_config.prod.yml"
 
-      - name: Lint CSS
+      - name: CSS linting
         run: npm run lint:css
 
-      - name: Lint JavaScript
+      - name: JS linting
         run: npm run lint:js
 
       - name: Site test with htmlproofer
@@ -52,11 +49,3 @@ jobs:
         with:
           directory: './_site'
           arguments: '--empty_alt_ignore --http-status-ignore 0,999,403 --file-ignore "/tags/" --url-ignore "/frippz.se/"'
-
-      - name: Deploy to Netlify
-        uses: South-Paw/action-netlify-deploy@v1.0.3
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
-          build-dir: './_site'
