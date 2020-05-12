@@ -1,4 +1,8 @@
+name-template: 'v$NEXT_MINOR_VERSION'
+tag-template: 'v$NEXT_MINOR_VERSION'
+
 template: |
-  ## Changes
+  ## What’s Changed in Search Results
 
   $CHANGES
+change-template: '- $TITLE (#$NUMBER)'
