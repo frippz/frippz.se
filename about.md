@@ -19,7 +19,7 @@ This site is just plain static HTML generated with the help of [Jekyll](http://j
 
 I used to host this site on [DigitalOcean](https://m.do.co/c/2e95857e7f62) due to a comprehensible pricing model, a nice control panel and a great community with loads of documentation and helpful people. Paying $5 a month for their lowest tier was pretty damn affordable as well. However, some other projects that required me to run Node.js has now been defunct which led me to go back to Github Pages. Thanks to Github Actions, I could suddenly do a lot more fun stuff with my tool stack for this site.
 
-Stiff, if you want to give them a try, the above link is a referral that’ll give you a $10 credit. If you happen to like them as much as I do and stay with them, when you spend $25 with them, I get a $25 credit myself (I still use them for other things, so that would be much appreciated).
+Still, if you want to give them a try, the above link is a referral that’ll give you a $10 credit. If you happen to like them as much as I do and stay with them, when you spend $25 with them, I get a $25 credit myself (I still use them for other things, so that would be much appreciated).
 
 #### Encryption
 
