@@ -14,5 +14,3 @@ exclude:
   - 'svg'
   - 'svg-sprite.config.json'
   - 'vendor'
-  - 'yarn-error.log'
-  - 'yarn.lock'
