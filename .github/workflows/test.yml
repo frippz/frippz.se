@@ -10,7 +10,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Check out files
+        uses: actions/checkout@v2
+
+      - name: Setup caching
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.npm
+            vendor/bundle
+          key: ${{ runner.os }}-gem-${{ hashFiles('Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gem-
 
       - name: Setup Node
         uses: actions/setup-node@v1
@@ -27,14 +38,6 @@ jobs:
         uses: actions/setup-ruby@v1
         with:
           ruby-version: 2.6.x
-
-      - name: Setup caching
-        uses: actions/cache@v1
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gem-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gem-
 
       - name: Bundle install
         run: |
