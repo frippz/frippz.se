@@ -13,20 +13,18 @@ jobs:
       - name: Check out files
         uses: actions/checkout@v2
 
-      - name: Setup caching
-        uses: actions/cache@v2
-        with:
-          path: |
-            ~/.npm
-            vendor/bundle
-          key: ${{ runner.os }}-gem-${{ hashFiles('Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gem-
-
-      - name: Setup Node
+      - name: Set up Node
         uses: actions/setup-node@v1
         with:
           node-version: '12.15'
+
+      - name: Set up caching for npm
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
 
       - name: Install Node packages
         run: npm ci --production
@@ -38,6 +36,14 @@ jobs:
         uses: actions/setup-ruby@v1
         with:
           ruby-version: 2.6.x
+
+      - name: Set up caching for Bundler
+        uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gem-${{ hashFiles('Gemfile.lock,package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-gem-
 
       - name: Bundle install
         run: |
