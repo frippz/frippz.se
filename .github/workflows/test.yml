@@ -28,7 +28,8 @@ jobs:
         with:
           ruby-version: 2.6.x
 
-      - uses: actions/cache@v1
+      - name: Setup caching
+        uses: actions/cache@v1
         with:
           path: vendor/bundle
           key: ${{ runner.os }}-gem-${{ hashFiles('**/Gemfile.lock') }}
@@ -44,7 +45,7 @@ jobs:
       - name: Jekyll build
         env:
           JEKYLL_ENV: production
-        run: jekyll build --config "_config.yml,_config.prod.yml"
+        run: bundle exec jekyll build --config "_config.yml,_config.prod.yml"
 
       - name: CSS linting
         run: npm run lint:css
