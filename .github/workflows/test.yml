@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out files
+      - name: Checkout files
         uses: actions/checkout@v2
 
       - name: Set up Node
