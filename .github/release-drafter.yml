@@ -2,7 +2,7 @@ name-template: 'v$NEXT_MINOR_VERSION'
 tag-template: 'v$NEXT_MINOR_VERSION'
 
 template: |
-  ## What’s Changed in Search Results
+  ## What’s new
 
   $CHANGES
 change-template: '- $TITLE (#$NUMBER)'
