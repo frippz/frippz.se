@@ -32,7 +32,7 @@ jobs:
       - name: Install Node packages
         run: npm ci --production
 
-      - name: Build assets for deployment
+      - name: Build assets
         run: npm run deploy
 
       - name: Set up Ruby 2.6
