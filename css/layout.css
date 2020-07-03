@@ -111,12 +111,12 @@
 
     #footer {
       margin-top: 0;
-      grid-column: content-start / content-end;
+      grid-column: main-start / main-end;
       grid-row: footer-start / main-end;
     }
 
     /* Unset landmark content max-width */
-    .landmark-content {
+    main .landmark-content {
       max-width: unset;
     }
 
