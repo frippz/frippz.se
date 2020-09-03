@@ -42,6 +42,7 @@ jobs:
           ruby-version: 2.6.x
 
       - name: Set up caching for Bundler
+        id: cache-gems
         uses: actions/cache@v2
         with:
           path: vendor/bundle
@@ -50,6 +51,7 @@ jobs:
             ${{ runner.os }}-gem-
 
       - name: Bundle install
+        if: steps.cache-gems.outputs.cache-hit != 'true'
         run: |
           gem install bundler
           bundle config path vendor/bundle
