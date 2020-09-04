@@ -51,7 +51,7 @@
 
   /* Article */
   --article-link: hsl(12, 78%, 44%);
-  --article-link-invert: hsl(0, 100%, 100%, 1);
+  --article-link-invert: hsl(0, 100%, 100%);
   --article-header-decoration: hsla(0, 0%, 0%, 0.2);
 
   /* Selection */
