@@ -1,7 +1,7 @@
 {%- capture figCaption -%}
 {% if include.caption %}
   <figcaption>
-    {{ include.caption | markdownify | remove: '<p>' | remove: '</p>' }}
+    {{ include.caption | markdownify | remove: '<p>' | remove: '</p>' }}
   </figcaption>
 {% endif %}
 {%- endcapture -%}
