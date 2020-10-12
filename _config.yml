@@ -7,7 +7,6 @@ avatar: 'https://frippz.se/images/just-me.jpg'
 feed-title: 'Fredrik Frodlund – frippz.se'
 permalink: 'pretty'
 paginate: '5'
-analytics: 'UA-57274505-11'
 
 # Default page settings
 defaults:
