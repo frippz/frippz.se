@@ -87,7 +87,7 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           DEPLOY_DIR: "./_site"
-          DEPLOY_MSG: "Deploy ${{ steps.vars.outputs.tag }}"
+          DEPLOY_MSG: ${{ steps.vars.outputs.tag }}
         run: |
           wget -qO- 'https://cli.netlify.com/download/latest/linux' | tar xz
           ./netlifyctl deploy -A $NETLIFY_AUTH_TOKEN -s $NETLIFY_SITE_ID -P $DEPLOY_DIR -m "$DEPLOY_MSG"
