@@ -85,7 +85,7 @@ jobs:
           DEPLOY_DIR: './_site'
         run: |
           wget -qO- 'https://cli.netlify.com/download/latest/linux' | tar xz
-          ./netlifyctl deploy -s $NETLIFY_AUTH_TOKEN -s $NETLIFY_SITE_ID -P $DEPLOY_DIR
+          ./netlifyctl deploy -A $NETLIFY_AUTH_TOKEN -s $NETLIFY_SITE_ID -P $DEPLOY_DIR
 
       - if: failure()
         name: Dump netlifyctl-debug.log
