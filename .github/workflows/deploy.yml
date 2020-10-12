@@ -94,14 +94,3 @@ jobs:
         with:
           name: netlifyctl-debug.log
           path: ./netlifyctl-debug.log
-
-      # - name: Deploy to Netlify
-      #   uses: jsmrcaga/action-netlify-deploy@master
-      #   with:
-      #     NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-      #     NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-      #     NETLIFY_DEPLOY_MESSAGE: "Production deploy v${{ github.ref }}"
-      #     NETLIFY_DEPLOY_TO_PROD: true
-      #     build_directory: './_site'
-      #     install_command: ''
-      #     build_command: ''
