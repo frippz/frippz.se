@@ -87,6 +87,13 @@ jobs:
           wget -qO- 'https://cli.netlify.com/download/latest/linux' | tar xz
           ./netlifyctl deploy -s $NETLIFY_AUTH_TOKEN -s $NETLIFY_SITE_ID -P $DEPLOY_DIR
 
+      - if: failure()
+        name: Dump netlifyctl-debug.log
+        uses: actions/upload-artifact@master
+        with:
+          name: netlifyctl-debug.log
+          path: ./
+
       # - name: Deploy to Netlify
       #   uses: jsmrcaga/action-netlify-deploy@master
       #   with:
