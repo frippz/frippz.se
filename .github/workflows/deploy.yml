@@ -81,7 +81,7 @@ jobs:
       - name: Deploy to Netlify
         run: |
           wget -qO- 'https://cli.netlify.com/download/latest/linux' | tar xz
-          ./netlifyctl deploy -s ${{ secrets.NETLIFY_AUTH_TOKEN }} -s ${{ secrets.NETLIFY_SITE_ID }} -b ./_site
+          ./netlifyctl deploy -s ${{ secrets.NETLIFY_AUTH_TOKEN }} -s ${{ secrets.NETLIFY_SITE_ID }} -P ./_site
 
       # - name: Deploy to Netlify
       #   uses: jsmrcaga/action-netlify-deploy@master
