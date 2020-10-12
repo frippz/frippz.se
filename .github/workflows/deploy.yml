@@ -90,7 +90,7 @@ jobs:
           DEPLOY_MSG: "Deploy ${{ steps.vars.outputs.tag }}"
         run: |
           wget -qO- 'https://cli.netlify.com/download/latest/linux' | tar xz
-          ./netlifyctl deploy -A $NETLIFY_AUTH_TOKEN -s $NETLIFY_SITE_ID -P $DEPLOY_DIR -m $DEPLOY_MSG
+          ./netlifyctl deploy -A $NETLIFY_AUTH_TOKEN -s $NETLIFY_SITE_ID -P $DEPLOY_DIR -m "$DEPLOY_MSG"
 
       - if: failure()
         name: Dump netlifyctl-debug.log
