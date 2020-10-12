@@ -96,5 +96,5 @@ jobs:
         name: Dump netlifyctl-debug.log
         uses: actions/upload-artifact@master
         with:
-          name: netlifyctl-debug.log
+          name: netlifyctl-debug
           path: ./netlifyctl-debug.log
