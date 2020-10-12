@@ -79,9 +79,13 @@ jobs:
         run: npm run lint:js
 
       - name: Deploy to Netlify
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          DEPLOY_DIR: './_site'
         run: |
           wget -qO- 'https://cli.netlify.com/download/latest/linux' | tar xz
-          ./netlifyctl deploy -s ${{ secrets.NETLIFY_AUTH_TOKEN }} -s ${{ secrets.NETLIFY_SITE_ID }} -P ./_site
+          ./netlifyctl deploy -s $NETLIFY_AUTH_TOKEN -s $NETLIFY_SITE_ID -P $DEPLOY_DIR
 
       # - name: Deploy to Netlify
       #   uses: jsmrcaga/action-netlify-deploy@master
