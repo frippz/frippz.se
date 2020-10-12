@@ -92,7 +92,7 @@ jobs:
         uses: actions/upload-artifact@master
         with:
           name: netlifyctl-debug.log
-          path: ./
+          path: ./netlifyctl-debug.log
 
       # - name: Deploy to Netlify
       #   uses: jsmrcaga/action-netlify-deploy@master
