@@ -4,8 +4,7 @@ on:
 
   push:
     paths:
-      - '!**'
-      - '_posts/**'
+      - './_posts/**'
 
   release:
     types:
