@@ -78,7 +78,7 @@ jobs:
       - name: Lint JavaScript
         run: npm run lint:js
 
-      - name: Set output
+      - name: Get tagged version
         id: vars
         run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
 
