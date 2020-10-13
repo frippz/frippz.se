@@ -1,14 +1,12 @@
 name: Deploy to prod
 
 on:
-
-  push:
-    paths:
-      - './_posts/**'
-
   release:
     types:
       - published
+  push:
+    paths:
+      - '_posts/**'
 
 jobs:
   deploy:
