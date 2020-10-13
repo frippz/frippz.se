@@ -3,9 +3,8 @@ name: Deploy to prod
 on:
 
   push:
-    paths-ignore:
-      - '*'
     paths:
+      - '!**'
       - '_posts/**'
 
   release:
