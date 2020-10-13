@@ -1,8 +1,8 @@
 # frippz.se
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/18c2cfaf-2e01-4e4b-8778-deee41ba9b13/deploy-status)](https://app.netlify.com/sites/frippz-se/deploys)
+![Tests](https://github.com/frippz/frippz.se/workflows/Tests/badge.svg)
 
-![Deploy](https://github.com/frippz/frippz.se/workflows/Deploy/badge.svg)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/18c2cfaf-2e01-4e4b-8778-deee41ba9b13/deploy-status)](https://app.netlify.com/sites/frippz-se/deploys)
 
 This repo contains the Jekyll source code for my personal journal at frippz.se.
 
