@@ -49,7 +49,6 @@ host: '0.0.0.0'
 plugins:
   - 'jekyll-archives'
   - 'jekyll-paginate'
-  - 'jekyll-tidy'
   - 'rouge'
 
 # Tags
