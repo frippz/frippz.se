@@ -58,4 +58,4 @@ Following yesterdays [Apple event](https://www.apple.com/apple-events/october-20
 </table>
 The iPhone 12 Mini is the model that I believe will be the "people’s iPhone". That is to say, it’ll most likely be the top seller. With that in mind, it’s interesting to note the width of the device. 360 CSS pixels. I’ve noticed in my day job that our designers have designed with the iPhone 8/SE 2 in mind, that is to say that they make their most narrow designs 375 CSS pixels. While that might be a problem in and of itself since there’s still plenty of devices out there that is reporting 320 CSS pixels and you should cater to these too, it’s interesting to note that our designers will _at least_ have to shave off 15 CSS pixels in their future designs, since this will very likely be the majority for the future.
 
-Then again, if we all just built stuff fully flexible and not cater to a specific minimum viewport, this wouldn’t be a problem at all.
+Then again, if we all just built stuff fully flexible and did not cater to a specific minimum viewport, this wouldn’t be a problem at all.
