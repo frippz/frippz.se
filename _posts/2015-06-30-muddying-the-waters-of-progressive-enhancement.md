@@ -25,7 +25,7 @@ Back in 2008, Aaron Gustafson wrote for A List Apart on progressive enhancement.
 
 > Getting into the progressive enhancement mindset is quite simple: just think from the content out. The content forms the solid base on which you layer your style and interactivity. If you’re a candy fan, think of it as a Peanut M&M:
 >
-> ![](//frippz-se.s3.amazonaws.com/pe-nut.jpeg)
+> <img src="//frippz-se.s3.amazonaws.com/pe-nut.jpeg" alt="" loading="lazy">
 >
 > Start with your content peanut, marked up in rich, semantic (X)HTML. Coat that content with a layer of rich, creamy CSS. Finally, add JavaScript as the hard candy shell to make a wonderfully tasty treat (and keep it from melting in your hands).
 
