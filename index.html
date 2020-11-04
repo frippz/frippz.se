@@ -8,14 +8,14 @@ sitemap:
 ---
 
 {% for post in paginator.posts %}
-<article itemscope itemtype="http://schema.org/BlogPosting">
+<article itemscope itemtype="http://schema.org/BlogPosting" id="{{ post.title | slugify }}">
   <header>
     <h2 itemprop="headline">
-      <a href="{{ post.url | prepend: site.baseurl }}" class="article-link">{{ post.title }}</a>
+      <a href="{{ post.url | prepend: site.baseurl }}#{{ post.title | slugify }}" class="article-link">{{ post.title }}</a>
     </h2>
     <small class="post-info">
       Posted on <time datetime="{{ post.date | date: '%Y-%m-%d' }}" itemprop="datePublished">{{ post.date | date: '%B %-d, %Y' }}</time>
-      <a class="permalink" href="{{ post.url | prepend: site.baseurl }}" aria-label="Permalink to: “{{ post.title }}”">
+      <a class="permalink" href="{{ post.url | prepend: site.baseurl }}#{{ post.title | slugify }}" aria-label="Permalink to: “{{ post.title }}”">
         {% include svg.html icon="icon-link" %}
       </a>
     </small>

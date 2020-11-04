@@ -11,6 +11,11 @@
    * Articles
    */
 
+  /* Offset article in focus */
+  article:target {
+    padding-top: 2em;
+  }
+
   /* Heading links */
   article h2 a:link,
   article h2 a:visited {

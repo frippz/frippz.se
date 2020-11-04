@@ -1,12 +1,12 @@
 ---
 layout: default
 ---
-<article itemscope itemtype="http://schema.org/BlogPosting">
+<article itemscope itemtype="http://schema.org/BlogPosting" id="{{ page.title | slugify }}">
   <header>
     <h2 itemprop="headline">{{ page.title }}</h2>
     <small class="post-info">
       Posted on <time datetime="{{ page.date | date: '%Y-%m-%d' }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>
-      <a class="permalink" href="{{ post.url | prepend: site.baseurl }}" aria-label="Permalink">
+      <a class="permalink" href="{{ post.url | prepend: site.baseurl }}#{{ page.title | slugify }}" aria-label="Permalink">
         {% include svg.html icon="icon-link" %}
       </a>
     </small>
