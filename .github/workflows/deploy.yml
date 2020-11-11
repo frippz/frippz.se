@@ -101,7 +101,7 @@ jobs:
       - name: Deploy to AWS
         uses: reggionick/s3-deploy@v3.0.0
         with:
-          folder: .
+          folder: _site
           bucket: ${{ secrets.S3_BUCKET }}
           bucket-region: ${{ secrets.S3_BUCKET_REGION }}
           dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
