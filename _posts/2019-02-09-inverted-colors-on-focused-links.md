@@ -13,7 +13,7 @@ Some time ago, I worked on a project where we made digital teaching aids. It was
 
 Since this was teaching materials for public schools, we had accessibility requirements to fulfill. This included clear and distinct focus states for users navigating the UI with a keyboard. We chose to invert the colors of links — that is, if the text color was black and the background was white, upon focusing a link the background would turn black and the text white.
 
-{% include image.html url="https:/images/basic-focus-links.gif" %}
+{% include image.html url="/images/basic-focus-links.gif" %}
 
 It’s a fairly simple setup. The required styling would be accordingly:
 
@@ -112,6 +112,6 @@ Then, we do the styling.
 
 That’s it! See what’s going on? All boxes will get the class name `themed-box`, which declares that the background color and the color of the text should be set by the custom properties `--background` and `--text` respectively. Then, all we need to do is assign the values of those custom properties for each theme we create. Now, without any additional styling for focused links, we get the following:
 
-{% include image.html url="https:/images/themed-focus-links.gif" %}
+{% include image.html url="/images/themed-focus-links.gif" %}
 
 [There’s a CodePen](https://codepen.io/frippz/pen/YBeNKR) up if you want to play around with this yourself. Happy coding!
