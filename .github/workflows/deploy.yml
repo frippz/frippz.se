@@ -7,7 +7,7 @@ on:
 jobs:
   deploy:
 
-    name: Deploy to prod
+    name: Build site & deploy to AWS
 
     runs-on: ubuntu-latest
 
