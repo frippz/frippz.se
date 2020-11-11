@@ -81,23 +81,6 @@ jobs:
         id: vars
         run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
 
-      - name: Deploy to Netlify
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          DEPLOY_DIR: "./_site"
-          DEPLOY_MSG: ${{ steps.vars.outputs.tag }}
-        run: |
-          wget -qO- 'https://cli.netlify.com/download/latest/linux' | tar xz
-          ./netlifyctl deploy -A $NETLIFY_AUTH_TOKEN -s $NETLIFY_SITE_ID -P $DEPLOY_DIR -m "$DEPLOY_MSG"
-
-      - if: failure()
-        name: Dump netlifyctl-debug.log
-        uses: actions/upload-artifact@master
-        with:
-          name: netlifyctl-debug
-          path: ./netlifyctl-debug.log
-
       - name: Tag CloudFront
         run: |
           echo "<!-- Deployed to CloudFront: `date` -->" >> _site/index.html
