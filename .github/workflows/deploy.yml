@@ -98,6 +98,10 @@ jobs:
           name: netlifyctl-debug
           path: ./netlifyctl-debug.log
 
+      - name: Tag CloudFront
+        run: |
+          echo "<!-- Deployed to CloudFront: `date` -->" >> _site/index.html
+
       - name: Deploy to AWS
         uses: reggionick/s3-deploy@v3.0.0
         with:
