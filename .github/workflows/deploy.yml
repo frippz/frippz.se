@@ -87,7 +87,7 @@ jobs:
         run: npm run lint:js
 
       - name: Compress assets
-        uses: stefh/ghaction-CompressFiles@v1
+        uses: frippz/ghaction-CompressFiles@v1.1
         with:
           path: ./_site
           extensions: '.js,.css,.html,.xml,.json'
