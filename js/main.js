@@ -4,7 +4,6 @@
  * We keep things simple here on the countryside. No complex
  * module loading or whatever using Browserify or RequireJS.
  * Just one plain, simple vanilla JavaScript file.
- *
  */
 
 'use strict'

@@ -1,6 +1,7 @@
 /**
  * Custom web fonts
  */
+
 @font-face {
   font-family: "AvenirNextWeb";
   src: url("/fonts/Avenir-Next-Regular.woff") format("woff");
