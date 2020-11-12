@@ -86,13 +86,13 @@ jobs:
       - name: Lint JavaScript
         run: npm run lint:js
 
-      - name: Compress assets
-        uses: frippz/ghaction-CompressFiles@v1.1
-        with:
-          path: ./_site
-          extensions: '.js,.css,.html,.xml,.json'
-          tools: 'brotli,gzip'
-          depth: 99
+      # - name: Compress assets
+      #   uses: frippz/ghaction-CompressFiles@v1.1
+      #   with:
+      #     path: ./_site
+      #     extensions: '.js,.css,.html,.xml,.json'
+      #     tools: 'brotli,gzip'
+      #     depth: 99
 
       - name: Deploy to AWS
         run: |

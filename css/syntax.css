@@ -1,7 +1,6 @@
 /**
  * Code block syntax highlighting
  */
-
 @media screen {
 
   @supports (color: var(--code-color)) {
