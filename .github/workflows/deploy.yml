@@ -91,19 +91,19 @@ jobs:
           aws s3 sync ./_site/ s3://${{ secrets.S3_BUCKET }} \
             --exclude "*" \
             --include "*.xml" \
-              --content-type="application/xml" \
-              --acl "public-read" --cache-control no-cache --content-encoding="gzip" \
+              --content-type "application/xml" \
+              --acl "public-read" --cache-control no-cache --content-encoding "gzip" \
             --include "*.json" \
-              --content-type="application/json" \
-              --acl "public-read" --cache-control no-cache --content-encoding="gzip" \
+              --content-type "application/json" \
+              --acl "public-read" --cache-control no-cache --content-encoding "gzip" \
             --include "*.html" \
-              --content-type="text/html" \
-              --acl "public-read" --cache-control no-cache --content-encoding="gzip" \
+              --content-type "text/html" \
+              --acl "public-read" --cache-control no-cache --content-encoding "gzip" \
             --include "*.js" \
-              --content-type="application/javascript" \
-              --acl "public-read" --cache-control "max-age=3153600" --content-encoding="gzip" \
+              --content-type "application/javascript" \
+              --acl "public-read" --cache-control "max-age=3153600" --content-encoding "gzip" \
             --include "*.css" \
-              --acl "public-read" --cache-control "max-age=3153600" --content-encoding="gzip" \
+              --acl "public-read" --cache-control "max-age=3153600" --content-encoding "gzip" \
             --include "*.jpg" --include "*.jpeg" --include "*.png" --include "*.gif" --include "*.ico" \
               --acl "public-read" --cache-control "max-age=2629800" \
             --delete \
