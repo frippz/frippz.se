@@ -1,6 +1,7 @@
 /**
  * Footer
  */
+
 @media screen {
 
   #footer {
@@ -120,3 +121,5 @@
     margin-left: auto;
   }
 }
+
+/* Touch */

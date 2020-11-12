@@ -3,6 +3,7 @@
  *
  * @author Fredrik Frodlund
  */
+
 @media all {
 
   * {
@@ -345,3 +346,5 @@
     font-size: 10vw;
   }
 }
+
+/* Touch */

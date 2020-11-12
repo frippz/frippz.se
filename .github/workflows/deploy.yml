@@ -90,29 +90,27 @@ jobs:
         run: |
           aws s3 sync ./_site/ s3://${{ secrets.S3_BUCKET }} \
             --exclude "*" \
-            --include "*.html" --include "*.xml" --include "*.json" \
-              --acl "public-read" --cache-control no-cache \
+            --include "*.xml" \
+              --content-type "application/xml" \
+              --acl "public-read" --cache-control no-cache --content-encoding gzip \
+            --include "*.json" \
+              --content-type "application/json" \
+              --acl "public-read" --cache-control no-cache --content-encoding gzip \
+            --include "*.html" \
+              --content-type "text/html" \
+              --acl "public-read" --cache-control no-cache --content-encoding gzip \
             --include "*.js" \
-              --acl "public-read" --cache-control "max-age=3153600" \
+              --content-type "application/javascript" \
+              --acl "public-read" --cache-control "max-age=3153600" --content-encoding gzip \
             --include "*.css" \
-              --acl "public-read" --cache-control "max-age=3153600" \
+              --acl "public-read" --cache-control "max-age=3153600" --content-encoding gzip \
             --include "*.jpg" --include "*.jpeg" --include "*.png" --include "*.gif" --include "*.ico" \
               --acl "public-read" --cache-control "max-age=2629800" \
-            --delete
+            --delete \
+            --exact-timestamps
 
       - name: Create CloudFront invalidation
         run: |
           aws cloudfront create-invalidation \
             --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
             --paths "/*"
-
-      # - name: Deploy to AWS
-      #   uses: reggionick/s3-deploy@v3.0.0
-      #   with:
-      #     folder: _site
-      #     bucket: ${{ secrets.S3_BUCKET }}
-      #     bucket-region: ${{ secrets.S3_BUCKET_REGION }}
-      #     dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
-      #     invalidation: /
-      #     delete-removed: true
-      #     no-cache: true

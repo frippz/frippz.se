@@ -5,6 +5,7 @@
  * module loading or whatever using Browserify or RequireJS.
  * Just one plain, simple vanilla JavaScript file.
  */
+
 'use strict'
 
 // Only run in capable browsers via feature detection
@@ -35,3 +36,5 @@ if (didCutTheMustard) {
     }
   })()
 }
+
+// Touch
