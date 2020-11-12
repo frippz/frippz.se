@@ -98,7 +98,10 @@ jobs:
               --acl "public-read" --cache-control "max-age=3153600" --content-encoding gzip \
             --include "*.jpg" --include "*.jpeg" --include "*.png" --include "*.gif" --include "*.ico" \
               --acl "public-read" --cache-control "max-age=2629800" --content-encoding gzip \
-            --delete \
+            --delete
+          aws cloudfront --dryrun create-invalidation \
+            --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
+            --paths "*.html" "*.json" "*.xml"
 
       # - name: Deploy to AWS
       #   uses: reggionick/s3-deploy@v3.0.0
