@@ -37,5 +37,3 @@ if (didCutTheMustard) {
     }
   })()
 }
-
-// Touch
