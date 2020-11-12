@@ -4,6 +4,10 @@ _site
 .jekyll-metadata
 .jekyll-cache
 
+# Version & build timestamp data files
+_data/version.yml
+_data/timestamp.yml
+
 # Generated stuff
 dist
 _includes/sprite.svg
