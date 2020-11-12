@@ -110,7 +110,7 @@ jobs:
             --metadata-directive REPLACE \
             --expires 2034-01-01T00:00:00Z \
             --acl public-read \
-            --cache-control max-age=2592000,public
+            --cache-control max-age=31536000,public
           aws s3 cp s3://${{ secrets.S3_BUCKET }}/ s3://${{ secrets.S3_BUCKET }}/ \
             --exclude "*" \
             --include "*.json" \
