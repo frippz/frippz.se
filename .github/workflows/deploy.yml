@@ -86,7 +86,7 @@ jobs:
       - name: Lint JavaScript
         run: npm run lint:js
 
-      - name: Deploy to AWS (dry run)
+      - name: Deploy to AWS
         run: |
           aws s3 sync ./_site/ s3://${{ secrets.S3_BUCKET }} \
             --exclude "*" \
@@ -101,7 +101,7 @@ jobs:
             --delete
           aws cloudfront create-invalidation \
             --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
-            --paths "*.html" "*.json" "*.xml"
+            --paths "/*"
 
       # - name: Deploy to AWS
       #   uses: reggionick/s3-deploy@v3.0.0
