@@ -86,13 +86,27 @@ jobs:
       - name: Lint JavaScript
         run: npm run lint:js
 
-      - name: Deploy to AWS
-        uses: reggionick/s3-deploy@v3.0.0
-        with:
-          folder: _site
-          bucket: ${{ secrets.S3_BUCKET }}
-          bucket-region: ${{ secrets.S3_BUCKET_REGION }}
-          dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
-          invalidation: /
-          delete-removed: true
-          no-cache: true
+      - name: Deploy to AWS (dry run)
+        run: |
+          aws s3 sync --dryrun ./_site/ s3://${{ secrets.S3_BUCKET }} \
+            --exclude "*" \
+            --include "*.html" --include "*.xml" --include "*.json" \
+              --acl "public-read" --cache-control no-cache --content-encoding gzip \
+            --include "*.js" \
+              --acl "public-read" --cache-control "max-age=3153600" --content-encoding gzip \
+            --include "*.css" \
+              --acl "public-read" --cache-control "max-age=3153600" --content-encoding gzip \
+            --include "*.jpg" --include "*.jpeg" --include "*.png" --include "*.gif" --include "*.ico" \
+              --acl "public-read" --cache-control "max-age=2629800" --content-encoding gzip \
+            --delete \
+
+      # - name: Deploy to AWS
+      #   uses: reggionick/s3-deploy@v3.0.0
+      #   with:
+      #     folder: _site
+      #     bucket: ${{ secrets.S3_BUCKET }}
+      #     bucket-region: ${{ secrets.S3_BUCKET_REGION }}
+      #     dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+      #     invalidation: /
+      #     delete-removed: true
+      #     no-cache: true
