@@ -17,5 +17,4 @@ jobs:
     steps:
       - name: Get basic info
         run: |
-          aws --version
-          aws help
+          aws s3 ls
