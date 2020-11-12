@@ -88,7 +88,7 @@ jobs:
 
       - name: Deploy to AWS (dry run)
         run: |
-          aws s3 sync --dryrun ./_site/ s3://${{ secrets.S3_BUCKET }} \
+          aws s3 sync ./_site/ s3://${{ secrets.S3_BUCKET }} \
             --exclude "*" \
             --include "*.html" --include "*.xml" --include "*.json" \
               --acl "public-read" --cache-control no-cache --content-encoding gzip \
@@ -99,7 +99,7 @@ jobs:
             --include "*.jpg" --include "*.jpeg" --include "*.png" --include "*.gif" --include "*.ico" \
               --acl "public-read" --cache-control "max-age=2629800" --content-encoding gzip \
             --delete
-          aws cloudfront --dryrun create-invalidation \
+          aws cloudfront create-invalidation \
             --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
             --paths "*.html" "*.json" "*.xml"
 
