@@ -93,11 +93,11 @@ jobs:
             --include "*.html" --include "*.xml" --include "*.json" \
               --acl "public-read" --cache-control no-cache \
             --include "*.js" \
-              --acl "public-read" --cache-control "max-age=3153600" --content-encoding gzip \
+              --acl "public-read" --cache-control "max-age=3153600" \
             --include "*.css" \
-              --acl "public-read" --cache-control "max-age=3153600" --content-encoding gzip \
+              --acl "public-read" --cache-control "max-age=3153600" \
             --include "*.jpg" --include "*.jpeg" --include "*.png" --include "*.gif" --include "*.ico" \
-              --acl "public-read" --cache-control "max-age=2629800" --content-encoding gzip \
+              --acl "public-read" --cache-control "max-age=2629800" \
             --delete
 
       - name: Create CloudFront invalidation
