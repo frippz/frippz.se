@@ -94,6 +94,24 @@ jobs:
             --delete \
             --exact-timestamps
 
+      - name: Set cache-control
+        run: |
+          aws s3 cp s3://${{ secrets.S3_BUCKET }}/ s3://${{ secrets.S3_BUCKET }}/ \
+            --exclude "*" \
+            --include "*.woff" \
+            --include "*.jpg" \
+            --include "*.jpeg" \
+            --include "*.png" \
+            --include "*.gif" \
+            --include "*.ico" \
+            --include "*.js" \
+            --include "*.css" \
+            --recursive \
+            --metadata-directive REPLACE \
+            --expires 2034-01-01T00:00:00Z \
+            --acl public-read \
+            --cache-control max-age=2592000,public
+
       - name: Create CloudFront invalidation
         run: |
           aws cloudfront create-invalidation \
