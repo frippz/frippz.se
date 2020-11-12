@@ -89,23 +89,33 @@ jobs:
       - name: Deploy to AWS
         run: |
           aws s3 sync ./_site/ s3://${{ secrets.S3_BUCKET }} \
-            --exclude "*" \
-            --include "*.xml" \
-              --acl "public-read" --cache-control no-cache \
-            --include "*.json" \
-              --acl "public-read" --cache-control no-cache \
-            --include "*.html" \
-              --acl "public-read" --cache-control no-cache \
-            --include "*.js" \
-              --acl "public-read" --cache-control "max-age=3153600" \
-            --include "*.css" \
-              --acl "public-read" --cache-control "max-age=3153600" \
-            --include "*.woff" \
-              --acl "public-read" --cache-control "max-age=2629800" \
-            --include "*.jpg" --include "*.jpeg" --include "*.png" --include "*.gif" --include "*.ico" \
-              --acl "public-read" --cache-control "max-age=2629800" \
+            --include "*" \
+            --acl "public-read" \
             --delete \
             --exact-timestamps
+
+      - name: Set cache expiry on assets
+        run: |
+          aws s3 cp s3://${{ secrets.S3_BUCKET }} s3://${{ secrets.S3_BUCKET }} \
+            --exclude "*" \
+            --include "*.html" \
+            --include "*.json" \
+            --include "*.xml" \
+            --cache-control "no-cache"
+          aws s3 cp s3://${{ secrets.S3_BUCKET }} s3://${{ secrets.S3_BUCKET }} \
+            --exclude "*" \
+            --include "*.js" \
+            --include "*.css" \
+            --cache-control "max-age=3153600"
+          aws s3 cp s3://${{ secrets.S3_BUCKET }} s3://${{ secrets.S3_BUCKET }} \
+            --exclude "*" \
+            --include "*.woff" \
+            --include "*.jpg" \
+            --include "*.jpeg" \
+            --include "*.png" \
+            --include "*.gif" \
+            --include "*.ico" \
+            --cache-control "max-age=2629800"
 
       - name: Create CloudFront invalidation
         run: |
