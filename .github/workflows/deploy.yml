@@ -92,7 +92,7 @@ jobs:
           path: ./_site
           extensions: '.js,.css,.html,.xml,.json'
           tools: 'brotli,gzip'
-          depth: 0
+          depth: 99
 
       - name: Deploy to AWS
         run: |
