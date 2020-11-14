@@ -25,8 +25,8 @@
 
   article h2 a:focus {
     color: var(--article-link-invert);
-    text-decoration-color: var(--article-link-invert);
     -webkit-text-decoration-color: var(--article-link-invert);
+    text-decoration-color: var(--article-link-invert);
   }
 
   article h2 a:hover + .svg-icon,
@@ -42,21 +42,21 @@
   }
 
   article a:focus {
-    background-color: var(--article-link);
     color: var(--article-link-invert);
+    background-color: var(--article-link);
     outline: 0;
   }
 
   article footer {
-    border-top: 1px solid var(--faint-border);
-    padding-left: 0.5em;
     padding-right: 0.5em;
+    padding-left: 0.5em;
+    border-top: 1px solid var(--faint-border);
   }
 
   .article-end {
     display: block;
-    fill: var(--faint-border);
     margin: 3.75em auto;
+    fill: var(--faint-border);
   }
 
   .article-link {
@@ -68,38 +68,38 @@
   }
 
   .permalink .svg-icon {
-    height: 0.85em;
     width: 0.85em;
+    height: 0.85em;
     margin-left: 0.25em;
-    vertical-align: baseline;
     overflow: visible;
+    vertical-align: baseline;
   }
 
   /* Bookmarklet */
   a.bookmarklet {
-    background-color: var(--article-link);
-    color: var(--article-link-invert);
     padding: 0.25em 0.5em;
-    border-radius: 0.25em;
+    color: var(--article-link-invert);
     text-decoration: none;
+    background-color: var(--article-link);
+    border-radius: 0.25em;
   }
 
   /* Icon for external links */
   [rel="external"] + .svg-icon {
-    fill: var(--article-header-decoration);
+    width: 0.65em;
+    height: 0.65em;
     margin: 0;
     vertical-align: middle;
-    height: 0.65em;
-    width: 0.65em;
+    fill: var(--article-header-decoration);
   }
 
   /* Post meta data */
   .post-info {
-    font-family: var(--title-font);
-    font-weight: 400;
     display: block;
-    font-size: 0.85em;
     margin-top: -1em;
+    font-family: var(--title-font);
+    font-size: 0.85em;
+    font-weight: 400;
   }
 
   .post-tags {
@@ -120,10 +120,10 @@
   }
 
   figure.image figcaption {
+    padding: 0.5em 0;
+    margin: 0;
     font-size: 0.9em;
     font-style: italic;
-    margin: 0;
-    padding: 0.5em 0;
   }
 
   /**
@@ -134,19 +134,19 @@
   }
 
   .highlighter-rouge pre {
-    background: var(--code-background);
+    padding: 1em;
     margin: 2em 0;
     overflow-x: auto;
-    padding: 1em;
+    background: var(--code-background);
     -webkit-overflow-scrolling: touch;
   }
 
   /* Inline code */
   p > code,
   li > code {
+    padding: 0.1em 0.2em;
     background: var(--inline-code-background);
     border: 1px solid var(--inline-code-border);
-    padding: 0.1em 0.2em;
   }
 
   /* Line numbers (requires JS) */
@@ -156,29 +156,29 @@
   }
 
   .js .highlighter-rouge code {
-    counter-reset: linenumber;
     order: 2;
     padding-right: 1em;
+    counter-reset: linenumber;
   }
 
   .js .ln {
-    border-right: 1px solid var(--line-numbers-border);
-    color: var(--line-numbers-text);
+    flex: 1 0 auto;
+    order: 1;
+    max-width: 2em;
+    padding-right: 0.5em;
     margin-top: 0;
     margin-right: 0.75em;
-    padding-right: 0.5em;
-    flex: 1 0 auto;
+    color: var(--line-numbers-text);
     text-align: right;
-    max-width: 2em;
-    order: 1;
     user-select: none;
+    border-right: 1px solid var(--line-numbers-border);
   }
 
   .js .ln span::before {
-    counter-increment: linenumber;
-    content: counter(linenumber);
     display: block;
     margin-top: 0;
+    content: counter(linenumber);
+    counter-increment: linenumber;
   }
 
   .js .ln + code {
@@ -189,26 +189,26 @@
    * Custom error page (404)
    */
   .not-found main {
-    text-align: center;
     padding-top: 4em;
+    text-align: center;
   }
 
   .not-found article .svg-icon {
-    fill: var(--body-text);
-    opacity: 0.2;
-    height: 16em;
-    width: 16em;
     display: block;
+    width: 16em;
+    height: 16em;
     margin: 0 auto;
+    opacity: 0.2;
+    fill: var(--body-text);
   }
 
   /**
    * Blockquotes
    */
   blockquote {
-    margin-left: 1em;
-    margin-right: 1em;
     padding-left: 0.75em;
+    margin-right: 1em;
+    margin-left: 1em;
     border-left: 4px solid var(--faint-border);
   }
 
@@ -227,21 +227,21 @@
   /* Inline footnotes references */
   [aria-describedby="footnotes"] {
     color: inherit;
-    counter-increment: footnotes;
-    cursor: default;
-    outline: none;
     text-decoration: none;
+    cursor: default;
+    counter-increment: footnotes;
+    outline: none;
   }
 
   /* Numbered references */
   [aria-describedby="footnotes"]::after {
-    color: inherit;
-    content: "[" counter(footnotes) "]";
-    cursor: pointer;
-    font-size: 0.5em;
     margin-left: 2px;
+    font-size: 0.5em;
+    color: inherit;
     text-decoration: underline;
     vertical-align: super;
+    cursor: pointer;
+    content: "[" counter(footnotes) "]";
   }
 
   /* Resetting the default focused styles on the number */
@@ -255,8 +255,8 @@
    */
   .dyslexic-mode {
     font-size: 1.4em;
-    letter-spacing: 0.25em;
     line-height: 2;
+    letter-spacing: 0.25em;
   }
 
   .dyslexic-mode .landmark-content {
@@ -265,11 +265,11 @@
 
   /* Toggle button */
   .toggle-dyslexic-mode {
-    font-size: 0.65em;
-    margin-top: 0;
     position: absolute;
     top: 1.5em;
     right: 0;
+    margin-top: 0;
+    font-size: 0.65em;
   }
 
   /**

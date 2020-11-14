@@ -5,18 +5,18 @@
 @media screen {
 
   #footer {
-    background-color: var(--footer-text-invert);
-    color: var(--footer-text);
-    margin-top: 6em;
     padding: 2em 0;
+    margin-top: 6em;
     font-family: var(--title-font);
+    color: var(--footer-text);
+    background-color: var(--footer-text-invert);
   }
 
   #footer a,
   #footer a:visited {
+    padding: 0.25em;
     color: currentcolor;
     text-decoration: none;
-    padding: 0.25em;
   }
 
   #footer a:hover,
@@ -26,22 +26,22 @@
 
   /* Invert colors on :focus */
   #footer a:focus {
-    background-color: var(--footer-text);
     color: var(--footer-background);
+    background-color: var(--footer-text);
     outline: 0;
   }
 
   #footer .svg-icon {
-    fill: currentcolor;
     display: inline-block;
     margin-right: 0.25em;
+    fill: currentcolor;
   }
 
   /* Footer links */
   .footer-links {
-    list-style: none;
-    margin-left: 0;
     padding: 0;
+    margin-left: 0;
+    list-style: none;
   }
 
   .footer-links ~ .footer-links,
@@ -52,23 +52,23 @@
   /* Copyright */
   .copyright {
     display: block;
-    font-size: 0.75em;
-    margin-top: 4em;
-    text-align: center;
     width: 100%;
+    margin-top: 4em;
+    font-size: 0.75em;
+    text-align: center;
   }
 
   /**
    * Older & newer articles navigation
    */
   .more-articles {
-    margin: 4em -0.25em 0;
     display: flex;
+    margin: 4em -0.25em 0;
   }
 
   .more-articles a {
-    margin-top: 0;
     padding: 0 0.25em;
+    margin-top: 0;
   }
 
   .more-articles a:hover,
@@ -77,8 +77,8 @@
   }
 
   .more-articles a:focus {
-    background-color: var(--body-text);
     color: var(--body-text-invert);
+    background-color: var(--body-text);
     outline: 0;
   }
 
@@ -91,8 +91,8 @@
   }
 
   .more-articles .svg-icon {
-    height: 1em;
     width: 1em;
+    height: 1em;
   }
 }
 
@@ -109,8 +109,8 @@
   .footer-links,
   .footer-links ~ .footer-links {
     display: inline-block;
-    vertical-align: top;
     margin-top: 0;
+    vertical-align: top;
   }
 
   .footer-links.external-links {

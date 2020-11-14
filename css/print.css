@@ -23,7 +23,7 @@
   }
 
   [itemprop="articleBody"] a[href^="http"]::after {
-    content: " ("attr(href)")";
     font-size: 0.85em;
+    content: " ("attr(href)")";
   }
 }

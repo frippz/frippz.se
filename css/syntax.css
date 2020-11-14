@@ -66,8 +66,8 @@
     }
 
     .highlight .cs {
-      color: hsl(0, 100%, 40%);
       font-weight: bold;
+      color: hsl(0, 100%, 40%);
     }
 
     .highlight .gd {
@@ -75,8 +75,8 @@
     }
 
     .highlight .ge {
-      color: hsl(0, 0%, 80%);
       font-style: italic;
+      color: hsl(0, 0%, 80%);
     }
 
     .highlight .gr {
@@ -84,8 +84,8 @@
     }
 
     .highlight .gh {
-      color: hsl(60, 19%, 83%);
       font-weight: bold;
+      color: hsl(60, 19%, 83%);
     }
 
     .highlight .gi {
@@ -97,18 +97,18 @@
     }
 
     .highlight .gp {
-      color: hsl(60, 19%, 83%);
       font-weight: bold;
+      color: hsl(60, 19%, 83%);
     }
 
     .highlight .gs {
-      color: hsl(0, 0%, 80%);
       font-weight: bold;
+      color: hsl(0, 0%, 80%);
     }
 
     .highlight .gu {
-      color: hsl(300, 100%, 25%);
       font-weight: bold;
+      color: hsl(300, 100%, 25%);
     }
 
     .highlight .gt {
@@ -124,8 +124,8 @@
     }
 
     .highlight .kn {
-      color: hsl(24, 56%, 72%);
       font-weight: bold;
+      color: hsl(24, 56%, 72%);
     }
 
     .highlight .kp {
@@ -177,8 +177,8 @@
     }
 
     .highlight .ne {
-      color: hsl(53, 23%, 69%);
       font-weight: bold;
+      color: hsl(53, 23%, 69%);
     }
 
     .highlight .nf {

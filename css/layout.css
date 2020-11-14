@@ -5,14 +5,14 @@
 @media screen {
 
   body::before {
-    content: "";
-    height: 0.5rem;
     position: fixed;
     top: 0;
-    left: 0;
     right: 0;
-    background-color: var(--body-top-border);
+    left: 0;
     z-index: 2;
+    height: 0.5rem;
+    content: "";
+    background-color: var(--body-top-border);
   }
 
   /**
@@ -21,9 +21,9 @@
    * Used in any main landmarks
    */
   .landmark-content {
-    margin: 0 auto;
     max-width: 34em;
     padding: 0 1em;
+    margin: 0 auto;
   }
 
   /**
@@ -69,8 +69,8 @@
 
   /* Reset main title spacing */
   .main-title {
-    margin: 0;
     padding-bottom: 0;
+    margin: 0;
   }
 }
 
@@ -80,21 +80,21 @@
 
     body {
       display: grid;
+      grid-template-rows:
+        [main-start] auto
+        [footer-start] minmax(16rem, min-content)
+        [main-end];
       grid-template-columns:
         [main-start] 1fr
         [content-start] calc(38rem + 5vw)
         [content-end] 1fr
         [main-end];
-      grid-template-rows:
-        [main-start] auto
-        [footer-start] minmax(16rem, min-content)
-        [main-end];
     }
 
     #header {
       grid-column: main-start / content-start;
-      text-align: right;
       padding-bottom: unset;
+      text-align: right;
     }
 
     .header-content {
@@ -110,9 +110,9 @@
     }
 
     #footer {
-      margin-top: 0;
-      grid-column: main-start / main-end;
       grid-row: footer-start / main-end;
+      grid-column: main-start / main-end;
+      margin-top: 0;
     }
 
     /* Unset landmark content max-width */
@@ -122,24 +122,24 @@
 
     /* Unset flex header */
     .header-content {
-      display: block;
-      margin: 0 0 2em;
-      max-width: none;
       position: -webkit-sticky;
       position: sticky;
       top: 2rem;
+      display: block;
+      max-width: none;
       padding-top: 1em;
       padding-bottom: 3em;
+      margin: 0 0 2em;
     }
 
     /* Pretty gradient border in header */
     .header-content::after {
-      content: "";
       position: absolute;
-      height: 100%;
       top: 0;
       right: 0;
       width: 1px;
+      height: 100%;
+      content: "";
       background-image:
         linear-gradient(
           0deg,

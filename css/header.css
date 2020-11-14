@@ -6,9 +6,9 @@
 
   /* Main title */
   .main-title {
+    padding: 0.5em 0 0;
     font-size: 2.8em;
     line-height: 1.125;
-    padding: 0.5em 0 0;
     white-space: nowrap;
   }
 
@@ -21,8 +21,8 @@
   }
 
   .main-title a:focus {
-    background-color: var(--header-text);
     color: var(--header-text-invert);
+    background-color: var(--header-text);
     outline: 0;
   }
 
@@ -30,9 +30,9 @@
    * Navigation
    */
   #main-nav {
-    list-style: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    list-style: none;
   }
 
   #main-nav li {
@@ -50,8 +50,8 @@
   }
 
   #main-nav a:focus {
-    background-color: var(--header-text);
     color: var(--header-text-invert);
+    background-color: var(--header-text);
     outline: 0;
   }
 }

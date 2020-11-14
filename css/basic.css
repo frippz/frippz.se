@@ -5,8 +5,8 @@
 @media all {
 
   * {
-    margin: 0;
     padding: 0;
+    margin: 0;
   }
 
   /**
@@ -51,8 +51,8 @@
    */
   body,
   html {
-    margin: 0;
     padding: 0;
+    margin: 0;
   }
 
   /**
@@ -72,9 +72,9 @@
    * Tables
    */
   table {
-    border-collapse: collapse;
-    border-spacing: 0;
     width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
   }
 
   table,
@@ -103,9 +103,9 @@
    * Images
    */
   img {
-    border: 0;
-    height: auto;
     max-width: 100%;
+    height: auto;
+    border: 0;
   }
 
   /**
@@ -113,8 +113,8 @@
    */
   html,
   body {
-    background-color: var(--body-background);
     color: var(--body-text);
+    background-color: var(--body-background);
   }
 
   /**
@@ -122,11 +122,11 @@
    */
   html {
     font-family: "Avenir Next", "AvenirNextWeb", sans-serif;
-    line-height: 1.6;
     font-weight: 400;
+    line-height: 1.6;
+    -webkit-text-size-adjust: 100%;
 
     text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
   }
 
   body {
@@ -161,9 +161,9 @@
   h4,
   h5,
   h6 {
+    margin: 2em 0 0.5em;
     font-weight: 400;
     line-height: 1.125;
-    margin: 2em 0 0.5em;
   }
 
   h1:first-child,
@@ -210,8 +210,8 @@
    */
   ul[class],
   ol[class] {
-    margin: 0;
     padding: 0;
+    margin: 0;
   }
 
   ul,
@@ -261,12 +261,12 @@
    * General button styles
    */
   button {
-    border: 0;
-    background: var(--default-button);
-    color: var(--default-button-text);
-    border-radius: 0.25em;
-    font-size: inherit;
     padding: 0.2em 0.5em;
+    font-size: inherit;
+    color: var(--default-button-text);
+    background: var(--default-button);
+    border: 0;
+    border-radius: 0.25em;
   }
 
   /**
@@ -280,12 +280,12 @@
    * Visually hidden (still visible to AT:s)
    */
   .offscreen {
-    height: 1px;
-    left: -10000px;
-    overflow: hidden;
     position: absolute;
     top: auto;
+    left: -10000px;
     width: 1px;
+    height: 1px;
+    overflow: hidden;
   }
 
   /**
@@ -293,18 +293,18 @@
    */
   .svg-icon {
     display: inline-block;
-    fill: currentcolor;
-    height: 1.2em;
     width: 1.2em;
+    height: 1.2em;
     vertical-align: -0.2em;
+    fill: currentcolor;
   }
 
   /**
    * Selection styling
    */
   ::selection {
-    background: var(--selection-bg) !important;
     color: var(--selection-text) !important;
+    background: var(--selection-bg) !important;
   }
 }
 
