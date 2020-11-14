@@ -108,7 +108,7 @@ jobs:
             --include "*.css" \
             --recursive \
             --metadata-directive REPLACE \
-            --expires 2034-01-01T00:00:00Z \
+            --expires `date --date='10 years'`\
             --acl public-read \
             --cache-control max-age=31536000,public
           aws s3 cp s3://${{ secrets.S3_BUCKET }}/ s3://${{ secrets.S3_BUCKET }}/ \
@@ -118,5 +118,6 @@ jobs:
             --include "*.xml" \
             --recursive \
             --metadata-directive REPLACE \
+            --expires `date` \
             --acl public-read \
             --cache-control no-cache
