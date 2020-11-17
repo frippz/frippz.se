@@ -141,6 +141,10 @@
     -webkit-overflow-scrolling: touch;
   }
 
+  .js .highlighter-rouge pre {
+    padding-left: 0;
+  }
+
   /* Inline code */
   p > code,
   li > code {
@@ -162,15 +166,19 @@
   }
 
   .js .ln {
+    position: sticky;
+    left: 0;
     flex: 1 0 auto;
     order: 1;
     max-width: 2em;
     padding-right: 0.5em;
+    padding-left: 1em;
     margin-top: 0;
     margin-right: 0.75em;
     color: var(--line-numbers-text);
     text-align: right;
     user-select: none;
+    background-color: var(--code-background);
     border-right: 1px solid var(--line-numbers-border);
   }
 
