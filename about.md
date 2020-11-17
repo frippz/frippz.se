@@ -21,10 +21,6 @@ I used to host this site on [DigitalOcean](https://m.do.co/c/2e95857e7f62) due t
 
 Still, if you want to give DigitalOcean a try, the above link is a referral that’ll give you a $10 credit. If you happen to like them as much as I do and stay with them, when you spend $25 with them, I get a $25 credit myself (I still use them for other things, so that would be much appreciated).
 
-#### Encryption
-
-I'm also using encryption via SSL provided by [Let’s Encrypt](https://letsencrypt.org), a new certificate authority that is free, automated and open. If you’re looking to serve your content encrypted, but always balked at the difficulty and complexity issuing a certificate means, give them a go. They’re currently in open beta.
-
 ### Getting in touch
 
 Feeling the need to get in touch with me? Have a business inquiry? Don’t hesitate to shoot me an email at [contact@frippz.se](mailto:contact@frippz.se). I have limited availability for smaller front end related projects from time to time.
