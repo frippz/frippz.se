@@ -124,19 +124,18 @@
     font-family: "Avenir Next", "AvenirNextWeb", sans-serif;
     font-weight: 400;
     line-height: 1.6;
-    -webkit-text-size-adjust: 100%;
-
-    text-size-adjust: 100%;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
   }
 
   body {
-    font-size: calc(1.1em + 0.25vw);
+    font-size: calc(1.1em + 0.30vw);
   }
 
   @media (min-width: 32em) {
 
     body {
-      font-size: calc(1em + 0.25vw);
+      font-size: calc(1em + 0.30vw);
     }
   }
 
