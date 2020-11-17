@@ -129,6 +129,10 @@
   /**
    * Code highlighting
    */
+  .js div.highlight {
+    overflow: hidden;
+  }
+
   .highlighter-rouge {
     margin: 0;
   }
@@ -168,10 +172,9 @@
   .js .ln {
     position: sticky;
     left: 0;
-    flex: 1 0 auto;
+    flex: 0 0 auto;
     order: 1;
-    max-width: 2em;
-    padding-right: 0.5em;
+    padding-right: 0.75em;
     padding-left: 1em;
     margin-top: 0;
     margin-right: 0.75em;
