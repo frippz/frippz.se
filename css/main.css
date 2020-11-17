@@ -275,7 +275,12 @@
   /**
    * Tags list
    */
-  .tags-article-list li + li {
+  .tag-item small {
+    display: block;
+    margin-top: 0;
+  }
+
+  .tag-item + .tag-item {
     margin-top: 0.5em;
   }
 
