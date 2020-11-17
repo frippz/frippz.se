@@ -118,6 +118,12 @@ jobs:
             --include "*.xml" \
             --recursive \
             --metadata-directive REPLACE \
-            --expires "`date`" \
+            --expires "`date --date='2 days ago'`" \
             --acl public-read \
             --cache-control no-cache
+
+      - name: Create CloudFront invalidation
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
+            --paths "/*.html" "/*.json" "/*.xml"
