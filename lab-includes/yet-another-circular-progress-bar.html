@@ -1,0 +1,156 @@
+<!-- Begin CSS -->
+<style>
+.progress-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-container + .progress-container {
+  margin-top: 1rem;
+}
+
+.progress-container span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.progress-bar {
+  transform: rotate(-90deg);
+}
+
+.progress-bar circle {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1.5s ease-in-out;
+  stroke: #666;
+}
+
+.progress-bar .progress-value {
+  stroke: #45bdab;
+  stroke-dashoffset: 301.59;
+}
+
+/* Style the pen */
+html,
+body {
+  background-color: #393939;
+  color: #fff;
+  font: 100%/1.7 "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#control {
+  margin-top: 2rem;
+}
+</style>
+<!-- End CSS -->
+
+<!-- Begin markup -->
+<div class="progress-container" data-value="92">
+  <svg class="progress-bar" id="svg" width="120" height="120" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <circle class="progress-meter" r="48" cx="60" cy="60" fill="transparent" stroke-width="20" stroke-dashoffset="0"></circle>
+    <circle class="progress-value" r="48" cx="60" cy="60" fill="transparent" stroke-width="20" stroke-dashoffset="0" stroke-dasharray="301.59"></circle>
+  </svg>
+  <span>0%</span>
+</div>
+
+<div class="progress-container" data-value="73">
+  <svg class="progress-bar" id="svg" width="120" height="120" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <circle class="progress-meter" r="48" cx="60" cy="60" fill="transparent" stroke-width="20" stroke-dashoffset="0"></circle>
+    <circle class="progress-value" r="48" cx="60" cy="60" fill="transparent" stroke-width="20" stroke-dashoffset="0" stroke-dasharray="301.59"></circle>
+  </svg>
+  <span>0%</span>
+</div>
+
+<div class="progress-container" data-value="21">
+  <svg class="progress-bar" id="svg" width="120" height="120" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <circle class="progress-meter" r="48" cx="60" cy="60" fill="transparent" stroke-width="20" stroke-dashoffset="0"></circle>
+    <circle class="progress-value" r="48" cx="60" cy="60" fill="transparent" stroke-width="20" stroke-dashoffset="0" stroke-dasharray="301.59"></circle>
+  </svg>
+  <span>0%</span>
+</div>
+<!-- End markup -->
+
+<!-- Begin JavaScript -->
+<script>
+/**
+ * Borrowed from the excellent article on
+ * https://codepen.io/xgad/post/svg-radial-progress-meters
+ * with some personal modifications ❤️
+ */
+
+var progressBars = document.querySelectorAll('.progress-container');
+
+console.log(progressBars);
+
+for (var el of progressBars) {
+  var dataValue = el.getAttribute("data-value");
+  var progressValue = el.querySelector(".progress-value");
+  var valueContainer = el.querySelector("span");
+
+  var radius = progressValue.getAttribute("r");
+
+  var circumference = 2 * Math.PI * radius;
+
+  progressValue.style.strokeDasharray = circumference;
+  progress(dataValue);
+}
+
+function progress(value) {
+  var progress = value / 100;
+  var dashoffset = circumference * (1 - progress);
+
+  // TODO: Remove before entering into production
+  console.log("progress:", value + "%", "|", "offset:", dashoffset);
+
+  progressValue.style.strokeDashoffset = dashoffset;
+
+  //valueContainer.innerHTML = value + '%';
+  animateValue(valueContainer, 0, dataValue, 1500);
+}
+
+function animateValue(selector, start, end, duration) {
+  var obj = selector;
+  var range = end - start;
+
+  // no timer shorter than 50ms (not really visible any way)
+  var minTimer = 50;
+  // calc step time to show all interediate values
+  var stepTime = Math.abs(Math.floor(duration / range));
+  // never go below minTimer
+  stepTime = Math.max(stepTime, minTimer);
+  // get current time and calculate desired end time
+  var startTime = new Date().getTime();
+  var endTime = startTime + duration;
+  var timer;
+
+  function run() {
+    var now = new Date().getTime();
+    var remaining = Math.max((endTime - now) / duration, 0);
+    var value = Math.round(end - remaining * range);
+    obj.innerHTML = value + "%";
+    if (value == end) {
+      clearInterval(timer);
+    }
+  }
+
+  var timer = setInterval(run, stepTime);
+  run();
+}
+</script>
+<!-- End JavaScript -->

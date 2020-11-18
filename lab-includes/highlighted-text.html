@@ -1,0 +1,124 @@
+<style>
+:root {
+  --yellow: linear-gradient(
+      to bottom,
+      rgba(255,255,80,0.5) 20%,
+      rgba(255,255,80,0.2),
+      rgba(255,255,80,0.5) 50%,
+      rgba(255,255,80,0.2),
+      rgba(255,255,80,0.5) 80%
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 255, 80, 0.2),
+      rgba(255, 255, 80, 0.2),
+      rgba(255, 255, 80, 0.2)
+    );
+  --pink: linear-gradient(
+      to bottom,
+      rgba(255,111,207,0.5) 20%,
+      rgba(255,111,207,0.2),
+      rgba(255,111,207,0.5) 50%,
+      rgba(255,111,207,0.2),
+      rgba(255,111,207,0.5) 80%
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 111, 207, 0.2),
+      rgba(255, 111, 207, 0.2),
+      rgba(255, 111, 207, 0.2)
+    );
+  --green: linear-gradient(
+      to bottom,
+      rgba(0,232,25,0.5) 20%,
+      rgba(0,232,25,0.2),
+      rgba(0,232,25,0.5) 50%,
+      rgba(0,232,25,0.2),
+      rgba(0,232,25,0.5) 80%
+    ),
+    linear-gradient(
+      to right,
+      rgba(0, 232, 25, 0.2),
+      rgba(0, 232, 25, 0.2),
+      rgba(0, 232, 25, 0.2)
+    );
+  --blue: linear-gradient(
+      to bottom,
+      rgba(86,135,235,0.5) 20%,
+      rgba(86,135,235,0.2),
+      rgba(86,135,235,0.5) 50%,
+      rgba(86,135,235,0.2),
+      rgba(86,135,235,0.5) 80%
+    ),
+    linear-gradient(
+      to right,
+      rgba(86, 135, 235, 0.2),
+      rgba(86, 135, 235, 0.2),
+      rgba(86, 135, 235, 0.2)
+    );
+}
+
+html {
+  font: 120%/1.7 Georgia, serif;
+}
+
+article {
+  max-width: 43em;
+  margin: 0 auto;
+}
+
+mark {
+  background-color: transparent;
+  padding: 0.1em 0;
+}
+
+mark:before,
+mark:after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  height: 1.2em;
+  padding: 0 0.1em;
+}
+
+mark:before {
+  left: -0.15em;
+  top: 0.3em;
+}
+
+mark:after {
+  right: -0.1em;
+  top: 0.15em;
+}
+
+/* Color themes */
+
+.theme-yellow,
+.theme-yellow:before,
+.theme-yellow:after {
+  background-image: var(--yellow);
+}
+
+.theme-pink,
+.theme-pink:before,
+.theme-pink:after {
+  background-image: var(--pink);
+}
+
+.theme-blue,
+.theme-blue:before,
+.theme-blue:after {
+  background-image: var(--blue);
+}
+
+.theme-green,
+.theme-green:before,
+.theme-green:after {
+  background-image: var(--green);
+}
+</style>
+
+<article>
+  <h1>Highlighted text</h1>
+  <p>A <mark class="theme-pink">marker pen</mark>, fineliner, marking pen, felt-tip marker, felt-tip pen, flow, marker or texta (in Australia) or sketch pen (in India), is a pen <mark class="theme-blue">which has its own ink-source</mark>, and a tip made of porous, pressed fibers such as felt. A permanent marker consists of a container (glass, aluminum or plastic) and a core of an absorbent material. This filling serves as a carrier for the ink. The upper part of the <mark class="theme-yellow">marker contains the nib that was made in earlier time of a hard felt material</mark>, and a cap to prevent the marker from drying out. Until the early 1990s the most common solvents that were used for the ink were toluene and xylene. These two substances are <mark class="theme-green">both harmful and characterized</mark> by a very strong smell. Today, the ink is usually made on the basis of alcohols (e.g. 1-propanol, 1-butanol, diacetone alcohol and cresols). Markers may be waterproof, dry-erase, or permanent which will be further expanded on in this article.</p>
+</article>

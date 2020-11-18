@@ -26,6 +26,11 @@ defaults:
     values:
       layout: 'post'
   - scope:
+      path: ''
+      type: 'labs'
+    values:
+      layout: 'labs'
+  - scope:
       path: 'dist/css'
     values:
       dist-css: true
@@ -54,6 +59,12 @@ plugins:
 # Tags
 tag_page_layout: 'tags-page'
 tag_page_dir: 'tags'
+
+# Collections
+collections:
+  labs:
+    output: true
+    permalink: /:collection/:name
 
 # Archives
 jekyll-archives:

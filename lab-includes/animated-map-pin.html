@@ -1,0 +1,80 @@
+<style>
+/* box-sizing reset */
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+/* Example background */
+body {
+  background-color: #faf6ef;
+  background-image: linear-gradient(rgba(204,204,204,.3) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(204,204,204,.3) 1px, transparent 1px);
+  background-size: 1.5625rem 1.5625rem, 1.5625rem 1.5625rem;
+  background-position: calc(50% - .78125rem) calc(50% - .78125rem), calc(50% - .78125rem) calc(50% - .78125rem);
+  min-height: 100vh;
+}
+
+/* The real stuff */
+.pin {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><path d="M16 0C10.477 0 6 4.477 6 10c0 10 10 22 10 22s10-12 10-22c0-5.523-4.477-10-10-10zm0 16a6 6 0 110-12 6 6 0 010 12z" fill="rgb(255,49,85)"/></svg>') no-repeat 50% calc(50% + 2px);
+  background-size: cover;
+  height: 5rem;
+  width: 5rem;
+  margin: -4.2rem 0 0 -2.5rem;
+  position: absolute;
+  border-radius: 100%;
+  transform: scale(.7);
+  top: 50%;
+  left: 50%;
+}
+
+.pin span {
+  display: block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.pin:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-color: rgba(255,49,85,.7);
+  border-radius: 100%;
+  border-style: solid;
+  animation: 1.5s infinite pulsePin;
+}
+
+@keyframes pulsePin {
+  0% {
+    border-width: 1.6em;
+    transform: translateY(-.8em) scale(.8);
+    opacity: 0;
+  }
+  30% {
+    border-width: 1.9em;
+  }
+  50% {
+    transform: translateY(-.8em) scale(2.4);
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    border-width: .3em;
+  }
+  100% {
+    transform: translateY(-.8em) scale(2.4);
+    opacity: 0;
+  }
+}
+</style>
+
+<div class="pin">
+  <span>You are here</span>
+</div>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none;"><defs><g id="pin"><path d="M16 0C10.477 0 6 4.477 6 10c0 10 10 22 10 22s10-12 10-22c0-5.523-4.477-10-10-10zm0 16a6 6 0 110-12 6 6 0 010 12z"/></g></defs></svg>
