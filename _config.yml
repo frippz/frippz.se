@@ -64,7 +64,7 @@ tag_page_dir: 'tags'
 collections:
   labs:
     output: true
-    permalink: /:collection/:name
+    permalink: /:collection/:name:output_ext
 
 # Archives
 jekyll-archives:
