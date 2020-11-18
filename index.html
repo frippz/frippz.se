@@ -34,7 +34,8 @@ sitemap:
   <div itemprop="articleBody">
     {{ post.content }}
   </div>
-  {% if post.tags %}
+  {% assign hasTags = post.tags | size %}
+  {% if hasTags > 0 %}
     <footer>
       <p class="post-tags">
         <em><strong>Keywords:</strong> <span itemprop="keywords">{{ post | tags }}</span></em>

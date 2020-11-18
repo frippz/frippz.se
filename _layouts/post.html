@@ -24,7 +24,8 @@ layout: default
   <div itemprop="articleBody">
     {{ content }}
   </div>
-  {% if page.tags %}
+  {% assign hasTags = page.tags | size %}
+  {% if hasTags > 0 %}
     <footer>
       <p class="post-tags">
         <em><strong>Keywords:</strong> <span itemprop="keywords">{{ page | tags }}</span></em>
