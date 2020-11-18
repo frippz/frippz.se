@@ -23,7 +23,7 @@
     <ul class="footer-links feeds">
       {% for item in feedLinks %}
       <li>
-        <a href="{{ item.url | prepend: site.baseurl | prepend: site.urlk}}">
+        <a href="{{ item.url | prepend: site.baseurl }}">
           {% include svg.html icon=item.icon %}
           {{ item.label }}
         </a>

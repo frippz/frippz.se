@@ -6,3 +6,7 @@
   label: JSON feed
   icon: icon-json-feed
   url: /feed.json
+-
+  label: Tags
+  icon: icon-tag
+  url: /tags/
