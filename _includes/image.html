@@ -7,6 +7,8 @@
 {%- endcapture -%}
 
 <figure class="image">
+  {% if include.link %}<a href="{{ include.link }}">{% endif %}
   <img src="{{ include.url }}" alt="" loading="lazy">
+  {% if include.link %}</a>{% endif %}
   {{ figCaption }}
 </figure>
