@@ -28,4 +28,4 @@ For clarity, the line you want to add (as seen above) is:
 ```bash
 auth       sufficient     pam_tid.so
 ```
-That all you need! Oh, and your finger, of course! 😉
+That’s all you need! Oh, and your finger, of course! 😉
