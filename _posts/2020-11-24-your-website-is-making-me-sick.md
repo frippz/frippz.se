@@ -21,7 +21,7 @@ There’s an accessibility setting in macOS and iOS that allows users to reduce 
 }
 ```
 
-But why didn’t I remove the transition and animation durations altogether? Well, retaining the durations but changing them to something that’s imperceptible to the human eye, helps to avoid breaking anything that is tied to CSS-based animations. Make sure test your site, though. I've seen stuff break in the most weird of ways with this styling, so your mileage may vary. Resetting `animation-iteration-count` disables infinite animations, instead of making the loop crazy fast!
+But why didn’t I remove the transition and animation durations altogether? Well, retaining the durations but changing them to something that’s imperceptible to the human eye, helps to avoid breaking anything that is tied to CSS-based animations. Make sure test your site, though. I've seen stuff break in the weirdest of ways with this styling, so your mileage may vary. Resetting `animation-iteration-count` disables infinite animations, instead of making the loop crazy fast!
 
 ### Browser and OS support
 
