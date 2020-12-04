@@ -35,12 +35,12 @@ I do realise that we’re drifting into the deep waters of semantics and that wh
 
 Imagine the following scenario, if you will. Developers express an intention to develop a web site using progressive enhancement. Jubilations all around!
 
-> **Developer 1:** *”Alright! We’re going to start with a rock solid foundation of semantic HTML, then we'll add styling using CSS to carefully…”*
+> **Developer 1:** *“Alright! We’re going to start with a rock solid foundation of semantic HTML, then we'll add styling using CSS to carefully…”*
 >
-> **Developer 2:** *”Uh…”*
+> **Developer 2:** *“Uh…”*
 >
-> **Developer 1:** *”What?”*
+> **Developer 1:** *“What?”*
 >
-> **Developer 2:** *”That’s not what progressive enhancement is. We need to require JavaScript for this.”*
+> **Developer 2:** *“That’s not what progressive enhancement is. We need to require JavaScript for this.”*
 
-I don’t know. Maybe the core problem is the semantics and like Jason Garber says: maybe we should just call it [Responsible Web Design](http://sixtwothree.org/posts/responsible-web-design). While I don’t feel that core functionality without JavaScript is some kind of ”baggage”, maybe there’s a point to it. I just don’t feel that it is very responsible to scrape the icing off the layer cake and ignore the rest of the layers.
+I don’t know. Maybe the core problem is the semantics and like Jason Garber says: maybe we should just call it [Responsible Web Design](http://sixtwothree.org/posts/responsible-web-design). While I don’t feel that core functionality without JavaScript is some kind of “baggage”, maybe there’s a point to it. I just don’t feel that it is very responsible to scrape the icing off the layer cake and ignore the rest of the layers.

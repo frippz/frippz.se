@@ -12,7 +12,7 @@ published: 2016-02-10
 
 This morning, [Heydon Pickering](https://www.heydonworks.com) posted a link to an article detailing how special typefaces for dyslexics basically don’t work as expected.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Fonts &quot;for dyslexics&quot; is not inclusive design. More like target marketing. And it doesn&#39;t work. <a href="https://t.co/HS8JxwPpt6">https://t.co/HS8JxwPpt6</a></p>&mdash; Heydon (@heydonworks) <a href="https://twitter.com/heydonworks/status/697342047833976832">February 10, 2016</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Fonts “for dyslexics” is not inclusive design. More like target marketing. And it doesn&#39;t work. <a href="https://t.co/HS8JxwPpt6">https://t.co/HS8JxwPpt6</a></p>&mdash; Heydon (@heydonworks) <a href="https://twitter.com/heydonworks/status/697342047833976832">February 10, 2016</a></blockquote>
 
 Intrigued by this, as I have seen a few of these special typefaces and always wondered _how_ they would help people with dyslexia, I had to read on. What caught my eye next was the proposed alternative to relying on special typefaces alone.
 

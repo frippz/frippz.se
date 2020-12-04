@@ -8,7 +8,7 @@ tags:
   - html
 ---
 
-Chris Ferdinandi of Go Make Things answers the question ”[Why use a form element when submitting fields with JavaScript?](https://gomakethings.com/why-use-a-form-element-when-submitting-fields-with-javascript/)” and does so quite succinctly:
+Chris Ferdinandi of Go Make Things answers the question “[Why use a form element when submitting fields with JavaScript?](https://gomakethings.com/why-use-a-form-element-when-submitting-fields-with-javascript/)” and does so quite succinctly:
 
 > * It makes your life easier.
 > * Semantics (and the accessibility that happens as a result).
