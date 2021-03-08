@@ -6,12 +6,15 @@
  * Just one plain, simple vanilla JavaScript file.
  */
 
+/* global CSS */
+
 'use strict'
 
 // Only run in capable browsers via feature detection
 var didCutTheMustard = 'querySelector' in document &&
   'classList' in document.createElement('a') &&
-  'addEventListener' in window
+  'addEventListener' in window &&
+  CSS.supports('display', 'flex')
 
 if (didCutTheMustard) {
   // Add class "js" to html element
