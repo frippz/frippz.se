@@ -9,7 +9,7 @@ tags:
 
 This morning, my app of choice for reading RSS feeds; NetNewsWire, notified me of an update. This was a major version update which included a new app icon and an updated UI for Big Sur. This gave me the opportunity to grab a screenshot to compare. So I did.
 
-{% include image.html url="/images/nnw-before-thumb.png" caption="NetNewsWire 5.1" link="/images/nnw-before.png" %}
+{% include image.html url="/images/nnw-before-thumb.png" caption="NetNewsWire 5.1.3" link="/images/nnw-before.png" %}
 
 {% include image.html url="/images/nnw-after-thumb.png" caption="NetNewsWire 6.0" link="/images/nnw-after.png" %}
 
