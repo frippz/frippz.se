@@ -4,9 +4,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="disabled-adaptations" content="watch">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/json" title="{{ site.title }}" href="{{ "/feed.json" | prepend: site.baseurl | prepend: site.url }}">
-  {% include css.html %}
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   <meta name="author" content="{{ page.author }}">
   {% if page.description %}<meta name="description" content="{{ page.description }}{% if paginator.page > 1 %} (page {{ paginator.page }}){% endif %}">{% endif %}
   <meta name="twitter:card" content="summary">
@@ -16,7 +15,7 @@
   <meta name="twitter:description" content="{{ page.description }}">
   <meta name="twitter:image" content="{{ site.avatar }}">
   {% include favicons.html %}
-
+  {% include css.html %}
   <!-- Version: {{ site.data.version }} -->
   <!-- Build date: {{ site.data.timestamp }} -->
 </head>

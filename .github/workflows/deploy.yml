@@ -127,23 +127,38 @@ jobs:
           aws s3 cp s3://${{ secrets.S3_BUCKET }}/ s3://${{ secrets.S3_BUCKET }}/ \
             --exclude "*" \
             --include "*.html" \
-            --content-type "text/html"
+            --content-type "text/html" \
+            --no-guess-mime-type \
+            --metadata-directive="REPLACE" \
+            --recursive
           aws s3 cp s3://${{ secrets.S3_BUCKET }}/ s3://${{ secrets.S3_BUCKET }}/ \
             --exclude "*" \
             --include "*.css" \
-            --content-type "text/css"
+            --content-type "text/css" \
+            --no-guess-mime-type \
+            --metadata-directive="REPLACE" \
+            --recursive
           aws s3 cp s3://${{ secrets.S3_BUCKET }}/ s3://${{ secrets.S3_BUCKET }}/ \
             --exclude "*" \
             --include "*.js" \
-            --content-type "text/js"
+            --content-type "text/js" \
+            --no-guess-mime-type \
+            --metadata-directive="REPLACE" \
+            --recursive
           aws s3 cp s3://${{ secrets.S3_BUCKET }}/ s3://${{ secrets.S3_BUCKET }}/ \
             --exclude "*" \
             --include "*.json" \
-            --content-type "application/json"
+            --content-type "application/json" \
+            --no-guess-mime-type \
+            --metadata-directive="REPLACE" \
+            --recursive
           aws s3 cp s3://${{ secrets.S3_BUCKET }}/ s3://${{ secrets.S3_BUCKET }}/ \
             --exclude "*" \
             --include "*.xml" \
-            --content-type "application/xml"
+            --content-type "application/xml" \
+            --no-guess-mime-type \
+            --metadata-directive="REPLACE" \
+            --recursive
 
       - name: Create CloudFront invalidation
         run: |
