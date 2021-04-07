@@ -22,4 +22,6 @@ services:
     ports:
       - '4000:4000'
 
+    image: frippzse-jekyll:1.0
+
     command: npm start
