@@ -94,46 +94,51 @@ jobs:
             --delete \
             --exact-timestamps
 
-      - name: Set correct MIME types
+      - name: Set cache control & correct MIME types
         run: |
           aws s3 cp s3://${{ secrets.S3_BUCKET }}/ s3://${{ secrets.S3_BUCKET }}/ \
             --exclude "*" \
             --include "*.html" \
             --content-type "text/html" \
             --no-guess-mime-type \
-            --metadata-directive="REPLACE" \
+            --metadata-directive REPLACE \
+            --acl "public-read" \
+            --cache-control "no-cache" \
             --recursive
           aws s3 cp s3://${{ secrets.S3_BUCKET }}/ s3://${{ secrets.S3_BUCKET }}/ \
             --exclude "*" \
             --include "*.css" \
             --content-type "text/css" \
             --no-guess-mime-type \
-            --metadata-directive="REPLACE" \
+            --metadata-directive REPLACE \
+            --cache-control "max-age=31536000,public" \
             --recursive
           aws s3 cp s3://${{ secrets.S3_BUCKET }}/ s3://${{ secrets.S3_BUCKET }}/ \
             --exclude "*" \
             --include "*.js" \
             --content-type "text/js" \
             --no-guess-mime-type \
-            --metadata-directive="REPLACE" \
+            --metadata-directive REPLACE \
+            --cache-control "max-age=31536000,public" \
             --recursive
           aws s3 cp s3://${{ secrets.S3_BUCKET }}/ s3://${{ secrets.S3_BUCKET }}/ \
             --exclude "*" \
             --include "*.json" \
             --content-type "application/json" \
             --no-guess-mime-type \
-            --metadata-directive="REPLACE" \
+            --metadata-directive REPLACE \
+            --acl "public-read" \
+            --cache-control "no-cache" \
             --recursive
           aws s3 cp s3://${{ secrets.S3_BUCKET }}/ s3://${{ secrets.S3_BUCKET }}/ \
             --exclude "*" \
             --include "*.xml" \
             --content-type "application/xml" \
             --no-guess-mime-type \
-            --metadata-directive="REPLACE" \
+            --metadata-directive REPLACE \
+            --acl "public-read" \
+            --cache-control "no-cache" \
             --recursive
-
-      - name: Set cache-control
-        run: |
           aws s3 cp s3://${{ secrets.S3_BUCKET }}/ s3://${{ secrets.S3_BUCKET }}/ \
             --exclude "*" \
             --include "*.woff" \
@@ -142,21 +147,10 @@ jobs:
             --include "*.png" \
             --include "*.gif" \
             --include "*.ico" \
-            --include "*.js" \
-            --include "*.css" \
-            --recursive \
             --metadata-directive REPLACE \
             --acl "public-read" \
-            --cache-control "max-age=31536000,public"
-          aws s3 cp s3://${{ secrets.S3_BUCKET }}/ s3://${{ secrets.S3_BUCKET }}/ \
-            --exclude "*" \
-            --include "*.json" \
-            --include "*.html" \
-            --include "*.xml" \
-            --recursive \
-            --metadata-directive REPLACE \
-            --acl "public-read" \
-            --cache-control "no-cache"
+            --cache-control "max-age=2592000,public" \
+            --recursive
 
       - name: Create CloudFront invalidation
         run: |
