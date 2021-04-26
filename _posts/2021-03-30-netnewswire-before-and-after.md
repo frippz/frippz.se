@@ -1,5 +1,5 @@
 ---
-title: 'Pointless post of the day – NetNewsWire before and after Big Sur update'
+title: 'Pointless post of the day – NetNewsWire before and after their Big Sur update'
 description: NetNewsWire got updated and I had the opportunity to compare the UI
 date: 2021-03-30 07:00
 tags:
