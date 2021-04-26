@@ -6,9 +6,18 @@
 {% endif %}
 {%- endcapture -%}
 
+{%- capture responsiveImages -%}
+{% if include.sizes %}
+sizes="{{ include.sizes }}"
+{% endif %}
+{% if include.srcset %}
+srcset="{{ include.srcset }}"
+{% endif %}
+{%- endcapture -%}
+
 <figure class="image">
   {% if include.link %}<a href="{{ include.link }}">{% endif %}
-  <img src="{{ include.url }}" alt="" loading="lazy">
+    <img src="{{ include.url }}" {{ responsiveImages }} alt="" loading="lazy">
   {% if include.link %}</a>{% endif %}
   {{ figCaption }}
 </figure>
