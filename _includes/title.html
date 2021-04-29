@@ -1,9 +1,3 @@
-{% if page.layout == "tags-page" %}
-Articles tagged with “{{ page.tag }}”
-{% else %}
-{{ page.title }}
-{% endif %}
-  – {{ site.title }}
-{% if paginator.page > 1 %}
- (page {{ paginator.page }})
-{% endif %}
+{%- if page.layout == "tags-page" -%}
+Articles tagged with “{{ page.tag }}”{% else %}{{ page.title }}{% endif %} – {{ site.title }}{% if paginator.page > 1 %} (page {{ paginator.page }})
+{%- endif -%}

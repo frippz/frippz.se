@@ -7,11 +7,3 @@
 {% for js in js-files %}
   <script async src="{{ site.baseurl }}{{ js.path }}"></script>
 {% endfor %}
-
-{% comment %}
-{% for js in site.static_files %}
-  {% if js.path contains "/js" %}
-    <script async src="{{ site.baseurl }}{{ js.path }}"></script>
-  {% endif %}
-{% endfor %}
-{% endcomment %}

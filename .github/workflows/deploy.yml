@@ -92,7 +92,7 @@ jobs:
             --include "*" \
             --acl "public-read" \
             --delete \
-            --exact-timestamps
+            --size-only
 
       - name: Set cache control & correct MIME types
         run: |
