@@ -9,6 +9,7 @@ exclude:
   - 'js'
   - 'node_modules'
   - 'package.json'
+  - 'package-lock.json'
   - 'postcss.*.js'
   - 'script'
   - 'svg'
