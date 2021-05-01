@@ -9,6 +9,7 @@ sitemap:
 
 {% for post in paginator.posts %}
 <article itemscope itemtype="http://schema.org/BlogPosting" id="{{ post.title | slugify }}">
+
   <header>
     <h2 itemprop="headline">
       <a href="{{ post.url | prepend: site.baseurl }}#{{ post.title | slugify }}" class="article-link">{{ post.title }}</a>
@@ -31,9 +32,11 @@ sitemap:
     <link itemprop="mainEntityOfPage" href="{{ site.url}}{{ post.url }}">
     <meta itemprop="description" content="{{ post.excerpt | strip_html }}">
   </header>
+
   <div itemprop="articleBody">
     {{ post.content }}
   </div>
+
   {% assign hasTags = post.tags | size %}
   {% if hasTags > 0 %}
     <footer>
@@ -42,9 +45,11 @@ sitemap:
       </p>
     </footer>
   {% endif %}
+
   {% if forloop.last == false %}
     {% include svg.html icon="divider" classes="article-end" %}
   {% endif %}
+
 </article>
 {% endfor %}
 
