@@ -15,6 +15,7 @@ jobs:
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+      CACHE_CONTROL_365: "max-age=31536000,public"
 
     steps:
       - name: Checkout file
@@ -111,7 +112,7 @@ jobs:
             --content-type "text/css" \
             --no-guess-mime-type \
             --metadata-directive REPLACE \
-            --cache-control "max-age=31536000,public" \
+            --cache-control "${{ env.CACHE_CONTROL_365 }}" \
             --recursive
           aws s3 cp s3://${{ secrets.S3_BUCKET }}/ s3://${{ secrets.S3_BUCKET }}/ \
             --exclude "*" \
@@ -119,7 +120,7 @@ jobs:
             --content-type "text/js" \
             --no-guess-mime-type \
             --metadata-directive REPLACE \
-            --cache-control "max-age=31536000,public" \
+            --cache-control "${{ env.CACHE_CONTROL_365 }}" \
             --recursive
           aws s3 cp s3://${{ secrets.S3_BUCKET }}/ s3://${{ secrets.S3_BUCKET }}/ \
             --exclude "*" \
@@ -143,13 +144,47 @@ jobs:
             --exclude "*" \
             --include "*.jpg" \
             --include "*.jpeg" \
-            --include "*.png" \
-            --include "*.gif" \
-            --include "*.ico" \
+            --content-type "image/jpeg" \
             --no-guess-mime-type \
             --metadata-directive REPLACE \
             --acl "public-read" \
-            --cache-control "max-age=2592000,public" \
+            --cache-control "${{ env.CACHE_CONTROL_365 }}" \
+            --recursive
+          aws s3 cp s3://${{ secrets.S3_BUCKET }}/ s3://${{ secrets.S3_BUCKET }}/ \
+            --exclude "*" \
+            --include "*.png" \
+            --content-type "image/png" \
+            --no-guess-mime-type \
+            --metadata-directive REPLACE \
+            --acl "public-read" \
+            --cache-control "${{ env.CACHE_CONTROL_365 }}" \
+            --recursive
+          aws s3 cp s3://${{ secrets.S3_BUCKET }}/ s3://${{ secrets.S3_BUCKET }}/ \
+            --exclude "*" \
+            --include "*.gif" \
+            --content-type "image/gif" \
+            --no-guess-mime-type \
+            --metadata-directive REPLACE \
+            --acl "public-read" \
+            --cache-control "${{ env.CACHE_CONTROL_365 }}" \
+            --recursive
+          aws s3 cp s3://${{ secrets.S3_BUCKET }}/ s3://${{ secrets.S3_BUCKET }}/ \
+            --exclude "*" \
+            --include "*.ico" \
+            --content-type "image/x-icon" \
+            --no-guess-mime-type \
+            --metadata-directive REPLACE \
+            --acl "public-read" \
+            --cache-control "${{ env.CACHE_CONTROL_365 }}" \
+            --recursive
+          aws s3 cp s3://${{ secrets.S3_BUCKET }}/ s3://${{ secrets.S3_BUCKET }}/ \
+            --exclude "*" \
+            --include "*.svg" \
+            --content-type "image/svg+xml" \
+            --no-guess-mime-type \
+            --metadata-directive REPLACE \
+            --acl "public-read" \
+            --cache-control "${{ env.CACHE_CONTROL_365 }}" \
             --recursive
 
       - name: Create CloudFront invalidation
