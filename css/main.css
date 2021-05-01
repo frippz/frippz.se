@@ -112,6 +112,8 @@
 
   /* Images with captions */
   figure.image {
+    display: grid;
+    justify-content: center;
     margin: 2em 0;
   }
 
