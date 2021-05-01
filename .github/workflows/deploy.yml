@@ -141,12 +141,12 @@ jobs:
             --recursive
           aws s3 cp s3://${{ secrets.S3_BUCKET }}/ s3://${{ secrets.S3_BUCKET }}/ \
             --exclude "*" \
-            --include "*.woff" \
             --include "*.jpg" \
             --include "*.jpeg" \
             --include "*.png" \
             --include "*.gif" \
             --include "*.ico" \
+            --no-guess-mime-type \
             --metadata-directive REPLACE \
             --acl "public-read" \
             --cache-control "max-age=2592000,public" \
