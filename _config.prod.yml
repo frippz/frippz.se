@@ -15,3 +15,7 @@ exclude:
   - 'svg'
   - 'svg-sprite.config.json'
   - 'vendor'
+
+# Include
+include:
+  - 'dist'
