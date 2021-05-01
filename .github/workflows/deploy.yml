@@ -117,7 +117,7 @@ jobs:
           aws s3 cp s3://${{ secrets.S3_BUCKET }}/ s3://${{ secrets.S3_BUCKET }}/ \
             --exclude "*" \
             --include "*.js" \
-            --content-type "text/js" \
+            --content-type "text/javascript" \
             --no-guess-mime-type \
             --metadata-directive REPLACE \
             --cache-control "${{ env.CACHE_CONTROL_365 }}" \
