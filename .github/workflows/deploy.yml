@@ -59,15 +59,6 @@ jobs:
           gem install bundler
           bundle config path vendor/bundle
 
-      # - name: Set up caching for Bundler
-      #   id: cache-gems
-      #   uses: actions/cache@v2
-      #   with:
-      #     path: vendor/bundle
-      #     key: ${{ runner.os }}-gem-${{ hashFiles('**/Gemfile.lock') }}
-      #     restore-keys: |
-      #       ${{ runner.os }}-gem-
-
       - name: Bundle install
         if: steps.cache-gems.outputs.cache-hit != 'true'
         run: bundle install --jobs 4 --retry 3
