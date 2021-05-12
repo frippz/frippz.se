@@ -52,20 +52,21 @@ jobs:
         uses: actions/setup-ruby@v1
         with:
           ruby-version: 2.6.x
+          bundler-cache: true
 
       - name: Install Bundler
         run: |
           gem install bundler
           bundle config path vendor/bundle
 
-      - name: Set up caching for Bundler
-        id: cache-gems
-        uses: actions/cache@v2
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gem-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gem-
+      # - name: Set up caching for Bundler
+      #   id: cache-gems
+      #   uses: actions/cache@v2
+      #   with:
+      #     path: vendor/bundle
+      #     key: ${{ runner.os }}-gem-${{ hashFiles('**/Gemfile.lock') }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-gem-
 
       - name: Bundle install
         if: steps.cache-gems.outputs.cache-hit != 'true'
