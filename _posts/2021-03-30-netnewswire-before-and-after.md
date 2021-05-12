@@ -16,6 +16,7 @@ This morning, my app of choice for reading RSS feeds; NetNewsWire, notified me o
           /images/nnw-before-1330w.png 1330w"
   caption="NetNewsWire 5.1.3"
   link="/images/nnw-before.png"
+  alt="Screenshot of NetNewsWire 5.1.3"
 %}
 
 {% include image.html
@@ -25,6 +26,7 @@ This morning, my app of choice for reading RSS feeds; NetNewsWire, notified me o
           /images/nnw-after-1330w.png 1330w"
   caption="NetNewsWire 6.0"
   link="/images/nnw-after.png"
+  alt="Screenshot of NetNewsWire 6.0"
 %}
 
 It’s a bit pointless, but also interesting to compare how Big Sur affects the design of apps on the Mac. I’m also thankful I get to keep the text below the icons in the toolbar.
