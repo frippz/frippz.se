@@ -17,7 +17,7 @@ srcset="{{ include.srcset }}"
 
 <figure class="image">
   {% if include.link %}<a href="{{ include.link }}">{% endif %}
-    <img src="{{ include.url }}" {{ responsiveImages }} alt="" loading="lazy">
+    <img src="{{ include.url }}" {{ responsiveImages }} alt="{{ include.alt }}" loading="lazy">
   {% if include.link %}</a>{% endif %}
   {{ figCaption }}
 </figure>
