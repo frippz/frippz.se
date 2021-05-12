@@ -9,7 +9,7 @@ tags:
 
 When the first MacBook Pro with a Touch ID sensor was released, I was thoroughly excited. Rightly so. Apps like 1Password was quick to implement support for it. There was one thing that was missing though; authentication with `sudo`.
 
-{% include image.html url="https://imgs.xkcd.com/comics/sandwich.png" link="https://xkcd.com/149/" caption="There’s an XKCD for every situation" %}
+{% include image.html url="https://imgs.xkcd.com/comics/sandwich.png" link="https://xkcd.com/149/" caption="There’s an XKCD for every situation" alt="XKCD comic showing Cueball is demanding a sandwich from his friend. Not being properly asked, the friend denies the request. Cueball then uses the sudo command on the friend, who then has no choice but to go and make the sandwich, and now does so without complaint, because Cueball has all the rights." %}
 
 I’m almost ashamed that after having owned at least two MacBook Pros with Touch ID, I didn't find out until today about this. So it’s time to write it down. Hat tip to [Stanislas and his post “Using Touch ID for sudo authentication on a MacBook”](https://stanislas.blog/2019/09/touch-id-sudo-macbook/) for showing me the way.
 
