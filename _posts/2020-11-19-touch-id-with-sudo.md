@@ -11,7 +11,7 @@ When the first MacBook Pro with a Touch ID sensor was released, I was thoroughly
 
 {% include image.html url="https://imgs.xkcd.com/comics/sandwich.png" link="https://xkcd.com/149/" caption="There’s an XKCD for every situation" %}
 
-I’m almost ashamed that after having owned at least two MacBook Pros with Touch ID, I didn't find out until today about this. So it’s time to write it down. Hat tip to [Stanislas](https://stanislas.blog/2019/09/touch-id-sudo-macbook/) for showing me the way.
+I’m almost ashamed that after having owned at least two MacBook Pros with Touch ID, I didn't find out until today about this. So it’s time to write it down. Hat tip to [Stanislas and his post “Using Touch ID for sudo authentication on a MacBook”](https://stanislas.blog/2019/09/touch-id-sudo-macbook/) for showing me the way.
 
 Edit (as root) `/etc/pam.d/sudo`:
 
