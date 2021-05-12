@@ -49,7 +49,7 @@ jobs:
       - name: Set up Ruby 2.6
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.6.x
+          ruby-version: 2.6.6
           bundler-cache: true
 
       - name: Install Bundler
