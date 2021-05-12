@@ -1,9 +1,9 @@
 ---
 layout: default
 ---
-<article>
+<article aria-labelledby="{{ page.title | slugify }}">
 
-  {% if page.title %}<h2>{{ page.title }}</h2>{% endif %}
+  {% if page.title %}<h2 id="{{ page.title | slugify: "pretty" }}">{{ page.title }}</h2>{% endif %}
   {{ content }}
 
 </article>

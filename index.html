@@ -8,49 +8,49 @@ sitemap:
 ---
 
 {% for post in paginator.posts %}
-<article itemscope itemtype="http://schema.org/BlogPosting" id="{{ post.title | slugify }}">
+  <article itemscope itemtype="http://schema.org/BlogPosting" id="{{ post.title | slugify }}" aria-label="{{ post.title }}">
 
-  <header>
-    <h2 itemprop="headline">
-      <a href="{{ post.url | prepend: site.baseurl }}#{{ post.title | slugify }}" class="article-link">{{ post.title }}</a>
-    </h2>
-    <small class="post-info">
-      Posted on <time datetime="{{ post.date | date: '%Y-%m-%d' }}" itemprop="datePublished">{{ post.date | date: '%B %-d, %Y' }}</time>
-      <a class="permalink" href="{{ post.url | prepend: site.baseurl }}#{{ post.title | slugify }}" aria-label="Permalink to: “{{ post.title }}”">
-        {% include svg.html icon="icon-link" %}
-      </a>
-    </small>
-    <span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-      <meta itemprop="name" content="frippz.se">
-      <span hidden itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-        <meta itemprop="url" content="https://frippz.se/apple-touch-icon.png">
+    <header>
+      <h2 itemprop="headline" id="heading-{{ post.title | slugify }}">
+        <a href="{{ post.url | prepend: site.baseurl }}#{{ post.title | slugify }}" class="article-link">{{ post.title }}</a>
+      </h2>
+      <small class="post-info">
+        Posted on <time datetime="{{ post.date | date: '%Y-%m-%d' }}" itemprop="datePublished">{{ post.date | date: '%B %-d, %Y' }}</time>
+        <a class="permalink" href="{{ post.url | prepend: site.baseurl }}#{{ post.title | slugify }}" aria-label="Permalink to: “{{ post.title }}”">
+          {% include svg.html icon="icon-link" %}
+        </a>
+      </small>
+      <span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+        <meta itemprop="name" content="frippz.se">
+        <span hidden itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="https://frippz.se/apple-touch-icon.png">
+        </span>
       </span>
-    </span>
-    <meta itemprop="author" content="{{ page.author }}">
-    <meta itemprop="url" content="{{ site.url}}{{ post.url }}">
-    <meta itemprop="image" content="https://frippz.se/images/just-me.jpg">
-    <link itemprop="mainEntityOfPage" href="{{ site.url}}{{ post.url }}">
-    <meta itemprop="description" content="{{ post.excerpt | strip_html }}">
-  </header>
+      <meta itemprop="author" content="{{ page.author }}">
+      <meta itemprop="url" content="{{ site.url}}{{ post.url }}">
+      <meta itemprop="image" content="https://frippz.se/images/just-me.jpg">
+      <link itemprop="mainEntityOfPage" href="{{ site.url}}{{ post.url }}">
+      <meta itemprop="description" content="{{ post.excerpt | strip_html }}">
+    </header>
 
-  <div itemprop="articleBody">
-    {{ post.content }}
-  </div>
+    <div itemprop="articleBody">
+      {{ post.content }}
+    </div>
 
-  {% assign hasTags = post.tags | size %}
-  {% if hasTags > 0 %}
-    <footer>
-      <p class="post-tags">
-        <em><strong>Keywords:</strong> <span itemprop="keywords">{{ post | tags }}</span></em>
-      </p>
-    </footer>
-  {% endif %}
+    {% assign hasTags = post.tags | size %}
+    {% if hasTags > 0 %}
+      <footer>
+        <p class="post-tags">
+          <em><strong>Keywords:</strong> <span itemprop="keywords">{{ post | tags }}</span></em>
+        </p>
+      </footer>
+    {% endif %}
 
-  {% if forloop.last == false %}
-    {% include svg.html icon="divider" classes="article-end" %}
-  {% endif %}
+    {% if forloop.last == false %}
+      {% include svg.html icon="divider" classes="article-end" %}
+    {% endif %}
 
-</article>
+  </article>
 {% endfor %}
 
 {% if paginator.total_pages > 1 %}
