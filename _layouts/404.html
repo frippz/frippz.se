@@ -7,9 +7,9 @@
 
     <div class="landmark-content">
 
-      <article>
+      <article aria-labelledby="heading-404">
 
-        {% if page.title %}<h2>{{ page.title }}</h2>{% endif %}
+        {% if page.title %}<h2 id="heading-404">{{ page.title }}</h2>{% endif %}
         {{ content }}
 
       </article>
