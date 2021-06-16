@@ -30,8 +30,7 @@ jobs:
         with:
           node-version: '14.15'
 
-      - name: Set up caching for npm
-        id: cache-node_modules
+      - name: Cache NPM
         uses: actions/cache@v2
         with:
           path: ~/.npm
@@ -40,8 +39,7 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: Install Node packages
-        if: steps.cache-node_modules.outputs.cache-hit != 'true'
-        run: npm ci --production
+        run: npm ci --silent --production
 
       - name: Build assets
         run: npm run deploy
