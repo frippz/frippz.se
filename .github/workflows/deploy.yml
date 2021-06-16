@@ -26,9 +26,7 @@ jobs:
         run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
 
       - name: Setup Node
-        uses: actions/setup-node@v1
-        with:
-          node-version: '14.15'
+        uses: actions/setup-node@v2
 
       - name: Cache NPM
         uses: actions/cache@v2
