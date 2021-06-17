@@ -18,7 +18,7 @@ jobs:
       CACHE_CONTROL_365: "max-age=31536000,public"
 
     steps:
-      - name: Checkout file
+      - name: Checkout files
         uses: actions/checkout@v2
 
       - name: Get tagged version
