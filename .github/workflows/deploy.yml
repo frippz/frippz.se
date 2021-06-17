@@ -45,17 +45,9 @@ jobs:
       - name: Set up Ruby 2.6
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.6.6
+          ruby-version: 2.6
           bundler-cache: true
-
-      - name: Install Bundler
-        run: |
-          gem install bundler
-          bundle config path vendor/bundle
-
-      - name: Bundle install
-        if: steps.cache-gems.outputs.cache-hit != 'true'
-        run: bundle install --jobs 4 --retry 3
+          run: bundle install --jobs 4 --retry 3
 
       - name: Add version & build timestamp
         run: |
