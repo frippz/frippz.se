@@ -11,6 +11,8 @@ This morning, my app of choice for reading RSS feeds; NetNewsWire, notified me o
 
 {% include image.html
   url="/images/nnw-before-320w.png"
+  height="768"
+  width="1330"
   srcset="/images/nnw-before-640w.png 640w,
           /images/nnw-before-1184w.png 1184w,
           /images/nnw-before-1330w.png 1330w"
@@ -21,6 +23,8 @@ This morning, my app of choice for reading RSS feeds; NetNewsWire, notified me o
 
 {% include image.html
   url="/images/nnw-after-320w.png"
+  height="740"
+  width="1330"
   srcset="/images/nnw-after-640w.png 640w,
           /images/nnw-after-1184w.png 1184w,
           /images/nnw-after-1330w.png 1330w"
