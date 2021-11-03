@@ -110,6 +110,12 @@
     font-weight: 600;
   }
 
+  /* Figure grid */
+  .figure-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(14em, 1fr));
+  }
+
   /* Images with captions */
   figure.image {
     display: grid;
