@@ -12,8 +12,11 @@
    */
 
   /* Offset article in focus */
-  article:target {
+  article:target::before {
+    display: block;
     padding-top: 2em;
+    margin-top: -2em;
+    content: "";
   }
 
   /* Heading links */
