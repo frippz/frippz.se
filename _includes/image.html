@@ -15,9 +15,21 @@ srcset="{{ include.srcset }}"
 {% endif %}
 {%- endcapture -%}
 
+{%- capture height -%}
+{% if include.height %}
+height="{{ include.height }}"
+{% endif %}
+{%- endcapture -%}
+
+{%- capture width -%}
+{% if include.width %}
+width="{{ include.width }}"
+{% endif %}
+{%- endcapture -%}
+
 <figure class="image">
   {% if include.link %}<a href="{{ include.link }}">{% endif %}
-    <img src="{{ include.url }}" {{ responsiveImages }} alt="{{ include.alt }}" loading="lazy">
+    <img src="{{ include.url }}" {{ height }} {{ width }} {{ responsiveImages }} alt="{{ include.alt }}" loading="lazy">
   {% if include.link %}</a>{% endif %}
   {{ figCaption }}
 </figure>
