@@ -47,6 +47,13 @@
   }
 
   /**
+   * Smooooooth scrolling
+   */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /**
    * Reset body & html spacing
    */
   body,
