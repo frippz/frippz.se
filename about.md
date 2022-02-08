@@ -38,6 +38,6 @@ Feeling the need to get in touch with me? Have a business inquiry? Don’t hesit
 * You are a faceless mass-recruiter. I will not reply to you and I will blacklist your email.
 * You want to write a guest post or “collaborate”, whatever that actually means.
 
-### Hey, what’s a ”frippz”?
+### frippz?
 
 That’s just a nickname my cousin gave me when I was a kid. The ”z” is just because it looks cool. Back in 2005, I quickly needed a domain name for my portfolio when I attended Hyper Island in Karlskrona, and said name came to mind.
