@@ -27,6 +27,7 @@
   }
 
   article h2 a:focus {
+    display: block;
     color: var(--article-link-invert);
     text-decoration-color: var(--article-link-invert);
   }
