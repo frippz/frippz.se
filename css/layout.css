@@ -122,7 +122,6 @@
 
     /* Unset flex header */
     .header-content {
-      position: -webkit-sticky;
       position: sticky;
       top: 2rem;
       display: block;
