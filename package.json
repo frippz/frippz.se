@@ -16,7 +16,7 @@
     "start": "concurrently 'npm run jekyll:serve' 'npm run watch:svg'",
     "prebuild": "touch _includes/sprite.svg & mkdir -p dist",
     "build": "npm run build:css && npm run build:js && npm run build:svg",
-    "watch:svg": "onchange ./src/svg/** -i -- npm run svg",
+    "watch:svg": "onchange ./svg/** -i -- npm run svg",
     "svg": "svg-sprite -C svg-sprite.config.json --dest ./images svg/*.svg",
     "uglify:css": "foreach -g 'dist/css/*.css' -x 'uglifycss #{path} --output #{path}'",
     "uglify:js": "foreach -g 'dist/js/*.js' -x 'uglifyjs #{path} --output #{path}'",
@@ -38,7 +38,7 @@
     "stylelint": "^13.11.0",
     "stylelint-color-format": "^1.1.0",
     "stylelint-config-recess-order": "^2.3.0",
-    "svg-sprite": "^1.5.3",
+    "svg-sprite": "^2.0.0-beta2",
     "uglify-es": "^3.3.9",
     "uglifycss": "^0.0.29"
   },
