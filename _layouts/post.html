@@ -6,9 +6,6 @@ layout: default
     <h2 itemprop="headline">{{ page.title }}</h2>
     <small class="post-info">
       Posted on <time datetime="{{ page.date | date: '%Y-%m-%d' }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>
-      <a class="permalink" href="{{ post.url | prepend: site.baseurl }}#{{ page.title | slugify }}" aria-label="Permalink">
-        {% include svg.html icon="icon-link" %}
-      </a>
     </small>
     <span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
       <meta itemprop="name" content="frippz.se">

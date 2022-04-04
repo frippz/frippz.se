@@ -16,9 +16,6 @@ sitemap:
       </h2>
       <small class="post-info">
         Posted on <time datetime="{{ post.date | date: '%Y-%m-%d' }}" itemprop="datePublished">{{ post.date | date: '%B %-d, %Y' }}</time>
-        <a class="permalink" href="{{ post.url | prepend: site.baseurl }}#{{ post.title | slugify }}" aria-label="Permalink to: “{{ post.title }}”">
-          {% include svg.html icon="icon-link" %}
-        </a>
       </small>
       <span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
         <meta itemprop="name" content="frippz.se">
