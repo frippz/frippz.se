@@ -2,23 +2,14 @@
 <html lang="en">
   {% include head.html %}
   <body{% if page.custom_class %} class="{{ page.custom_class }}"{% endif %}>
-
     <main id="main-content">
-
       <div class="landmark-content">
-
         <article aria-labelledby="heading-404">
-
           {% if page.title %}<h2 id="heading-404">{{ page.title }}</h2>{% endif %}
-
           {{ content }}
-
         </article>
-
       </div>
-
     </main>
-
     {% include script.html %}
   </body>
 </html>

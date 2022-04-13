@@ -2,21 +2,13 @@
 <html lang="en">
   {% include head.html %}
   <body{% if page.custom_class %} class="{{ page.custom_class }}"{% endif %}>
-
     {% include header.html %}
-
     <main id="main-content">
-
       <div class="landmark-content">
-
         {{ content }}
-
       </div>
-
     </main>
-
     {% include footer.html %}
-
     {% include script.html %}
   </body>
 </html>
