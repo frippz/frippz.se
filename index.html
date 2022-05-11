@@ -12,7 +12,7 @@ sitemap:
 
     <header>
       <h2 itemprop="headline" id="heading-{{ post.title | slugify }}">
-        <a href="{{ post.url | prepend: site.baseurl }}#{{ post.title | slugify }}" class="article-link">{{ post.title }}</a>
+        <a href="{{ post.url | prepend: site.baseurl }}" class="article-link">{{ post.title }}</a>
       </h2>
       <small class="post-info">
         Posted on <time datetime="{{ post.date | date: '%Y-%m-%d' }}" itemprop="datePublished">{{ post.date | date: '%B %-d, %Y' }}</time>
