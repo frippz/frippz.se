@@ -2,6 +2,7 @@
 title: Your website is making me sick — or why you should respect the preferences of your users
 description: On the importance of respecting your more sensitive users
 date: 2020-11-24 16:00
+updated: 2022-05-11 07:51
 tags:
   - a11y
   - accessibility
@@ -27,13 +28,40 @@ But why didn’t I remove the transition and animation durations altogether? Wel
 
 Almost all of the major browsers has had support for a good while, the exception being Legacy Edge, which lacks support entirely. Check [caniuse.com](https://caniuse.com/prefers-reduced-motion) for more details.
 
-Supporting browsers can read this preference from the OS of your choice. A few examples:
+Supporting browsers can read this preference from the OS of your choice. A few examples below.
 
-- **Windows 10:** Settings → Ease of Access → Display → Show animations in Windows.
-- **Windows 7:** Control Panel → Ease of Access → Make the computer easier to see → Turn off all unnecessary animations (when possible).
-- **macOS:** System Preferences → Accessibility → Display → Reduce motion.
-- **iOS/iPadOS:** Settings → General → Accessibility → Reduce Motion.
-- **Android 9+:** Settings → Accessibility → Remove animations.
+#### Windows 10
+
+  1. Settings
+  1. Ease of Access
+  1. Display
+  1. Show animations in Windows.
+
+#### Windows 7
+
+  1. Control Panel
+  1. Ease of Access
+  1. Make the computer easier to see
+  1. Turn off all unnecessary animations (when possible).
+
+#### macOS
+
+  1. System Preferences
+  1. Accessibility
+  1. Display
+  1. Reduce motion.
+
+#### iOS/iPadOS
+
+  1. Settings
+  1. General
+  1. Accessibility
+  1. Reduce Motion.
+
+#### Android 9+
+
+  1. Settings
+  1. Accessibility
+  1. Remove animations.
 
 Remember, respect your users. ❤️
-
