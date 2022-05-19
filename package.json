@@ -43,7 +43,7 @@
     "uglifycss": "^0.0.29"
   },
   "devDependencies": {
-    "concurrently": "^6.4.0",
+    "concurrently": "6.5.1",
     "onchange": "^6.1.1"
   }
 }
