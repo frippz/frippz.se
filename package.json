@@ -44,6 +44,6 @@
   },
   "devDependencies": {
     "concurrently": "6.5.1",
-    "onchange": "^6.1.1"
+    "onchange": "7.1.0"
   }
 }
