@@ -32,15 +32,15 @@
     "deploy": "npm run hash:css && npm run hash:js && npm run svg"
   },
   "dependencies": {
-    "foreach-cli": "^1.8.1",
-    "hashmark": "^5.0.0",
+    "foreach-cli": "1.8.1",
+    "hashmark": "5.0.0",
     "standard": "17.0.0",
     "stylelint": "14.8.3",
-    "stylelint-color-format": "^1.1.0",
+    "stylelint-color-format": "1.1.0",
     "stylelint-config-recess-order": "3.0.0",
     "svg-sprite": "2.0.0-beta4",
-    "uglify-es": "^3.3.9",
-    "uglifycss": "^0.0.29"
+    "uglify-es": "3.3.9",
+    "uglifycss": "0.0.29"
   },
   "devDependencies": {
     "concurrently": "7.2.1",
