@@ -37,7 +37,7 @@
     "standard": "^16.0.0",
     "stylelint": "14.8.3",
     "stylelint-color-format": "^1.1.0",
-    "stylelint-config-recess-order": "^2.3.0",
+    "stylelint-config-recess-order": "3.0.0",
     "svg-sprite": "2.0.0-beta4",
     "uglify-es": "^3.3.9",
     "uglifycss": "^0.0.29"
