@@ -28,6 +28,7 @@
     "lint:css": "stylelint --color -f verbose css/**/*.css",
     "lint:js": "standard js/**/*.js",
     "lint:js:fix": "standard --fix js/**/*.js",
+    "prettify": "prettier --write .",
     "jekyll:serve": "jekyll serve --drafts",
     "predeploy": "rm -rf dist && mkdir -p dist/css dist/js",
     "deploy": "npm run hash:css && npm run hash:js && npm run svg"
@@ -45,6 +46,8 @@
   },
   "devDependencies": {
     "concurrently": "7.2.1",
-    "onchange": "7.1.0"
+    "cypress": "10.0.0",
+    "onchange": "7.1.0",
+    "prettier": "2.6.2"
   }
 }
