@@ -1,0 +1,66 @@
+name: e2e on prod
+
+on:
+  schedule:
+    - cron: '0 12 */1 * *'
+
+  workflow_dispatch: # Allow running from the UI
+
+jobs:
+  deploy:
+
+    name: Build site & run e2e
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout files
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+
+      - name: Cache NPM
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install Node packages
+        run: npm ci --silent --production
+
+      - name: Build assets
+        run: npm run deploy
+
+      - name: Set up Ruby 3.0
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.0
+          bundler-cache: true
+
+      - name: Add version & build timestamp
+        run: |
+          echo `date` > _data/timestamp.yml
+          echo "${{ steps.vars.outputs.tag }}" > _data/version.yml
+
+      - name: Jekyll build
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build --config "_config.yml,_config.prod.yml"
+
+      - name: Lint CSS
+        run: npm run lint:css
+
+      - name: Lint JavaScript
+        run: npm run lint:js
+
+      - name: Run localhost
+        run: npm run start
+
+      - name: Run e2e tests
+        uses: cypress-io/github-action@v2
+        with:
+          browser: chrome
+          headless: true
