@@ -47,7 +47,7 @@
   },
   "devDependencies": {
     "concurrently": "7.2.1",
-    "cypress": "10.0.1",
+    "cypress": "10.0.3",
     "onchange": "7.1.0",
     "http-server": "14.1.1",
     "prettier": "2.6.2"
