@@ -53,8 +53,8 @@ jobs:
       - name: Run e2e tests
         uses: cypress-io/github-action@v4
         env:
-          CYPRESS_TEST_URL: http://localhost
+          CYPRESS_TEST_URL: http://localhost:4000
         with:
           browser: chrome
           headed: false
-          start: npx http-server
+          start: npx http-server _site -p 4000 -s
