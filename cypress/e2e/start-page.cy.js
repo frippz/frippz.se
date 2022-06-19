@@ -1,6 +1,6 @@
 describe('Check vital page elements on home', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:4000/')
+    cy.visit(Cypress.env('TEST_URL'))
   })
 
   it('Find the header main title', () => {
