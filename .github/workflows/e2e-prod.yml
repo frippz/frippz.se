@@ -61,6 +61,9 @@ jobs:
 
       - name: Run e2e tests
         uses: cypress-io/github-action@v4
+        env:
+          CYPRESS_TEST_URL: https://frippz.se
         with:
           browser: chrome
+          headed: false
           start: npx http-server
