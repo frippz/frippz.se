@@ -95,3 +95,5 @@ exclude:
   - 'svg'
   - 'svg-sprite.config.json'
   - 'vendor'
+  - 'cypress*'
+  - 'renovate.json'
