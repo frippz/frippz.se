@@ -1,8 +1,7 @@
 ---
 layout: none
 sitemap:
-  priority: 0.7
-  changefreq: weekly
+  exclude: 'yes'
 ---
 {
   "version": "https://jsonfeed.org/version/1",
