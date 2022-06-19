@@ -4,7 +4,7 @@ describe('Check vital page elements on home', () => {
   })
 
   it('Find the header main title', () => {
-    cy.get('#header h1').should('have.text', 'frippz.se')
+    cy.get('#header h1')
   })
 
   it('Find main navigation', () => {
