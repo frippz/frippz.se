@@ -3,25 +3,35 @@ version: '3'
 services:
 
   jekyll:
-    container_name: frippz-jekyll
+    image: jekyll/jekyll:latest
 
-    build:
-      context: .
-      dockerfile: Dockerfile
+    command: jekyll serve --watch --force_polling
 
     volumes:
-      - $PWD:/jekyll
-      - /jekyll/node_modules
+      - .:/srv/jekyll
 
-    working_dir: /jekyll
+    restart: unless-stopped
 
     environment:
-      NODE_ENV: development
       JEKYLL_ENV: development
 
     ports:
       - '4000:4000'
 
-    image: frippzse-jekyll:1.0
+    # expose:
+    #   - '4000'
 
-    command: npm start
+  # node:
+  #   image: node:lts-alpine
+  #
+  #   environment:
+  #     NODE_ENV: development
+  #
+  #   working_dir: /jekyll
+  #
+  #   volumes:
+  #     - ./node_modules:/srv/jekyll/node_modules
+  #
+  #   command: npm start
+
+  # volumes:

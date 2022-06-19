@@ -13,10 +13,6 @@
     "url": "git@github.com:frippz/frippz.se.git"
   },
   "scripts": {
-    "start": "concurrently 'npm run jekyll:serve' 'npm run watch:svg'",
-    "prebuild": "touch _includes/sprite.svg & mkdir -p dist",
-    "build": "npm run build:css && npm run build:js && npm run build:svg",
-    "watch:svg": "onchange ./svg/** -i -- npm run svg",
     "svg": "svg-sprite -C svg-sprite.config.json --dest ./images svg/*.svg",
     "uglify:css": "foreach -g 'dist/css/*.css' -x 'uglifycss #{path} --output #{path}'",
     "uglify:js": "foreach -g 'dist/js/*.js' -x 'uglifyjs #{path} --output #{path}'",
@@ -29,7 +25,6 @@
     "lint:js": "standard js/**/*.js",
     "lint:js:fix": "standard --fix js/**/*.js",
     "prettify": "prettier --write .",
-    "jekyll:serve": "jekyll serve --drafts",
     "predeploy": "rm -rf dist && mkdir -p dist/css dist/js",
     "deploy": "npm run hash:css && npm run hash:js && npm run svg",
     "http-server": "http-server _site -p 4000 -s"
@@ -46,9 +41,7 @@
     "uglifycss": "0.0.29"
   },
   "devDependencies": {
-    "concurrently": "7.2.2",
     "cypress": "10.1.0",
-    "onchange": "7.1.0",
     "http-server": "14.1.1",
     "prettier": "2.7.1"
   }
