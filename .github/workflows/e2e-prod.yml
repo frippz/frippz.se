@@ -1,6 +1,7 @@
 name: e2e on prod
 
 on:
+  workflow_dispatch: # Allow running from the UI
   workflow_run:
     workflows: [Deploy to prod]
     types: [completed]
