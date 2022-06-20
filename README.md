@@ -1,6 +1,6 @@
 # frippz.se
 
-![Tests](https://github.com/frippz/frippz.se/workflows/Tests/badge.svg) [![e2e on prod](https://github.com/frippz/frippz.se/actions/workflows/e2e-prod.yml/badge.svg)](https://github.com/frippz/frippz.se/actions/workflows/e2e-prod.yml)
+![Tests](https://github.com/frippz/frippz.se/workflows/Tests/badge.svg) [![e2e on prod](https://github.com/frippz/frippz.se/actions/workflows/e2e-prod.yml/badge.svg)](https://github.com/frippz/frippz.se/actions/workflows/e2e-prod.yml) [![Deploy to prod](https://github.com/frippz/frippz.se/actions/workflows/deploy.yml/badge.svg)](https://github.com/frippz/frippz.se/actions/workflows/deploy.yml)
 
 This repo contains the Jekyll source code for my personal journal at frippz.se.
 
