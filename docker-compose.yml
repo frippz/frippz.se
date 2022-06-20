@@ -1,14 +1,12 @@
-version: '3'
-
 services:
 
   jekyll:
-    image: jekyll/jekyll:latest
+    image: bretfisher/jekyll-serve
 
     command: jekyll serve --watch --force_polling
 
     volumes:
-      - .:/srv/jekyll
+      - .:/site
 
     restart: unless-stopped
 
@@ -17,21 +15,3 @@ services:
 
     ports:
       - '4000:4000'
-
-    # expose:
-    #   - '4000'
-
-  # node:
-  #   image: node:lts-alpine
-  #
-  #   environment:
-  #     NODE_ENV: development
-  #
-  #   working_dir: /jekyll
-  #
-  #   volumes:
-  #     - ./node_modules:/srv/jekyll/node_modules
-  #
-  #   command: npm start
-
-  # volumes:
