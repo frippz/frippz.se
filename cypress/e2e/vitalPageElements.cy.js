@@ -32,10 +32,6 @@ describe('Check vital page elements', () => {
     cy.get('#main-nav li').should('have.length', 3)
   })
 
-  it('Find footer', () => {
-    cy.get('#footer')
-  })
-
   it('Find footer – external links', () => {
     cy.get('#footer .external-links li').should('have.length', 5)
   })
