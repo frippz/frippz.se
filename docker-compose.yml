@@ -1,6 +1,7 @@
 services:
 
   jekyll:
+    container_name: jekyll
     image: bretfisher/jekyll-serve
 
     command: jekyll serve --watch --force_polling
