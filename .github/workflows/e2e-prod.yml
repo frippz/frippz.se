@@ -3,7 +3,7 @@ name: e2e on prod
 on:
   workflow_dispatch: # Allow running from the UI
   
-  schedule: # Run every 30 minutes
+  schedule: # Run daily at 12:00 UTC
     - cron: '0 12 */1 * *'
 
   workflow_run:
