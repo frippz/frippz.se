@@ -31,11 +31,12 @@ Still, if you want to give DigitalOcean a try, the above link is a referral that
 
 ### Getting in touch
 
-Feeling the need to get in touch with me? Have a business inquiry? Don’t hesitate to shoot me an email at [contact@frippz.se](mailto:contact@frippz.se). I have limited availability for smaller front end related projects from time to time.
+Need to get in touch with me? I’m reachable at [contact@frippz.se](mailto:contact@frippz.se).
 
 #### Please don’t bother contacting me if
 
-* You are a faceless mass-recruiter. I will not reply to you and I will blacklist your email.
+* You’re a recruiter. I will not reply. I’m just fine where I work today and if that changes then I’ll find something else on my own.
+* You want to offer your services to me, like building a web page. This is what I do for a living, so please stop wasting both your time and mine.
 * You want to write a guest post or “collaborate”, whatever that actually means.
 
 ### frippz?
