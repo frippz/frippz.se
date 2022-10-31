@@ -2,3 +2,4 @@ renovate: renovate/*
 feature: feature/*
 bugfix: ['fix/*', 'bug/*', 'bugfix/*']
 chore: chore/*
+content: content/*
