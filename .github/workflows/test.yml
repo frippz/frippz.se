@@ -46,9 +46,6 @@ jobs:
       - name: Lint JavaScript
         run: npm run lint:js
 
-      - name: Install http-server
-        run: npm install http-server
-
       - name: Run e2e tests
         uses: cypress-io/github-action@v4
         env:
@@ -56,4 +53,4 @@ jobs:
         with:
           browser: chrome
           headed: false
-          start: npx http-server _site -p 4000 -s
+          start: python3 -m http.server 4000
