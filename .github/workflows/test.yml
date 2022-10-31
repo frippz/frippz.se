@@ -53,4 +53,4 @@ jobs:
         with:
           browser: chrome
           headed: false
-          start: python3 -m http.server 4000
+          start: python3 -m http.server --directory _site 4000
