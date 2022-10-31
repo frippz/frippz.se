@@ -30,10 +30,9 @@ jobs:
       - name: Build assets
         run: npm run deploy
 
-      - name: Set up Ruby 2.6
+      - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.6
           bundler-cache: true
 
       - name: Jekyll build
@@ -47,9 +46,6 @@ jobs:
       - name: Lint JavaScript
         run: npm run lint:js
 
-      - name: Install http-server
-        run: npm install http-server
-
       - name: Run e2e tests
         uses: cypress-io/github-action@v4
         env:
@@ -57,4 +53,4 @@ jobs:
         with:
           browser: chrome
           headed: false
-          start: npx http-server _site -p 4000 -s
+          start: python3 -m http.server --directory _site 4000
