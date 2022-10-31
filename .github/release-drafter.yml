@@ -19,7 +19,7 @@ categories:
       - 'renovate'
 
 template: |
-  ## What’s Changed in Search
+  ## Changes
 
   $CHANGES
 change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
