@@ -25,9 +25,7 @@ This site is just plain static HTML generated with the help of [Jekyll](http://j
 
 #### Platform
 
-I used to host this site on [DigitalOcean](https://m.do.co/c/2e95857e7f62) due to their comprehensible pricing model, easy to use control panel and a great community with loads of documentation and helpful people. Paying $5 a month for their lowest tier was pretty damn affordable as well. Since then, I moved to hosting on AWS using S3 and CloudFront, mostly to learn how AWS works. I also use Github Actions for continous deployment and testing. Mostly overkill for my simple needs, to be sure, but it's always fun to learn new stuff.
-
-Still, if you want to give DigitalOcean a try, the above link is a referral that’ll give you a $10 credit. If you happen to like them as much as I do and stay with them, when you spend $25 with them, I get a $25 credit myself (I still use them for other things, so that would be much appreciated).
+I’ve moved from Github Pages to running my own virtual host at Digital Ocean, to currently hosting on AWS using S3 and CloudFront, mostly just to learn how AWS works. It certainly is overkill for my simple needs, but it's always fun to learn new stuff, right? I also use Github Actions for continous deployment and testing.
 
 ### Getting in touch
 
@@ -37,8 +35,8 @@ Need to get in touch with me? I’m reachable at [contact@frippz.se](mailto:cont
 
 * You’re a recruiter. I will not reply. I’m just fine where I work today and if that changes then I’ll find something else on my own.
 * You want to offer your services to me, like building a web page. This is what I do for a living, so please stop wasting both your time and mine.
-* You want to write a guest post or “collaborate”, whatever that actually means.
+* You want to write a guest post or “collaborate”, whatever that means.
 
 ### frippz?
 
-That’s just a nickname my cousin gave me when I was a kid. The ”z” is just because it looks cool. Back in 2005, I quickly needed a domain name for my portfolio when I attended Hyper Island in Karlskrona, and said name came to mind.
+That’s just a nickname my cousin gave me when I was a kid. The ”z” is just because it looks cool. Back in 2005, I quickly needed a domain name for my portfolio when I attended [Hyper Island](https://www.hyperisland.com) in Karlskrona, and said name came to mind.
