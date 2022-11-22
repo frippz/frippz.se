@@ -29,24 +29,6 @@
   }
 
   /**
-   * HTML5 elements legacy reset
-   */
-  article,
-  aside,
-  details,
-  figcaption,
-  figure,
-  footer,
-  header,
-  hgroup,
-  main,
-  menu,
-  nav,
-  section {
-    display: block;
-  }
-
-  /**
    * Smooooooth scrolling
    */
   html {
