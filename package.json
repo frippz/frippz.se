@@ -32,7 +32,7 @@
     "foreach-cli": "1.8.1",
     "hashmark": "5.0.0",
     "standard": "17.0.0",
-    "stylelint": "14.14.0",
+    "stylelint": "14.16.0",
     "stylelint-color-format": "1.1.0",
     "stylelint-config-recess-order": "3.0.0",
     "svg-sprite": "2.0.1",
