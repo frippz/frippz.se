@@ -5,14 +5,13 @@
     "color-format/format": {
       "format": "hsl"
     },
-    "at-rule-empty-line-before": ["always", {
-      "except": [
-        "blockless-after-blockless"
-      ],
-      "ignore": [
-        "after-comment"
-      ]
-    }],
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        "except": ["blockless-after-blockless"],
+        "ignore": ["after-comment"]
+      }
+    ],
     "block-closing-brace-newline-after": "always",
     "block-closing-brace-newline-before": "always",
     "block-no-empty": true,
@@ -44,11 +43,12 @@
     "media-query-list-comma-newline-after": "always-multi-line",
     "media-query-list-comma-newline-before": "never-multi-line",
     "number-leading-zero": "always",
-    "rule-empty-line-before": ["always", {
-      "ignore": [
-        "after-comment"
-      ]
-    }],
+    "rule-empty-line-before": [
+      "always",
+      {
+        "ignore": ["after-comment"]
+      }
+    ],
     "selector-combinator-space-after": "always",
     "selector-combinator-space-before": "always",
     "selector-list-comma-newline-after": "always",
@@ -58,5 +58,6 @@
     "selector-type-case": "lower",
     "string-quotes": "double",
     "value-list-comma-space-after": "always-single-line",
-    "value-list-comma-space-before": "never"}
+    "value-list-comma-space-before": "never"
+  }
 }

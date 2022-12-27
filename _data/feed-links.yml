@@ -1,12 +1,11 @@
--
-  label: Atom feed
+- label: Atom feed
   icon: icon-feed
   url: /feed.xml
--
-  label: JSON feed
+
+- label: JSON feed
   icon: icon-json-feed
   url: /feed.json
--
-  label: Tags
+
+- label: Tags
   icon: icon-tag
   url: /tags/

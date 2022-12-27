@@ -1,11 +1,13 @@
 {
-  "transform": [{
-    "svgo": {
-      "js2svg": {
-        "useShortTags": false
+  "transform": [
+    {
+      "svgo": {
+        "js2svg": {
+          "useShortTags": false
+        }
       }
     }
-  }],
+  ],
   "svg": {
     "doctypeDeclaration": false,
     "xmlDeclaration": false

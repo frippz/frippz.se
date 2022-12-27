@@ -1,20 +1,19 @@
--
-  label: Github
+- label: Github
   icon: icon-github
   url: https://github.com/frippz
--
-  label: Twitter
+
+- label: Twitter
   icon: icon-twtr
   url: https://twitter.com/frippz
--
-  label: LinkedIn
+
+- label: LinkedIn
   icon: icon-linkedin
   url: https://linkedin.com/in/fredrikfrodlund
--
-  label: CodePen
+
+- label: CodePen
   icon: icon-codepen
   url: https://codepen.io/frippz
--
-  label: Stack Overflow
+
+- label: Stack Overflow
   icon: icon-stackoverflow
   url: https://stackoverflow.com/users/2204730/fredrik-frodlund

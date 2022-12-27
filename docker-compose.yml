@@ -1,5 +1,4 @@
 services:
-
   jekyll:
     container_name: jekyll
     image: bretfisher/jekyll-serve
