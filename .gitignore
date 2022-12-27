@@ -4,6 +4,7 @@ _site
 .sass-cache
 .jekyll-metadata
 .jekyll-cache
+vendor
 
 # Version & build timestamp data files
 _data/version.yml
