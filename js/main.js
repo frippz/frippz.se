@@ -16,6 +16,13 @@ const didCutTheMustard =
   CSS.supports('display', 'flex')
 
 /**
+ * Add class "js" to <html>
+ */
+const jsEnabled = () => {
+  document.querySelector('html').classList.add('js')
+}
+
+/**
  * Add line numbers to <pre>
  */
 const lineNumbers = () => {
@@ -38,8 +45,6 @@ const lineNumbers = () => {
 }
 
 if (didCutTheMustard) {
-  // Add class "js" to html element
-  document.querySelector('html').classList.add('js')
-
+  jsEnabled()
   lineNumbers()
 }
