@@ -2,7 +2,7 @@ name: Deploy to prod
 
 on:
   workflow_dispatch: # Allow running from the UI
-  
+
   release:
     types: [published]
 
@@ -25,7 +25,7 @@ jobs:
 
       - name: Get tagged version
         id: vars
-        run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
+        run: echo "tag=${GITHUB_REF#refs/*/}" >> $GITHUB_OUTPUT
 
       - name: Setup Node
         uses: actions/setup-node@v3
