@@ -1,6 +1,8 @@
 name: Deploy to prod
 
 on:
+  workflow_dispatch: # Allow running from the UI
+  
   release:
     types: [published]
 
