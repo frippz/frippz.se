@@ -73,6 +73,7 @@ jobs:
           projectName: frippz-se
           directory: _site
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          branch: master
 
       - name: Deploy to AWS
         run: |
