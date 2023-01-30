@@ -42,7 +42,7 @@
     "uglifycss": "0.0.29"
   },
   "devDependencies": {
-    "cypress": "12.4.0",
+    "cypress": "12.4.1",
     "prettier": "2.8.3"
   }
 }
