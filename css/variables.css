@@ -5,7 +5,11 @@
 :root {
   color-scheme: light dark;
 
-  --base-color: hsl(12, 85%, 50%);
+  --base-hue: 12;
+  --base-saturation: 85%;
+  --base-lightness: 50%;
+
+  --base-color: hsl(var(--base-hue), var(--base-saturation), var(--base-lightness));
 
   /**
    * Surface colors
@@ -64,7 +68,7 @@
 
   :root {
 
-    --base-color: hsl(12, 85%, 60%);
+    --base-lightness: 60%;
 
     /**
      * Surface colors
