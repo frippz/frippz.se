@@ -33,7 +33,7 @@ describe('Check vital page elements', () => {
   });
 
   it('Find footer – external links', () => {
-    cy.get('#footer .external-links li').should('have.length', 5);
+    cy.get('#footer .external-links li').should('have.length', 4);
   });
 
   it('Find footer – feed links', () => {
