@@ -5,11 +5,13 @@
 :root {
   color-scheme: light dark;
 
+  --base-color: hsl(12, 85%, 60%);
+
   /**
    * Surface colors
    */
   --body-background: hsl(45, 40%, 94%);
-  --body-top-border: hsl(12, 85%, 60%);
+  --body-top-border: var(--base-color);
   --footer-background: hsl(0, 0%, 20%);
 
   /* Borders */
@@ -49,7 +51,7 @@
   --footer-text-hover: hsl(0, 0%, 94%);
 
   /* Article */
-  --article-link: hsl(12, 78%, 44%);
+  --article-link: var(--base-color);
   --article-link-invert: hsl(0, 100%, 100%);
   --article-header-decoration: hsla(0, 0%, 0%, 0.2);
 
