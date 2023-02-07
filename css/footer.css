@@ -34,7 +34,7 @@
   #footer .svg-icon {
     display: inline-block;
     margin-right: 0.25em;
-    fill: currentcolor;
+    fill: var(--base-color);
   }
 
   /* Footer links */
