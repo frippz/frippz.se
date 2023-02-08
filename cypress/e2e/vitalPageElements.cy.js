@@ -2,11 +2,11 @@ describe('Check vital page elements', () => {
   /**
    * Create an array of all entries from sitemap.xml
    */
-  let urls = [];
+  let urls = []
 
   before(async () => {
     // getch the sitemap content
-    const response = await cy.request(`${Cypress.env('TEST_URL')}/sitemap.xml`);
+    const response = await cy.request(`${Cypress.env('TEST_URL')}/sitemap.xml`)
 
     // convert sitemap xml body to an array of urls
     urls = Cypress.$(response.body)
@@ -17,26 +17,26 @@ describe('Check vital page elements', () => {
       // map to a js array
       .toArray()
       // get the text of the <loc /> node
-      .map((el) => el.innerText);
-  });
+      .map((el) => el.innerText)
+  })
 
   beforeEach(() => {
-    urls.forEach(cy.visit);
-  });
+    urls.forEach(cy.visit)
+  })
 
   it('Find the header main title', () => {
-    cy.get('#header h1');
-  });
+    cy.get('#header h1')
+  })
 
   it('Find main navigation', () => {
-    cy.get('#main-nav li').should('have.length', 3);
-  });
+    cy.get('#main-nav li').should('have.length', 3)
+  })
 
   it('Find footer – external links', () => {
-    cy.get('#footer .external-links li').should('have.length', 4);
-  });
+    cy.get('#footer .external-links li').should('have.length', 4)
+  })
 
   it('Find footer – feed links', () => {
-    cy.get('#footer .feeds li').should('have.length', 3);
-  });
-});
+    cy.get('#footer .feeds li').should('have.length', 3)
+  })
+})
