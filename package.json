@@ -13,7 +13,7 @@
     "url": "git@github.com:frippz/frippz.se.git"
   },
   "scripts": {
-    "start": "bundle exec jekyll serve --drafts",
+    "start": "nodemon",
     "bundle:install": "bundle install",
     "svg": "svg-sprite -C svg-sprite.config.json --dest ./images svg/*.svg",
     "uglify:css": "foreach -g 'dist/css/*.css' -x 'uglifycss #{path} --output #{path}'",
@@ -26,7 +26,6 @@
     "lint:css": "stylelint --color -f verbose css/**/*.css",
     "lint:js": "eslint js/**/*.js",
     "lint:js:fix": "standard --fix js/**/*.js",
-    "prettify": "prettier --write .",
     "predeploy": "rm -rf dist && mkdir -p dist/css dist/js",
     "deploy": "npm run hash:css && npm run hash:js && npm run svg"
   },
@@ -44,6 +43,24 @@
   },
   "devDependencies": {
     "cypress": "12.5.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.3",
+    "nodemon": "^2.0.20",
     "prettier": "2.8.3"
+  },
+  "lint-staged": {
+    "*.css": [
+      "stylelint --fix css/*.css",
+      "stylelint css/*.css"
+    ],
+    "*": [
+      "prettier --write ."
+    ]
+  },
+  "nodemonConfig": {
+    "watch": [
+      "_config.yml"
+    ],
+    "exec": "bundle exec jekyll serve --drafts"
   }
 }
