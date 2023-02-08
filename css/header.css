@@ -6,10 +6,10 @@
 
   /* Main title */
   .main-title {
-    color: var(--base-color);
     padding: 0.5em 0 0;
     font-size: 2.8em;
     line-height: 1.125;
+    color: var(--base-color);
     white-space: nowrap;
   }
 
