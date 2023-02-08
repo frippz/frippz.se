@@ -13,7 +13,7 @@
     "url": "git@github.com:frippz/frippz.se.git"
   },
   "scripts": {
-    "start": "bundle exec jekyll serve --drafts",
+    "start": "nodemon",
     "bundle:install": "bundle install",
     "svg": "svg-sprite -C svg-sprite.config.json --dest ./images svg/*.svg",
     "uglify:css": "foreach -g 'dist/css/*.css' -x 'uglifycss #{path} --output #{path}'",
@@ -44,6 +44,21 @@
   },
   "devDependencies": {
     "cypress": "12.5.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.3",
+    "nodemon": "^2.0.20",
     "prettier": "2.8.3"
+  },
+  "lint-staged": {
+    "*.css": [
+      "stylelint --fix css/*.css",
+      "stylelint css/*.css"
+    ]
+  },
+  "nodemonConfig": {
+    "watch": [
+      "_config.yml"
+    ],
+    "exec": "bundle exec jekyll serve --drafts"
   }
 }
