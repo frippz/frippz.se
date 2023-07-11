@@ -36,7 +36,7 @@
     "hashmark": "5.0.0",
     "stylelint": "14.16.1",
     "stylelint-color-format": "1.1.0",
-    "stylelint-config-recess-order": "3.1.0",
+    "stylelint-config-recess-order": "4.3.0",
     "svg-sprite": "2.0.2",
     "uglify-es": "3.3.9",
     "uglifycss": "0.0.29"
