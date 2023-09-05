@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "eslint": "8.33.0",
-    "eslint-config-prettier": "8.6.0",
+    "eslint-config-prettier": "8.10.0",
     "foreach-cli": "1.8.1",
     "hashmark": "5.0.0",
     "stylelint": "15.10.3",
