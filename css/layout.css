@@ -86,7 +86,7 @@
         [main-end];
       grid-template-columns:
         [main-start] 1fr
-        [content-start] calc(38rem + 5vw)
+        [content-start] calc(34em + 5vw)
         [content-end] 1fr
         [main-end];
     }
