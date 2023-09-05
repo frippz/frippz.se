@@ -42,7 +42,7 @@
     "uglifycss": "0.0.29"
   },
   "devDependencies": {
-    "cypress": "12.5.1",
+    "cypress": "13.1.0",
     "husky": "^8.0.0",
     "lint-staged": "^13.0.3",
     "nodemon": "^2.0.20",
