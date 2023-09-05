@@ -30,22 +30,22 @@
     "deploy": "npm run hash:css && npm run hash:js && npm run svg"
   },
   "dependencies": {
-    "eslint": "8.33.0",
-    "eslint-config-prettier": "8.10.0",
+    "eslint": "8.48.0",
+    "eslint-config-prettier": "9.0.0",
     "foreach-cli": "1.8.1",
     "hashmark": "5.0.0",
     "stylelint": "15.10.3",
     "stylelint-color-format": "1.1.0",
-    "stylelint-config-recess-order": "3.1.0",
+    "stylelint-config-recess-order": "4.3.0",
     "svg-sprite": "2.0.2",
     "uglify-es": "3.3.9",
     "uglifycss": "0.0.29"
   },
   "devDependencies": {
-    "cypress": "12.5.1",
-    "husky": "^8.0.0",
-    "lint-staged": "^13.0.3",
-    "nodemon": "^2.0.20",
+    "cypress": "13.1.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "nodemon": "^3.0.1",
     "prettier": "3.0.3"
   },
   "lint-staged": {
