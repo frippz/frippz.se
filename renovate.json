@@ -1,5 +1,8 @@
 {
   "extends": ["config:base"],
   "addLabels": ["renovate"],
-  "ignoreDeps": ["ruby"]
+  "ignoreDeps": ["ruby"],
+  "major": {
+    "dependencyDashboardApproval": true
+  }
 }
