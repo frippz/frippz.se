@@ -45,4 +45,4 @@ I want to be clear that these are very early impressions after only testing the 
 
 As I already mentioned, I’ve only tested the tool for a few hours and I haven’t looked over everything the tool has to offer, like the daily and weekly test reports mentioned in their list of features.
 
-The pricing is € 49 per month, which might be steep for a private person, but I don’t think they’re the target audience here. For companies that not only values offering a good experience for their users, but that also cares about the forthcoming [European Accessibility Act](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L0882), this is a low price to pay.
+The pricing is € 49 per month, which might be steep for a private person, but I don’t think they’re the target audience here. For companies that not only values offering a good experience for their users, but that also cares about the forthcoming [European Accessibility Act](https://ec.europa.eu/social/main.jsp?catId=1202), this is a low price to pay.

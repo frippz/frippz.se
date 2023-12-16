@@ -39,8 +39,9 @@
   }
 
   /* Inline article links */
-  article a,
-  article a:visited {
+  article p a,
+  article p a:visited {
+    font-weight: 600;
     color: var(--article-link);
   }
 

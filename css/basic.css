@@ -118,13 +118,13 @@
   }
 
   body {
-    font-size: calc(1.1em + 0.30vw);
+    font-size: calc(1.2em + 0.30vw);
   }
 
   @media (min-width: 32em) {
 
     body {
-      font-size: calc(1em + 0.30vw);
+      font-size: calc(1.1em + 0.30vw);
     }
   }
 
