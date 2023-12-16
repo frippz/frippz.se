@@ -53,14 +53,14 @@
   <body>
 
     <aside>
+      <h1>{{ page.title }}</h1>
       {{ content }}
       <p><a href="/labs/">⇠ Back to labs</a></p>
     </aside>
 
-    <div id="lab-area">
-      <iframe src="/lab-includes/{{ page.include }}"></iframe>
-    </div>
+    <main id="lab-area">
+      <iframe src="/lab-includes/{{ page.include }}" title="{{ page.title }}"></iframe>
+    </main>
 
   </body>
 </html>
-

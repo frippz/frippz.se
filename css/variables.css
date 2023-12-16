@@ -7,7 +7,7 @@
 
   --base-hue: 12;
   --base-saturation: 85%;
-  --base-lightness: 50%;
+  --base-lightness: 40%;
 
   --base-color: hsl(var(--base-hue), var(--base-saturation), var(--base-lightness));
 
