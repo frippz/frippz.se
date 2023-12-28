@@ -45,7 +45,8 @@
     color: var(--article-link);
   }
 
-  article a:focus {
+  article a:focus,
+  article p a:focus {
     color: var(--article-link-invert);
     background-color: var(--article-link);
     outline: 0;
