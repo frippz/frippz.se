@@ -13,7 +13,7 @@
     "url": "git@github.com:frippz/frippz.se.git"
   },
   "scripts": {
-    "start": "nodemon",
+    "dev": "nodemon",
     "bundle:install": "bundle install",
     "svg": "svg-sprite -C svg-sprite.config.json --dest ./images svg/*.svg",
     "uglify:css": "foreach -g 'dist/css/*.css' -x 'uglifycss #{path} --output #{path}'",
