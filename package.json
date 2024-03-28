@@ -34,7 +34,7 @@
     "eslint-config-prettier": "9.1.0",
     "foreach-cli": "1.8.1",
     "hashmark": "5.0.0",
-    "stylelint": "15.11.0",
+    "stylelint": "16.3.1",
     "stylelint-color-format": "1.1.0",
     "stylelint-config-recess-order": "4.4.0",
     "svg-sprite": "2.0.2",
