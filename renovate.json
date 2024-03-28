@@ -1,8 +1,16 @@
 {
-  "extends": ["config:base"],
-  "addLabels": ["renovate"],
-  "ignoreDeps": ["ruby"],
+  "extends": ["config:base", "schedule:weekdays"],
+  "timezone": "CET",
+  "automergeSchedule": ["after 9am and before 2pm every weekday"],
   "major": {
     "dependencyDashboardApproval": true
-  }
+  },
+  "addLabels": ["renovate"],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true
+    }
+  ]
 }
