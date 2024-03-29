@@ -19,7 +19,7 @@ jobs:
 
       - name: Get tagged version
         id: vars
-        run: echo "hash=${GITHUB_SHA}" >> $GITHUB_OUTPUT
+        run: echo "hash=${GITHUB_SHA::7}" >> $GITHUB_OUTPUT
 
       - name: Setup Node
         uses: actions/setup-node@v4
