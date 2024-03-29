@@ -4,7 +4,7 @@ sitemap:
   exclude: 'yes'
 ---
 {
-  "version": "https://jsonfeed.org/version/1",
+  "version": "https://jsonfeed.org/version/1.1",
   "title": "{{ site.feed-title }}",
   "home_page_url": "{{ site.url }}",
   "feed_url": "{{ "/feed.json" | absolute_url }}",
