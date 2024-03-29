@@ -1,3 +1,4 @@
+---
 name: Deploy to prod
 
 on:
@@ -18,7 +19,7 @@ jobs:
 
       - name: Get tagged version
         id: vars
-        run: echo "tag=${GITHUB_REF#refs/*/}" >> $GITHUB_OUTPUT
+        run: echo "hash=${GITHUB_SHA}" >> $GITHUB_OUTPUT
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -45,7 +46,7 @@ jobs:
       - name: Add version & build timestamp
         run: |
           echo `date` > _data/timestamp.yml
-          echo "${{ steps.vars.outputs.tag }}" > _data/version.yml
+          echo "${{ steps.vars.outputs.hash }}" > _data/version.yml
 
       - name: Jekyll build
         env:
