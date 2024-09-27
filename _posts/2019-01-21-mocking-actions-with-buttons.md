@@ -24,7 +24,7 @@ That’s really all we need. No need to complicate things, right?
 <button type="button" data-prototype-url="link.html">Click me</button>
 ```
 
-The `type="button"` attribute is optional, since the default type for a button is `submit` and that might be just what you want. In order to easily enter the URL in question we’ve got the `data-prototype-url` attribute. You can name it however you want. but it might be prudent to use a name that communicates its prototype use case as clearly as possible. Again, we _do not_ want this type of code running on a live web site.
+The `type="button"` attribute is optional, since the default type for a button is `submit` and that might be just what you want. In order to easily enter the URL in question we’ve got the `data-prototype-url` attribute. You can name it however you want. but it might be prudent to use a name that communicates its prototype use case as clearly as possible. Again, we _do not_ want this type of code running on a live website.
 
 ### The JavaScript
 

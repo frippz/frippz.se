@@ -33,7 +33,7 @@ This is a great description of what progressive enhancement is, and even if this
 
 I do realise that we’re drifting into the deep waters of semantics and that while Anders do have a point of sorts, that progressive enhancement can certainly be applied to just JavaScript, the underlying idea of a rock solid foundation goes out the window. What’s worse to me is the confusion this causes.
 
-Imagine the following scenario, if you will. Developers express an intention to develop a web site using progressive enhancement. Jubilations all around!
+Imagine the following scenario, if you will. Developers express an intention to develop a website using progressive enhancement. Jubilations all around!
 
 > **Developer 1:** *“Alright! We’re going to start with a rock solid foundation of semantic HTML, then we'll add styling using CSS to carefully…”*
 >

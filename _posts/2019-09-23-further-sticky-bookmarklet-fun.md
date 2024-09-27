@@ -14,9 +14,9 @@ I just couldn’t leave that poor bookmarklet alone, could I? Using the [previou
 * It checks the `<body>` for any scroll disabling styling and tries to unset it
 * It finds any element with either `position: fixed` or `position: sticky` and deletes them
 
-Sounds good enough, right? Well, not quite. I found one big glaring issue with this; headers. Many times, modern web sites use `position: sticky` for headers. If I delete them — well, then I've broken the site a little too much.
+Sounds good enough, right? Well, not quite. I found one big glaring issue with this; headers. Many times, modern websites use `position: sticky` for headers. If I delete them — well, then I've broken the site a little too much.
 
-Based on my *very* scientific research following this, by visiting as many as *ten web sites*, I could conclude the following:
+Based on my *very* scientific research following this, by visiting as many as *ten websites*, I could conclude the following:
 
 1. Most annoying overlays and modals is positioned using `position: fixed` — these we can safely destroy with fire
 2. Most functional elements of a page, such as the header, uses `position: fixed` — these we want to keep, but away from scrolling view

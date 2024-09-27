@@ -31,7 +31,7 @@ Brad Frost wrote a great post called “[Support Vs Optimization](http://bradfro
 
 > “There is a difference between support and optimization” is a line I use regularly at work. For time and budget reasons, we can’t make the best experience ever for every connected device, but we have a responsibility to provide a decent experience to those who wish to interact with our products and services. As we move into the future, it’s going to be harder and harder to account for the plethora of connected devices, so we need to be construct our experiences with more consideration.
 
-A lot of people will argue that supporting legacy browsers means putting in loads of hours adding fixes and hacks to make your web site work in something like, say, Internet Explorer 8 (or even the over-a-decade-old IE 6). But before you dismiss the notion of supporting legacy browsers altogether, consider this quote from the same article:
+A lot of people will argue that supporting legacy browsers means putting in loads of hours adding fixes and hacks to make your website work in something like, say, Internet Explorer 8 (or even the over-a-decade-old IE 6). But before you dismiss the notion of supporting legacy browsers altogether, consider this quote from the same article:
 
 > You don’t have to treat these browsers as equals to iOS and Android and no one is recommending that we have to serve up a crappy WAP site to the best smartphones on the market. It’s just about being more considerate and giving these people who want to interact with your site a functional experience. That requires removing comfortable assumptions about support and accounting for different use cases. There are ways to support lesser platforms while still optimizing for the best of the best.
 
@@ -71,7 +71,7 @@ Then you do more complex layouts with something like this:
 
 While this might be considered a hack, it’s totally valid CSS. `min-width: 0;` means all widths from 0 and up, but since IE 8 and older versions doesn’t understand the syntax, they’ll just ignore it. Also, keep in mind that the code snippets above is only the beginning. You of course need to add additional media queries for different breakpoints tailored to your design.
 
-A basic mobile first layout will, provided you’ve kept it simple, work quite well on legacy browsers. Chances are it will look just fine (or fine enough) without you needing to add any quirky hacks to your stylesheet. A great example of how this can look is the web site of [Jake Archibald](http://jakearchibald.com). Visiting his site in something very old (like IE6) and something quite modern (like Safari 8 on OS X) shows something interesting:
+A basic mobile first layout will, provided you’ve kept it simple, work quite well on legacy browsers. Chances are it will look just fine (or fine enough) without you needing to add any quirky hacks to your stylesheet. A great example of how this can look is the website of [Jake Archibald](http://jakearchibald.com). Visiting his site in something very old (like IE6) and something quite modern (like Safari 8 on OS X) shows something interesting:
 
 {% include image.html
   url="/images/jakearchibald-safari8.png"

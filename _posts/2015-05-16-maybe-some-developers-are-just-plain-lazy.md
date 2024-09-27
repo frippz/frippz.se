@@ -16,7 +16,7 @@ In the wake of the news that Facebook has put out a new product that allows iPho
 
 The trend is hard to miss. There’s an insane amount of tools and frameworks out there and using them is more the rule than the exception. PPK asks himself the question of why this is:
 
-> Why all these tools? I see two related reasons: emulating native, and the fact that people with a server-side background coming to JavaScript development take existing tools because they do not have the training to recognise their drawbacks. Thus, the average web site has become way overtooled, which exacts a price when it comes to speed.
+> Why all these tools? I see two related reasons: emulating native, and the fact that people with a server-side background coming to JavaScript development take existing tools because they do not have the training to recognise their drawbacks. Thus, the average website has become way overtooled, which exacts a price when it comes to speed.
 
 While I absolutely do not disagree with his conclusions, sometimes the answer seem to be even more simple, and depressing. Based on what I've seen throughout my career as a front end web developer, the reason often is that **developers are just plain lazy.** With the advent of libraries and frameworks such as jQuery, Twitter Bootstrap, and not to mention the torrent of CSS preprocessors such as LESS and SASS, developers have not only become disconnected from how to properly build something for the web on their own, some of them have also turned horribly lazy.
 
@@ -28,4 +28,4 @@ Now, a lot of developers would surely scream bloody murder at me calling them la
 
 The very uncomfortable truth might just be that you just lack the proper knowledge to effectively solve the problem at hand. Guess what, *that's totally fine*. It happens all the time to most developers. No one is perfect and what really makes you a professional is what you choose to do when faced with such problems. Maybe take a step back, admit that you don’t have the right tools for the problem and that you need to aquire them before continuing.
 
-The thing is that the tools I'm talking about can't be downloaded as a zip file from some web site.
+The thing is that the tools I'm talking about can't be downloaded as a zip file from some website.
