@@ -25,7 +25,7 @@ Just paste a URL into the input field and let Squidler go to town on your site. 
 
 #### Continous testing
 
-Once you've entered a web site that you want to test, Squidler will keep crawling it periodically. This is a nice feature to me and something that will come in handy once you start fixing issues that the tool will find. Keep fixing issues and deploy them, and let Squidler handle future checks automatically. Nice.
+Once you've entered a website that you want to test, Squidler will keep crawling it periodically. This is a nice feature to me and something that will come in handy once you start fixing issues that the tool will find. Keep fixing issues and deploy them, and let Squidler handle future checks automatically. Nice.
 
 #### Simple and clear reports
 
@@ -37,7 +37,7 @@ I understand that this tool is in the early stages of its life and so, there's a
 
 * **One URL only?** - running tests like these surely doesn’t come cheap in terms of server costs, so I get that there might be limitations. I would however love to see the possibility to test multiple sites. If this feature isn’t currently available, it would be a valuable addition for future updates.
 
-* **Very minimal UI** - I should emphasize that this is generally a good thing, but if I dive into one of the reported problems, I would love to have some kind of breadcrumb or other way of getting back to the overview. The back button works just fine, but my confidence is a bit lowered by such patterns. I guess poor web site designs over the years with terrible single page apps have ruined me a bit.
+* **Very minimal UI** - I should emphasize that this is generally a good thing, but if I dive into one of the reported problems, I would love to have some kind of breadcrumb or other way of getting back to the overview. The back button works just fine, but my confidence is a bit lowered by such patterns. I guess poor website designs over the years with terrible single page apps have ruined me a bit.
 
 I want to be clear that these are very early impressions after only testing the tool for a few hours. As I understand it, they're still working on improving plenty of things, so take my impressions with a heap of salt.
 
