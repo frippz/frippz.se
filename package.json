@@ -61,6 +61,6 @@
     "watch": [
       "_config.yml"
     ],
-    "exec": "bundle exec jekyll serve --drafts"
+    "exec": "docker-compose up"
   }
 }

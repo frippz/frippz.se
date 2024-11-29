@@ -1,0 +1,13 @@
+---
+services:
+  jekyll:
+    container_name: jekyll
+    image: bretfisher/jekyll-serve
+    command: bundle exec jekyll serve --watch --force_polling
+    volumes:
+      - .:/site
+    restart: unless-stopped
+    environment:
+      JEKYLL_ENV: development
+    ports:
+      - '4000:4000'
