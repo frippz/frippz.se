@@ -25,7 +25,7 @@ This site is just plain static HTML generated with the help of [Jekyll](http://j
 
 #### Platform
 
-I’ve moved from Github Pages to running my own virtual host at Digital Ocean and then onto hosting on AWS using S3 and CloudFront, mostly just to learn how AWS works. I’m currently settled in at Cloudflare using their quite nice service [Cloudflare Pages](https://pages.cloudflare.com/). I also use Github Actions for continous deployment and testing.
+I’ve moved from Github Pages to running my own virtual host at Digital Ocean and then onto hosting on AWS using S3 and CloudFront, mostly just to learn how AWS works. I’m currently settled in at Cloudflare using their quite nice service [Cloudflare Pages](https://pages.cloudflare.com/). Finally, I use Github Actions for continous deployment and testing.
 
 ### Getting in touch
 
