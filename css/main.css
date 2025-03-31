@@ -42,7 +42,13 @@
   article p a,
   article p a:visited {
     font-weight: 600;
+    text-decoration-thickness: 0.145em;
+    text-decoration-color: var(--article-link);
+  }
+
+  article p a:hover {
     color: var(--article-link);
+    text-decoration-color: var(--article-link);
   }
 
   article a:focus,

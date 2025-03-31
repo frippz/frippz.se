@@ -48,6 +48,8 @@
   #main-nav a:hover,
   #main-nav a:active {
     text-decoration: underline;
+    text-decoration-thickness: 0.145em;
+    text-decoration-color: var(--article-link);
   }
 
   #main-nav a:focus {
