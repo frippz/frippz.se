@@ -1,5 +1,5 @@
 {
-  "extends": ["config:base", "schedule:weekdays"],
+  "extends": ["config:recommended", "schedule:weekdays"],
   "timezone": "CET",
   "automergeSchedule": ["after 9am and before 2pm every weekday"],
   "major": {
