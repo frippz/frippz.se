@@ -3,12 +3,11 @@ name: Deploy branch
 on:
   push:
     branches:
-      - '**'
-      - '!master'
+      - "**"
+      - "!master"
 
 jobs:
   deploy:
-
     name: Build site & deploy preview to Cloudflare
 
     runs-on: ubuntu-latest
@@ -21,20 +20,8 @@ jobs:
         id: vars
         run: echo "hash=${GITHUB_SHA::7}" >> $GITHUB_OUTPUT
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 10.18.0
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version-file: .node-version
-          cache: pnpm
-          cache-dependency-path: pnpm-lock.yaml
-
-      - name: Install Node packages
-        run: pnpm install
+      - name: Setup Node.js and PNPM
+        uses: ./.github/actions/setup-node-pnpm
 
       - name: Build assets
         run: pnpm run deploy
