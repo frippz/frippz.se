@@ -21,22 +21,23 @@ jobs:
       - name: Checkout files
         uses: actions/checkout@v4
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.18.0
+
       - name: Setup Node
         uses: actions/setup-node@v4
-
-      - name: Cache NPM
-        uses: actions/cache@v4
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          node-version-file: .node-version
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
 
       - name: Install Node packages
-        run: npm ci --silent
+        run: pnpm install
 
       - name: Build assets
-        run: npm run deploy
+        run: pnpm run deploy
 
       - name: Set up Ruby 3.0
         uses: ruby/setup-ruby@v1
@@ -54,10 +55,10 @@ jobs:
         run: bundle exec jekyll build --config "_config.yml,_config.prod.yml"
 
       - name: Lint CSS
-        run: npm run lint:css
+        run: pnpm run lint:css
 
       - name: Lint JavaScript
-        run: npm run lint:js
+        run: pnpm run lint:js
 
       - name: Run e2e tests
         uses: cypress-io/github-action@v4
