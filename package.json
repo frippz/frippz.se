@@ -19,15 +19,15 @@
     "uglify:css": "foreach -g 'dist/css/*.css' -x 'uglifycss #{path} --output #{path}'",
     "uglify:js": "foreach -g 'dist/js/*.js' -x 'uglifyjs #{path} --output #{path}'",
     "hash:css": "hashmark -l 8 css/*.css './dist/css/{name}-{hash}.css'",
-    "posthash:css": "npm run uglify:css",
+    "posthash:css": "pnpm run uglify:css",
     "hash:js": "hashmark -l 8 js/*.js './dist/js/{name}-{hash}.js'",
-    "posthash:js": "npm run uglify:js",
-    "lint": "npm run lint:css && npm run lint:js",
+    "posthash:js": "pnpm run uglify:js",
+    "lint": "pnpm run lint:css && pnpm run lint:js",
     "lint:css": "stylelint --color -f verbose css/**/*.css",
     "lint:js": "eslint js/**/*.js",
     "lint:js:fix": "standard --fix js/**/*.js",
     "predeploy": "rm -rf dist && mkdir -p dist/css dist/js",
-    "deploy": "npm run hash:css && npm run hash:js && npm run svg"
+    "deploy": "pnpm run hash:css && pnpm run hash:js && pnpm run svg"
   },
   "dependencies": {
     "eslint": "8.57.1",
