@@ -12,7 +12,6 @@ on:
 
 jobs:
   deploy:
-
     name: Build site & run e2e
 
     runs-on: ubuntu-latest
@@ -21,20 +20,12 @@ jobs:
       - name: Checkout files
         uses: actions/checkout@v4
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 10.18.0
+      - name: Get tagged version
+        id: vars
+        run: echo "hash=${GITHUB_SHA::7}" >> $GITHUB_OUTPUT
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version-file: .node-version
-          cache: pnpm
-          cache-dependency-path: pnpm-lock.yaml
-
-      - name: Install Node packages
-        run: pnpm install
+      - name: Setup Node.js and PNPM
+        uses: ./.github/actions/setup-node-pnpm
 
       - name: Build assets
         run: pnpm run deploy
@@ -47,7 +38,7 @@ jobs:
       - name: Add version & build timestamp
         run: |
           echo `date` > _data/timestamp.yml
-          echo "${{ steps.vars.outputs.tag }}" > _data/version.yml
+          echo "${{ steps.vars.outputs.hash }}" > _data/version.yml
 
       - name: Jekyll build
         env:
