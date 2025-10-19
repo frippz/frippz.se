@@ -51,6 +51,9 @@ jobs:
       - name: Lint JavaScript
         run: pnpm run lint:js
 
+      - name: Install Cypress binary
+        run: pnpm exec cypress install
+
       - name: Run e2e tests
         uses: cypress-io/github-action@v4
         env:
