@@ -50,7 +50,7 @@ importers:
         version: 16.2.6
       nodemon:
         specifier: ^3.0.1
-        version: 3.1.10
+        version: 3.1.11
       prettier:
         specifier: 3.6.2
         version: 3.6.2
@@ -1449,8 +1449,8 @@ packages:
     resolution: {integrity: sha512-GvTwK4F8FlPOSWHWN/H7qumKcuqY8lM1wyTzuSP94dlmPKaoOr4PWUwSzet2NCjpu/VWfl1zsncoitPEPtjJuA==}
     engines: {node: '>=0.10'}
 
-  nodemon@3.1.10:
-    resolution: {integrity: sha512-WDjw3pJ0/0jMFmyNDp3gvY2YizjLmmOUQo6DEBY+JgdvW/yQ9mEeSw6H5ythl5Ny2ytb7f9C2nIbjSxMNzbJXw==}
+  nodemon@3.1.11:
+    resolution: {integrity: sha512-is96t8F/1//UHAjNPHpbsNY46ELPpftGUoSVNXwUfMk/qdjSylYrWSu1XavVTBOn526kFiOR733ATgNBCQyH0g==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -3582,7 +3582,7 @@ snapshots:
       charm: 0.2.1
       colors: 1.4.0
 
-  nodemon@3.1.10:
+  nodemon@3.1.11:
     dependencies:
       chokidar: 3.6.0
       debug: 4.4.3(supports-color@5.5.0)
