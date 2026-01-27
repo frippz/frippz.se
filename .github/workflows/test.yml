@@ -34,15 +34,12 @@ jobs:
       - name: Lint JavaScript
         run: pnpm run lint:js
 
-      - name: Install Cypress binary
-        run: pnpm exec cypress install
-
       - name: Run e2e tests
         uses: cypress-io/github-action@v4
         env:
           CYPRESS_TEST_URL: http://localhost:4000
         with:
-          install: false
+          install: true
           browser: chrome
           headed: false
           start: python3 -m http.server --directory _site 4000
