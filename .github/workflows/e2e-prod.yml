@@ -18,7 +18,7 @@ jobs:
 
     steps:
       - name: Checkout files
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Get tagged version
         id: vars
