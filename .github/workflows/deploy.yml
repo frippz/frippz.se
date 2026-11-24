@@ -10,7 +10,7 @@ jobs:
   deploy:
     name: Build site & deploy to Cloudflare
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Checkout files
@@ -48,11 +48,9 @@ jobs:
         run: pnpm run lint:js
 
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: frippz-se
-          directory: _site
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          branch: master
+          command: pages deploy _site --project-name=frippz-se --branch=master
