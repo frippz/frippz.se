@@ -1,7 +1,7 @@
 {
-  "extends": ["config:recommended", "schedule:weekdays"],
-  "timezone": "CET",
-  "automergeSchedule": ["after 9am and before 2pm every weekday"],
+  "extends": ["config:recommended"],
+  "timezone": "Europe/Stockholm",
+  "automergeSchedule": ["after 8am and before 8pm"],
   "major": {
     "dependencyDashboardApproval": true
   },
